@@ -95,6 +95,7 @@ def markdown_sections(root, path, code):
             return 'href="'+text(route+('#'+u.fragment if u.fragment else ''))+'"'
         return m[0]
     body=re.sub(r'href="([^"]+)"',registered,body)
+    body=body.replace('<div class="table">','<div class="scroll" tabindex="0">')
     titles=[]
     def index(m):
         ident=f'case-{code}-section-{len(titles)+1}'
