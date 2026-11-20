@@ -1,0 +1,130 @@
+{
+  "source": "图册模板在 Chromium 的本地静态预览",
+  "edition": "atlas edition",
+  "verified": {
+    "viewports": [
+      {
+        "width": 1440,
+        "cards": [
+          "002507",
+          "600298",
+          "688188",
+          "09992",
+          "US"
+        ],
+        "foot": 751,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "cards": [
+          "002507",
+          "600298",
+          "688188",
+          "09992",
+          "US"
+        ],
+        "foot": 758,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "cards": [
+          "002507",
+          "600298",
+          "688188",
+          "09992",
+          "US"
+        ],
+        "foot": 834,
+        "errors": []
+      }
+    ],
+    "offlineCompanyCount": 5,
+    "keyboard": true,
+    "switch": true,
+    "oldDeepLink": true
+  },
+  "motion": [
+    {
+      "name": "封面入场",
+      "trigger": "打开 /atlas/",
+      "purpose": "先看到标题，再定位可点击的五家公司",
+      "mobile": "保留轻微位移，五家入口在 390×844 和 320×844 可见",
+      "reduced": "取消位移与淡入，内容立即显示",
+      "frames": [
+        "cover-entry.jpg",
+        "cover-desktop.jpg",
+        "cover-mobile-390.jpg",
+        "cover-mobile-320.jpg"
+      ]
+    },
+    {
+      "name": "公司入口反馈",
+      "trigger": "悬停、键盘 Tab 聚焦或触屏按压公司卡",
+      "purpose": "提示正在操作的公司卡片",
+      "mobile": "保持触屏按压、边线与焦点环，取消悬停抬升",
+      "reduced": "立即切换边线、阴影与焦点环",
+      "frames": [
+        "cover-hover.jpg",
+        "cover-keyboard.jpg",
+        "cover-mobile-390.jpg"
+      ]
+    },
+    {
+      "name": "公司切换",
+      "trigger": "从封面选公司或在公司页使用顶部切换栏",
+      "purpose": "新页首屏同步显示公司名称、主判断和估值",
+      "mobile": "可换行的公司链接，保留当前公司底色",
+      "reduced": "立即呈现新公司首屏",
+      "frames": [
+        "company-desktop.jpg",
+        "company-mobile-reduced.jpg"
+      ]
+    },
+    {
+      "name": "章节进度",
+      "trigger": "滚动公司正文或点选「估值与价值桥」",
+      "purpose": "目录标出当前章节，页顶铜线反映本篇阅读位置",
+      "mobile": "折叠目录保留定位，铜线不占正文",
+      "reduced": "进度随滚动直接更新，不插入过渡",
+      "frames": [
+        "chapter-progress.jpg",
+        "direct-value-link.jpg"
+      ]
+    },
+    {
+      "name": "图例与底表",
+      "trigger": "按下「改善」图例，再展开同源底表",
+      "purpose": "切换情景线条并查验相同数据表",
+      "mobile": "图例可触屏，图表和底表可各自水平滚动",
+      "reduced": "立即切换图线和底表，不淡入",
+      "frames": [
+        "company-desktop.jpg",
+        "chart-toggle-table.jpg"
+      ]
+    },
+    {
+      "name": "横向筛选",
+      "trigger": "进入横向比较并选择「证券估值」",
+      "purpose": "留下符合主题的比较章节",
+      "mobile": "选择器换行，内容保留其原顺序",
+      "reduced": "直接更新显示和条目数",
+      "frames": [
+        "comparison-filter.jpg"
+      ]
+    }
+  ],
+  "illustrations": {
+    "source": "项目 Agent 原创 CSS 几何图案",
+    "file": "../atlas_edition.css",
+    "conditions": "供项目内阅读和协作复现。遵循仓库内容共享规则。",
+    "companyMotifs": {
+      "600298": "发酵罐与管线",
+      "688188": "金属板与激光切割路径",
+      "002507": "腌制容器与菜叶",
+      "09992": "零售盒与抽象藏品轮廓",
+      "US": "手术机械臂的运动关节"
+    }
+  }
+}

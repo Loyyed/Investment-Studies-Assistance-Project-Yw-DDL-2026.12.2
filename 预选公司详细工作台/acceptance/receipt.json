@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "tested_browser": "Chromium 121.0.6167.57",
+  "scenario": "合成验收，工作区位于独立临时目录",
+  "steps": {
+    "candidate_registrated": true,
+    "locked_before_confirmation": true,
+    "explicit_candidate_confirmation": true,
+    "market_and_code": "HKEX-00001",
+    "blank_seed": {
+      "sources": 0,
+      "facts": 0,
+      "delegations": 0,
+      "signatures": 0
+    },
+    "official_source_fixture": {
+      "archived_and_opened": true,
+      "status": 200
+    },
+    "reviewstore_fixture": {
+      "state": "Fact",
+      "verifier": "human-ui"
+    },
+    "research_and_scenario_pages": true,
+    "md_export": {
+      "status": 200,
+      "contains_reviewed_fixture": true
+    },
+    "references": {
+      "count": 1,
+      "state": "外部参考"
+    }
+  },
+  "responsive": [
+    {
+      "width": 1440,
+      "route": "/select",
+      "body": 1440,
+      "ok": true
+    },
+    {
+      "width": 1440,
+      "route": "/references",
+      "body": 1440,
+      "ok": true
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "body": 1440,
+      "ok": true
+    },
+    {
+      "width": 390,
+      "route": "/select",
+      "body": 390,
+      "ok": true
+    },
+    {
+      "width": 390,
+      "route": "/references",
+      "body": 390,
+      "ok": true
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "body": 390,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "/select",
+      "body": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "/references",
+      "body": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "/",
+      "body": 320,
+      "ok": true
+    }
+  ],
+  "js_errors": [],
+  "screenshots": [
+    "desktop-selection.png",
+    "mobile-selection.png",
+    "narrow-evidence.png"
+  ]
+}
