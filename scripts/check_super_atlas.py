@@ -60,7 +60,15 @@ def compare(root, base_url):
             live=json.load(response)
         def ids(rows):
             return {(r['company'],r['id'],r['binding'],r['confirmation_event'],r['verifier']) for r in rows}
-        assert ids(live)<=ids(facts)
+        current_vintage=root/'docs/long-atlas/historical-reviewstore-receipt.csv'
+        supplemental=set()
+        if current_vintage.is_file():
+            from csv import DictReader
+            names={r['company'].split('_',1)[0]:r['company'] for r in facts}
+            with current_vintage.open(encoding='utf-8-sig',newline='') as table:
+                supplemental={(names[r['company']],r['fact_id'],r['binding'],r['verification_event'],r['verifier'])
+                              for r in DictReader(table)}
+        assert ids(live)<=ids(facts)|supplemental
     snap={(r['company'],r['id']):r for r in facts}
     confirmations=0
     for batch in BATCHES:

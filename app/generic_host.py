@@ -22,7 +22,7 @@ def start(root,kit,port):
  from atlas_service import ResearchHost
  research_host=ResearchHost(root,kit,mapping,server.workbench_token) if (root/ATLAS_OUT/'coverage.json').is_file() else None
  class Handler(Base):
-  def send_edition_cover(self,html):
+  def send_edition_cover(self,html,allow_images=False):
    # This cover contains only escaped publication fields and compiled local scripts.
    # Its trusted legacy-bookmark listener needs same-origin navigation without activation.
    data=html.encode('utf-8')
@@ -31,14 +31,14 @@ def start(root,kit,port):
    self.send_header('Content-Length',str(len(data)))
    self.send_header('Cache-Control','no-store')
    self.send_header('X-Content-Type-Options','nosniff')
-   self.send_header('Content-Security-Policy',"default-src 'none'; style-src 'unsafe-inline'; script-src 'nonce-"+server.workbench_token+"'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'")
+   self.send_header('Content-Security-Policy',"default-src 'none'; style-src 'unsafe-inline'; script-src 'nonce-"+server.workbench_token+"'; "+("img-src 'self' data:; " if allow_images else "")+"form-action 'none'; base-uri 'none'; frame-ancestors 'none'")
    self.end_headers()
    self.wfile.write(data)
   def send(self,data,*args,**kwargs):
    if self.path.split('?')[0]=='/' and isinstance(data,str):
     data=data.replace('最终展示图册</a></nav>','最终展示图册</a><a href="/preparation/">完整证券分析准备</a><a href="/security-analysis/">五家公司证券分析（阶段14）</a><a href="/stage15/">五家公司证券分析（阶段15）</a><a href="/stage16/">五家公司证券分析（阶段16）</a><a href="/stage17/">五家公司证券研究定稿</a></nav>')
     if research_host:
-     data=data.replace('五家公司证券研究定稿</a></nav>','五家公司证券研究定稿</a><a href="/cases/">五家公司案例</a><a href="/research/">五家公司成果总览</a><a href="/atlas/">五家公司证券投资超级图册</a></nav>')
+     data=data.replace('五家公司证券研究定稿</a></nav>','五家公司证券研究定稿</a><a href="/cases/">五家公司案例</a><a href="/research/">五家公司成果总览</a><a href="/long-atlas/">五家公司长篇研究图册</a><a href="/atlas/">既有超级图册</a></nav>')
      safe_mapping=json.dumps(mapping,ensure_ascii=False).replace('<',chr(92)+'u003c')
      data=data.replace('</body>','<script type="application/json" id="project-research-map">'+safe_mapping+'</script></body>')
     data=data.replace('</body>','<script nonce="'+server.workbench_token+'" src="/assets/project-adapter.js"></script></body>')
@@ -54,6 +54,13 @@ def start(root,kit,port):
   def do_GET(self):
    if not self.host_ok():return self.send({'error':'不允许的Host'},403)
    route=urlparse(self.path);q=parse_qs(route.query)
+   if route.path in ('/long-atlas','/long-atlas/') or route.path.startswith('/long-atlas/'):
+    if route.path=='/long-atlas' or route.path.rsplit('/',1)[-1] in ('002507','600298','688188','09992','US'):
+     self.send_response(302);self.send_header('Location',route.path+'/');self.end_headers();return
+    if not (root/'docs/long-atlas/package.json').is_file():
+     return self.send({'error':'长篇图册尚未构建'},404)
+    from long_atlas_site import serve_long
+    return serve_long(self,root,route.path if route.path!='/long-atlas' else '/long-atlas/',q,server.workbench_token)
    if route.path.startswith('/cases/') and (root/'docs/cases/case-package.json').is_file():
     from case_site import serve_case
     return serve_case(self,root,route.path,q)

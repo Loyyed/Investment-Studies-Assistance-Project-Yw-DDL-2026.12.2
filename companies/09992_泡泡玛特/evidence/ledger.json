@@ -582,6 +582,424 @@
         }
       ],
       "support_boundary": "两份同范围原件的年度收入列核对一致。早期主营业务收入按当时列名保留。"
+    },
+    "V22-2020-ROU-DA": {
+      "id": "V22-2020-ROU-DA",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "142940",
+      "claim": "使用權資產折舊費用合計",
+      "scope": {
+        "period": "2020-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "使用權資產折舊費用合計",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S3a717e3a572b1f30",
+          "location": "PDF物理第215页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2020-OPERATING-LEASE-CASH": {
+      "id": "V22-2020-OPERATING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "40027",
+      "claim": "租賃作為經營活動之現金流出",
+      "scope": {
+        "period": "2020-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為經營活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S3a717e3a572b1f30",
+          "location": "PDF物理第215页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2020-FINANCING-LEASE-CASH": {
+      "id": "V22-2020-FINANCING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "147995",
+      "claim": "租賃作為融資活動之現金流出",
+      "scope": {
+        "period": "2020-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為融資活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S3a717e3a572b1f30",
+          "location": "PDF物理第215页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2021-ROU-DA": {
+      "id": "V22-2021-ROU-DA",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "221698",
+      "claim": "使用權資產折舊費用合計",
+      "scope": {
+        "period": "2021-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "使用權資產折舊費用合計",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "Sae0f1e1845c9aa8f",
+          "location": "PDF物理第247页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2021-OPERATING-LEASE-CASH": {
+      "id": "V22-2021-OPERATING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "88126",
+      "claim": "租賃作為經營活動之現金流出",
+      "scope": {
+        "period": "2021-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為經營活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "Sae0f1e1845c9aa8f",
+          "location": "PDF物理第247页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2021-FINANCING-LEASE-CASH": {
+      "id": "V22-2021-FINANCING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "220126",
+      "claim": "租賃作為融資活動之現金流出",
+      "scope": {
+        "period": "2021-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為融資活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "Sae0f1e1845c9aa8f",
+          "location": "PDF物理第247页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2022-ROU-DA": {
+      "id": "V22-2022-ROU-DA",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "335630",
+      "claim": "使用權資產折舊費用合計",
+      "scope": {
+        "period": "2022-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "使用權資產折舊費用合計",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S113a569cdaac64d5",
+          "location": "PDF物理第260页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2022-OPERATING-LEASE-CASH": {
+      "id": "V22-2022-OPERATING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "72512",
+      "claim": "租賃作為經營活動之現金流出",
+      "scope": {
+        "period": "2022-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為經營活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S113a569cdaac64d5",
+          "location": "PDF物理第260页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2022-FINANCING-LEASE-CASH": {
+      "id": "V22-2022-FINANCING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "323041",
+      "claim": "租賃作為融資活動之現金流出",
+      "scope": {
+        "period": "2022-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為融資活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S113a569cdaac64d5",
+          "location": "PDF物理第260页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2023-ROU-DA": {
+      "id": "V22-2023-ROU-DA",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "348390",
+      "claim": "使用權資產折舊費用合計",
+      "scope": {
+        "period": "2023-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "使用權資產折舊費用合計",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S1312bd4fec38932f",
+          "location": "PDF物理第260页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2023-OPERATING-LEASE-CASH": {
+      "id": "V22-2023-OPERATING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "175516",
+      "claim": "租賃作為經營活動之現金流出",
+      "scope": {
+        "period": "2023-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為經營活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S1312bd4fec38932f",
+          "location": "PDF物理第260页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2023-FINANCING-LEASE-CASH": {
+      "id": "V22-2023-FINANCING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "384999",
+      "claim": "租賃作為融資活動之現金流出",
+      "scope": {
+        "period": "2023-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為融資活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S1312bd4fec38932f",
+          "location": "PDF物理第260页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2024-ROU-DA": {
+      "id": "V22-2024-ROU-DA",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "452318",
+      "claim": "使用權資產折舊費用合計",
+      "scope": {
+        "period": "2024-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "使用權資產折舊費用合計",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S9b89a4686ffb5fe8",
+          "location": "PDF物理第272页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2024-OPERATING-LEASE-CASH": {
+      "id": "V22-2024-OPERATING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "424926",
+      "claim": "租賃作為經營活動之現金流出",
+      "scope": {
+        "period": "2024-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為經營活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S9b89a4686ffb5fe8",
+          "location": "PDF物理第272页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2024-FINANCING-LEASE-CASH": {
+      "id": "V22-2024-FINANCING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "505104",
+      "claim": "租賃作為融資活動之現金流出",
+      "scope": {
+        "period": "2024-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為融資活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S9b89a4686ffb5fe8",
+          "location": "PDF物理第272页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2025-ROU-DA": {
+      "id": "V22-2025-ROU-DA",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "592713",
+      "claim": "使用權資產折舊費用合計",
+      "scope": {
+        "period": "2025-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "使用權資產折舊費用合計",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S47095a39c6425b11",
+          "location": "PDF物理第301页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2025-OPERATING-LEASE-CASH": {
+      "id": "V22-2025-OPERATING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "1284337",
+      "claim": "租賃作為經營活動之現金流出",
+      "scope": {
+        "period": "2025-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為經營活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S47095a39c6425b11",
+          "location": "PDF物理第301页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2025-FINANCING-LEASE-CASH": {
+      "id": "V22-2025-FINANCING-LEASE-CASH",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "608288",
+      "claim": "租賃作為融資活動之現金流出",
+      "scope": {
+        "period": "2025-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "租賃作為融資活動之現金流出",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S47095a39c6425b11",
+          "location": "PDF物理第301页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2022-ROU-DA-LATER-COMPARATIVE": {
+      "id": "V22-2022-ROU-DA-LATER-COMPARATIVE",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "330124",
+      "claim": "使用權資產折舊費用合計",
+      "scope": {
+        "period": "2022-FY",
+        "entity": "泡泡玛特",
+        "basis": "历史合并原披露",
+        "definition": "使用權資產折舊費用合計",
+        "unit": "人民币千元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "S1312bd4fec38932f",
+          "location": "PDF物理第260页，使用權資產折舊費用合計，第2数值列，2022 比较列"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
     }
   },
   "events": [
@@ -3108,6 +3526,1279 @@
       },
       "previous_hash": "96d11c43fffb3001d4ff6a103892de51937ed50712185f2c0231aa800237408c",
       "hash": "274a6307093ed455d0332017788eb44a1c42bc98f627b91cc7ea5e6403cb6db7"
+    },
+    {
+      "id": "E000066",
+      "time": "2026-11-20T22:48:12+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2020-ROU-DA",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "142940",
+          "claim": "使用權資產折舊費用合計",
+          "scope": {
+            "period": "2020-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S3a717e3a572b1f30",
+              "location": "PDF物理第215页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "274a6307093ed455d0332017788eb44a1c42bc98f627b91cc7ea5e6403cb6db7",
+      "hash": "dade6d1ac5bc724c01e14f49bfb582dff512f1131c372f3e77866b66f37381d1"
+    },
+    {
+      "id": "E000067",
+      "time": "2026-11-20T22:48:12+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2020-ROU-DA",
+        "binding": "09e405c8ac110d70b9b053499f5d529df2c2776f318c3db13b71167f265b7a99",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第215页，使用權資產折舊費用合計，第1数值列，本年已审计合并为142940人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2020-ROU-DA",
+          "claim": "使用權資產折舊費用合計",
+          "value": "142940",
+          "scope": {
+            "period": "2020-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S3a717e3a572b1f30",
+              "location": "PDF物理第215页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "dade6d1ac5bc724c01e14f49bfb582dff512f1131c372f3e77866b66f37381d1",
+      "hash": "b1188a7b70caf44e49ea56dc713bb2ecf8ac1a30022201fcb480e3992841a021"
+    },
+    {
+      "id": "E000068",
+      "time": "2026-11-20T22:48:12+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2020-OPERATING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "40027",
+          "claim": "租賃作為經營活動之現金流出",
+          "scope": {
+            "period": "2020-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S3a717e3a572b1f30",
+              "location": "PDF物理第215页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "b1188a7b70caf44e49ea56dc713bb2ecf8ac1a30022201fcb480e3992841a021",
+      "hash": "02ebde6e1d2bc5c4b964979e0864a409b71f93517976c6909ec81ed96b45fc29"
+    },
+    {
+      "id": "E000069",
+      "time": "2026-11-20T22:48:13+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2020-OPERATING-LEASE-CASH",
+        "binding": "949ae6062cfee2ee12586c2faebbdd944db162209a57a83d0dc8a5101589123f",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第215页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并为40027人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2020-OPERATING-LEASE-CASH",
+          "claim": "租賃作為經營活動之現金流出",
+          "value": "40027",
+          "scope": {
+            "period": "2020-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S3a717e3a572b1f30",
+              "location": "PDF物理第215页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "02ebde6e1d2bc5c4b964979e0864a409b71f93517976c6909ec81ed96b45fc29",
+      "hash": "250bc2ed1b59488e2ee174864e03304d489d4ff4fca778f13d14e282c83bc0dd"
+    },
+    {
+      "id": "E000070",
+      "time": "2026-11-20T22:48:13+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2020-FINANCING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "147995",
+          "claim": "租賃作為融資活動之現金流出",
+          "scope": {
+            "period": "2020-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S3a717e3a572b1f30",
+              "location": "PDF物理第215页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "250bc2ed1b59488e2ee174864e03304d489d4ff4fca778f13d14e282c83bc0dd",
+      "hash": "0d9f7bbe2069b30a5195f04f714c81a7dc7c910100f7ae35a501fd99e662b0c9"
+    },
+    {
+      "id": "E000071",
+      "time": "2026-11-20T22:48:13+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2020-FINANCING-LEASE-CASH",
+        "binding": "92d117dcb03ed3f9b733f0445f9c6b059e2aa30ace567356bfc2c58b45162e64",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第215页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并为147995人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2020-FINANCING-LEASE-CASH",
+          "claim": "租賃作為融資活動之現金流出",
+          "value": "147995",
+          "scope": {
+            "period": "2020-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S3a717e3a572b1f30",
+              "location": "PDF物理第215页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "0d9f7bbe2069b30a5195f04f714c81a7dc7c910100f7ae35a501fd99e662b0c9",
+      "hash": "bbe16d3fb4f92232bc27d786bee0ac4eb3f0cc97a30553306dcf58cbcb014303"
+    },
+    {
+      "id": "E000072",
+      "time": "2026-11-20T22:48:13+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2021-ROU-DA",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "221698",
+          "claim": "使用權資產折舊費用合計",
+          "scope": {
+            "period": "2021-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "Sae0f1e1845c9aa8f",
+              "location": "PDF物理第247页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "bbe16d3fb4f92232bc27d786bee0ac4eb3f0cc97a30553306dcf58cbcb014303",
+      "hash": "903d6c999a284c05fe8a77a38cafd150d83ccc9a69ac218506fd8163ffe2a4c0"
+    },
+    {
+      "id": "E000073",
+      "time": "2026-11-20T22:48:13+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2021-ROU-DA",
+        "binding": "800f811e97a8e6977dfd5edeaf10d07100e94bce2eed7b8cb705e556ece64e51",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第247页，使用權資產折舊費用合計，第1数值列，本年已审计合并为221698人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2021-ROU-DA",
+          "claim": "使用權資產折舊費用合計",
+          "value": "221698",
+          "scope": {
+            "period": "2021-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "Sae0f1e1845c9aa8f",
+              "location": "PDF物理第247页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "903d6c999a284c05fe8a77a38cafd150d83ccc9a69ac218506fd8163ffe2a4c0",
+      "hash": "0e0756eacd2f613063bd36a96cdb8e7eb1aa7b389efb42413ca9160ac3020f86"
+    },
+    {
+      "id": "E000074",
+      "time": "2026-11-20T22:48:13+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2021-OPERATING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "88126",
+          "claim": "租賃作為經營活動之現金流出",
+          "scope": {
+            "period": "2021-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "Sae0f1e1845c9aa8f",
+              "location": "PDF物理第247页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "0e0756eacd2f613063bd36a96cdb8e7eb1aa7b389efb42413ca9160ac3020f86",
+      "hash": "da087dddf2acf56e14e2496d5c04a857e96884e5acf8b2e2da7924a69305aa4e"
+    },
+    {
+      "id": "E000075",
+      "time": "2026-11-20T22:48:13+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2021-OPERATING-LEASE-CASH",
+        "binding": "29f769143da1643a51b5fb815a53fd360f9dc3fd2806b6b25e11439ad5813a83",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第247页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并为88126人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2021-OPERATING-LEASE-CASH",
+          "claim": "租賃作為經營活動之現金流出",
+          "value": "88126",
+          "scope": {
+            "period": "2021-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "Sae0f1e1845c9aa8f",
+              "location": "PDF物理第247页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "da087dddf2acf56e14e2496d5c04a857e96884e5acf8b2e2da7924a69305aa4e",
+      "hash": "a250b1e292b79999b169e54a8af92f178281dc797174ba65a59bccd366ad3509"
+    },
+    {
+      "id": "E000076",
+      "time": "2026-11-20T22:48:13+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2021-FINANCING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "220126",
+          "claim": "租賃作為融資活動之現金流出",
+          "scope": {
+            "period": "2021-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "Sae0f1e1845c9aa8f",
+              "location": "PDF物理第247页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "a250b1e292b79999b169e54a8af92f178281dc797174ba65a59bccd366ad3509",
+      "hash": "6cd235f369461381a147483dcffce2e6384f0a87a115dff95532b03ecfccd37f"
+    },
+    {
+      "id": "E000077",
+      "time": "2026-11-20T22:48:13+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2021-FINANCING-LEASE-CASH",
+        "binding": "202e60096720486dab35b2f7c0b749d2adb06147df4d1afa58e95829be1e8125",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第247页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并为220126人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2021-FINANCING-LEASE-CASH",
+          "claim": "租賃作為融資活動之現金流出",
+          "value": "220126",
+          "scope": {
+            "period": "2021-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "Sae0f1e1845c9aa8f",
+              "location": "PDF物理第247页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "6cd235f369461381a147483dcffce2e6384f0a87a115dff95532b03ecfccd37f",
+      "hash": "cde033240753c074954b22c72dac59eb9886816c0e40843e6bd97bef7644f624"
+    },
+    {
+      "id": "E000078",
+      "time": "2026-11-20T22:48:14+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2022-ROU-DA",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "335630",
+          "claim": "使用權資產折舊費用合計",
+          "scope": {
+            "period": "2022-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S113a569cdaac64d5",
+              "location": "PDF物理第260页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "cde033240753c074954b22c72dac59eb9886816c0e40843e6bd97bef7644f624",
+      "hash": "17004774fea0097fbb40ca32f5f5eb0d69a7c4de3e3859d892ea5a36d02f2df3"
+    },
+    {
+      "id": "E000079",
+      "time": "2026-11-20T22:48:14+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2022-ROU-DA",
+        "binding": "9e45dfcb116ff5308b03235562634dd5d27b34fa72d218143dd73384ef1031f0",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第260页，使用權資產折舊費用合計，第1数值列，本年已审计合并为335630人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2022-ROU-DA",
+          "claim": "使用權資產折舊費用合計",
+          "value": "335630",
+          "scope": {
+            "period": "2022-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S113a569cdaac64d5",
+              "location": "PDF物理第260页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "17004774fea0097fbb40ca32f5f5eb0d69a7c4de3e3859d892ea5a36d02f2df3",
+      "hash": "64b7bfef7565cef17b17990676cb305b005e694c072b27bbdd5105adbdec341e"
+    },
+    {
+      "id": "E000080",
+      "time": "2026-11-20T22:48:14+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2022-OPERATING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "72512",
+          "claim": "租賃作為經營活動之現金流出",
+          "scope": {
+            "period": "2022-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S113a569cdaac64d5",
+              "location": "PDF物理第260页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "64b7bfef7565cef17b17990676cb305b005e694c072b27bbdd5105adbdec341e",
+      "hash": "61f7ef50ace7907af2eb2700bd1bd1795981a86c24892d5d8216cf9fc6981c83"
+    },
+    {
+      "id": "E000081",
+      "time": "2026-11-20T22:48:14+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2022-OPERATING-LEASE-CASH",
+        "binding": "8237a169e3535f6cf96abdd5942384d61f0274ba231c86b32c686d270454ecae",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第260页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并为72512人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2022-OPERATING-LEASE-CASH",
+          "claim": "租賃作為經營活動之現金流出",
+          "value": "72512",
+          "scope": {
+            "period": "2022-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S113a569cdaac64d5",
+              "location": "PDF物理第260页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "61f7ef50ace7907af2eb2700bd1bd1795981a86c24892d5d8216cf9fc6981c83",
+      "hash": "7ff0a058acb277e297065da76a62bfe3f651a7072ef04c1a0ff93dc78b18f323"
+    },
+    {
+      "id": "E000082",
+      "time": "2026-11-20T22:48:14+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2022-FINANCING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "323041",
+          "claim": "租賃作為融資活動之現金流出",
+          "scope": {
+            "period": "2022-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S113a569cdaac64d5",
+              "location": "PDF物理第260页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "7ff0a058acb277e297065da76a62bfe3f651a7072ef04c1a0ff93dc78b18f323",
+      "hash": "4d2f4a6ff4b72254fa46bf7504cceca421f98a59958027fb4872604d325be1e0"
+    },
+    {
+      "id": "E000083",
+      "time": "2026-11-20T22:48:14+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2022-FINANCING-LEASE-CASH",
+        "binding": "de5c8741053ef9f75cf72a70ebd9e25262ffb164282bd349203410e8688f319c",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第260页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并为323041人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2022-FINANCING-LEASE-CASH",
+          "claim": "租賃作為融資活動之現金流出",
+          "value": "323041",
+          "scope": {
+            "period": "2022-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S113a569cdaac64d5",
+              "location": "PDF物理第260页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "4d2f4a6ff4b72254fa46bf7504cceca421f98a59958027fb4872604d325be1e0",
+      "hash": "f34457f652e7203e04b9cbdc21ccf8eb9a852af30c73205c7fe2ea870497eca5"
+    },
+    {
+      "id": "E000084",
+      "time": "2026-11-20T22:48:14+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2023-ROU-DA",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "348390",
+          "claim": "使用權資產折舊費用合計",
+          "scope": {
+            "period": "2023-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S1312bd4fec38932f",
+              "location": "PDF物理第260页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "f34457f652e7203e04b9cbdc21ccf8eb9a852af30c73205c7fe2ea870497eca5",
+      "hash": "32ca43ae562bbb782b5695e910b45a09e1ea7ea92181c175f71e46f6daa0d3c8"
+    },
+    {
+      "id": "E000085",
+      "time": "2026-11-20T22:48:14+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2023-ROU-DA",
+        "binding": "49063c8ab059b859420e9641ac396b618eb327d48153e6a5afc2c1d46b1d3df5",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第260页，使用權資產折舊費用合計，第1数值列，本年已审计合并为348390人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2023-ROU-DA",
+          "claim": "使用權資產折舊費用合計",
+          "value": "348390",
+          "scope": {
+            "period": "2023-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S1312bd4fec38932f",
+              "location": "PDF物理第260页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "32ca43ae562bbb782b5695e910b45a09e1ea7ea92181c175f71e46f6daa0d3c8",
+      "hash": "f68da35018213662fd8a36b7b988bdbaad6159dab2905cf889d304135f57b40d"
+    },
+    {
+      "id": "E000086",
+      "time": "2026-11-20T22:48:15+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2023-OPERATING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "175516",
+          "claim": "租賃作為經營活動之現金流出",
+          "scope": {
+            "period": "2023-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S1312bd4fec38932f",
+              "location": "PDF物理第260页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "f68da35018213662fd8a36b7b988bdbaad6159dab2905cf889d304135f57b40d",
+      "hash": "cfe5dba6e5da5ebb1f2bb41c39c19b042d6413f3af397df8d5ee2a4497ce0d6f"
+    },
+    {
+      "id": "E000087",
+      "time": "2026-11-20T22:48:15+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2023-OPERATING-LEASE-CASH",
+        "binding": "9629a9522f60bc0b11ecbf016efb5d25e6747746cc19424145ac274ae397b830",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第260页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并为175516人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2023-OPERATING-LEASE-CASH",
+          "claim": "租賃作為經營活動之現金流出",
+          "value": "175516",
+          "scope": {
+            "period": "2023-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S1312bd4fec38932f",
+              "location": "PDF物理第260页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "cfe5dba6e5da5ebb1f2bb41c39c19b042d6413f3af397df8d5ee2a4497ce0d6f",
+      "hash": "c9be3dd2600b5aed2d459cec8330ba5c1d11af12708723255a9f05fba62e4398"
+    },
+    {
+      "id": "E000088",
+      "time": "2026-11-20T22:48:15+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2023-FINANCING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "384999",
+          "claim": "租賃作為融資活動之現金流出",
+          "scope": {
+            "period": "2023-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S1312bd4fec38932f",
+              "location": "PDF物理第260页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "c9be3dd2600b5aed2d459cec8330ba5c1d11af12708723255a9f05fba62e4398",
+      "hash": "7d510f185cdf5c3ff36fb4400c3a6ff562c7a1dce71c872cd6ab626141d9a6c6"
+    },
+    {
+      "id": "E000089",
+      "time": "2026-11-20T22:48:15+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2023-FINANCING-LEASE-CASH",
+        "binding": "25f065fd6ca7ac0cf86844d419d65b132c96222d3a1f5f96cb095bfa01b6187a",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第260页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并为384999人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2023-FINANCING-LEASE-CASH",
+          "claim": "租賃作為融資活動之現金流出",
+          "value": "384999",
+          "scope": {
+            "period": "2023-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S1312bd4fec38932f",
+              "location": "PDF物理第260页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "7d510f185cdf5c3ff36fb4400c3a6ff562c7a1dce71c872cd6ab626141d9a6c6",
+      "hash": "3c6c569ffa91f520880a1124b315692679e31267ffe1726993969344456c9302"
+    },
+    {
+      "id": "E000090",
+      "time": "2026-11-20T22:48:15+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2024-ROU-DA",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "452318",
+          "claim": "使用權資產折舊費用合計",
+          "scope": {
+            "period": "2024-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S9b89a4686ffb5fe8",
+              "location": "PDF物理第272页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "3c6c569ffa91f520880a1124b315692679e31267ffe1726993969344456c9302",
+      "hash": "29318ee710493e63ee6c012341bb94ed661de50f351d18ab68955477ff9b755c"
+    },
+    {
+      "id": "E000091",
+      "time": "2026-11-20T22:48:15+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2024-ROU-DA",
+        "binding": "960533b428167df82cc3ce959a2cec64c44cac0afefad7042354b1e2bf5eea2d",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第272页，使用權資產折舊費用合計，第1数值列，本年已审计合并为452318人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2024-ROU-DA",
+          "claim": "使用權資產折舊費用合計",
+          "value": "452318",
+          "scope": {
+            "period": "2024-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S9b89a4686ffb5fe8",
+              "location": "PDF物理第272页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "29318ee710493e63ee6c012341bb94ed661de50f351d18ab68955477ff9b755c",
+      "hash": "8c9f606aa61a90fd5fd76a6c7ac847d7e0d7f6384f118c8dfeda1d8de8dea021"
+    },
+    {
+      "id": "E000092",
+      "time": "2026-11-20T22:48:15+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2024-OPERATING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "424926",
+          "claim": "租賃作為經營活動之現金流出",
+          "scope": {
+            "period": "2024-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S9b89a4686ffb5fe8",
+              "location": "PDF物理第272页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "8c9f606aa61a90fd5fd76a6c7ac847d7e0d7f6384f118c8dfeda1d8de8dea021",
+      "hash": "c1c423ffb0457593591410ef7b216149f0152059cf6bff1652da465b3a2a7f07"
+    },
+    {
+      "id": "E000093",
+      "time": "2026-11-20T22:48:16+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2024-OPERATING-LEASE-CASH",
+        "binding": "e56af378fc67b02a76cfb5b6a0a3c4cfa04f4dfb0eee6f416ca4856a9d0a2938",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第272页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并为424926人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2024-OPERATING-LEASE-CASH",
+          "claim": "租賃作為經營活動之現金流出",
+          "value": "424926",
+          "scope": {
+            "period": "2024-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S9b89a4686ffb5fe8",
+              "location": "PDF物理第272页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "c1c423ffb0457593591410ef7b216149f0152059cf6bff1652da465b3a2a7f07",
+      "hash": "85095684529f14db2f22471eb6b862d5ded6e343f0c089b8ee5a8f6ee3c50a7e"
+    },
+    {
+      "id": "E000094",
+      "time": "2026-11-20T22:48:16+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2024-FINANCING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "505104",
+          "claim": "租賃作為融資活動之現金流出",
+          "scope": {
+            "period": "2024-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S9b89a4686ffb5fe8",
+              "location": "PDF物理第272页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "85095684529f14db2f22471eb6b862d5ded6e343f0c089b8ee5a8f6ee3c50a7e",
+      "hash": "3d83fafe3e85fdeda99ec5eacd947dc430b4b5226b10ea3475c14a13c2ae6fab"
+    },
+    {
+      "id": "E000095",
+      "time": "2026-11-20T22:48:16+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2024-FINANCING-LEASE-CASH",
+        "binding": "7c96255757fbfc7012453f94d1d08ace4e7639e14502b428f13a11f59560f47d",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第272页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并为505104人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2024-FINANCING-LEASE-CASH",
+          "claim": "租賃作為融資活動之現金流出",
+          "value": "505104",
+          "scope": {
+            "period": "2024-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S9b89a4686ffb5fe8",
+              "location": "PDF物理第272页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "3d83fafe3e85fdeda99ec5eacd947dc430b4b5226b10ea3475c14a13c2ae6fab",
+      "hash": "10d6895e4acd279a0d6957ceebfcc1bbb3ffa8923504589409e5f4e0733dea70"
+    },
+    {
+      "id": "E000096",
+      "time": "2026-11-20T22:48:16+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2025-ROU-DA",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "592713",
+          "claim": "使用權資產折舊費用合計",
+          "scope": {
+            "period": "2025-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S47095a39c6425b11",
+              "location": "PDF物理第301页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "10d6895e4acd279a0d6957ceebfcc1bbb3ffa8923504589409e5f4e0733dea70",
+      "hash": "fbabe7db5d87c793bf5685e86a28c20cf6fbc1ddad29821677ff6cb8ab8f8cc0"
+    },
+    {
+      "id": "E000097",
+      "time": "2026-11-20T22:48:16+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2025-ROU-DA",
+        "binding": "083ad993ba5de00617aaa43f6e259f9817e44470182cfe788351d77305017adc",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第301页，使用權資產折舊費用合計，第1数值列，本年已审计合并为592713人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2025-ROU-DA",
+          "claim": "使用權資產折舊費用合計",
+          "value": "592713",
+          "scope": {
+            "period": "2025-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S47095a39c6425b11",
+              "location": "PDF物理第301页，使用權資產折舊費用合計，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "fbabe7db5d87c793bf5685e86a28c20cf6fbc1ddad29821677ff6cb8ab8f8cc0",
+      "hash": "560f30ed5e2cd279fc7d28df866a7b8dcf7f677549ac3f577ed0aef0e2ca024e"
+    },
+    {
+      "id": "E000098",
+      "time": "2026-11-20T22:48:16+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2025-OPERATING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "1284337",
+          "claim": "租賃作為經營活動之現金流出",
+          "scope": {
+            "period": "2025-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S47095a39c6425b11",
+              "location": "PDF物理第301页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "560f30ed5e2cd279fc7d28df866a7b8dcf7f677549ac3f577ed0aef0e2ca024e",
+      "hash": "2de7fcdc60814b512f97df5d2408d475ef31a26ab6a0876c2ecc40af77a3fd16"
+    },
+    {
+      "id": "E000099",
+      "time": "2026-11-20T22:48:16+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2025-OPERATING-LEASE-CASH",
+        "binding": "ebd22709cc8c7a0fd2c5e08a6915e76e87705c81d6beaca96cd6cda8e08eabd7",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第301页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并为1284337人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2025-OPERATING-LEASE-CASH",
+          "claim": "租賃作為經營活動之現金流出",
+          "value": "1284337",
+          "scope": {
+            "period": "2025-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為經營活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S47095a39c6425b11",
+              "location": "PDF物理第301页，租賃作為經營活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "2de7fcdc60814b512f97df5d2408d475ef31a26ab6a0876c2ecc40af77a3fd16",
+      "hash": "c00fed2a7f2b463ef6dbdcbb04925cfd1c5694dbf3b33a93f5180dec2fe0a676"
+    },
+    {
+      "id": "E000100",
+      "time": "2026-11-20T22:48:17+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2025-FINANCING-LEASE-CASH",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "608288",
+          "claim": "租賃作為融資活動之現金流出",
+          "scope": {
+            "period": "2025-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S47095a39c6425b11",
+              "location": "PDF物理第301页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "c00fed2a7f2b463ef6dbdcbb04925cfd1c5694dbf3b33a93f5180dec2fe0a676",
+      "hash": "b0bc3a29a5ecf21c6da62f8967eb9b0232d4cf19052151c6e90ebca0da883fdd"
+    },
+    {
+      "id": "E000101",
+      "time": "2026-11-20T22:48:17+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2025-FINANCING-LEASE-CASH",
+        "binding": "7103d65a1717047d2762935af79b49d4df7b9778aaca9c4b25a00b4e7c409cd3",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第301页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并为608288人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2025-FINANCING-LEASE-CASH",
+          "claim": "租賃作為融資活動之現金流出",
+          "value": "608288",
+          "scope": {
+            "period": "2025-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "租賃作為融資活動之現金流出",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S47095a39c6425b11",
+              "location": "PDF物理第301页，租賃作為融資活動之現金流出，第1数值列，本年已审计合并"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "b0bc3a29a5ecf21c6da62f8967eb9b0232d4cf19052151c6e90ebca0da883fdd",
+      "hash": "82225efa4f8ef122b17c3fadc39790b9ff489d667611a392182568fa65f28f0e"
+    },
+    {
+      "id": "E000102",
+      "time": "2026-11-20T22:48:17+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2022-ROU-DA-LATER-COMPARATIVE",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "330124",
+          "claim": "使用權資產折舊費用合計",
+          "scope": {
+            "period": "2022-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S1312bd4fec38932f",
+              "location": "PDF物理第260页，使用權資產折舊費用合計，第2数值列，2022 比较列"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "82225efa4f8ef122b17c3fadc39790b9ff489d667611a392182568fa65f28f0e",
+      "hash": "b23b82ae12308b5f7482406e7497cad6700b933d97165cff9877af4630a86ead"
+    },
+    {
+      "id": "E000103",
+      "time": "2026-11-20T22:48:17+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2022-ROU-DA-LATER-COMPARATIVE",
+        "binding": "c70712290b105fc59bd54262ab86cb5df9f889a617eb056116aae07dd85033e8",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第260页，使用權資產折舊費用合計，第2数值列，2022 比较列为330124人民币千元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2022-ROU-DA-LATER-COMPARATIVE",
+          "claim": "使用權資產折舊費用合計",
+          "value": "330124",
+          "scope": {
+            "period": "2022-FY",
+            "entity": "泡泡玛特",
+            "basis": "历史合并原披露",
+            "definition": "使用權資產折舊費用合計",
+            "unit": "人民币千元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "S1312bd4fec38932f",
+              "location": "PDF物理第260页，使用權資產折舊費用合計，第2数值列，2022 比较列"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "b23b82ae12308b5f7482406e7497cad6700b933d97165cff9877af4630a86ead",
+      "hash": "a88a3721ac1f48117961d94b4a1895322df7267e5f5961d117b9f37b72b932ea"
     }
   ],
   "delegations": [

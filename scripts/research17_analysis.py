@@ -338,7 +338,10 @@ def research():
         corrected.append(m)
     facts=current_facts()
     bound,_=snapshot(STAGE16,'docs/research16/current_facts.json')
-    assert {(r['company'],r['id'],r['binding'],r['confirmation_event']) for r in facts} <= {
+    # Reproduce the historical bindings while permitting separately authorized later facts.
+    frozen_ids={(r['company'],r['id']) for r in bound}
+    assert {(r['company'],r['id'],r['binding'],r['confirmation_event']) for r in facts
+            if (r['company'],r['id']) in frozen_ids} <= {
              (r['company'],r['id'],r['binding'],r['confirmation_event']) for r in bound}
     return corrected,facts
 

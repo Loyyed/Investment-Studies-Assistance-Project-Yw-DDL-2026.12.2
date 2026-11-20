@@ -1,0 +1,98 @@
+{
+  "baseline": "9301d3129511c0080818e802311d1989f6cd1505",
+  "companies": {
+    "002507": {
+      "han": 21652,
+      "charts": 14,
+      "mechanisms": 4,
+      "paragraphs": 88,
+      "digest": "1d3e439d9d4cdd7c5435a8ac2011316f7d3f6bebf0ea4a7a9d3aa7124c8b4ccc",
+      "scenarios": {
+        "base": 15.093513086746889,
+        "stress": 11.002522448525678,
+        "improve": 19.871660760554118
+      },
+      "asof": "2026-11-12",
+      "close": 11.42,
+      "original_annual_periods": 16
+    },
+    "600298": {
+      "han": 20883,
+      "charts": 14,
+      "mechanisms": 4,
+      "paragraphs": 81,
+      "digest": "0bb3af1e7a46ef918b5f6546d7c61299f3f107cbdb0a779d908979f33a950592",
+      "scenarios": {
+        "base": 57.71136084671705,
+        "stress": 11.116658497955338,
+        "improve": 135.6701660296606
+      },
+      "asof": "2026-11-12",
+      "close": 36.62,
+      "original_annual_periods": 25
+    },
+    "688188": {
+      "han": 21890,
+      "charts": 13,
+      "mechanisms": 4,
+      "paragraphs": 102,
+      "digest": "7581a79c8043d57f811a4fffd4b9b21054301197990d81e1768f91b579a61cc7",
+      "scenarios": {
+        "base": 92.75774737785618,
+        "stress": 49.27648753192086,
+        "improve": 167.74678116640987
+      },
+      "asof": "2026-11-12",
+      "close": 96.2,
+      "original_annual_periods": 7
+    },
+    "09992": {
+      "han": 21461,
+      "charts": 14,
+      "mechanisms": 4,
+      "paragraphs": 97,
+      "digest": "620e7539cdece398b40bc7c711d82e96a11e51607017ba9facd1b16893dfb41a",
+      "scenarios": {
+        "base": 166.65471957516075,
+        "stress": 48.53435822480893,
+        "improve": 536.3658597824261
+      },
+      "asof": "2026-11-12",
+      "close": 143.4,
+      "original_annual_periods": 6
+    },
+    "US": {
+      "han": 20828,
+      "charts": 13,
+      "mechanisms": 4,
+      "paragraphs": 101,
+      "digest": "48f2ebb00de945af8e68c07f7fcce11501e9cfb8558dfa0993b97802e73f7bf5",
+      "scenarios": {
+        "base": 178.6925027453693,
+        "stress": 95.010168459657,
+        "improve": 294.20845181157534
+      },
+      "asof": "2026-11-12",
+      "close": 439.89,
+      "original_annual_periods": 11
+    }
+  },
+  "scope": "阶段15–17财务和估值的冻结窗口",
+  "base_model": {
+    "annual": 65,
+    "interim": 49,
+    "cold_or_current_facts": 246,
+    "frozen_facts": 188,
+    "old_price_roundtrips": 62,
+    "path_count": 15
+  },
+  "warm_or_restored_reviewstore": 246,
+  "ledger_snapshot_additions": 58,
+  "reviewed_raw_locations": 122,
+  "angel_supplement_years": 6,
+  "pop_lease_supplement_years": 6,
+  "fuling_prior_zero_edges": 5,
+  "fuling_added_reversals": 9,
+  "reproducible_offline_members": 215,
+  "online_routes_checked": 172
+}

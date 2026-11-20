@@ -1,0 +1,18 @@
+﻿company,group,field,first,last,comparable_count,missing,stages,entry,locations
+688188,收入及增速,revenue,2019-FY,2025-FY,7,,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,收入及增速,revenue_growth,2020-FY,2025-FY,6,2019-FY,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,成本及毛利,cost,2019-FY,2025-FY,7,,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,成本及毛利,gross_profit,2019-FY,2025-FY,7,,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,核心经营利润,report_operating_profit,2019-FY,2025-FY,7,,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,核心经营利润,analysis_ebit,2019-FY,2025-FY,7,,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,经营现金与资本支出,cfo_reported,2019-FY,2025-FY,7,,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,经营现金与资本支出,cash_capex,2019-FY,2025-FY,7,,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,营运资本,wc_trade_subset,2019-FY,2025-FY,7,,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,营运资本,delta_wc_trade_subset,2020-FY,2025-FY,6,2019-FY,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,资本与回报,capital_subset,2019-FY,2025-FY,7,,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,资本与回报,roic_subset,2020-FY,2025-FY,6,2019-FY,控制系统放量／需求周期反例／控制与配套共同增长,/cases/688188/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+688188,产品组新增收入与毛利留存,收入变化,2024年报p25和2025年报p27–28；百万元人民币,2024年报p25和2025年报p27–28；百万元人民币,4,,百万元人民币,/cases/688188/product-bridge.csv,原专题表 source、口径及有条件代理列
+688188,产品组新增收入与毛利留存,毛利变化,2024年报p25和2025年报p27–28；百万元人民币,2024年报p25和2025年报p27–28；百万元人民币,4,,百万元人民币,/cases/688188/product-bridge.csv,原专题表 source、口径及有条件代理列
+688188,两类交付的期末库存天数代理,控制系统,2024,2025,2,,天,/cases/688188/volume-and-stock.csv,原专题表 source、口径及有条件代理列
+688188,两类交付的期末库存天数代理,硬件,2024,2025,2,,天,/cases/688188/volume-and-stock.csv,原专题表 source、口径及有条件代理列
+688188,经营数据覆盖,控制与配套销量／库存,2024,2025,2,覆盖表仅计原表观察行，拆分缺项见源表说明,产品、地区或公司专项口径,/cases/688188/volume-and-stock.csv,源表期间列、行组说明与来源定位

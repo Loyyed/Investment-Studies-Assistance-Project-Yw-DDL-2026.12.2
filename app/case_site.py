@@ -20,7 +20,7 @@ LABELS = {
     'sensitivity.csv':'双变量矩阵', 'reverse.csv':'价格反推与无解边界', 'value-bridge.csv':'阶段17—新版价值桥',
     'evidence-index.csv':'来源与定位', 'relative.csv':'相对估值底表', 'sensitivity.svg':'灵敏度图',
 }
-NAV = [('工作台','/desk/'),('五家公司案例','/cases/'),('超级图册','/atlas/'),
+NAV = [('工作台','/desk/'),('长篇图册','/long-atlas/'),('五家公司案例','/cases/'),('超级图册','/atlas/'),
        ('证据与覆盖','/research/'),('期后记录','/research/follow-up.html')]
 SELECT = [
  ('688188','优先','销量、毛利、库存能构成可回代的故事。92.76 接近 96.20，反证能改变方向。',

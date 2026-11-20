@@ -5,6 +5,7 @@ from pathlib import Path
 import sys
 
 from case_model import CODES, OUT, ROOT, bake, get_records, group, add_optional
+from build_atlas_valuation_notes import wacc_note
 from recalculate_research14 import read
 sys.path.insert(0,str(ROOT/'app'))
 from atlas_render import csv_payload
@@ -148,7 +149,7 @@ def parameters(model):
             ('经营量与实现价/结构',inputs['rates'][i],'同名历史驱动及留出修正；专门模型见 native_driver_spec'),
             ('预测期营业利润率先验',inputs['active_margin'][i],'历史可比范围；现金租金口径另外调整'),
             ('经营营运资本／收入',inputs['wc'][i],'集团可见经营性余额代理，最低去化速度按情景'),
-            ('WACC',d['wacc'],'无风险率、风险溢价和资金结构见阶段14输入；安琪单位β条件'),
+            ('WACC',d['wacc'],wacc_note(model['company'].split('_',1)[0],scenario)),
             ('永续增长',d['terminal']['growth'],'稳态规模；唯一期间与终值所在年见预测底表'),
             ('稳态新增投入回报',d['terminal']['incremental_return'],'稳态再投资＝NOPAT×增长率／新增回报'),
         ]
