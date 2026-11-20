@@ -121,7 +121,7 @@ def overview(root, out):
               +data_table(['公司','推荐顺序','故事与可证伪性','原始证据质量','完成难度'],
                  [[dict(title=NAMES[r[0]],href='/cases/'+r[0]+'/'),*r[1:]] for r in SELECT])
               +links([('验收矩阵','/cases/acceptance.csv'),('全量复算回执','/cases/model-acceptance.json'),
-                      ('组长待审','/cases/review.md'),('运行说明','/cases/README.md')])+'</main>')
+                      ('干净克隆验收','/cases/rebuild-receipt.json'),('组长待审','/cases/review.html'),('动效预览','/cases/motion.html'),('运行说明','/cases/README.md')])+'</main>')
 
 
 def render_case(root, out, code):

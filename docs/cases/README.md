@@ -30,4 +30,4 @@ python -X utf8 五公司工作台/start.py
 
 冷启动可逐项复算65个财年、49条近期比较、15条情景和62项旧价格回代。原件通过工作台原件页或恢复脚本按指纹获取。原件未恢复时，阶段17的188条是冻结快照，实时Fact以ReviewStore实际绑定为准。新材料保留对读者、可获日、期间、行列和证据标签，由独立原披露账本按授权流程认定。项目对读的原件证据见各家复核文件与[五家合并收入抽查](original-receipt.json)。
 
-正式报告在团队选定主对象后按素材地图组织。 [60项验收矩阵](acceptance.csv) · [复算回执](model-acceptance.json) · [组长待审与下一步](review.md) · [动效与预览](motion.md)
+正式报告在团队选定主对象后按素材地图组织。 [60项验收矩阵](acceptance.csv) · [复算回执](model-acceptance.json) · [干净克隆和浏览器验收](rebuild-receipt.json) · [组长待审与下一步](review.md) · [动效与预览](motion.md)
