@@ -170,4 +170,6 @@ def serve_case(host, root, route, query):
         return host.send({'error':'没有该案例资源'},404)
     mime=SUPPORTED[file.suffix]
     disposition=('attachment; filename="'+file.name+'"') if file.suffix in ('.md','.csv','.json','.py') or query.get('download')==['1'] else None
-    return host.send(file.read_bytes(),content=mime+'; charset=utf-8',disposition=disposition)
+    # Sandboxed readers must explicitly opt in to user-initiated downloads.
+    return host.send(file.read_bytes(),content=mime+'; charset=utf-8',disposition=disposition,
+                     interactive=file.suffix=='.html',downloadable=True)
