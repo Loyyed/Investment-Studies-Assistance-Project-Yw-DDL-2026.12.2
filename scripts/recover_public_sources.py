@@ -1,6 +1,7 @@
 """Recover public originals into local storage after exact SHA-256 verification."""
 import argparse
 from concurrent.futures import ThreadPoolExecutor
+from csv import DictReader
 from hashlib import sha256
 import json
 import os
@@ -28,6 +29,28 @@ def registered():
     rows = read('docs/super-atlas/coverage.json')
     need = {(r['company'], s['source_id']) for r in read('docs/research17/current_facts.json')
             for s in r['sources']}
+    known={(r['company'],r['id']) for r in rows}
+    published=ROOT/'docs/long-atlas/historical-reviewstore-receipt.csv'
+    if published.is_file():
+        with published.open(encoding='utf-8-sig',newline='') as receipt:
+            confirmed={(r['company'],r['source']) for r in DictReader(receipt)}
+        companies={r['company'].split('_',1)[0]:r['company'] for r in rows if '_' in r['company']}
+        for code in sorted({c for c,_ in confirmed}):
+            company=companies[code]
+            with (published.parent/code/'historical-original-locators.csv').open(encoding='utf-8-sig',newline='') as index:
+                locators={r['source']:r for r in DictReader(index)}
+            manifest=read(f'companies/{company}/sources/manifest.json')['sources']
+            for source in manifest:
+                sid=source['id']
+                if (code,sid) not in confirmed:
+                    continue
+                need.add((company,sid))
+                if (company,sid) in known:
+                    continue
+                loc=locators[sid]
+                assert loc['sha256']==source['sha256']
+                rows.append(dict(company=company,id=sid,source_path=source['path'],
+                                 source_version=source['sha256'],original_url=loc['url']))
     for row in rows:
         company, identifier = row['company'], row['id']
         if row.get('source_path'):
