@@ -4,14 +4,18 @@
   const cover = document.getElementById('cover');
   if (cover && !document.body.classList.contains('edition-offline')) {
     // Keep bookmarks from the previous single-page edition working.
-    const company = location.hash.match(/^#company-(002507|600298|688188|09992|US)(?:-|$)/);
-    const topic = /^#(?:overview|business|forecast|valuation|updates|methods)(?:-|$)/;
-    if (company) {
-      const fragment = location.hash === '#company-' + company[1] ? '' : location.hash;
-      location.replace('/atlas/company/' + company[1] + fragment);
-    } else if (topic.test(location.hash)) {
-      location.replace('/atlas/compare/' + location.hash);
+    function redirectLegacy() {
+      const company = location.hash.match(/^#company-(002507|600298|688188|09992|US)(?:-|$)/);
+      const topic = /^#(?:overview|business|forecast|valuation|updates|methods)(?:-|$)/;
+      if (company) {
+        const fragment = location.hash === '#company-' + company[1] ? '' : location.hash;
+        location.replace('/atlas/company/' + company[1] + fragment);
+      } else if (topic.test(location.hash)) {
+        location.replace('/atlas/compare/' + location.hash);
+      }
     }
+    redirectLegacy();
+    window.addEventListener('hashchange', redirectLegacy);
   }
 
   const progress = document.querySelector('.reading-progress');
