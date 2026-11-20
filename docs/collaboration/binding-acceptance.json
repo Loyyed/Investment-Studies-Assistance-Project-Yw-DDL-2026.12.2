@@ -1,0 +1,14 @@
+{
+  "source_commit": "5c515fc6adc5b4cf4eb766f982721d8bdd9e309a",
+  "cutoff": "2026-11-12",
+  "research_companies": 5,
+  "audited_batch_positions": 48,
+  "frozen_facts": 188,
+  "live_facts_in_this_run": 188,
+  "followup_records": 9,
+  "covered": 394,
+  "statuses": {
+    "已验证访问": 338,
+    "附公开原件链接": 56
+  }
+}

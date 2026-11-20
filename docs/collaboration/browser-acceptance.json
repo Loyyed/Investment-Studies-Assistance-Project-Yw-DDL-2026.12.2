@@ -1,0 +1,62 @@
+{
+  "tested_ports": [
+    8780,
+    8781
+  ],
+  "widths": {
+    "320": [
+      "002507",
+      "600298",
+      "688188",
+      "09992",
+      "US"
+    ],
+    "390": [
+      "002507",
+      "600298",
+      "688188",
+      "09992",
+      "US"
+    ],
+    "1440": [
+      "002507",
+      "600298",
+      "688188",
+      "09992",
+      "US"
+    ]
+  },
+  "browser": "Chromium",
+  "downloads": [
+    "五家公司证券投资超级图册.html",
+    "super-atlas.json"
+  ],
+  "company_deep_links": [
+    "002507",
+    "600298",
+    "688188",
+    "09992",
+    "US"
+  ],
+  "edit_reopened": true,
+  "candidate": {
+    "isolated": "HKEX-00001",
+    "confirmed_and_created": true,
+    "initial_facts": 0
+  },
+  "offline_standalone": true,
+  "reduced_motion": true,
+  "legacy_fragment": true,
+  "theme_filter_and_legend": true,
+  "browser_errors": [],
+  "byte_identical": [
+    "atlas.html",
+    "atlas-editable.json",
+    "coverage.csv",
+    "coverage.json",
+    "follow-up.csv",
+    "follow-up.json",
+    "version.json",
+    "seeds/atlas-2026-11-20.2.json"
+  ]
+}
