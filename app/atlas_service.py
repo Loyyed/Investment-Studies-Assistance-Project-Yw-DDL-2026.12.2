@@ -323,7 +323,7 @@ class ResearchHost:
             if offline:
                 self.send_download(h,content.encode('utf-8'),'.html','五家公司证券投资超级图册.html')
             else:
-                self.send_page(h,content)
+                h.send_edition_cover(content)
         elif path=='/atlas/document.json':
             self.send_download(h,json_bytes(self.load_edit()),'.json','super-atlas.json')
         elif path=='/research/' or path.startswith('/research/company/'):

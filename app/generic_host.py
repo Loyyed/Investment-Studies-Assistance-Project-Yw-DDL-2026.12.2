@@ -22,6 +22,18 @@ def start(root,kit,port):
  from atlas_service import ResearchHost
  research_host=ResearchHost(root,kit,mapping,server.workbench_token) if (root/ATLAS_OUT/'coverage.json').is_file() else None
  class Handler(Base):
+  def send_edition_cover(self,html):
+   # This cover contains only escaped publication fields and compiled local scripts.
+   # Its trusted legacy-bookmark listener needs same-origin navigation without activation.
+   data=html.encode('utf-8')
+   self.send_response(200)
+   self.send_header('Content-Type','text/html; charset=utf-8')
+   self.send_header('Content-Length',str(len(data)))
+   self.send_header('Cache-Control','no-store')
+   self.send_header('X-Content-Type-Options','nosniff')
+   self.send_header('Content-Security-Policy',"default-src 'none'; style-src 'unsafe-inline'; script-src 'nonce-"+server.workbench_token+"'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'")
+   self.end_headers()
+   self.wfile.write(data)
   def send(self,data,*args,**kwargs):
    if self.path.split('?')[0]=='/' and isinstance(data,str):
     data=data.replace('最终展示图册</a></nav>','最终展示图册</a><a href="/preparation/">完整证券分析准备</a><a href="/security-analysis/">五家公司证券分析（阶段14）</a><a href="/stage15/">五家公司证券分析（阶段15）</a><a href="/stage16/">五家公司证券分析（阶段16）</a><a href="/stage17/">五家公司证券研究定稿</a></nav>')
