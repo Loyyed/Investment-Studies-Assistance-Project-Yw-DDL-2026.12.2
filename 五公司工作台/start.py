@@ -16,7 +16,7 @@ if __name__ == '__main__':
     parser.add_argument('--open', action='store_true')
     args = parser.parse_args()
     url = f'http://127.0.0.1:{args.port}/desk/'
-    print(f'三公司工作台 {url}', flush=True)
+    print(f'五公司工作台 {url}', flush=True)
     if args.open:
         threading.Timer(1.2, webbrowser.open, args=(url,)).start()
     start(ROOT, ROOT / 'shared/runtime', args.port)

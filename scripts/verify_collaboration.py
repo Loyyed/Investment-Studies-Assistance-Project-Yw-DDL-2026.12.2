@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 import csv
 import json
 from pathlib import Path
+import re
 from http.client import HTTPConnection
 from urllib.parse import parse_qs, urlsplit
 
@@ -72,6 +73,13 @@ def verify(url):
         assert model['cases']['base']['per_share'] == case['stage16']
         assert case['stage16'] - case['stage15'] == case['delta']
         assert case['as_of'] == '2026-11-12'
+    expected_desk_codes = [row['code'] for row in frozen]
+    for desk_path in ('/desk/', '/desk/summary/'):
+        status, _, body = live(url, desk_path)
+        assert status == 200, desk_path
+        desk_codes = re.findall(r'<article class="tile"><h2><a href="/atlas/company/([^"]+)"',
+                                body.decode('utf-8'))
+        assert desk_codes == expected_desk_codes, (desk_path, desk_codes)
     events = read('docs/super-atlas/follow-up.json')
     assert len(events) == 9 and all(not d['valuation_changed'] for d in events)
     batchnames = ['R12-FIRST-8','R14-002507-8','R14-600298-8','R14-688188-8','R14-9992-8','R14-ISRG-8']
@@ -90,7 +98,7 @@ def verify(url):
     assert len(registered) == 394
     results=check_entries(url,registered)
     return results, dict(source_commit=BASE, cutoff='2026-11-12',
-        research_companies=5, audited_batch_positions=48, frozen_facts=len(known),
+        research_companies=5, desk_companies=len(expected_desk_codes), audited_batch_positions=48, frozen_facts=len(known),
         live_facts_in_this_run=len(current), followup_records=len(events),
         covered=len(results), statuses=dict(Counter(r['status'] for r in results)))
 
