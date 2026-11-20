@@ -1,0 +1,207 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>泡泡玛特证券投资案例</title><style>
+:root{--paper:#f4f0e8;--surface:#fcfaf5;--ink:#192c2b;--muted:#516460;--line:#d9d6c7;--green:#21554a;--rust:#a24931;--dark:#143b35;--serif:"Noto Serif CJK SC","Songti SC","SimSun",Georgia,serif;--sans:system-ui,"Microsoft YaHei",sans-serif;font:16px/1.65 var(--sans);color:var(--ink);background:var(--paper)}
+
+*{box-sizing:border-box}
+body{margin:0}
+a{color:var(--green);text-underline-offset:.23em}
+button,input,select{font:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{line-height:1.27}
+.shell{width:min(1370px,100%);margin:auto;padding:0 clamp(14px,4vw,52px)}
+.mast{background:var(--dark);color:#faf6ea}
+.mast .shell{padding-top:20px;padding-bottom:30px}
+.nav{display:flex;align-items:center;gap:9px 20px;flex-wrap:wrap}
+.mast .nav{padding-bottom:18px;border-bottom:1px solid #87a49755}
+.mast a{color:#fdf9e9}
+.mast a.action:not(.main){color:var(--green)}
+.mark{margin-right:auto;font-weight:700;text-decoration:none}
+.titleblock{padding-top:30px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:end}
+.titleblock h1{font:700 clamp(2rem,4.4vw,4.7rem)/1.14 var(--serif);margin:8px 0 15px;overflow-wrap:anywhere}
+.titleblock p{color:#d9e8de;max-width:62ch}
+.dateline{font-size:.83rem;color:#e8d3a6}
+.edition{border-block:1px solid #9cbaaa75;padding:8px 0;color:#e1eee7;font-size:.83rem;max-width:30ch;text-align:right}
+.hero-actions{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0}
+.action,button{display:inline-block;padding:6px 11px;border:1px solid #a8ada1;border-radius:3px;text-decoration:none;background:var(--surface);color:var(--green);cursor:pointer;min-height:36px}
+.action:hover,button:hover{border-color:var(--green);background:#e9efe5}
+.action.main{background:#ecdfbf;color:#153b35;border-color:#ecdfbf}
+.toolbar{display:flex;align-items:end;gap:10px;flex-wrap:wrap;padding:15px 0;border-bottom:1px solid var(--line)}
+.toolbar label{display:flex;flex-direction:column;gap:2px;font-size:.84rem;color:var(--muted);min-width:0}
+.toolbar label:first-child{flex:1 1 235px}
+.toolbar input,.toolbar select{background:var(--surface);border:1px solid #b5bcaf;border-radius:3px;color:var(--ink);padding:6px;max-width:100%}
+.toolbar .status{color:var(--muted);font-size:.82rem;align-self:center}
+.layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:26px;align-items:start}
+.outline{position:sticky;top:0;max-height:95vh;overflow:auto;padding:18px 0}
+.outline a{display:block;padding:5px 7px;border-left:2px solid var(--line);text-decoration:none;font-size:.9rem}
+.outline a:hover,.outline a:focus-visible{background:#e5eadf;border-color:var(--green)}
+.outline strong{display:block;font-size:.79rem;color:var(--muted);margin-bottom:8px}
+.reading{min-width:0;padding-bottom:36px}
+.chapter{margin:22px 0 32px;background:var(--surface);padding:clamp(15px,3vw,37px);border:1px solid var(--line);scroll-margin-top:13px;overflow-wrap:anywhere}
+.chapter>header{border-bottom:1px solid var(--line);padding-bottom:14px}
+.chapter>header h2{font:700 clamp(1.55rem,3vw,2.8rem)/1.2 var(--serif);margin:5px 0 10px}
+.chapter>header p{max-width:75ch}
+.kicker{color:var(--rust);font-size:.87rem;font-weight:650}
+.segment{padding:18px 0;border-bottom:1px solid var(--line)}
+.segment h3{font:700 clamp(1.12rem,2.4vw,1.55rem)/1.35 var(--serif);margin-bottom:9px}
+.segment p{max-width:79ch;margin:0 0 10px}
+.source-links{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:9px;font-size:.84rem}
+.chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:0;list-style:none}
+.chain li{background:#e9eee5;padding:5px 8px;border-left:2px solid #927c59;font-size:.83rem}
+.chart-box{margin:15px 0}
+.chart{background:white;min-width:0;overflow:auto;border:1px solid var(--line);margin-top:5px}
+.chart svg{display:block;width:100%;min-width:510px;height:auto;max-height:400px}
+.legend{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.legend button{font-size:.81rem;border-left:4px solid var(--series,#326c53);min-height:30px;padding:3px 7px}
+.legend button[aria-pressed=false]{opacity:.55;text-decoration:line-through}
+figcaption,.annotation{color:var(--muted);font-size:.88rem;margin:5px 0 8px}
+summary{cursor:pointer;color:var(--green);padding:5px 0}
+details{margin:6px 0}
+.scroll{overflow:auto;max-height:65vh;border:1px solid var(--line);background:white}
+.scroll:focus{outline:2px solid var(--green)}
+table{border-collapse:collapse;min-width:100%;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{padding:6px 9px;border-bottom:1px solid #e7e4db;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+th{position:sticky;top:0;z-index:1;white-space:nowrap;background:#e9ede4}
+td{min-width:60px}
+td.numeric{text-align:right;white-space:nowrap}
+td.long{min-width:195px;max-width:450px}
+.matrix{margin:13px 0}
+.matrix tbody td:nth-child(6){font-weight:750;color:var(--green)}
+.cover-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:10px;margin:14px 0}
+.tile{border:1px solid var(--line);background:var(--surface);padding:16px;min-width:0;overflow-wrap:anywhere}
+.tile h2{font-family:var(--serif);font-size:1.28rem;margin-bottom:7px}
+.tile p,.tile .nav{font-size:.87rem;margin-top:5px}
+.subtle{color:var(--muted)}
+.note{padding:15px 0}
+.wide{padding-bottom:22px}
+.wide .scroll{max-height:67vh}
+.version-grid a{word-break:break-word}
+.foot{padding:25px 0;border-top:1px solid var(--line);font-size:.86rem}
+.presenting .toolbar,.presenting .outline,.presenting .mast,.presenting .foot{display:none}
+.presenting .layout{display:block}
+.presenting .chapter{display:none;font-size:clamp(1.12rem,2vw,1.5rem)}
+.presenting .chapter.active-slide{display:block}
+.presenting .presentation{display:flex}
+.presentation{display:none;position:sticky;top:0;z-index:4;gap:7px;flex-wrap:wrap;padding:8px;background:var(--dark);align-items:center;color:#fff}
+.presentation span{padding:0 8px}
+[hidden]{display:none!important}
+.knowledge-card:target{border-left:4px solid var(--rust);padding-left:9px}
+
+@media(max-width:780px){.layout{display:block}
+.outline{position:static;max-height:none;display:flex;gap:5px 10px;flex-wrap:wrap;padding:10px 0}
+.outline strong{width:100%}
+.outline a{font-size:.83rem}
+.titleblock{display:block}
+.edition{text-align:left;margin-top:14px;max-width:none}
+.chapter{padding:14px}
+.mast .nav{gap:8px 14px}
+}
+
+@media print{.mast{background:white;color:black}
+.mast p,.dateline{color:black}
+.nav,.edition,.toolbar,.outline,.legend,.presentation,.foot{display:none!important}
+.layout{display:block}
+.scroll{overflow:visible;max-height:none}
+.chart{overflow:visible}
+.chart svg{min-width:0}
+.chapter{break-before:page;border:0;margin:0}
+.chapter:first-child{break-before:auto}
+th,td{break-inside:avoid}
+}
+</style></head><body><header class="mast"><div class="shell"><nav class="nav"><a href="/desk/">工作台</a> <a href="/cases/">五家公司案例</a> <a href="/atlas/">超级图册</a> <a href="/research/">证据与覆盖</a> <a href="/research/follow-up.html">期后记录</a> <a href="/cases/002507/">涪陵榨菜</a> <a href="/cases/600298/">安琪酵母</a> <a href="/cases/688188/">柏楚电子</a> <a href="/cases/US/">ISRG</a></nav><div class="titleblock"><div><div class="dateline">2026-11-12 各市场当地收盘</div><h1>泡泡玛特证券投资案例</h1><p>基准 166.65 HKD，同日收盘 143.40 HKD。商业模式、经营变化与价格条件沿同一模型核对。</p></div><div class="edition">冻结窗口 2026-11-12</div></div></div></header><main class="shell note"><div class="chapter"><h2>数据与复核</h2><nav class="source-links"><a href="/cases/09992/case.md">案例正文 MD</a> <a href="/cases/09992/report-map.md">未来报告素材地图</a> <a href="/cases/09992/independent-review.md">独立复核</a> <a href="/cases/09992/history.csv">历史财务桥</a> <a href="/cases/09992/interim.csv">近期累计／单季／余额</a> <a href="/cases/09992/operating-bridges.csv">经营活动桥</a> <a href="/cases/09992/forecast.csv">2026实际＋预测底表</a> <a href="/cases/09992/inputs.json">程序输入索引</a> <a href="/cases/09992/model.json">完整模型与结果</a> <a href="/cases/09992/sensitivity.csv">双变量矩阵</a> <a href="/cases/09992/reverse.csv">价格反推与无解边界</a> <a href="/cases/09992/value-bridge.csv">阶段17—新版价值桥</a> <a href="/cases/09992/evidence-index.csv">来源与定位</a> <a href="/cases/09992/relative.csv">相对估值底表</a> <a href="/cases/09992/sensitivity.svg">灵敏度图</a> <a href="/cases/09992/2026-bridge.csv">2026-bridge.csv</a> <a href="/cases/09992/capital-crosscheck.csv">capital-crosscheck.csv</a> <a href="/cases/09992/cash-rent-ebit-cfo.csv">cash-rent-ebit-cfo.csv</a> <a href="/cases/09992/expense-nature.csv">expense-nature.csv</a> <a href="/cases/09992/ip-contribution.csv">ip-contribution.csv</a> <a href="/cases/09992/mechanism-grid.svg">mechanism-grid.svg</a> <a href="/cases/09992/operating-acceptance.json">operating-acceptance.json</a> <a href="/cases/09992/operating-summary.json">operating-summary.json</a> <a href="/cases/09992/operating.py">operating.py</a> <a href="/cases/09992/parameters.csv">parameters.csv</a> <a href="/cases/09992/peer-screen.csv">peer-screen.csv</a> <a href="/cases/09992/q4-cash-threshold-grid.csv">q4-cash-threshold-grid.csv</a> <a href="/cases/09992/region-channel-bridge.csv">region-channel-bridge.csv</a> <a href="/cases/09992/source-index.json">source-index.json</a> <a href="/cases/09992/store-cohort-proxy.csv">store-cohort-proxy.csv</a> <a href="/cases/09992/subsequent-buybacks.csv">subsequent-buybacks.csv</a></nav><nav class="source-links"><a href="#case-09992-section-1">1. 谁决定复购，哪些经营事实支持轮动</a><a href="#case-09992-section-2">2. 把 IP 轮动与渠道变化分开</a><a href="#case-09992-section-3">3. 营业成本、渠道费用、库存和可承受折扣</a><a href="#case-09992-section-4">4. 现金利润和股东资本不是同一件事</a><a href="#case-09992-section-5">5. 三路径，逐项从实际滚到未来</a><a href="#case-09992-section-6">6. 同日估值、行业参照与市场反推</a><a href="#case-09992-section-7">7. 翻转条件和独立事实</a><a href="#case-09992-section-8">口径附录</a></nav></div><section class="chapter case-body"><h1>泡泡玛特｜爆款接续以后，国内渠道是否还能兑现现金</h1><p><strong>同日判断。</strong> 2026H1 星星人和其它 IP 的扩大支持国内渠道仍有经营价值，海外线上负增长、库存和现金租金却对冲这项证据。冻结基准 <strong>166.65 港元/股</strong> 高于 2026-11-12 港交所当地未复权收盘 <strong>143.40 港元</strong>。若 H2 库存周转停在约 1.80 次、现金租金沿基准口径，Q4 需要约 <strong>20.96–26.77 亿元人民币</strong> 才能覆盖现价。若未来含折扣毛利持续低 1.5 个百分点，门槛升为 <strong>35.28–41.09 亿元</strong>。 <a href="/stage17/09992/model.json" target="_blank" rel="noopener">冻结模型</a> · <a href="/cases/09992/q4-cash-threshold-grid.csv" target="_blank" rel="noopener">Q4 联合临界表</a></p><h2 id="case-09992-section-1">1. 谁决定复购，哪些经营事实支持轮动</h2><p>收藏者为包装、设计、完整系列和限量形象付钱，送礼者更关心辨识度、价格和门店可得性。公司与艺术家、授权商协作，分别取得形象及联名的合同权利，研发产品并协调外包生产，向终端经直营零售、机器人店、线上和批发销售。自主产品同时包含艺术家 IP 和授权 IP，由商品实现的收入要扣生产、授权费用、运营、租金与履约。品牌能在新品发售时重复把用户引回不同款式，既有渠道和会员的价值在下一款是否卖得动时才可观察。单独授权收入、复购频率、外包成本和限定发货量缺持续同口径，无法当成纯版权收款生意。</p><p>2020–2021 年渠道和自主 IP 推动收入由 25.13 增至 44.91 亿元。2022 年只增至 46.17 亿元，成本由 17.32 增至 19.63 亿元、毛利率下行约 3.95 个百分点，证明开店和 IP 投入有可能在需求慢时消耗折扣及周转。2023–2025 年毛绒、热门 IP 与海外扩张推动收入 63.01→130.38→371.20 亿元。2026H1 国内和海外出现分化，然后 Q3 连国内渠道也下行。最强替代解释是同一批消费者追逐下一个爆款，加上铺货能力扩大，增长主要来自更换旗舰、门店变化和折扣。上半年剔除 THE MONSTERS 的增长 40.35%；再剔除星星人仍有 16.09%，线下不全由同一个 IP 拉动。但下半年海外及中国线上负区间要求检验这部分收入能不能继续在低库存压力下兑现。 <a href="https://prod-out-res.popmart.com/cms/Prospectus_7ce2a0b409.pdf" target="_blank" rel="noopener">2020 招股书</a> · <a href="https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2025_bd4e173872.pdf" target="_blank" rel="noopener">2025 年报</a> · <a href="https://prod-out-res.popmart.com/cms/2026_INTERIM_REPORT_3ca5b69bf8.pdf" target="_blank" rel="noopener">2026 中报物理第26页</a></p><h2 id="case-09992-section-2">2. 把 IP 轮动与渠道变化分开</h2><p>2026H1 合并收入由 138.763 增至 171.729 亿元。逐个 IP 的归并核对合计增 32.966 亿元，其中 THE MONSTERS 减 <strong>3.597 亿元</strong>、星星人增 <strong>22.606 亿元</strong>，星星人相当于全部净增的 68.57%。CRYBABY、DIMOO、SKULLPANDA 和 HIRONO 分别增约 4.14、5.14、3.31、2.80 亿元，MOLLY 减约 4.57 亿元。艺术家 IP 合计与授权 IP 和外采其他相加即集团；把艺术家 IP 合计和具体子行同加会重复。IP 定义不告诉销售单件，因此只能做收入增量，不得把 IP 收入差直接认作销量变化。</p><p>用地区×渠道的完整 4×4 交叉表看同一合并增量。PRC 增 <strong>39.177 亿元</strong>，其中门店 +16.837、机器人店 +1.007、线上 +18.415、批发及其它 +2.918。亚太不含 PRC 减 2.759，美洲减 3.732，欧洲及其它增 0.281 亿元。海外零售门店合计增加 <strong>5.202 亿元</strong>，海外线上合计减少 <strong>11.274 亿元</strong>。两个切面各自对合并数，不能将“IP 增长”与“国内线上增长”相加。没有逐地区逐 IP 的真实成交额、货币影响基线和并表细分，不为单个因素分配剩余量。</p><p>PRC 零售门店 2025H1/2026H1 末分别 443/455。门店销售 44.059→60.897 亿元，期末店数分母对应 994.57→1,338.39 万元/店，约 +34.57%。以两期中点把 <strong>16.837 亿元</strong>拆成期末门店数量与单店代理贡献，约 <strong>1.40／15.44 亿元</strong>。新店开业不满半年、闭店、城市及门店形态、排队客流、促销都会进入后一项。冻模用同期期初期末平均店数的独立代理 +34.22%。原始季报 Q3 只披露整体同比减少 45%–50%，PRC 减25%–30%、亚太减65%–70%、美洲减70%–75%、欧洲及其它减50%–55%，并给 PRC 线下减5%–10%、线上减45%–50%；这是管理账区间，保持季度绝对数空缺。用 2025H2 232.438 亿元和假设权重 35%/50%/65% 得 2026Q3 整体绝对额只能落在条件范围，例如 50% 时 <strong>58.11–63.92 亿元</strong>。Q4 的全年含义要用两端分别推算，不用 47.5% 冒充单点披露。 <a href="/cases/09992/region-channel-bridge.csv" target="_blank" rel="noopener">地区渠道</a> · <a href="/cases/09992/ip-contribution.csv" target="_blank" rel="noopener">IP 桥</a> · <a href="/cases/09992/store-cohort-proxy.csv" target="_blank" rel="noopener">店效代理</a> · <a href="https://prod-out-res.popmart.com/cms/LATEST_BUSINESS_UPDATE_FOR_THE_THIRD_QUARTER_OF_2026_c437e22e46.pdf" target="_blank" rel="noopener">2026Q3 公告</a></p><h2 id="case-09992-section-3">3. 营业成本、渠道费用、库存和可承受折扣</h2><p>报表销售成本 41.152→52.072 亿元，毛利率 70.34%→69.68%。同期毛利增 22.047 亿元，销售费用增 7.385、管理费用增 1.561，核心 EBIT 从 57.981 增至 71.081 亿元。与报表营业利润 60.437/67.247 亿元的净其它差额分栏，不延长未来利润。费用按性质按附注列示，集团入销货的存货成本增加 10.303 亿元、员工费用增 4.123、短期与可变租赁会计费用增 1.598、使用权折旧增 1.978、电商佣金和平台费减少 0.805、授权费减少 0.749 亿元，存货减值由 0.043 增至 0.228 亿元。性质表含收入成本与销售管理费用的交叉归属，不能再与功能法利润表叠加。管理层将高毛利海外收入下降与授权和采购产品结构共同视为影响毛利的因素，单个 IP、同店或折扣后的单位毛利不可辨。按公司总成本除以合并收入约 30.32%，可作为收入参考的 COGS 率；缺 SKU 件数、折扣、退货与履约单量。</p><p>渠道现金桥沿合并现金口径。现金租金合计由 6.967 增至 12.111 亿元，增加 5.144 亿元；固定租赁、经营租赁分开。渠道拓展的贡献同时承受集团销售履约费、退货与库存积压、应收、租赁和装修 CAPEX。具体店的直接贡献门槛是该店销售毛利 ≥ 租金＋人工＋履约及退货处理＋新增占款和投入。因缺店级收益和费用，测算以集团持续毛利 −1.5/−3 个百分点作为有现金后果的折扣情景，并固定店数行和折现。单项折扣冲击使条件价值从 166.65 港元降至 157.19/147.72 港元，风险在同一时点再叠加高租金或周转下降。 <a href="/cases/09992/expense-nature.csv" target="_blank" rel="noopener">按性质费用</a> · <a href="/cases/09992/cash-rent-ebit-cfo.csv" target="_blank" rel="noopener">现金租赁与核心 EBIT</a> · <a href="https://prod-out-res.popmart.com/cms/2026_INTERIM_REPORT_3ca5b69bf8.pdf" target="_blank" rel="noopener">中报 p88、102</a></p><h2 id="case-09992-section-4">4. 现金利润和股东资本不是同一件事</h2><p>折旧和短／变租赁费用先从功能分析金额加回，再扣经营和融资两类租赁现金一次。2026H1 IFRS 口径分析营业利润 71.081 亿元，加使用权折旧 4.519、加短／浮动会计租金 6.731、扣经营租赁现金 7.083、扣融资租赁现金 5.029，得 <strong>70.220 亿元</strong>；2025H1 同口径 <strong>58.688 亿元</strong>，利润率由 42.29% 降到 40.89%。现金流已计经营租赁，不再减该部分。CFO 59.775→36.373，减现金资本开支和融资租赁后为 <strong>53.394→24.103 亿元</strong>。同口径实付税 <strong>11.896→32.197 亿元</strong>，税期错配和库存增加都压低 CFO。用期末贸易应收、存货、应付、合同负债得到窄口径营运资本，并清楚列 ±。2026H1 库存 61.015 亿元、2025H1 22.737 亿元，按期初期末平均年化周转 4.33→1.80 次。不能把端点差额直接加到同期间 CFO 差额。对读2025年报原列补齐阶段15缺项，2025年期末贸易WC41.427亿元、2024年8.036亿元，窄经营资本57.690／16.783亿元，非使用权D&amp;A 5.253亿元。用现金租赁调整 EBIT 和25%税代理得2025窄资本ROIC 341.41%、新增回报235.79%；低资本分母及爆款周期令该数不适合稳定期。独立FCFF代理87.276亿元，对已扣现金购建和融资租金的CFO 90.853亿元，差额留给未见科目。可识别投入、现金和非现金使用权资产分开，若一次性费用现金未能定位则保留差额。</p><p>稳定期用现金租金而非 IFRS 使用权折旧，配置核心现金税率 25%，2027 年以后逐步归一营运资本和净再投资。终值稳定增长 2.2%、新增资本回报 17.0%，以 NOPAT×g/ROIC 再投资，终期利润率 24.626%。基准 EV 1786.09 亿元，加净权益项 109.08 亿元得到 1895.16 亿元。纳入 124.42 亿元财务现金和 17.22 亿元合资格财务投资，扣运营保留金 25.00 亿元及截点已知回购／缓冲 4.46 亿元，再扣少数权益 3.10 亿元。租赁已作经营成本资本现金，EV→权益不再扣租赁债务。换算 <strong>0.85633 人民币/港元</strong>、经济股数 1,327,969,203，避免 HKD 和 RMB 交叉。估值日 16:48 等 6 份后续回购共买 2,390,000 股、支付 342,472,620 港元，记为后验，不改变当时价格或模型。 <a href="/cases/09992/cash-rent-ebit-cfo.csv" target="_blank" rel="noopener">现金租赁、税和投入</a> · <a href="/cases/09992/capital-crosscheck.csv" target="_blank" rel="noopener">逐年资本和FCFF</a> · <a href="/stage17/09992/model.json" target="_blank" rel="noopener">冻结权益桥</a> · <a href="/cases/09992/subsequent-buybacks.csv" target="_blank" rel="noopener">已披露期后回购</a></p><h2 id="case-09992-section-5">5. 三路径，逐项从实际滚到未来</h2><p>2026H1 实际 171.729 亿元，冻结 2026H2 基准 123.192 亿元（对 2025H2 倍数 0.53），给全年 294.921 亿元。若 2025Q3 权重 50%，基准 H2 要求 2026Q4 约 59.27–65.08 亿元，明显高于现价的单向门槛，不能把 2026Q4 实际写成已知。2027 基准门店产能增长 7.5%，另一驱动是收入实现与需求留存，并输入销售相关变动租金、门店合同租金、实体履约、折扣毛利和库存回收。压力保留更慢开店与更弱销售获现，库存占用率提高、低价销货压利润；改善要求多个 IP 逐渐接力、成熟店表现稳和更轻库存，只有会员新增与热潮不能同时带来高毛利与低库存。</p><p>早期年度总收入的滚动中位留出对 2024、2025 分别误差 −34.05%、−52.07%。用高收入的新品周期回填门店产能会把偶发性增长拉至更高、更持久。冻结模型采用可见门店增速并有限校正，门店留出两条的绝对误差中位数 18.23%，只支撑保守估计。下一版看到成熟店分开销售、订单折扣和 2026H2 库存天数才改相应驱动。2027–2031 每年三路径随模型和程序输出交付，2026 行的折现只含估值日以后余额。 <a href="/cases/09992/forecast.csv" target="_blank" rel="noopener">预测可执行输出</a> · <a href="/stage17/09992/model.json" target="_blank" rel="noopener">分年模型</a> · <a href="/stage15/backtests.csv" target="_blank" rel="noopener">留出数据</a></p><h2 id="case-09992-section-6">6. 同日估值、行业参照与市场反推</h2><p>阶段 15 条件值约 215.04204182 港元，去总收入误差回填 −21.59297299，改用门店证据 −19.57018285，统一各期现金租赁和投入 −7.22416640，得到 <strong>166.65471958</strong>。新数据表的具体证据还不足以识别耐久的店级利润和 Q4 绝对规模，经营、现金与再投入、折现、终值及权益桥维持阶段 17，五项每股差额暂为零。压力／基准／改善 <strong>48.53／166.65／536.37 港元</strong>，差距包含强条件和宽利润率收敛不确定性。基准 WACC 5.396%，终值占 EV 75.83%，核对 g、ROIC 与折现避免高估迅速回收。</p><p>同日市值 1630.72 亿元人民币、滚动归母利润 132.40 亿元，引用 P/E 12.32×；滚动核心 EBIT 182.22 亿元与 EV 1521.64 亿元得到 8.35×，LTM 收入 404.17 亿元得 EV/S 3.76×。这些分母包含峰值年份，不能表示下一年盈利。以独立统一租金重算的滚动同口径核心 EBIT，可采用已知 2025 年现金租赁 EBIT 169.507 加 2026H1 70.220 减 2025H1 58.688 得 181.039 亿元，补充租金口径 EV/核心 EBIT 8.41×。可比筛出 TOP TOY/MINISO、Here Group、Hasbro、Mattel。TOP TOY 可用分部做渠道测试，既有公募证券主要系 MINISO 综合零售，且 Retail Partner 承担开店资本与运营费用，泡泡的直营租赁资本难与之对应。Here Group 接近 DTC 潮玩但有业务范围变化、ADS 和双层权利，旧业务 VIE 随 2025 年 9 月处置终止，缺本轮统一盘口与租金调整，暂作竞争检验。Hasbro 和 Mattel 的合并销售含传统玩具与授权，渠道和租赁不同。本轮筛出的可直接使用样本为零，保留条件倍数测试。 <a href="/cases/09992/peer-screen.csv" target="_blank" rel="noopener">可比淘汰表</a> · <a href="/stage15/relative.csv" target="_blank" rel="noopener">冻结市场参照</a> · <a href="https://www.sec.gov/Archives/edgar/data/1815846/000110465926048172/mnso-20251231x20f.htm" target="_blank" rel="noopener">MINISO 20-F</a> · <a href="https://www.sec.gov/Archives/edgar/data/1932770/000121390026114370/ea030926901-20f_heregroup.htm" target="_blank" rel="noopener">Here Group 20-F</a></p><p>按现金租金和库存反馈独立重算，固定当年 H2 搜索 0.25–0.85（对 2025H2 倍数）。2025Q3 权重 50%、下滑 45%–50%、周转约 1.80、租金倍数 1.0 时，H2 反解 84.882 亿元，对应 Q4 <strong>20.962–26.773 亿元</strong>。稳定到终值的毛利持续冲击 −1.5pp 后，反解 <strong>35.276–41.087 亿元</strong>。周转降至 1.35 次、租金倍数 1.15 及毛利不变时，反解 <strong>35.638–41.449 亿元</strong>。当可见 Q3 估计本身超出需达到的 H2，非负 Q4 无等值解，清楚列代回价格及区间边界。 <a href="/cases/09992/q4-cash-threshold-grid.csv" target="_blank" rel="noopener">216 行联合表</a> · <a href="/cases/09992/independent-review.md" target="_blank" rel="noopener">独立复核</a></p><p><a href="/cases/09992/mechanism-grid.svg" target="_blank" rel="noopener">经营变量敏感性图</a></p><h2 id="case-09992-section-7">7. 翻转条件和独立事实</h2><p>首选判断仍是 <strong>166.65 港元高于 143.40 港元，但经营需要过折扣和库存关</strong>。竞争性解释是星星人替换 THE MONSTERS 而非可持续扩大的客群。国内和海外的出货与门店质量并未同比同向。下一场验证拿到全年收入、季度绝对额、净折扣、库存库龄、租赁实付和同批成熟店销售。即便全年门店增加，若量只靠更深折扣且库存周转进一步下降，应用联合临界表更新折扣、周转及租金，不把收入增量当正方。Q4 低于对应组合时，条件基准转至现价下方。期后回购根据当日可获时间更新后续快照，由复核人确认股份已注销和价款，不能使用 16:48 的披露推回 16:10 收盘。</p><p><a href="/cases/09992/independent-review.md" target="_blank" rel="noopener">原披露→经营桥→预测输入→条件价值</a> · <a href="/cases/09992/report-map.md" target="_blank" rel="noopener">报告素材地图</a> · <a href="/cases/09992/source-index.json" target="_blank" rel="noopener">原文索引</a> · <a href="/cases/09992/operating.py" target="_blank" rel="noopener">独立复算程序</a></p><h3 id="case-09992-section-8">口径附录</h3><p>阶段 15–17 记录保留。原创材料对读有时使用已记源指纹的本地原件；未找到公开季度、门店批次或逐 IP 成本时直接空缺，相关假设只在条件表使用。原文披露、后验、算术、经验代理、机制判断以及预测和条件价值在数据和文字分栏。实际 Fact 以 ReviewStore 动态校验为准，新增对读不改变挂牌状态。</p></section><section class="chapter"><h2>三条路径与价值</h2><div class="scroll" tabindex="0"><table><thead><tr><th scope="col">情景</th><th scope="col">每股</th><th scope="col">WACC</th><th scope="col">显性期现值</th><th scope="col">终值现值</th><th scope="col">终值占比</th></tr></thead><tbody><tr><td class="">base</td><td class="numeric"><span title="166.65471957516075">166.654719575</span></td><td class="numeric"><span title="0.05395836367616964">0.0539583636762</span></td><td class="numeric"><span title="43163.01626418519">43163.0162642</span></td><td class="numeric"><span title="135445.51384324484">135445.513843</span></td><td class="numeric"><span title="0.7583373188378889">0.758337318838</span></td></tr><tr><td class="">stress</td><td class="numeric"><span title="48.53435822480893">48.5343582248</span></td><td class="numeric"><span title="0.05395836367616964">0.0539583636762</span></td><td class="numeric"><span title="14598.72038647483">14598.7203865</span></td><td class="numeric"><span title="31443.075589108557">31443.0755891</span></td><td class="numeric"><span title="0.6829246106251646">0.682924610625</span></td></tr><tr><td class="">improve</td><td class="numeric"><span title="536.3658597824261">536.365859782</span></td><td class="numeric"><span title="0.05395836367616964">0.0539583636762</span></td><td class="numeric"><span title="93807.65804749053">93807.6580475</span></td><td class="numeric"><span title="504671.5747829275">504671.574783</span></td><td class="numeric"><span title="0.8432566196092699">0.843256619609</span></td></tr></tbody></table></div><h2>双变量反解</h2><p>Q3仅有同比范围。固定2025Q3占H2 50%、Q3同比−47.5%，故本表Q3为6101.491百万元情景。H1实际17172.921百万元，固定租金乘数传导到现金口径利润。库存见专项联合表。</p><div class="scroll" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 978 334" role="img" aria-label="双变量条件估值矩阵"><rect width="978" height="334" rx="18" fill="#fffaf0"/><g font-family="sans-serif" fill="#263e36" font-size="13"><text x="20" y="29" font-weight="bold">同日每股价值 · HKD · 收盘 143.4</text><text x="20" y="51">固定现金租金倍数 ＼ Q4绝对收入（人民币百万元）</text><text x="114" y="80">0</text><text x="200" y="80">1000</text><text x="286" y="80">2000</text><text x="372" y="80">3000</text><text x="458" y="80">4000</text><text x="544" y="80">5500</text><text x="630" y="80">7500</text><text x="716" y="80">10000</text><text x="802" y="80">15000</text><text x="888" y="80">22000</text><text x="20" y="108">0.8</text><text x="20" y="147">0.9</text><text x="20" y="186">1</text><text x="20" y="225">1.1</text><text x="20" y="264">1.25</text><g><title>0／0.8 = 133.794177391</title><rect x="107" y="89" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="110">133.79</text></g><g><title>1000／0.8 = 139.872481058</title><rect x="193" y="89" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="110">139.87</text></g><g><title>2000／0.8 = 145.94493057</title><rect x="279" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="286" y="110">145.94</text></g><g><title>3000／0.8 = 152.016357966</title><rect x="365" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="110">152.02</text></g><g><title>4000／0.8 = 158.086042537</title><rect x="451" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="110">158.09</text></g><g><title>5500／0.8 = 167.184231086</title><rect x="537" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="110">167.18</text></g><g><title>7500／0.8 = 179.315149151</title><rect x="623" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="110">179.32</text></g><g><title>10000／0.8 = 194.465614459</title><rect x="709" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="110">194.47</text></g><g><title>15000／0.8 = 224.946674597</title><rect x="795" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="110">224.95</text></g><g><title>22000／0.8 = 267.881741352</title><rect x="881" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="110">267.88</text></g><g><title>0／0.9 = 131.346462799</title><rect x="107" y="128" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="149">131.35</text></g><g><title>1000／0.9 = 137.424766466</title><rect x="193" y="128" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="149">137.42</text></g><g><title>2000／0.9 = 143.498819286</title><rect x="279" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="286" y="149">143.50</text></g><g><title>3000／0.9 = 149.572872105</title><rect x="365" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="149">149.57</text></g><g><title>4000／0.9 = 155.645182101</title><rect x="451" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="149">155.65</text></g><g><title>5500／0.9 = 164.744610588</title><rect x="537" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="149">164.74</text></g><g><title>7500／0.9 = 176.875528653</title><rect x="623" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="149">176.88</text></g><g><title>10000／0.9 = 192.025993961</title><rect x="709" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="149">192.03</text></g><g><title>15000／0.9 = 222.507054099</title><rect x="795" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="149">222.51</text></g><g><title>22000／0.9 = 265.442120854</title><rect x="881" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="149">265.44</text></g><g><title>0／1.0 = 128.898748207</title><rect x="107" y="167" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="188">128.90</text></g><g><title>1000／1.0 = 134.977051874</title><rect x="193" y="167" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="188">134.98</text></g><g><title>2000／1.0 = 141.051104694</title><rect x="279" y="167" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="188">141.05</text></g><g><title>3000／1.0 = 147.125157513</title><rect x="365" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="188">147.13</text></g><g><title>4000／1.0 = 153.197467509</title><rect x="451" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="188">153.20</text></g><g><title>5500／1.0 = 162.299594194</title><rect x="537" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="188">162.30</text></g><g><title>7500／1.0 = 174.435763108</title><rect x="623" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="188">174.44</text></g><g><title>10000／1.0 = 189.586373463</title><rect x="709" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="188">189.59</text></g><g><title>15000／1.0 = 220.067433601</title><rect x="795" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="188">220.07</text></g><g><title>22000／1.0 = 263.002500355</title><rect x="881" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="188">263.00</text></g><g><title>0／1.1 = 126.451033615</title><rect x="107" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="227">126.45</text></g><g><title>1000／1.1 = 132.529337283</title><rect x="193" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="227">132.53</text></g><g><title>2000／1.1 = 138.603390102</title><rect x="279" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="227">138.60</text></g><g><title>3000／1.1 = 144.677442921</title><rect x="365" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="227">144.68</text></g><g><title>4000／1.1 = 150.749752917</title><rect x="451" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="227">150.75</text></g><g><title>5500／1.1 = 159.851879602</title><rect x="537" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="227">159.85</text></g><g><title>7500／1.1 = 171.988048516</title><rect x="623" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="227">171.99</text></g><g><title>10000／1.1 = 187.145077385</title><rect x="709" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="227">187.15</text></g><g><title>15000／1.1 = 217.627813102</title><rect x="795" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="227">217.63</text></g><g><title>22000／1.1 = 260.562879857</title><rect x="881" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="227">260.56</text></g><g><title>0／1.25 = 122.779461728</title><rect x="107" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="266">122.78</text></g><g><title>1000／1.25 = 128.857765395</title><rect x="193" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="266">128.86</text></g><g><title>2000／1.25 = 134.931818214</title><rect x="279" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="266">134.93</text></g><g><title>3000／1.25 = 141.005871034</title><rect x="365" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="372" y="266">141.01</text></g><g><title>4000／1.25 = 147.07818103</title><rect x="451" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="266">147.08</text></g><g><title>5500／1.25 = 156.180307715</title><rect x="537" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="266">156.18</text></g><g><title>7500／1.25 = 168.316476628</title><rect x="623" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="266">168.32</text></g><g><title>10000／1.25 = 183.473505497</title><rect x="709" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="266">183.47</text></g><g><title>15000／1.25 = 213.967692756</title><rect x="795" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="266">213.97</text></g><g><title>22000／1.25 = 256.90344911</title><rect x="881" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="266">256.90</text></g></g></svg></div><details><summary>同源反解边界与回代</summary><div class="scroll" tabindex="0"><table><thead><tr><th scope="col">第二驱动取值</th><th scope="col">搜索首端价值</th><th scope="col">搜索末端价值</th><th scope="col">状态</th><th scope="col">首个解</th><th scope="col">回代价值</th></tr></thead><tbody><tr><td class="numeric"><span title="0.8">0.8</span></td><td class="numeric"><span title="133.79417739076146">133.794177391</span></td><td class="numeric"><span title="267.88174135205645">267.881741352</span></td><td class="">有解</td><td class="numeric"><span title="1580.8348836649207">1580.83488366</span></td><td class="numeric"><span title="143.4">143.4</span></td></tr><tr><td class="numeric"><span title="0.9">0.9</span></td><td class="numeric"><span title="131.34646279899522">131.346462799</span></td><td class="numeric"><span title="265.4421208537556">265.442120854</span></td><td class="">有解</td><td class="numeric"><span title="1983.7309143386997">1983.73091434</span></td><td class="numeric"><span title="143.4">143.4</span></td></tr><tr><td class="numeric"><span title="1.0">1</span></td><td class="numeric"><span title="128.89874820722892">128.898748207</span></td><td class="numeric"><span title="263.00250035545474">263.002500355</span></td><td class="">有解</td><td class="numeric"><span title="2386.709726764977">2386.70972676</span></td><td class="numeric"><span title="143.39999999999998">143.4</span></td></tr><tr><td class="numeric"><span title="1.1">1.1</span></td><td class="numeric"><span title="126.45103361546262">126.451033615</span></td><td class="numeric"><span title="260.5628798571539">260.562879857</span></td><td class="">有解</td><td class="numeric"><span title="2789.68853919126">2789.68853919</span></td><td class="numeric"><span title="143.4">143.4</span></td></tr><tr><td class="numeric"><span title="1.25">1.25</span></td><td class="numeric"><span title="122.77946172781316">122.779461728</span></td><td class="numeric"><span title="256.90344910970254">256.90344911</span></td><td class="">有解</td><td class="numeric"><span title="3394.156757830682">3394.15675783</span></td><td class="numeric"><span title="143.39999999999992">143.4</span></td></tr></tbody></table></div></details><nav class="source-links"><a href="/cases/09992/sensitivity.csv">下载双变量底表</a> <a href="/research/facts.html?code=09992">查看原窗口事实</a></nav></section></main><script>
+(() => {
+  'use strict';
+  const query = (s, root = document) => root.querySelector(s);
+  const all = (s, root = document) => [...root.querySelectorAll(s)];
+  const selectors = all('[data-filter]');
+  const filterRows = all('[data-search-row]');
+  const status = query('#filter-status');
+  function filter() {
+    const terms = (query('#search')?.value || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+    let count = 0;
+    for (const row of filterRows) {
+      const fields = selectors.every(s => !s.value || (row.dataset[s.dataset.filter] || '').split('|').includes(s.value));
+      const matches = fields && terms.every(x => row.dataset.searchRow.toLowerCase().includes(x));
+      row.hidden = !matches;
+      const nav = document.getElementById('nav-' + row.id);
+      if (nav) nav.hidden = !matches;
+      if (matches) count++;
+    }
+    if (status) status.textContent = count + ' 项';
+  }
+  for (const input of [...selectors, query('#search')].filter(Boolean)) input.addEventListener('input', filter);
+  filter();
+  const config = query('#charts');
+  if (config) {
+    const colors = ['#286750','#ac894a','#7c91a1','#a96f62','#829756','#727493'];
+    const charts = JSON.parse(config.textContent);
+    for (const figure of all('[data-chart]')) {
+      const chart = charts[figure.dataset.chart], hidden = [];
+      const target = query('.chart', figure);
+      const draw = () => { target.innerHTML = ResultFeatures.chart(chart, hidden); };
+      all('button[data-series]', figure).forEach((button, n) => {
+        button.style.setProperty('--series', colors[n]);
+        button.addEventListener('click', () => {
+          const i = hidden.indexOf(n);
+          if (i < 0) hidden.push(n);
+          else hidden.splice(i, 1);
+          button.setAttribute('aria-pressed', i < 0 ? 'false' : 'true');
+          draw();
+        });
+      });
+      draw();
+    }
+  }
+  for (const link of all('a[href^="#"]')) {
+    link.addEventListener('click', () => {
+      const dest = document.getElementById(link.getAttribute('href').slice(1));
+      if (!dest) return;
+      const chapter = dest.closest('.chapter');
+      if (chapter?.hidden) {
+        for (const input of [...selectors, query('#search')].filter(Boolean)) input.value = '';
+        filter();
+      }
+      for (let el = dest; el; el = el.parentElement) if (el.tagName === 'DETAILS') el.open = true;
+      if (document.body.classList.contains('presenting') && chapter) {
+        slide = slides.indexOf(chapter);
+        drawSlide();
+      }
+    });
+  }
+  let slides = [], slide = 0;
+  const present = query('#present');
+  function drawSlide() {
+    slides.forEach((el, i) => el.classList.toggle('active-slide', i === slide));
+    if (query('#position')) query('#position').textContent =
+      (slide + 1) + ' / ' + slides.length + ' · ' + (query('h2', slides[slide])?.textContent || '');
+  }
+  function step(amount) {
+    slide = Math.max(0, Math.min(slides.length - 1, slide + amount));
+    drawSlide();
+    window.scrollTo(0, 0);
+  }
+  function end() {
+    document.body.classList.remove('presenting');
+    slides.forEach(x => x.classList.remove('active-slide'));
+    present?.focus();
+  }
+  present?.addEventListener('click', () => {
+    slides = all('.chapter').filter(el => !el.hidden && el.id !== 'methods');
+    if (!slides.length) return;
+    slide = 0;
+    document.body.classList.add('presenting');
+    drawSlide();
+    window.scrollTo(0, 0);
+    query('#exit').focus();
+  });
+  query('#previous')?.addEventListener('click', () => step(-1));
+  query('#next-slide')?.addEventListener('click', () => step(1));
+  query('#exit')?.addEventListener('click', end);
+  document.addEventListener('keydown', e => {
+    if (!document.body.classList.contains('presenting')) return;
+    if (e.key === 'Escape') end();
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      step(e.key === 'ArrowLeft' ? -1 : 1);
+    }
+  });
+})();
+</script></body></html>

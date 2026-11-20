@@ -1,0 +1,76 @@
+{
+  "volume_contribution_m": 125.11266840248918,
+  "realisation_mix_contribution_m": 323.6571549275104,
+  "main_margin_change_pp": -2.611259812556277,
+  "main_mix_pp": -1.3806636919517101,
+  "main_unit_margin_pp": -1.230596120604566,
+  "report_main_revenue_25_m": 2166.64476024,
+  "report_main_revenue_24_m": 1717.87493691,
+  "other_activities_revenue_25_m": 28.987552680000135,
+  "other_activities_revenue_24_m": 17.580133759999853,
+  "cutoff": "2026-11-12 SSE",
+  "tested_price": 96.2,
+  "model_base": 92.75774737785619,
+  "control_growth_edge": 0.0753340575665028,
+  "volume_shift": 0.00858869334437895,
+  "stock_volume_boundary": [
+    {
+      "inventory_days_improvement": 0,
+      "wc_share": 0.122,
+      "value_before_volume": 92.75774737785619,
+      "required_2027_control_growth": 0.0753340575665028,
+      "price_check": 96.20000000000003,
+      "incremental_sets_relative_to_2025": 558.8147437586721
+    },
+    {
+      "inventory_days_improvement": 15,
+      "wc_share": 0.11086946970864113,
+      "value_before_volume": 92.84288921306513,
+      "required_2027_control_growth": 0.07511701580633974,
+      "price_check": 96.19999999999999,
+      "incremental_sets_relative_to_2025": 544.6931386754226
+    },
+    {
+      "inventory_days_improvement": 30,
+      "wc_share": 0.09973893941728226,
+      "value_before_volume": 92.94440830390292,
+      "required_2027_control_growth": 0.07486012875421634,
+      "price_check": 96.19999999999999,
+      "incremental_sets_relative_to_2025": 527.9790395160661
+    },
+    {
+      "inventory_days_improvement": 45,
+      "wc_share": 0.0886084091259234,
+      "value_before_volume": 93.04349227587998,
+      "required_2027_control_growth": 0.07460877529922871,
+      "price_check": 96.20000000000002,
+      "incremental_sets_relative_to_2025": 511.6249783207509
+    },
+    {
+      "inventory_days_improvement": 60,
+      "wc_share": 0.07747787883456453,
+      "value_before_volume": 93.14039141413501,
+      "required_2027_control_growth": 0.07436377268880973,
+      "price_check": 96.20000000000003,
+      "incremental_sets_relative_to_2025": 495.6841284764499
+    }
+  ],
+  "steady_margin_edge": 0.49801129732619265,
+  "exact_reinsert_control": 96.20000000000003,
+  "exact_reinsert_margin": 96.19999999999999,
+  "excess_cash_bridge": {
+    "financial_cash": 2134.54113072,
+    "eligible_short_long_investments": 3596.03113218,
+    "working_cash_reserve": 400,
+    "notified_buyback_cash_or_buffer": 0,
+    "excess_cash_proxy": 5330.5722629,
+    "financial_debt": 20.322,
+    "finance_treated_lease": 8.677110650000001,
+    "non_controlling_book": 48.346,
+    "non_controlling_deduction": 77.3536,
+    "litigation_separate_pv": 0,
+    "bridge_net": 5224.21955225
+  },
+  "unknown_service_cost_bucket": "未披露，阈值以下单列",
+  "terminal_roi_required": 0.235
+}

@@ -1,0 +1,207 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>组长待审与下一步</title><style>
+:root{--paper:#f4f0e8;--surface:#fcfaf5;--ink:#192c2b;--muted:#516460;--line:#d9d6c7;--green:#21554a;--rust:#a24931;--dark:#143b35;--serif:"Noto Serif CJK SC","Songti SC","SimSun",Georgia,serif;--sans:system-ui,"Microsoft YaHei",sans-serif;font:16px/1.65 var(--sans);color:var(--ink);background:var(--paper)}
+
+*{box-sizing:border-box}
+body{margin:0}
+a{color:var(--green);text-underline-offset:.23em}
+button,input,select{font:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{line-height:1.27}
+.shell{width:min(1370px,100%);margin:auto;padding:0 clamp(14px,4vw,52px)}
+.mast{background:var(--dark);color:#faf6ea}
+.mast .shell{padding-top:20px;padding-bottom:30px}
+.nav{display:flex;align-items:center;gap:9px 20px;flex-wrap:wrap}
+.mast .nav{padding-bottom:18px;border-bottom:1px solid #87a49755}
+.mast a{color:#fdf9e9}
+.mast a.action:not(.main){color:var(--green)}
+.mark{margin-right:auto;font-weight:700;text-decoration:none}
+.titleblock{padding-top:30px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:end}
+.titleblock h1{font:700 clamp(2rem,4.4vw,4.7rem)/1.14 var(--serif);margin:8px 0 15px;overflow-wrap:anywhere}
+.titleblock p{color:#d9e8de;max-width:62ch}
+.dateline{font-size:.83rem;color:#e8d3a6}
+.edition{border-block:1px solid #9cbaaa75;padding:8px 0;color:#e1eee7;font-size:.83rem;max-width:30ch;text-align:right}
+.hero-actions{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0}
+.action,button{display:inline-block;padding:6px 11px;border:1px solid #a8ada1;border-radius:3px;text-decoration:none;background:var(--surface);color:var(--green);cursor:pointer;min-height:36px}
+.action:hover,button:hover{border-color:var(--green);background:#e9efe5}
+.action.main{background:#ecdfbf;color:#153b35;border-color:#ecdfbf}
+.toolbar{display:flex;align-items:end;gap:10px;flex-wrap:wrap;padding:15px 0;border-bottom:1px solid var(--line)}
+.toolbar label{display:flex;flex-direction:column;gap:2px;font-size:.84rem;color:var(--muted);min-width:0}
+.toolbar label:first-child{flex:1 1 235px}
+.toolbar input,.toolbar select{background:var(--surface);border:1px solid #b5bcaf;border-radius:3px;color:var(--ink);padding:6px;max-width:100%}
+.toolbar .status{color:var(--muted);font-size:.82rem;align-self:center}
+.layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:26px;align-items:start}
+.outline{position:sticky;top:0;max-height:95vh;overflow:auto;padding:18px 0}
+.outline a{display:block;padding:5px 7px;border-left:2px solid var(--line);text-decoration:none;font-size:.9rem}
+.outline a:hover,.outline a:focus-visible{background:#e5eadf;border-color:var(--green)}
+.outline strong{display:block;font-size:.79rem;color:var(--muted);margin-bottom:8px}
+.reading{min-width:0;padding-bottom:36px}
+.chapter{margin:22px 0 32px;background:var(--surface);padding:clamp(15px,3vw,37px);border:1px solid var(--line);scroll-margin-top:13px;overflow-wrap:anywhere}
+.chapter>header{border-bottom:1px solid var(--line);padding-bottom:14px}
+.chapter>header h2{font:700 clamp(1.55rem,3vw,2.8rem)/1.2 var(--serif);margin:5px 0 10px}
+.chapter>header p{max-width:75ch}
+.kicker{color:var(--rust);font-size:.87rem;font-weight:650}
+.segment{padding:18px 0;border-bottom:1px solid var(--line)}
+.segment h3{font:700 clamp(1.12rem,2.4vw,1.55rem)/1.35 var(--serif);margin-bottom:9px}
+.segment p{max-width:79ch;margin:0 0 10px}
+.source-links{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:9px;font-size:.84rem}
+.chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:0;list-style:none}
+.chain li{background:#e9eee5;padding:5px 8px;border-left:2px solid #927c59;font-size:.83rem}
+.chart-box{margin:15px 0}
+.chart{background:white;min-width:0;overflow:auto;border:1px solid var(--line);margin-top:5px}
+.chart svg{display:block;width:100%;min-width:510px;height:auto;max-height:400px}
+.legend{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.legend button{font-size:.81rem;border-left:4px solid var(--series,#326c53);min-height:30px;padding:3px 7px}
+.legend button[aria-pressed=false]{opacity:.55;text-decoration:line-through}
+figcaption,.annotation{color:var(--muted);font-size:.88rem;margin:5px 0 8px}
+summary{cursor:pointer;color:var(--green);padding:5px 0}
+details{margin:6px 0}
+.scroll{overflow:auto;max-height:65vh;border:1px solid var(--line);background:white}
+.scroll:focus{outline:2px solid var(--green)}
+table{border-collapse:collapse;min-width:100%;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{padding:6px 9px;border-bottom:1px solid #e7e4db;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+th{position:sticky;top:0;z-index:1;white-space:nowrap;background:#e9ede4}
+td{min-width:60px}
+td.numeric{text-align:right;white-space:nowrap}
+td.long{min-width:195px;max-width:450px}
+.matrix{margin:13px 0}
+.matrix tbody td:nth-child(6){font-weight:750;color:var(--green)}
+.cover-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:10px;margin:14px 0}
+.tile{border:1px solid var(--line);background:var(--surface);padding:16px;min-width:0;overflow-wrap:anywhere}
+.tile h2{font-family:var(--serif);font-size:1.28rem;margin-bottom:7px}
+.tile p,.tile .nav{font-size:.87rem;margin-top:5px}
+.subtle{color:var(--muted)}
+.note{padding:15px 0}
+.wide{padding-bottom:22px}
+.wide .scroll{max-height:67vh}
+.version-grid a{word-break:break-word}
+.foot{padding:25px 0;border-top:1px solid var(--line);font-size:.86rem}
+.presenting .toolbar,.presenting .outline,.presenting .mast,.presenting .foot{display:none}
+.presenting .layout{display:block}
+.presenting .chapter{display:none;font-size:clamp(1.12rem,2vw,1.5rem)}
+.presenting .chapter.active-slide{display:block}
+.presenting .presentation{display:flex}
+.presentation{display:none;position:sticky;top:0;z-index:4;gap:7px;flex-wrap:wrap;padding:8px;background:var(--dark);align-items:center;color:#fff}
+.presentation span{padding:0 8px}
+[hidden]{display:none!important}
+.knowledge-card:target{border-left:4px solid var(--rust);padding-left:9px}
+
+@media(max-width:780px){.layout{display:block}
+.outline{position:static;max-height:none;display:flex;gap:5px 10px;flex-wrap:wrap;padding:10px 0}
+.outline strong{width:100%}
+.outline a{font-size:.83rem}
+.titleblock{display:block}
+.edition{text-align:left;margin-top:14px;max-width:none}
+.chapter{padding:14px}
+.mast .nav{gap:8px 14px}
+}
+
+@media print{.mast{background:white;color:black}
+.mast p,.dateline{color:black}
+.nav,.edition,.toolbar,.outline,.legend,.presentation,.foot{display:none!important}
+.layout{display:block}
+.scroll{overflow:visible;max-height:none}
+.chart{overflow:visible}
+.chart svg{min-width:0}
+.chapter{break-before:page;border:0;margin:0}
+.chapter:first-child{break-before:auto}
+th,td{break-inside:avoid}
+}
+</style></head><body><header class="mast"><div class="shell"><nav class="nav"><a href="/desk/">工作台</a> <a href="/cases/">五家公司案例</a> <a href="/atlas/">超级图册</a> <a href="/research/">证据与覆盖</a> <a href="/research/follow-up.html">期后记录</a></nav><div class="titleblock"><div><div class="dateline">2026-11-12 各市场当地收盘</div><h1>组长待审与下一步</h1><p>五家公司证券投资案例</p></div><div class="edition">2026-11-12</div></div></div></header><main class="shell note"><nav class="source-links"></nav><h1>组长待审与下一步</h1><p>建议首选 <strong>柏楚电子</strong>。已披露销量、分产品收入毛利、库存和股数能从原文达到价格临界线。模型的92.76元离96.20元收盘近，竞争解释有定量后果。安琪酵母适合研究产能转固与资本回报，涪陵适合研究渠道现金与基地投入。泡泡与ISRG的投资张力突出，季度基数、同店、同机与合同数据分别提高完稿难度。</p><div class="table"><table><tbody><tr><td>需要刘翔宇判断</td><td>建议裁定</td><td>另一裁定的影响</td><td>证据位置</td><td>下一步</td></tr><tr><td>正式研究对象</td><td>柏楚优先，按资本回报兴趣可改选安琪</td><td>主报告的价值链、资料分工和风险专题随对象变化</td><td><a href="/cases/index.html" target="_blank" rel="noopener">选题比较</a>和五家素材地图</td><td>团队选择后由负责人分派</td></tr><tr><td>涪陵是否给直销或新基地加成</td><td>保留15.09元条件基准，压测新增销售、营运资本与基地投入</td><td>若可归属费用、退换或资金占用超过新增毛利，不能增加渠道现金；新基地净新增与跨期现金支付影响FCFF</td><td><a href="/cases/002507/case.md" target="_blank" rel="noopener">涪陵</a></td><td>消费研究人按下一期同口径披露核算</td></tr><tr><td>安琪新厂回报应否提高</td><td>按转固、出售认证和收现分阶段；7.50% WACC下须达到11.75%新增ROIC才能回代36.62元</td><td>提前把规划产能当作可售量会提高销量与NOPAT并少计爬坡库存；较高融资风险抬高ROIC门槛</td><td><a href="/cases/600298/case.md" target="_blank" rel="noopener">安琪</a></td><td>工业组查厂级认证、利用率和吨毛利</td></tr><tr><td>柏楚用销量还是软硬件组合定标</td><td>用实际控制出货量作为第一驱动，特定配套率等正式披露</td><td>稳定核心利润率47%时约7.52%销量增长可回代96.20；配套、服务费用使阈值外移</td><td><a href="/cases/688188/case.md" target="_blank" rel="noopener">柏楚</a></td><td>软件研究人核同客户复购、切割头和保修</td></tr><tr><td>泡泡何种Q4权重可使用</td><td>Q3只采用披露区间；按权重、租金和周转展示条件</td><td>成熟店折扣若持久，销售门槛升高；期后回购只改变后验权益</td><td><a href="/cases/09992/case.md" target="_blank" rel="noopener">泡泡</a></td><td>港股研究人重核Q4绝对额、同期店效、租赁及注销</td></tr><tr><td>ISRG是否把改善路径扩展至市场价</td><td>保留三条发布经营路径，用联合装机/利用率反推检验市场预期</td><td>WACC与活动因子同时变动会显著改变反解；经营租赁变动额的精度修正仅改变约−0.00010美元/股</td><td><a href="/cases/US/case.md" target="_blank" rel="noopener">ISRG</a></td><td>医疗研究人核同批医院术量、单位维护现金和和解付款</td></tr></tbody></table></div><p>无需组长裁定的工作包括恢复可公开原件、更新链接及指纹、核对新一期报表是否属于原估值窗、维护独立回代脚本。新增项目计划收益、可售量、客户和成本归属交证据负责人分栏更新。选择正式对象、采纳主张和正式稿取舍由团队决定。</p></main><script>
+(() => {
+  'use strict';
+  const query = (s, root = document) => root.querySelector(s);
+  const all = (s, root = document) => [...root.querySelectorAll(s)];
+  const selectors = all('[data-filter]');
+  const filterRows = all('[data-search-row]');
+  const status = query('#filter-status');
+  function filter() {
+    const terms = (query('#search')?.value || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+    let count = 0;
+    for (const row of filterRows) {
+      const fields = selectors.every(s => !s.value || (row.dataset[s.dataset.filter] || '').split('|').includes(s.value));
+      const matches = fields && terms.every(x => row.dataset.searchRow.toLowerCase().includes(x));
+      row.hidden = !matches;
+      const nav = document.getElementById('nav-' + row.id);
+      if (nav) nav.hidden = !matches;
+      if (matches) count++;
+    }
+    if (status) status.textContent = count + ' 项';
+  }
+  for (const input of [...selectors, query('#search')].filter(Boolean)) input.addEventListener('input', filter);
+  filter();
+  const config = query('#charts');
+  if (config) {
+    const colors = ['#286750','#ac894a','#7c91a1','#a96f62','#829756','#727493'];
+    const charts = JSON.parse(config.textContent);
+    for (const figure of all('[data-chart]')) {
+      const chart = charts[figure.dataset.chart], hidden = [];
+      const target = query('.chart', figure);
+      const draw = () => { target.innerHTML = ResultFeatures.chart(chart, hidden); };
+      all('button[data-series]', figure).forEach((button, n) => {
+        button.style.setProperty('--series', colors[n]);
+        button.addEventListener('click', () => {
+          const i = hidden.indexOf(n);
+          if (i < 0) hidden.push(n);
+          else hidden.splice(i, 1);
+          button.setAttribute('aria-pressed', i < 0 ? 'false' : 'true');
+          draw();
+        });
+      });
+      draw();
+    }
+  }
+  for (const link of all('a[href^="#"]')) {
+    link.addEventListener('click', () => {
+      const dest = document.getElementById(link.getAttribute('href').slice(1));
+      if (!dest) return;
+      const chapter = dest.closest('.chapter');
+      if (chapter?.hidden) {
+        for (const input of [...selectors, query('#search')].filter(Boolean)) input.value = '';
+        filter();
+      }
+      for (let el = dest; el; el = el.parentElement) if (el.tagName === 'DETAILS') el.open = true;
+      if (document.body.classList.contains('presenting') && chapter) {
+        slide = slides.indexOf(chapter);
+        drawSlide();
+      }
+    });
+  }
+  let slides = [], slide = 0;
+  const present = query('#present');
+  function drawSlide() {
+    slides.forEach((el, i) => el.classList.toggle('active-slide', i === slide));
+    if (query('#position')) query('#position').textContent =
+      (slide + 1) + ' / ' + slides.length + ' · ' + (query('h2', slides[slide])?.textContent || '');
+  }
+  function step(amount) {
+    slide = Math.max(0, Math.min(slides.length - 1, slide + amount));
+    drawSlide();
+    window.scrollTo(0, 0);
+  }
+  function end() {
+    document.body.classList.remove('presenting');
+    slides.forEach(x => x.classList.remove('active-slide'));
+    present?.focus();
+  }
+  present?.addEventListener('click', () => {
+    slides = all('.chapter').filter(el => !el.hidden && el.id !== 'methods');
+    if (!slides.length) return;
+    slide = 0;
+    document.body.classList.add('presenting');
+    drawSlide();
+    window.scrollTo(0, 0);
+    query('#exit').focus();
+  });
+  query('#previous')?.addEventListener('click', () => step(-1));
+  query('#next-slide')?.addEventListener('click', () => step(1));
+  query('#exit')?.addEventListener('click', end);
+  document.addEventListener('keydown', e => {
+    if (!document.body.classList.contains('presenting')) return;
+    if (e.key === 'Escape') end();
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      step(e.key === 'ArrowLeft' ? -1 : 1);
+    }
+  });
+})();
+</script></body></html>

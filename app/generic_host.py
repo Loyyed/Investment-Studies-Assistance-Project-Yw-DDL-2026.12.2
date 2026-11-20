@@ -38,7 +38,7 @@ def start(root,kit,port):
    if self.path.split('?')[0]=='/' and isinstance(data,str):
     data=data.replace('最终展示图册</a></nav>','最终展示图册</a><a href="/preparation/">完整证券分析准备</a><a href="/security-analysis/">五家公司证券分析（阶段14）</a><a href="/stage15/">五家公司证券分析（阶段15）</a><a href="/stage16/">五家公司证券分析（阶段16）</a><a href="/stage17/">五家公司证券研究定稿</a></nav>')
     if research_host:
-     data=data.replace('五家公司证券研究定稿</a></nav>','五家公司证券研究定稿</a><a href="/research/">五家公司成果总览</a><a href="/atlas/">五家公司证券投资超级图册</a></nav>')
+     data=data.replace('五家公司证券研究定稿</a></nav>','五家公司证券研究定稿</a><a href="/cases/">五家公司案例</a><a href="/research/">五家公司成果总览</a><a href="/atlas/">五家公司证券投资超级图册</a></nav>')
      safe_mapping=json.dumps(mapping,ensure_ascii=False).replace('<',chr(92)+'u003c')
      data=data.replace('</body>','<script type="application/json" id="project-research-map">'+safe_mapping+'</script></body>')
     data=data.replace('</body>','<script nonce="'+server.workbench_token+'" src="/assets/project-adapter.js"></script></body>')
@@ -54,6 +54,9 @@ def start(root,kit,port):
   def do_GET(self):
    if not self.host_ok():return self.send({'error':'不允许的Host'},403)
    route=urlparse(self.path);q=parse_qs(route.query)
+   if route.path.startswith('/cases/') and (root/'docs/cases/case-package.json').is_file():
+    from case_site import serve_case
+    return serve_case(self,root,route.path,q)
    if research_host:
     try:
      if research_host.get(self,route.path,q):return

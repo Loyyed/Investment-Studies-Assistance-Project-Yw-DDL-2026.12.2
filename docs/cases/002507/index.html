@@ -1,0 +1,207 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>涪陵榨菜证券投资案例</title><style>
+:root{--paper:#f4f0e8;--surface:#fcfaf5;--ink:#192c2b;--muted:#516460;--line:#d9d6c7;--green:#21554a;--rust:#a24931;--dark:#143b35;--serif:"Noto Serif CJK SC","Songti SC","SimSun",Georgia,serif;--sans:system-ui,"Microsoft YaHei",sans-serif;font:16px/1.65 var(--sans);color:var(--ink);background:var(--paper)}
+
+*{box-sizing:border-box}
+body{margin:0}
+a{color:var(--green);text-underline-offset:.23em}
+button,input,select{font:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{line-height:1.27}
+.shell{width:min(1370px,100%);margin:auto;padding:0 clamp(14px,4vw,52px)}
+.mast{background:var(--dark);color:#faf6ea}
+.mast .shell{padding-top:20px;padding-bottom:30px}
+.nav{display:flex;align-items:center;gap:9px 20px;flex-wrap:wrap}
+.mast .nav{padding-bottom:18px;border-bottom:1px solid #87a49755}
+.mast a{color:#fdf9e9}
+.mast a.action:not(.main){color:var(--green)}
+.mark{margin-right:auto;font-weight:700;text-decoration:none}
+.titleblock{padding-top:30px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:end}
+.titleblock h1{font:700 clamp(2rem,4.4vw,4.7rem)/1.14 var(--serif);margin:8px 0 15px;overflow-wrap:anywhere}
+.titleblock p{color:#d9e8de;max-width:62ch}
+.dateline{font-size:.83rem;color:#e8d3a6}
+.edition{border-block:1px solid #9cbaaa75;padding:8px 0;color:#e1eee7;font-size:.83rem;max-width:30ch;text-align:right}
+.hero-actions{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0}
+.action,button{display:inline-block;padding:6px 11px;border:1px solid #a8ada1;border-radius:3px;text-decoration:none;background:var(--surface);color:var(--green);cursor:pointer;min-height:36px}
+.action:hover,button:hover{border-color:var(--green);background:#e9efe5}
+.action.main{background:#ecdfbf;color:#153b35;border-color:#ecdfbf}
+.toolbar{display:flex;align-items:end;gap:10px;flex-wrap:wrap;padding:15px 0;border-bottom:1px solid var(--line)}
+.toolbar label{display:flex;flex-direction:column;gap:2px;font-size:.84rem;color:var(--muted);min-width:0}
+.toolbar label:first-child{flex:1 1 235px}
+.toolbar input,.toolbar select{background:var(--surface);border:1px solid #b5bcaf;border-radius:3px;color:var(--ink);padding:6px;max-width:100%}
+.toolbar .status{color:var(--muted);font-size:.82rem;align-self:center}
+.layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:26px;align-items:start}
+.outline{position:sticky;top:0;max-height:95vh;overflow:auto;padding:18px 0}
+.outline a{display:block;padding:5px 7px;border-left:2px solid var(--line);text-decoration:none;font-size:.9rem}
+.outline a:hover,.outline a:focus-visible{background:#e5eadf;border-color:var(--green)}
+.outline strong{display:block;font-size:.79rem;color:var(--muted);margin-bottom:8px}
+.reading{min-width:0;padding-bottom:36px}
+.chapter{margin:22px 0 32px;background:var(--surface);padding:clamp(15px,3vw,37px);border:1px solid var(--line);scroll-margin-top:13px;overflow-wrap:anywhere}
+.chapter>header{border-bottom:1px solid var(--line);padding-bottom:14px}
+.chapter>header h2{font:700 clamp(1.55rem,3vw,2.8rem)/1.2 var(--serif);margin:5px 0 10px}
+.chapter>header p{max-width:75ch}
+.kicker{color:var(--rust);font-size:.87rem;font-weight:650}
+.segment{padding:18px 0;border-bottom:1px solid var(--line)}
+.segment h3{font:700 clamp(1.12rem,2.4vw,1.55rem)/1.35 var(--serif);margin-bottom:9px}
+.segment p{max-width:79ch;margin:0 0 10px}
+.source-links{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:9px;font-size:.84rem}
+.chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:0;list-style:none}
+.chain li{background:#e9eee5;padding:5px 8px;border-left:2px solid #927c59;font-size:.83rem}
+.chart-box{margin:15px 0}
+.chart{background:white;min-width:0;overflow:auto;border:1px solid var(--line);margin-top:5px}
+.chart svg{display:block;width:100%;min-width:510px;height:auto;max-height:400px}
+.legend{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.legend button{font-size:.81rem;border-left:4px solid var(--series,#326c53);min-height:30px;padding:3px 7px}
+.legend button[aria-pressed=false]{opacity:.55;text-decoration:line-through}
+figcaption,.annotation{color:var(--muted);font-size:.88rem;margin:5px 0 8px}
+summary{cursor:pointer;color:var(--green);padding:5px 0}
+details{margin:6px 0}
+.scroll{overflow:auto;max-height:65vh;border:1px solid var(--line);background:white}
+.scroll:focus{outline:2px solid var(--green)}
+table{border-collapse:collapse;min-width:100%;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{padding:6px 9px;border-bottom:1px solid #e7e4db;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+th{position:sticky;top:0;z-index:1;white-space:nowrap;background:#e9ede4}
+td{min-width:60px}
+td.numeric{text-align:right;white-space:nowrap}
+td.long{min-width:195px;max-width:450px}
+.matrix{margin:13px 0}
+.matrix tbody td:nth-child(6){font-weight:750;color:var(--green)}
+.cover-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:10px;margin:14px 0}
+.tile{border:1px solid var(--line);background:var(--surface);padding:16px;min-width:0;overflow-wrap:anywhere}
+.tile h2{font-family:var(--serif);font-size:1.28rem;margin-bottom:7px}
+.tile p,.tile .nav{font-size:.87rem;margin-top:5px}
+.subtle{color:var(--muted)}
+.note{padding:15px 0}
+.wide{padding-bottom:22px}
+.wide .scroll{max-height:67vh}
+.version-grid a{word-break:break-word}
+.foot{padding:25px 0;border-top:1px solid var(--line);font-size:.86rem}
+.presenting .toolbar,.presenting .outline,.presenting .mast,.presenting .foot{display:none}
+.presenting .layout{display:block}
+.presenting .chapter{display:none;font-size:clamp(1.12rem,2vw,1.5rem)}
+.presenting .chapter.active-slide{display:block}
+.presenting .presentation{display:flex}
+.presentation{display:none;position:sticky;top:0;z-index:4;gap:7px;flex-wrap:wrap;padding:8px;background:var(--dark);align-items:center;color:#fff}
+.presentation span{padding:0 8px}
+[hidden]{display:none!important}
+.knowledge-card:target{border-left:4px solid var(--rust);padding-left:9px}
+
+@media(max-width:780px){.layout{display:block}
+.outline{position:static;max-height:none;display:flex;gap:5px 10px;flex-wrap:wrap;padding:10px 0}
+.outline strong{width:100%}
+.outline a{font-size:.83rem}
+.titleblock{display:block}
+.edition{text-align:left;margin-top:14px;max-width:none}
+.chapter{padding:14px}
+.mast .nav{gap:8px 14px}
+}
+
+@media print{.mast{background:white;color:black}
+.mast p,.dateline{color:black}
+.nav,.edition,.toolbar,.outline,.legend,.presentation,.foot{display:none!important}
+.layout{display:block}
+.scroll{overflow:visible;max-height:none}
+.chart{overflow:visible}
+.chart svg{min-width:0}
+.chapter{break-before:page;border:0;margin:0}
+.chapter:first-child{break-before:auto}
+th,td{break-inside:avoid}
+}
+</style></head><body><header class="mast"><div class="shell"><nav class="nav"><a href="/desk/">工作台</a> <a href="/cases/">五家公司案例</a> <a href="/atlas/">超级图册</a> <a href="/research/">证据与覆盖</a> <a href="/research/follow-up.html">期后记录</a> <a href="/cases/600298/">安琪酵母</a> <a href="/cases/688188/">柏楚电子</a> <a href="/cases/09992/">泡泡玛特</a> <a href="/cases/US/">ISRG</a></nav><div class="titleblock"><div><div class="dateline">2026-11-12 各市场当地收盘</div><h1>涪陵榨菜证券投资案例</h1><p>基准 15.09 CNY，同日收盘 11.42 CNY。商业模式、经营变化与价格条件沿同一模型核对。</p></div><div class="edition">冻结窗口 2026-11-12</div></div></div></header><main class="shell note"><div class="chapter"><h2>数据与复核</h2><nav class="source-links"><a href="/cases/002507/case.md">案例正文 MD</a> <a href="/cases/002507/report-map.md">未来报告素材地图</a> <a href="/cases/002507/independent-review.md">独立复核</a> <a href="/cases/002507/history.csv">历史财务桥</a> <a href="/cases/002507/interim.csv">近期累计／单季／余额</a> <a href="/cases/002507/operating-bridges.csv">经营活动桥</a> <a href="/cases/002507/forecast.csv">2026实际＋预测底表</a> <a href="/cases/002507/inputs.json">程序输入索引</a> <a href="/cases/002507/model.json">完整模型与结果</a> <a href="/cases/002507/sensitivity.csv">双变量矩阵</a> <a href="/cases/002507/reverse.csv">价格反推与无解边界</a> <a href="/cases/002507/value-bridge.csv">阶段17—新版价值桥</a> <a href="/cases/002507/evidence-index.csv">来源与定位</a> <a href="/cases/002507/relative.csv">相对估值底表</a> <a href="/cases/002507/sensitivity.svg">灵敏度图</a> <a href="/cases/002507/2026-bridge.csv">2026-bridge.csv</a> <a href="/cases/002507/capital-overlay.csv">capital-overlay.csv</a> <a href="/cases/002507/cash-capital.csv">cash-capital.csv</a> <a href="/cases/002507/channel-attribution.csv">channel-attribution.csv</a> <a href="/cases/002507/claim-index.csv">claim-index.csv</a> <a href="/cases/002507/cost-bridge.csv">cost-bridge.csv</a> <a href="/cases/002507/current-price-bridge.csv">current-price-bridge.csv</a> <a href="/cases/002507/dimension-panel.csv">dimension-panel.csv</a> <a href="/cases/002507/direct-threshold.csv">direct-threshold.csv</a> <a href="/cases/002507/ebit-adjustments.csv">ebit-adjustments.csv</a> <a href="/cases/002507/operating-analysis.json">operating-analysis.json</a> <a href="/cases/002507/operating-inputs.json">operating-inputs.json</a> <a href="/cases/002507/parameters.csv">parameters.csv</a> <a href="/cases/002507/plant-utilization.csv">plant-utilization.csv</a> <a href="/cases/002507/rebuild_operations.py">rebuild_operations.py</a> <a href="/cases/002507/unit-economics.csv">unit-economics.csv</a> <a href="/cases/002507/unit-price-volume-bridge.csv">unit-price-volume-bridge.csv</a> <a href="/cases/002507/views-reconciliation.csv">views-reconciliation.csv</a></nav><nav class="source-links"><a href="#case-002507-section-1">1 商业模式、竞争与历史阶段</a><a href="#case-002507-section-2">2 收入由出货、组均价和结构对账</a><a href="#case-002507-section-3">3 从收入到毛利、再到渠道现金</a><a href="#case-002507-section-4">4 从营业利润到现金和基地资本</a><a href="#case-002507-section-5">5 三条业务预测与误差</a><a href="#case-002507-section-6">6 每股价值、市场反推与可比</a><a href="#case-002507-section-7">7 判断取舍及接续证据</a></nav></div><section class="chapter case-body"><h1>涪陵榨菜｜经销复购留下现金，直销与新基地须通过增量现金检验</h1><p><strong>主判断。</strong> 11.42 元含权普通股估值日收盘低于阶段 17 条件基准 15.09 元。核心榨菜既有供货网络能够赚钱，但新直销收入尚不能独立证明现金增益。2026H1 直销新增毛利 21.09 百万元，若新增账期 30 天、其他净占用和购建 5 百万元、额外未入账退换损失占新增销额 1%，可归属费用上限只有 7.68 百万元。新基地只有在扣除替代及现金结算后提供净新增量，才支持改善路径。全篇基准信息截至 <strong>2026-11-12 深交所当地收盘</strong>。</p><h2 id="case-002507-section-1">1 商业模式、竞争与历史阶段</h2><p>家庭买的是一餐一袋的口味与便利，经销商按周转和补货收益采购，终端有货、售价合适才形成重复消费。公司向农户、合作社和供应商买菜头、半成品与配料，预处理、腌制和包装后向经销商交货。经销商承担部分铺货与库存，公司承担原料季节储备、加工、仓储和营销。电商和线下直销缩短中间层级，同时把履约、平台、促销和信用责任移回公司。餐饮买家关注一批次口味一致和供货，餐饮与线上是与产品×销售模式不同的重叠维度。2025 年报解释了经销覆盖、其他品类扩展和鱼泉、吉香居等区域竞品。 <a href="https://static.cninfo.com.cn/finalpage/2026-03-28/1225042838.PDF" target="_blank" rel="noopener">2025 年报物理页 11–16</a></p><p>2010–2015 年收入从 5.45 到 9.31 亿元，经销铺货形成规模。2016–2020 年从 11.21 到 22.73 亿元，分析营业利润率中位数约 33.03%，规模和量价表现一起改善。2021–2022 年收入约 25.19–25.48 亿元，销量由 15.32 到 14.03 万吨，吨均价和产品组合支持收入。2023–2025 年收入约 24 亿元徘徊，样本中位 CFO/营收从 2021–2022 年的 35.97% 降到 27.02%，扩建和政策投放削弱增量回报。阶段表带早期口径及样本数。 <a href="/stage15/stage-metrics.csv" target="_blank" rel="noopener">阶段比较</a> · <a href="/cases/002507/cash-capital.csv" target="_blank" rel="noopener">本案例年度现金和资本</a></p><p>替代机制是公司用更小规格达到同一货架价，而名义出货吨数降低；另一个能解释销售变化的机制是补货。2025 榨菜单品主族吨数 11.14→11.18 万吨且组均价贡献为正，2026H1 中期吨数 5.93→6.10 万吨但组均价贡献为负。2026 年销售回升由吨量和其他品类驱动的证据更强，阶段变化不能解释为全面提价。判断仍缺同 SKU 包数、净到手价和经销进销存，下一期优先核这三列。</p><h2 id="case-002507-section-2">2 收入由出货、组均价和结构对账</h2><p>2021–2025 和 2025/2026H1 已按榨菜、萝卜、泡菜、其他乘以直销和经销重建。每个时期产品合计、渠道合计和交叉表是同一个主营范围。2025 交叉主营收入 2,427.77、成本 1,170.62 百万元，距集团 4.15、5.76 百万元分别入差额行。2026H1 的差额是 1.92、2.53 百万元。2024 年惠聚天下注销，直销已含线上和线下。报表没有覆盖完整同客户结构，无法把毛利变化当作同渠道生产率变化。 <a href="/cases/002507/dimension-panel.csv" target="_blank" rel="noopener">交叉底表</a> · <a href="/cases/002507/views-reconciliation.csv" target="_blank" rel="noopener">对账</a></p><p>收入桥以Δ吨量乘两期平均组均价、Δ组均价乘平均吨量，交互平均分配。2025 榨菜增收 15.05 百万元，其中吨量 7.35、组均价及结构 7.70；其他品类增收 34.19，其中量 32.93。2026H1 榨菜增收 28.79，其中吨量 32.14、组均价与结构 −3.35；其他品类增收 40.85，其中量 22.69、组均价与结构 18.16。泡菜和萝卜收入同比各减少 10.30、6.72 百万元。在吨数以万吨两位小数列示且存在发出尚未确认收入的年份，单位价只能作销售收入除以公司披露销量的近似。 <a href="/cases/002507/unit-economics.csv" target="_blank" rel="noopener">每吨经济性</a> · <a href="/cases/002507/unit-price-volume-bridge.csv" target="_blank" rel="noopener">品族量价与毛利桥</a></p><p>2026 年前三季度合并收入为 2,067.51 百万元，同比增长 3.45%，Q3 单季 702.05 百万元，同比约 2.35%；期末应收 143.58 百万元，年初 29.17，上一年 9 月末 120.88。累计与单季现金、同比和余额另表，单季 CFO 325.21 百万元来自累计之差。回款含销项税、账期及历史项，保留集团约束。 <a href="https://static.cninfo.com.cn/finalpage/2026-10-28/1225628280.PDF" target="_blank" rel="noopener">三季报物理页 7、9、11</a> · <a href="/cases/002507/interim.csv" target="_blank" rel="noopener">近期比较</a></p><h2 id="case-002507-section-3">3 从收入到毛利、再到渠道现金</h2><p>2025 食品加工材料支出下降 22.63 百万元，人工、制造、运输分别增加 9.40、6.67、7.28 百万元。集团毛利增加 38.39 百万元，集团销售费用却增加 59.39，扣管理、研发及税附后三项费用的分析 EBIT 从 751.77降至735.45。报告营业利润 916.11 的利息、理财投资、公允价值、减值、处置与补助等拆项保留在调整表，支出正数按报告利润的实际符号冲回。运费已进主营成本的部分不重扣。 <a href="/cases/002507/cost-bridge.csv" target="_blank" rel="noopener">成本底表</a> · <a href="/cases/002507/ebit-adjustments.csv" target="_blank" rel="noopener">EBIT 调整</a></p><p>2026H1 直销增收 48.20、毛利增 21.09 百万元；经销虽小幅增收 4.42，毛利却减少 7.52。按同一产品×渠道格，直销毛利增量主要来自榨菜 13.23 和其他 7.16；经销榨菜的格内毛利率变化拖累 5.83。格内的收入规模和毛利率以中点桥勾稽，既不把该结果当成终端需求，也不把集团费用按收入比例摊为渠道实际。 <a href="https://static.cninfo.com.cn/finalpage/2026-08-28/1225517908.PDF" target="_blank" rel="noopener">中报物理页 13、16–17</a> · <a href="/cases/002507/channel-attribution.csv" target="_blank" rel="noopener">交叉毛利归因</a></p><p>集团销售费用增加 34.35 百万元，阶段 17 无占用时可给直销的上限是 61.39%。扣除 30 天新增应收代理 7.92、其他净占用/购建 5、额外退换 0.48，上限降至 <strong>7.68 百万元</strong>，等于集团费用增量的 22.37%。若直销分担集团增量的 25%，条件账期上限 <strong>26.57 天</strong>。若分担 50%，这组其他现金条件下连零天账期也不覆盖；30 天时亏空 9.49 百万元。退换项只计超出净收入已反映的额外实际损失。库存、应付、租赁及购建可在其他净占用中替换，集团项目及渠道不能叠加计费。 <a href="/cases/002507/direct-threshold.csv" target="_blank" rel="noopener">费用和账期二维边界</a></p><h2 id="case-002507-section-4">4 从营业利润到现金和基地资本</h2><p>2025 历史分析桥按百万元：分析 EBIT 735.45 − 模型经营税代理 154.44 = NOPAT 581.01；加 D&amp;A 109.87，减可见经营营运资本变化 87.75 和现金购建 412.34，得租赁前 190.78。报表 CFO 657.22 减同一购建为 244.88，差 54.10；含现金税时点、未建模往来、非现金与现金流分类，不作经营效率。报告所得税费率 15.69% 和此处模型税率 21% 分列；历史租赁现金无完整序列，FCFF 不补零。经营资本子集回报 2024/2025 约 27.93%/23.97%，增量代理 −14.86%/−3.02%；在建资产与利润不在同一生产期，不能用它给单个项目定价。 <a href="/cases/002507/cash-capital.csv" target="_blank" rel="noopener">逐财年现金桥</a></p><p>一期 16 万吨，原 20 万吨方案变更后计划达到可使用 2027-06-30。2026H1 募投表以万元披露承诺 277,626.43、期内 27,280.51、累计 94,750.26、进度 34.13%；现金流附注的基地购建实际现金为 258.49 百万元，两者不同口径。以开工为起点，公司披露 2023 年初启动土建，随后验收、可使用、爬坡、旧线退出、回款要分别验。 <a href="https://static.cninfo.com.cn/finalpage/2026-08-28/1225517908.PDF" target="_blank" rel="noopener">中报物理页 17、27、102</a></p><p>以吨售价 18,118 元、单位毛利 50%、额外渠道费 15%、年度固定现金和维持性投资 100 百万元作可验证的条件。35% 利用率下若 80% 替换旧线，名义生产 5.6 万吨，净新销仅 1.12 万吨。旧线节省 0/500/1,000 元每替换吨时，税前现金（未扣营运和成长投入）分别 <strong>−28.98/−6.58/+15.82 百万元</strong>；零节省须约 49.28% 利用率才能覆盖固定及维持性现金。按整个 2026Q4 和 2027–29 合并预测现金购建抵去 2026H1 尚余承诺，算术差额 867.24 百万元带未观测 H1 至 Q3 结算和口径差异。若把这笔差额的半数或全部按 50/30/20 分年视为未入模现金支出，阶段 17 每股值由 15.09 变为 <strong>14.76 或 14.42 元</strong>。实际投付缺少逐期合同与结算，仅作压力核查，已计现金不重扣权益。 <a href="/cases/002507/plant-utilization.csv" target="_blank" rel="noopener">基地替代与旧线现金节约</a> · <a href="/cases/002507/capital-overlay.csv" target="_blank" rel="noopener">购建覆盖与估值差</a></p><h2 id="case-002507-section-5">5 三条业务预测与误差</h2><p>2026 年 YTD9 公告实际收入/分析 EBIT/购建/CFO 为 2,067.51/637.85/398.69/691.28 百万元，YTD9 后至年底用上一年 Q4 同口径推演，估值日后现金按实际日期折现。阶段 17 基准全年收入 2,505.19，其中剩余期 437.68 百万元。2027–2031 前三年销量增长代理分别采用约 −0.08%/3.12%/5.12% 的压力/基准/改善假设，同时用 0.20%/0.80%/1.20% 的组价与结构代理以及不同渠道效率、维持性投入和税后再投资。压力假设换装与信用吞噬增长；改善要求复购、旧线释放真正兑现。2027–2031 的逐年 EBITDA、税、再投资和 FCFF 见程序输出，实际净新增吨仅可按基地架构作检查，不能直接叠加集团价量。 <a href="/cases/002507/forecast.csv" target="_blank" rel="noopener">预测导出</a> · <a href="/cases/002507/model.json" target="_blank" rel="noopener">模型</a></p><p>历史食品加工销量留出 2023/2024/2025 年误差 −4.47%/−4.93%/−3.79%，早期窗口机械延伸高估销量下行惯性。当前采用低个位数恢复条件；同 SKU 包数与吨数分离后重校量价。总收入持出在 2020 初年曾高估 +10.24%，没有按误差平均值机械上调。 <a href="/stage16/driver_holdouts.csv" target="_blank" rel="noopener">业务量留出</a> · <a href="/stage16/total-revenue-holdouts.csv" target="_blank" rel="noopener">收入留出</a></p><h2 id="case-002507-section-6">6 每股价值、市场反推与可比</h2><p>阶段 15 基准 13.98 元，阶段 17 基准 15.09 元。本案例的归因仍以同日冻表为准，新增渠道和新基地阈值不冒充估值日已确认的成本或合同额。阶段 17 三情景 11.00/15.09/19.87，基准 WACC 6.551%、稳增长 2.0%、新增资本回报 11.5%，稳定期 NOPAT 754.92、再投资 131.29、FCFF 623.63 百万元。终值约占 EV 75.61%。核心权益桥为货币资金和合格金融资产减经营现金储备及融资租赁等，调整后净桥 5,892.37 百万元；1,153,919,028 A 股。租赁现金走既有经营路径，同一义务不再重复计入权益。 <a href="/stage17/002507/report.md" target="_blank" rel="noopener">原估值与纠错</a> · <a href="/stage17/value-bridge.csv" target="_blank" rel="noopener">价值桥</a></p><p>基准折现率的起点是截至收盘的 155 周股价及沪深 300 回归，β 0.896、解释力 R² 32.02%；以市场 β=1 赋三分之一权重，收缩为 0.931。1.60% 无风险假设和 5.32% 权益风险溢价相加后，股权成本接近 6.551%。公司净现金且金融债务为零，纳入融资租赁后债务权重仍很小。当前经营及权益桥固定时，市场价对应 WACC 9.081%；估计与市场临界之间的差，才是股价对现金或风险折价可容纳的缓冲。 <a href="/file?project=&amp;path=docs%2Fcases%2F002507%2F..%2F..%2Fresearch14-market-series.json" target="_blank" rel="noopener">回归输入</a> · <a href="/stage17/002507/model.json" target="_blank" rel="noopener">风险与价格反解</a></p><p>阶段 17 固定其他量价、WACC 和权益桥，市场对应稳定分析利润率约 15.86%，稳定 FCFF 333.90 百万元；在一条仅改稳定 FCFF 的控制测试中，阶段 17 显式期不变，市场可承受额外稳定现金损失约 <strong>303.37 百万元总额</strong>，作用域不同。若先将基地补付条件全额纳入，静态终值可承受损失进一步降低约 55 百万元。买入决定前优先量化长期毛利和资本归属。 <a href="/cases/002507/sensitivity.csv" target="_blank" rel="noopener">双变量估值</a> · <a href="/cases/002507/reverse.csv" target="_blank" rel="noopener">价格回代</a> · <a href="/cases/002507/current-price-bridge.csv" target="_blank" rel="noopener">独立现金边界</a></p><p>同日 A 股市值 13,177.76 百万元、EV 7,285.39；截至 2026Q3 滚动核心 EBIT 713.98、收入 2,500.85、归母利润 708.96，对应 <strong>10.20×EV/核心 EBIT、2.91×EV/收入、18.59×市盈率</strong>。千禾味业与海天的品类及餐饮暴露不同，颐海国际有关联餐饮客户且为港股，均不用于榨菜主业的量化定标。 <a href="/stage15/relative.csv" target="_blank" rel="noopener">淘汰与分母</a></p><h2 id="case-002507-section-7">7 判断取舍及接续证据</h2><p>最强反方是直销与其他品类的增收由组织迁移和促销换取，基地再把旧线重复建设为资本占用。一期使用率和替换率、渠道客户账期和费用分摊是可直接击中该反方的变量。第一项查直销按客户发货、回款/红字单、集团销售费用的路径归属，和 26.57 天及 7.68 百万元边界核对。第二项查募投资金结算、竣工转固、逐月生产与旧线退出和保库。维持基准时，利润率落至旧反推 15.86% 或条件价值跌穿 11.42 元即复判。</p><p><a href="/cases/002507/operating-inputs.json" target="_blank" rel="noopener">原始定位和输入</a> · <a href="/cases/002507/operating-analysis.json" target="_blank" rel="noopener">全量机制计算</a> · <a href="/cases/002507/independent-review.md" target="_blank" rel="noopener">独立复核</a> · <a href="/cases/002507/report-map.md" target="_blank" rel="noopener">未来报告地图</a> · <a href="/research/facts.html?code=002507" target="_blank" rel="noopener">实时账本</a></p><p>复算新增营运和投资桥的命令为 <code>python -X utf8 docs/cases/002507/rebuild_operations.py</code>。集团历史与业务项、滚动分母、渠道分配假设及条件估值分别带范围。新增读数为 Agent 原件对读或条件计算，Fact 状态遵从 ReviewStore 当前实际绑定。</p><p>逐项核对主张、原件、计算、模型变量与下一项公开指标，见<a href="/cases/002507/claim-index.csv" target="_blank" rel="noopener">主张与模型索引</a>。</p></section><section class="chapter"><h2>三条路径与价值</h2><div class="scroll" tabindex="0"><table><thead><tr><th scope="col">情景</th><th scope="col">每股</th><th scope="col">WACC</th><th scope="col">显性期现值</th><th scope="col">终值现值</th><th scope="col">终值占比</th></tr></thead><tbody><tr><td class="">base</td><td class="numeric"><span title="15.093513086746889">15.0935130867</span></td><td class="numeric"><span title="0.06551010308118854">0.0655101030812</span></td><td class="numeric"><span title="2810.313849718663">2810.31384972</span></td><td class="numeric"><span title="8714.009684815586">8714.00968482</span></td><td class="numeric"><span title="0.7561406670597919">0.75614066706</span></td></tr><tr><td class="">stress</td><td class="numeric"><span title="11.002522448525678">11.0025224485</span></td><td class="numeric"><span title="0.0655100971994875">0.0655100971995</span></td><td class="numeric"><span title="1979.8504690293107">1979.85046903</span></td><td class="numeric"><span title="4973.801124691619">4973.80112469</span></td><td class="numeric"><span title="0.7152790239279326">0.715279023928</span></td></tr><tr><td class="">improve</td><td class="numeric"><span title="19.871660760554118">19.8716607606</span></td><td class="numeric"><span title="0.06551010980313261">0.0655101098031</span></td><td class="numeric"><span title="3730.4357290332214">3730.43572903</span></td><td class="numeric"><span title="13157.48332490113">13157.4833249</span></td><td class="numeric"><span title="0.7791062523973818">0.779106252397</span></td></tr></tbody></table></div><h2>双变量反解</h2><p>2027–2029 额外冲击的权重1／0.5／0.25。费用年化税后处理，资本与占款直接扣现。输入是原路径以外的额外付出，压力测试与原集团销售费用不叠加估计实际归属。</p><div class="scroll" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 978 334" role="img" aria-label="双变量条件估值矩阵"><rect width="978" height="334" rx="18" fill="#fffaf0"/><g font-family="sans-serif" fill="#263e36" font-size="13"><text x="20" y="29" font-weight="bold">同日每股价值 · CNY · 收盘 11.42</text><text x="20" y="51">附加基地与营运资本现金付出（年，百万元） ＼ 附加可归属销售费用（半年度，百万元）</text><text x="114" y="80">0</text><text x="200" y="80">10</text><text x="286" y="80">20</text><text x="372" y="80">34.351</text><text x="458" y="80">50</text><text x="544" y="80">70</text><text x="630" y="80">100</text><text x="716" y="80">160</text><text x="802" y="80">220</text><text x="888" y="80">300</text><text x="20" y="108">0</text><text x="20" y="147">10</text><text x="20" y="186">25</text><text x="20" y="225">50</text><text x="20" y="264">100</text><g><title>0／0 = 15.0935130867</title><rect x="107" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="114" y="110">15.09</text></g><g><title>10／0 = 15.0719865948</title><rect x="193" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="200" y="110">15.07</text></g><g><title>20／0 = 15.0504601028</title><rect x="279" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="286" y="110">15.05</text></g><g><title>34.35092621／0 = 15.019567593</title><rect x="365" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="110">15.02</text></g><g><title>50／0 = 14.9858806269</title><rect x="451" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="110">14.99</text></g><g><title>70／0 = 14.9428276429</title><rect x="537" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="110">14.94</text></g><g><title>100／0 = 14.878248167</title><rect x="623" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="110">14.88</text></g><g><title>160／0 = 14.7490892151</title><rect x="709" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="110">14.75</text></g><g><title>220／0 = 14.6199302633</title><rect x="795" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="110">14.62</text></g><g><title>300／0 = 14.4477183275</title><rect x="881" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="110">14.45</text></g><g><title>0／10 = 15.0798887247</title><rect x="107" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="114" y="149">15.08</text></g><g><title>10／10 = 15.0583622328</title><rect x="193" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="200" y="149">15.06</text></g><g><title>20／10 = 15.0368357408</title><rect x="279" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="286" y="149">15.04</text></g><g><title>34.35092621／10 = 15.005943231</title><rect x="365" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="149">15.01</text></g><g><title>50／10 = 14.9722562649</title><rect x="451" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="149">14.97</text></g><g><title>70／10 = 14.9292032809</title><rect x="537" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="149">14.93</text></g><g><title>100／10 = 14.864623805</title><rect x="623" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="149">14.86</text></g><g><title>160／10 = 14.7354648531</title><rect x="709" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="149">14.74</text></g><g><title>220／10 = 14.6063059013</title><rect x="795" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="149">14.61</text></g><g><title>300／10 = 14.4340939655</title><rect x="881" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="149">14.43</text></g><g><title>0／25 = 15.0594521817</title><rect x="107" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="114" y="188">15.06</text></g><g><title>10／25 = 15.0379256897</title><rect x="193" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="200" y="188">15.04</text></g><g><title>20／25 = 15.0163991978</title><rect x="279" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="286" y="188">15.02</text></g><g><title>34.35092621／25 = 14.985506688</title><rect x="365" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="188">14.99</text></g><g><title>50／25 = 14.9518197218</title><rect x="451" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="188">14.95</text></g><g><title>70／25 = 14.9087667379</title><rect x="537" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="188">14.91</text></g><g><title>100／25 = 14.844187262</title><rect x="623" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="188">14.84</text></g><g><title>160／25 = 14.7150283101</title><rect x="709" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="188">14.72</text></g><g><title>220／25 = 14.5858693583</title><rect x="795" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="188">14.59</text></g><g><title>300／25 = 14.4136574225</title><rect x="881" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="188">14.41</text></g><g><title>0／50 = 15.0253912767</title><rect x="107" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="114" y="227">15.03</text></g><g><title>10／50 = 15.0038647847</title><rect x="193" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="200" y="227">15.00</text></g><g><title>20／50 = 14.9823382927</title><rect x="279" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="286" y="227">14.98</text></g><g><title>34.35092621／50 = 14.951445783</title><rect x="365" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="227">14.95</text></g><g><title>50／50 = 14.9177588168</title><rect x="451" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="227">14.92</text></g><g><title>70／50 = 14.8747058329</title><rect x="537" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="227">14.87</text></g><g><title>100／50 = 14.8101263569</title><rect x="623" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="227">14.81</text></g><g><title>160／50 = 14.6809674051</title><rect x="709" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="227">14.68</text></g><g><title>220／50 = 14.5518084532</title><rect x="795" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="227">14.55</text></g><g><title>300／50 = 14.3795965174</title><rect x="881" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="227">14.38</text></g><g><title>0／100 = 14.9572694666</title><rect x="107" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="114" y="266">14.96</text></g><g><title>10／100 = 14.9357429747</title><rect x="193" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="200" y="266">14.94</text></g><g><title>20／100 = 14.9142164827</title><rect x="279" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="286" y="266">14.91</text></g><g><title>34.35092621／100 = 14.8833239729</title><rect x="365" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="266">14.88</text></g><g><title>50／100 = 14.8496370068</title><rect x="451" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="266">14.85</text></g><g><title>70／100 = 14.8065840228</title><rect x="537" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="266">14.81</text></g><g><title>100／100 = 14.7420045469</title><rect x="623" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="266">14.74</text></g><g><title>160／100 = 14.612845595</title><rect x="709" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="266">14.61</text></g><g><title>220／100 = 14.4836866432</title><rect x="795" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="266">14.48</text></g><g><title>300／100 = 14.3114747074</title><rect x="881" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="266">14.31</text></g></g></svg></div><details><summary>同源反解边界与回代</summary><div class="scroll" tabindex="0"><table><thead><tr><th scope="col">第二驱动取值</th><th scope="col">搜索首端价值</th><th scope="col">搜索末端价值</th><th scope="col">状态</th><th scope="col">首个解</th><th scope="col">回代价值</th></tr></thead><tbody><tr><td class="numeric">0</td><td class="numeric"><span title="15.093513086746889">15.0935130867</span></td><td class="numeric"><span title="14.44771832747509">14.4477183275</span></td><td class="">搜索区间无交点</td><td class="">—</td><td class="">—</td></tr><tr><td class="numeric">10</td><td class="numeric"><span title="15.079888724736934">15.0798887247</span></td><td class="numeric"><span title="14.434093965465136">14.4340939655</span></td><td class="">搜索区间无交点</td><td class="">—</td><td class="">—</td></tr><tr><td class="numeric">25</td><td class="numeric"><span title="15.059452181722007">15.0594521817</span></td><td class="numeric"><span title="14.413657422450205">14.4136574225</span></td><td class="">搜索区间无交点</td><td class="">—</td><td class="">—</td></tr><tr><td class="numeric">50</td><td class="numeric"><span title="15.025391276697123">15.0253912767</span></td><td class="numeric"><span title="14.37959651742532">14.3795965174</span></td><td class="">搜索区间无交点</td><td class="">—</td><td class="">—</td></tr><tr><td class="numeric">100</td><td class="numeric"><span title="14.957269466647354">14.9572694666</span></td><td class="numeric"><span title="14.311474707375552">14.3114747074</span></td><td class="">搜索区间无交点</td><td class="">—</td><td class="">—</td></tr></tbody></table></div></details><nav class="source-links"><a href="/cases/002507/sensitivity.csv">下载双变量底表</a> <a href="/research/facts.html?code=002507">查看原窗口事实</a></nav></section></main><script>
+(() => {
+  'use strict';
+  const query = (s, root = document) => root.querySelector(s);
+  const all = (s, root = document) => [...root.querySelectorAll(s)];
+  const selectors = all('[data-filter]');
+  const filterRows = all('[data-search-row]');
+  const status = query('#filter-status');
+  function filter() {
+    const terms = (query('#search')?.value || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+    let count = 0;
+    for (const row of filterRows) {
+      const fields = selectors.every(s => !s.value || (row.dataset[s.dataset.filter] || '').split('|').includes(s.value));
+      const matches = fields && terms.every(x => row.dataset.searchRow.toLowerCase().includes(x));
+      row.hidden = !matches;
+      const nav = document.getElementById('nav-' + row.id);
+      if (nav) nav.hidden = !matches;
+      if (matches) count++;
+    }
+    if (status) status.textContent = count + ' 项';
+  }
+  for (const input of [...selectors, query('#search')].filter(Boolean)) input.addEventListener('input', filter);
+  filter();
+  const config = query('#charts');
+  if (config) {
+    const colors = ['#286750','#ac894a','#7c91a1','#a96f62','#829756','#727493'];
+    const charts = JSON.parse(config.textContent);
+    for (const figure of all('[data-chart]')) {
+      const chart = charts[figure.dataset.chart], hidden = [];
+      const target = query('.chart', figure);
+      const draw = () => { target.innerHTML = ResultFeatures.chart(chart, hidden); };
+      all('button[data-series]', figure).forEach((button, n) => {
+        button.style.setProperty('--series', colors[n]);
+        button.addEventListener('click', () => {
+          const i = hidden.indexOf(n);
+          if (i < 0) hidden.push(n);
+          else hidden.splice(i, 1);
+          button.setAttribute('aria-pressed', i < 0 ? 'false' : 'true');
+          draw();
+        });
+      });
+      draw();
+    }
+  }
+  for (const link of all('a[href^="#"]')) {
+    link.addEventListener('click', () => {
+      const dest = document.getElementById(link.getAttribute('href').slice(1));
+      if (!dest) return;
+      const chapter = dest.closest('.chapter');
+      if (chapter?.hidden) {
+        for (const input of [...selectors, query('#search')].filter(Boolean)) input.value = '';
+        filter();
+      }
+      for (let el = dest; el; el = el.parentElement) if (el.tagName === 'DETAILS') el.open = true;
+      if (document.body.classList.contains('presenting') && chapter) {
+        slide = slides.indexOf(chapter);
+        drawSlide();
+      }
+    });
+  }
+  let slides = [], slide = 0;
+  const present = query('#present');
+  function drawSlide() {
+    slides.forEach((el, i) => el.classList.toggle('active-slide', i === slide));
+    if (query('#position')) query('#position').textContent =
+      (slide + 1) + ' / ' + slides.length + ' · ' + (query('h2', slides[slide])?.textContent || '');
+  }
+  function step(amount) {
+    slide = Math.max(0, Math.min(slides.length - 1, slide + amount));
+    drawSlide();
+    window.scrollTo(0, 0);
+  }
+  function end() {
+    document.body.classList.remove('presenting');
+    slides.forEach(x => x.classList.remove('active-slide'));
+    present?.focus();
+  }
+  present?.addEventListener('click', () => {
+    slides = all('.chapter').filter(el => !el.hidden && el.id !== 'methods');
+    if (!slides.length) return;
+    slide = 0;
+    document.body.classList.add('presenting');
+    drawSlide();
+    window.scrollTo(0, 0);
+    query('#exit').focus();
+  });
+  query('#previous')?.addEventListener('click', () => step(-1));
+  query('#next-slide')?.addEventListener('click', () => step(1));
+  query('#exit')?.addEventListener('click', end);
+  document.addEventListener('keydown', e => {
+    if (!document.body.classList.contains('presenting')) return;
+    if (e.key === 'Escape') end();
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      step(e.key === 'ArrowLeft' ? -1 : 1);
+    }
+  });
+})();
+</script></body></html>

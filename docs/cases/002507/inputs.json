@@ -1,0 +1,556 @@
+{
+  "security": {
+    "ticker": "002507.SZ",
+    "exchange": "深圳证券交易所",
+    "right": "人民币普通股 A股",
+    "quote": "CNY",
+    "report": "CNY",
+    "shares": 1153919028,
+    "fx": 1,
+    "close": "2026-11-12T15:00:00+08:00",
+    "shares_basis": "季报期末股本与收盘前公开章程一致。",
+    "shares_at": "2026-09-30"
+  },
+  "cutoff": "2026-11-12",
+  "close": 11.42,
+  "operating": {
+    "end": 2033,
+    "window": [
+      2016,
+      2025
+    ],
+    "steady_window": [
+      2021,
+      2025
+    ],
+    "drivers": [
+      "同范围销售量",
+      "组均价与结构"
+    ],
+    "rates": [
+      [
+        0.02,
+        0.008
+      ],
+      [
+        -0.012,
+        0.002
+      ],
+      [
+        0.04,
+        0.012
+      ]
+    ],
+    "active_margin": [
+      0.295,
+      0.25,
+      0.33
+    ],
+    "stable_margin": [
+      0.29,
+      0.235,
+      0.33
+    ],
+    "roi": [
+      0.115,
+      0.085,
+      0.15
+    ],
+    "g": [
+      0.02,
+      0.01,
+      0.025
+    ],
+    "reserve_cost": [
+      0.02,
+      0.027,
+      0.016
+    ],
+    "wc": [
+      0.135,
+      0.17,
+      0.105
+    ],
+    "fade_capex_years": 4,
+    "residual_growth": [
+      0.01,
+      -0.08,
+      0.07
+    ],
+    "check": "2025食品量价桥及2026前三季销售费用、收现和应收；按基地投产后的吨折旧和用工验证。"
+  },
+  "calibration": {
+    "mature_core_margin": 0.31492822972722534,
+    "signed_backtest_error": 0.06682814407555937,
+    "absolute_backtest_error": 0.06942180904036677,
+    "margin_sources": [
+      "002507-bd64672c54804089",
+      "002507-9ff347d8cbcba4f2",
+      "002507-4b14860c37a05a6b",
+      "002507-4c6fe783e1b63fd9",
+      "002507-6cd117ea1ac8beee"
+    ]
+  },
+  "source_windows": {
+    "latest_disclosed_period": "2026-Q3",
+    "frozen_stage17": "docs/research17/002507/model.json",
+    "operating_account": "companies/002507_涪陵榨菜/work/research14/inputs.json"
+  },
+  "holdouts": {
+    "driver_summary": {
+      "count": 3,
+      "median_signed_error": -0.04471206576916731,
+      "med_abs_error": 0.04471206576916731
+    },
+    "driver": [
+      {
+        "company": "002507_涪陵榨菜",
+        "period": "2023",
+        "metric": "食品加工销售量",
+        "estimate": 12.8486227154047,
+        "actual": 13.45,
+        "signed_error": -0.04471206576916731,
+        "forecast_growth": -0.08420365535248042,
+        "unit": "万吨",
+        "info_cutoff": "2023-03-25",
+        "training": [
+          {
+            "company": "002507_涪陵榨菜",
+            "tag": "原文披露·Agent对读",
+            "period": "2021",
+            "metric": "食品加工销售量",
+            "value": 15.32,
+            "unit": "万吨",
+            "source_id": "002507-bd64672c54804089",
+            "source_sha256": "f6378e5372b32921ab2da5f104c98f25fe3034b04cbdcf0e6fa134a84745e857",
+            "url": "https://static.cninfo.com.cn/finalpage/2022-03-18/1212606350.PDF",
+            "locator": "PDF物理第19页",
+            "disclosed": "2022-03-18",
+            "checked": "2026-11-19",
+            "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+          },
+          {
+            "company": "002507_涪陵榨菜",
+            "tag": "原文披露·Agent对读",
+            "period": "2022",
+            "metric": "食品加工销售量",
+            "value": 14.03,
+            "unit": "万吨",
+            "source_id": "002507-9ff347d8cbcba4f2",
+            "source_sha256": "d8b49de48f2dbaf14bbc5d4824f1fb3e0b53de0b0bd3c5e4d7a8de12ada5b2a5",
+            "url": "https://static.cninfo.com.cn/finalpage/2023-03-25/1216218389.PDF",
+            "locator": "PDF物理第18页",
+            "disclosed": "2023-03-25",
+            "checked": "2026-11-19",
+            "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+          }
+        ],
+        "target": {
+          "company": "002507_涪陵榨菜",
+          "tag": "原文披露·Agent对读",
+          "period": "2023",
+          "metric": "食品加工销售量",
+          "value": 13.45,
+          "unit": "万吨",
+          "source_id": "002507-4b14860c37a05a6b",
+          "source_sha256": "dde763a874456841c3ef85fd0b535903796f97af1fedb88453743bbc72460f64",
+          "url": "https://static.cninfo.com.cn/finalpage/2024-03-30/1219462373.PDF",
+          "locator": "PDF物理第20页",
+          "disclosed": "2024-03-30",
+          "checked": "2026-11-19",
+          "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+        },
+        "tag": "留出算术"
+      },
+      {
+        "company": "002507_涪陵榨菜",
+        "period": "2024",
+        "metric": "食品加工销售量",
+        "estimate": 12.60571901362057,
+        "actual": 13.26,
+        "signed_error": -0.049342457494677916,
+        "forecast_growth": -0.06277182054865649,
+        "unit": "万吨",
+        "info_cutoff": "2024-03-30",
+        "training": [
+          {
+            "company": "002507_涪陵榨菜",
+            "tag": "原文披露·Agent对读",
+            "period": "2021",
+            "metric": "食品加工销售量",
+            "value": 15.32,
+            "unit": "万吨",
+            "source_id": "002507-bd64672c54804089",
+            "source_sha256": "f6378e5372b32921ab2da5f104c98f25fe3034b04cbdcf0e6fa134a84745e857",
+            "url": "https://static.cninfo.com.cn/finalpage/2022-03-18/1212606350.PDF",
+            "locator": "PDF物理第19页",
+            "disclosed": "2022-03-18",
+            "checked": "2026-11-19",
+            "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+          },
+          {
+            "company": "002507_涪陵榨菜",
+            "tag": "原文披露·Agent对读",
+            "period": "2022",
+            "metric": "食品加工销售量",
+            "value": 14.03,
+            "unit": "万吨",
+            "source_id": "002507-9ff347d8cbcba4f2",
+            "source_sha256": "d8b49de48f2dbaf14bbc5d4824f1fb3e0b53de0b0bd3c5e4d7a8de12ada5b2a5",
+            "url": "https://static.cninfo.com.cn/finalpage/2023-03-25/1216218389.PDF",
+            "locator": "PDF物理第18页",
+            "disclosed": "2023-03-25",
+            "checked": "2026-11-19",
+            "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+          },
+          {
+            "company": "002507_涪陵榨菜",
+            "tag": "原文披露·Agent对读",
+            "period": "2023",
+            "metric": "食品加工销售量",
+            "value": 13.45,
+            "unit": "万吨",
+            "source_id": "002507-4b14860c37a05a6b",
+            "source_sha256": "dde763a874456841c3ef85fd0b535903796f97af1fedb88453743bbc72460f64",
+            "url": "https://static.cninfo.com.cn/finalpage/2024-03-30/1219462373.PDF",
+            "locator": "PDF物理第20页",
+            "disclosed": "2024-03-30",
+            "checked": "2026-11-19",
+            "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+          }
+        ],
+        "target": {
+          "company": "002507_涪陵榨菜",
+          "tag": "原文披露·Agent对读",
+          "period": "2024",
+          "metric": "食品加工销售量",
+          "value": 13.26,
+          "unit": "万吨",
+          "source_id": "002507-4c6fe783e1b63fd9",
+          "source_sha256": "6a92a481feeefe891c5161e1836d782d6cf673691ec304371325d5e5793bbb87",
+          "url": "https://static.cninfo.com.cn/finalpage/2025-03-29/1222941660.PDF",
+          "locator": "PDF物理第20页",
+          "disclosed": "2025-03-29",
+          "checked": "2026-11-19",
+          "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+        },
+        "tag": "留出算术"
+      },
+      {
+        "company": "002507_涪陵榨菜",
+        "period": "2025",
+        "metric": "食品加工销售量",
+        "estimate": 12.892257901946705,
+        "actual": 13.4,
+        "signed_error": -0.03789120134726087,
+        "forecast_growth": -0.027733189898438537,
+        "unit": "万吨",
+        "info_cutoff": "2025-03-29",
+        "training": [
+          {
+            "company": "002507_涪陵榨菜",
+            "tag": "原文披露·Agent对读",
+            "period": "2022",
+            "metric": "食品加工销售量",
+            "value": 14.03,
+            "unit": "万吨",
+            "source_id": "002507-9ff347d8cbcba4f2",
+            "source_sha256": "d8b49de48f2dbaf14bbc5d4824f1fb3e0b53de0b0bd3c5e4d7a8de12ada5b2a5",
+            "url": "https://static.cninfo.com.cn/finalpage/2023-03-25/1216218389.PDF",
+            "locator": "PDF物理第18页",
+            "disclosed": "2023-03-25",
+            "checked": "2026-11-19",
+            "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+          },
+          {
+            "company": "002507_涪陵榨菜",
+            "tag": "原文披露·Agent对读",
+            "period": "2023",
+            "metric": "食品加工销售量",
+            "value": 13.45,
+            "unit": "万吨",
+            "source_id": "002507-4b14860c37a05a6b",
+            "source_sha256": "dde763a874456841c3ef85fd0b535903796f97af1fedb88453743bbc72460f64",
+            "url": "https://static.cninfo.com.cn/finalpage/2024-03-30/1219462373.PDF",
+            "locator": "PDF物理第20页",
+            "disclosed": "2024-03-30",
+            "checked": "2026-11-19",
+            "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+          },
+          {
+            "company": "002507_涪陵榨菜",
+            "tag": "原文披露·Agent对读",
+            "period": "2024",
+            "metric": "食品加工销售量",
+            "value": 13.26,
+            "unit": "万吨",
+            "source_id": "002507-4c6fe783e1b63fd9",
+            "source_sha256": "6a92a481feeefe891c5161e1836d782d6cf673691ec304371325d5e5793bbb87",
+            "url": "https://static.cninfo.com.cn/finalpage/2025-03-29/1222941660.PDF",
+            "locator": "PDF物理第20页",
+            "disclosed": "2025-03-29",
+            "checked": "2026-11-19",
+            "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+          }
+        ],
+        "target": {
+          "company": "002507_涪陵榨菜",
+          "tag": "原文披露·Agent对读",
+          "period": "2025",
+          "metric": "食品加工销售量",
+          "value": 13.4,
+          "unit": "万吨",
+          "source_id": "002507-6cd117ea1ac8beee",
+          "source_sha256": "db3af94635933a99c37cccb2b3809267b5e21072563ef12c2a8de93eb721f9b5",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-03-28/1225042838.PDF",
+          "locator": "PDF物理第23页",
+          "disclosed": "2026-03-28",
+          "checked": "2026-11-19",
+          "note": "财年自报当期。2023年报2022比较栏14.02，与2022原披露14.03分列。"
+        },
+        "tag": "留出算术"
+      }
+    ],
+    "revenue": [
+      {
+        "company": "002507_涪陵榨菜",
+        "target": 2020,
+        "available_through": "2020-03-17",
+        "train_sources": [
+          "002507-c8ae2367cd041b60",
+          "002507-134249b41ba41fe2",
+          "002507-aede9bb96ffd4d2c",
+          "002507-5ef1479bfef2901f"
+        ],
+        "actual_source": "002507-d42572d6119a3a9d",
+        "expected": 2505.386500276501,
+        "actual": 2272.7465985100002,
+        "error": 0.10236068636909113,
+        "forecast_growth": 0.25924565739735494,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "002507_涪陵榨菜",
+        "target": 2021,
+        "available_through": "2021-04-29",
+        "train_sources": [
+          "002507-134249b41ba41fe2",
+          "002507-aede9bb96ffd4d2c",
+          "002507-5ef1479bfef2901f",
+          "002507-d42572d6119a3a9d"
+        ],
+        "actual_source": "002507-bd64672c54804089",
+        "expected": 2596.197705457807,
+        "actual": 2518.64738914,
+        "error": 0.030790461837647998,
+        "forecast_growth": 0.14231727688421558,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "002507_涪陵榨菜",
+        "target": 2022,
+        "available_through": "2022-03-18",
+        "train_sources": [
+          "002507-aede9bb96ffd4d2c",
+          "002507-5ef1479bfef2901f",
+          "002507-d42572d6119a3a9d",
+          "002507-bd64672c54804089"
+        ],
+        "actual_source": "002507-9ff347d8cbcba4f2",
+        "expected": 2791.153521021902,
+        "actual": 2548.3150959,
+        "error": 0.0952937199613213,
+        "forecast_growth": 0.10819542785421432,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "002507_涪陵榨菜",
+        "target": 2023,
+        "available_through": "2023-03-25",
+        "train_sources": [
+          "002507-5ef1479bfef2901f",
+          "002507-d42572d6119a3a9d",
+          "002507-bd64672c54804089",
+          "002507-9ff347d8cbcba4f2"
+        ],
+        "actual_source": "002507-4b14860c37a05a6b",
+        "expected": 2824.0311380082535,
+        "actual": 2449.8451455,
+        "error": 0.15273863051939318,
+        "forecast_growth": 0.10819542785421432,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "002507_涪陵榨菜",
+        "target": 2024,
+        "available_through": "2024-03-30",
+        "train_sources": [
+          "002507-d42572d6119a3a9d",
+          "002507-bd64672c54804089",
+          "002507-9ff347d8cbcba4f2",
+          "002507-4b14860c37a05a6b"
+        ],
+        "actual_source": "002507-4c6fe783e1b63fd9",
+        "expected": 2478.7024153574216,
+        "actual": 2387.12612655,
+        "error": 0.03836256818979744,
+        "forecast_growth": 0.011779222009369983,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "002507_涪陵榨菜",
+        "target": 2025,
+        "available_through": "2025-03-29",
+        "train_sources": [
+          "002507-bd64672c54804089",
+          "002507-9ff347d8cbcba4f2",
+          "002507-4b14860c37a05a6b",
+          "002507-4c6fe783e1b63fd9"
+        ],
+        "actual_source": "002507-6cd117ea1ac8beee",
+        "expected": 2326.0127908593186,
+        "actual": 2431.92278017,
+        "error": -0.043549898119412234,
+        "forecast_growth": -0.025601217719905756,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      }
+    ]
+  },
+  "native_driver_spec": {
+    "axis": "食品销量×组均价和品类",
+    "channel_h1_bridge": [
+      {
+        "channel": "直销",
+        "revenue": 122.2555826,
+        "cost": 67.24786737,
+        "revenue_0": 74.06007109,
+        "cost_0": 40.14001136,
+        "gross_change": 21.08765550000001,
+        "margin": 0.4499403140548283,
+        "margin_0": 0.4580073882021978,
+        "max_incremental_attributed_cash_cost": 21.08765550000001,
+        "total_group_selling_cost_change": 34.35092620999998,
+        "tag": "算术",
+        "source": "002507-b901d0b919e32cba 物理第13页和合并利润表"
+      },
+      {
+        "channel": "经销",
+        "revenue": 1241.28116239,
+        "cost": 572.82196163,
+        "revenue_0": 1236.85903712,
+        "cost_0": 560.88098801,
+        "gross_change": -7.518848350000098,
+        "margin": 0.5385236004652875,
+        "margin_0": 0.546527962219527,
+        "max_incremental_attributed_cash_cost": -7.518848350000098,
+        "total_group_selling_cost_change": 34.35092620999998,
+        "tag": "算术",
+        "source": "002507-b901d0b919e32cba 物理第13页和合并利润表"
+      }
+    ],
+    "plant_scenarios": [
+      {
+        "design_tonnes": 160000,
+        "utilisation": 0.35,
+        "replaced_volume_fraction": 0.5,
+        "incremental_tonnes": 28000.0,
+        "unit_price_proxy": 18117.688015000003,
+        "gross_contribution": 253.64763221000004,
+        "additional_selling_cash": 76.094289663,
+        "incremental_fixed_cash_cost": 70,
+        "pretax_increment_before_new_asset_depreciation": 107.55334254700006,
+        "maintenance_capex_proxy": 30,
+        "incremental_cash_before_working_capital_and_any_existing_site_savings": 77.55334254700006,
+        "tag": "情景",
+        "source": "2026中报物理第17页、2025年报物理第22–23页",
+        "fixed_conditions": "单位毛利50%、渠道费15%、每年固定现金70百万元、维持性购建30百万元均为情景。旧产能替代节省缺项。"
+      },
+      {
+        "design_tonnes": 160000,
+        "utilisation": 0.35,
+        "replaced_volume_fraction": 0.8,
+        "incremental_tonnes": 11199.999999999998,
+        "unit_price_proxy": 18117.688015000003,
+        "gross_contribution": 101.459052884,
+        "additional_selling_cash": 30.437715865199998,
+        "incremental_fixed_cash_cost": 70,
+        "pretax_increment_before_new_asset_depreciation": 1.0213370188000113,
+        "maintenance_capex_proxy": 30,
+        "incremental_cash_before_working_capital_and_any_existing_site_savings": -28.97866298119999,
+        "tag": "情景",
+        "source": "2026中报物理第17页、2025年报物理第22–23页",
+        "fixed_conditions": "单位毛利50%、渠道费15%、每年固定现金70百万元、维持性购建30百万元均为情景。旧产能替代节省缺项。"
+      },
+      {
+        "design_tonnes": 160000,
+        "utilisation": 0.55,
+        "replaced_volume_fraction": 0.5,
+        "incremental_tonnes": 44000.0,
+        "unit_price_proxy": 18117.688015000003,
+        "gross_contribution": 398.5891363300001,
+        "additional_selling_cash": 119.57674089900003,
+        "incremental_fixed_cash_cost": 70,
+        "pretax_increment_before_new_asset_depreciation": 209.01239543100007,
+        "maintenance_capex_proxy": 30,
+        "incremental_cash_before_working_capital_and_any_existing_site_savings": 179.01239543100007,
+        "tag": "情景",
+        "source": "2026中报物理第17页、2025年报物理第22–23页",
+        "fixed_conditions": "单位毛利50%、渠道费15%、每年固定现金70百万元、维持性购建30百万元均为情景。旧产能替代节省缺项。"
+      },
+      {
+        "design_tonnes": 160000,
+        "utilisation": 0.55,
+        "replaced_volume_fraction": 0.8,
+        "incremental_tonnes": 17599.999999999996,
+        "unit_price_proxy": 18117.688015000003,
+        "gross_contribution": 159.435654532,
+        "additional_selling_cash": 47.8306963596,
+        "incremental_fixed_cash_cost": 70,
+        "pretax_increment_before_new_asset_depreciation": 41.6049581724,
+        "maintenance_capex_proxy": 30,
+        "incremental_cash_before_working_capital_and_any_existing_site_savings": 11.604958172400003,
+        "tag": "情景",
+        "source": "2026中报物理第17页、2025年报物理第22–23页",
+        "fixed_conditions": "单位毛利50%、渠道费15%、每年固定现金70百万元、维持性购建30百万元均为情景。旧产能替代节省缺项。"
+      },
+      {
+        "design_tonnes": 160000,
+        "utilisation": 0.75,
+        "replaced_volume_fraction": 0.5,
+        "incremental_tonnes": 60000.0,
+        "unit_price_proxy": 18117.688015000003,
+        "gross_contribution": 543.5306404500001,
+        "additional_selling_cash": 163.05919213500002,
+        "incremental_fixed_cash_cost": 70,
+        "pretax_increment_before_new_asset_depreciation": 310.4714483150001,
+        "maintenance_capex_proxy": 30,
+        "incremental_cash_before_working_capital_and_any_existing_site_savings": 280.4714483150001,
+        "tag": "情景",
+        "source": "2026中报物理第17页、2025年报物理第22–23页",
+        "fixed_conditions": "单位毛利50%、渠道费15%、每年固定现金70百万元、维持性购建30百万元均为情景。旧产能替代节省缺项。"
+      },
+      {
+        "design_tonnes": 160000,
+        "utilisation": 0.75,
+        "replaced_volume_fraction": 0.8,
+        "incremental_tonnes": 23999.999999999996,
+        "unit_price_proxy": 18117.688015000003,
+        "gross_contribution": 217.41225618,
+        "additional_selling_cash": 65.223676854,
+        "incremental_fixed_cash_cost": 70,
+        "pretax_increment_before_new_asset_depreciation": 82.18857932600002,
+        "maintenance_capex_proxy": 30,
+        "incremental_cash_before_working_capital_and_any_existing_site_savings": 52.188579326000024,
+        "tag": "情景",
+        "source": "2026中报物理第17页、2025年报物理第22–23页",
+        "fixed_conditions": "单位毛利50%、渠道费15%、每年固定现金70百万元、维持性购建30百万元均为情景。旧产能替代节省缺项。"
+      }
+    ]
+  }
+}

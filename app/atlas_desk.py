@@ -19,7 +19,7 @@ def rows_for(root, doc):
 def render_desk(root, doc, *, mode='home', nonce=None):
     rows = list(rows_for(root,doc))
     nav = [('五公司首页','/desk/'),('五家公司图册','/atlas/'),('同日对照','/desk/compare/'),
-           ('报告摘要','/desk/summary/'),('证据与覆盖','/research/'),('原生工作台','/')]
+           ('报告摘要','/desk/summary/'),('深度案例','/cases/'),('证据与覆盖','/research/'),('原生工作台','/')]
     if mode == 'compare':
         title = '五家公司同日估值与判断'
     elif mode == 'summary':
@@ -45,7 +45,7 @@ def render_desk(root, doc, *, mode='home', nonce=None):
             content += ('<article class="tile"><h2>'+link(r['name']+' '+k, '/atlas/company/'+k)+'</h2>'
                 '<p>'+text(r['summary'])+'</p><p><strong>'+text(r['currency'])+' '+f"{r['close']:.2f}"+'</strong>'
                 ' · 压力／基准／改善 '+values+'</p><p>'+text(r['trigger'])+'</p>'
-                +links([('公司图册','/atlas/company/'+k),('冻结报告','/stage17/'+k+'/report.html'),
+                +links([('深度案例','/cases/'+k+'/'),('公司图册','/atlas/company/'+k),('冻结报告','/stage17/'+k+'/report.html'),
                         ('模型','/stage17/'+k+'/model.json'),('当前 Fact','/research/facts.html?code='+k),
                         ('关键原件','/research/coverage.html?code='+k)])+'</article>')
         content += '</div>'

@@ -198,6 +198,13 @@ class ResearchHost:
             for key in ('cards','maps'):
                 existing={item['id'] for item in doc[key]}
                 doc[key].extend(deepcopy(item) for item in self.seed[key] if item['id'] not in existing)
+            fresh={card['id']:card for card in self.seed['cards']}
+            for card in doc['cards']:
+                if card.get('kind')=='result' and card['id'] in fresh and 'feature' in card:
+                    sections=card['feature']['sections']
+                    used={section['id'] for section in sections}
+                    items=fresh[card['id']].get('feature',{}).get('sections',[])
+                    sections.extend(deepcopy(s) for s in items if s['id'].startswith('deepcase') and s['id'] not in used)
             doc['atlas_version']=self.seed['atlas_version']
         return doc
 

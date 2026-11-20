@@ -1,0 +1,207 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>安琪酵母证券投资案例</title><style>
+:root{--paper:#f4f0e8;--surface:#fcfaf5;--ink:#192c2b;--muted:#516460;--line:#d9d6c7;--green:#21554a;--rust:#a24931;--dark:#143b35;--serif:"Noto Serif CJK SC","Songti SC","SimSun",Georgia,serif;--sans:system-ui,"Microsoft YaHei",sans-serif;font:16px/1.65 var(--sans);color:var(--ink);background:var(--paper)}
+
+*{box-sizing:border-box}
+body{margin:0}
+a{color:var(--green);text-underline-offset:.23em}
+button,input,select{font:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{line-height:1.27}
+.shell{width:min(1370px,100%);margin:auto;padding:0 clamp(14px,4vw,52px)}
+.mast{background:var(--dark);color:#faf6ea}
+.mast .shell{padding-top:20px;padding-bottom:30px}
+.nav{display:flex;align-items:center;gap:9px 20px;flex-wrap:wrap}
+.mast .nav{padding-bottom:18px;border-bottom:1px solid #87a49755}
+.mast a{color:#fdf9e9}
+.mast a.action:not(.main){color:var(--green)}
+.mark{margin-right:auto;font-weight:700;text-decoration:none}
+.titleblock{padding-top:30px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:end}
+.titleblock h1{font:700 clamp(2rem,4.4vw,4.7rem)/1.14 var(--serif);margin:8px 0 15px;overflow-wrap:anywhere}
+.titleblock p{color:#d9e8de;max-width:62ch}
+.dateline{font-size:.83rem;color:#e8d3a6}
+.edition{border-block:1px solid #9cbaaa75;padding:8px 0;color:#e1eee7;font-size:.83rem;max-width:30ch;text-align:right}
+.hero-actions{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0}
+.action,button{display:inline-block;padding:6px 11px;border:1px solid #a8ada1;border-radius:3px;text-decoration:none;background:var(--surface);color:var(--green);cursor:pointer;min-height:36px}
+.action:hover,button:hover{border-color:var(--green);background:#e9efe5}
+.action.main{background:#ecdfbf;color:#153b35;border-color:#ecdfbf}
+.toolbar{display:flex;align-items:end;gap:10px;flex-wrap:wrap;padding:15px 0;border-bottom:1px solid var(--line)}
+.toolbar label{display:flex;flex-direction:column;gap:2px;font-size:.84rem;color:var(--muted);min-width:0}
+.toolbar label:first-child{flex:1 1 235px}
+.toolbar input,.toolbar select{background:var(--surface);border:1px solid #b5bcaf;border-radius:3px;color:var(--ink);padding:6px;max-width:100%}
+.toolbar .status{color:var(--muted);font-size:.82rem;align-self:center}
+.layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:26px;align-items:start}
+.outline{position:sticky;top:0;max-height:95vh;overflow:auto;padding:18px 0}
+.outline a{display:block;padding:5px 7px;border-left:2px solid var(--line);text-decoration:none;font-size:.9rem}
+.outline a:hover,.outline a:focus-visible{background:#e5eadf;border-color:var(--green)}
+.outline strong{display:block;font-size:.79rem;color:var(--muted);margin-bottom:8px}
+.reading{min-width:0;padding-bottom:36px}
+.chapter{margin:22px 0 32px;background:var(--surface);padding:clamp(15px,3vw,37px);border:1px solid var(--line);scroll-margin-top:13px;overflow-wrap:anywhere}
+.chapter>header{border-bottom:1px solid var(--line);padding-bottom:14px}
+.chapter>header h2{font:700 clamp(1.55rem,3vw,2.8rem)/1.2 var(--serif);margin:5px 0 10px}
+.chapter>header p{max-width:75ch}
+.kicker{color:var(--rust);font-size:.87rem;font-weight:650}
+.segment{padding:18px 0;border-bottom:1px solid var(--line)}
+.segment h3{font:700 clamp(1.12rem,2.4vw,1.55rem)/1.35 var(--serif);margin-bottom:9px}
+.segment p{max-width:79ch;margin:0 0 10px}
+.source-links{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:9px;font-size:.84rem}
+.chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:0;list-style:none}
+.chain li{background:#e9eee5;padding:5px 8px;border-left:2px solid #927c59;font-size:.83rem}
+.chart-box{margin:15px 0}
+.chart{background:white;min-width:0;overflow:auto;border:1px solid var(--line);margin-top:5px}
+.chart svg{display:block;width:100%;min-width:510px;height:auto;max-height:400px}
+.legend{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.legend button{font-size:.81rem;border-left:4px solid var(--series,#326c53);min-height:30px;padding:3px 7px}
+.legend button[aria-pressed=false]{opacity:.55;text-decoration:line-through}
+figcaption,.annotation{color:var(--muted);font-size:.88rem;margin:5px 0 8px}
+summary{cursor:pointer;color:var(--green);padding:5px 0}
+details{margin:6px 0}
+.scroll{overflow:auto;max-height:65vh;border:1px solid var(--line);background:white}
+.scroll:focus{outline:2px solid var(--green)}
+table{border-collapse:collapse;min-width:100%;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{padding:6px 9px;border-bottom:1px solid #e7e4db;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+th{position:sticky;top:0;z-index:1;white-space:nowrap;background:#e9ede4}
+td{min-width:60px}
+td.numeric{text-align:right;white-space:nowrap}
+td.long{min-width:195px;max-width:450px}
+.matrix{margin:13px 0}
+.matrix tbody td:nth-child(6){font-weight:750;color:var(--green)}
+.cover-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:10px;margin:14px 0}
+.tile{border:1px solid var(--line);background:var(--surface);padding:16px;min-width:0;overflow-wrap:anywhere}
+.tile h2{font-family:var(--serif);font-size:1.28rem;margin-bottom:7px}
+.tile p,.tile .nav{font-size:.87rem;margin-top:5px}
+.subtle{color:var(--muted)}
+.note{padding:15px 0}
+.wide{padding-bottom:22px}
+.wide .scroll{max-height:67vh}
+.version-grid a{word-break:break-word}
+.foot{padding:25px 0;border-top:1px solid var(--line);font-size:.86rem}
+.presenting .toolbar,.presenting .outline,.presenting .mast,.presenting .foot{display:none}
+.presenting .layout{display:block}
+.presenting .chapter{display:none;font-size:clamp(1.12rem,2vw,1.5rem)}
+.presenting .chapter.active-slide{display:block}
+.presenting .presentation{display:flex}
+.presentation{display:none;position:sticky;top:0;z-index:4;gap:7px;flex-wrap:wrap;padding:8px;background:var(--dark);align-items:center;color:#fff}
+.presentation span{padding:0 8px}
+[hidden]{display:none!important}
+.knowledge-card:target{border-left:4px solid var(--rust);padding-left:9px}
+
+@media(max-width:780px){.layout{display:block}
+.outline{position:static;max-height:none;display:flex;gap:5px 10px;flex-wrap:wrap;padding:10px 0}
+.outline strong{width:100%}
+.outline a{font-size:.83rem}
+.titleblock{display:block}
+.edition{text-align:left;margin-top:14px;max-width:none}
+.chapter{padding:14px}
+.mast .nav{gap:8px 14px}
+}
+
+@media print{.mast{background:white;color:black}
+.mast p,.dateline{color:black}
+.nav,.edition,.toolbar,.outline,.legend,.presentation,.foot{display:none!important}
+.layout{display:block}
+.scroll{overflow:visible;max-height:none}
+.chart{overflow:visible}
+.chart svg{min-width:0}
+.chapter{break-before:page;border:0;margin:0}
+.chapter:first-child{break-before:auto}
+th,td{break-inside:avoid}
+}
+</style></head><body><header class="mast"><div class="shell"><nav class="nav"><a href="/desk/">工作台</a> <a href="/cases/">五家公司案例</a> <a href="/atlas/">超级图册</a> <a href="/research/">证据与覆盖</a> <a href="/research/follow-up.html">期后记录</a> <a href="/cases/002507/">涪陵榨菜</a> <a href="/cases/688188/">柏楚电子</a> <a href="/cases/09992/">泡泡玛特</a> <a href="/cases/US/">ISRG</a></nav><div class="titleblock"><div><div class="dateline">2026-11-12 各市场当地收盘</div><h1>安琪酵母证券投资案例</h1><p>基准 57.71 CNY，同日收盘 36.62 CNY。商业模式、经营变化与价格条件沿同一模型核对。</p></div><div class="edition">冻结窗口 2026-11-12</div></div></div></header><main class="shell note"><div class="chapter"><h2>数据与复核</h2><nav class="source-links"><a href="/cases/600298/case.md">案例正文 MD</a> <a href="/cases/600298/report-map.md">未来报告素材地图</a> <a href="/cases/600298/independent-review.md">独立复核</a> <a href="/cases/600298/history.csv">历史财务桥</a> <a href="/cases/600298/interim.csv">近期累计／单季／余额</a> <a href="/cases/600298/operating-bridges.csv">经营活动桥</a> <a href="/cases/600298/forecast.csv">2026实际＋预测底表</a> <a href="/cases/600298/inputs.json">程序输入索引</a> <a href="/cases/600298/model.json">完整模型与结果</a> <a href="/cases/600298/sensitivity.csv">双变量矩阵</a> <a href="/cases/600298/reverse.csv">价格反推与无解边界</a> <a href="/cases/600298/value-bridge.csv">阶段17—新版价值桥</a> <a href="/cases/600298/evidence-index.csv">来源与定位</a> <a href="/cases/600298/relative.csv">相对估值底表</a> <a href="/cases/600298/sensitivity.svg">灵敏度图</a> <a href="/cases/600298/2026-bridge.csv">2026-bridge.csv</a> <a href="/cases/600298/capex-and-roic.csv">capex-and-roic.csv</a> <a href="/cases/600298/cash-capital.csv">cash-capital.csv</a> <a href="/cases/600298/claim-index.csv">claim-index.csv</a> <a href="/cases/600298/cost-bridge.csv">cost-bridge.csv</a> <a href="/cases/600298/current-price-bridge.csv">current-price-bridge.csv</a> <a href="/cases/600298/dimension-panel.csv">dimension-panel.csv</a> <a href="/cases/600298/ebit-adjustments.csv">ebit-adjustments.csv</a> <a href="/cases/600298/operating-analysis.json">operating-analysis.json</a> <a href="/cases/600298/operating-inputs.json">operating-inputs.json</a> <a href="/cases/600298/parameters.csv">parameters.csv</a> <a href="/cases/600298/project-bridge.csv">project-bridge.csv</a> <a href="/cases/600298/project-unit-requirements.csv">project-unit-requirements.csv</a> <a href="/cases/600298/rebuild_operations.py">rebuild_operations.py</a> <a href="/cases/600298/unit-economics.csv">unit-economics.csv</a> <a href="/cases/600298/unit-price-volume-bridge.csv">unit-price-volume-bridge.csv</a> <a href="/cases/600298/views-reconciliation.csv">views-reconciliation.csv</a></nav><nav class="source-links"><a href="#case-600298-section-1">1 商业模式、竞争和历史阶段</a><a href="#case-600298-section-2">2 从吨量、组均价到合并收入</a><a href="#case-600298-section-3">3 成本、渠道和单位经济</a><a href="#case-600298-section-4">4 现金、资本和项目批次</a><a href="#case-600298-section-5">5 三条预测、校准和更新条件</a><a href="#case-600298-section-6">6 同日估值、反推、历史可比</a><a href="#case-600298-section-7">7 证据判定、反方及下一期关口</a></nav></div><section class="chapter case-body"><h1>安琪酵母｜有复购能力，新增产线更需要证明资本回收</h1><p><strong>主判断。</strong> 36.62 元估值日 A 股收盘低于阶段 17 条件基准 57.71 元，但这段安全垫大部分由资本成本和稳定期再投资给出。2025 年酵母及深加工由吨量推动增长，单位成本下降覆盖了组均价下滑；2026 年前三季度收入再增，经营现金扣现金购建却下降。将阶段 17 显式现金固定，仅改变终值再投资，本案例在 WACC 7.50% 时求得市场所需稳定新增回报 <strong>12.00%</strong>。若 WACC 达 8.00%，在设定的 8–18% 新增 ROIC 区间内无解。全篇以 <strong>2026-11-12 上交所当地收盘</strong>前可得披露为基准。</p><h2 id="case-600298-section-1">1 商业模式、竞争和历史阶段</h2><p>烘焙、食品配料、酿造及饲料买家为批次活性、应用配方、稳定供货及交付速度付费。采购和质量团队通过工艺试验、安全和规格验证再下单，工厂、实验室与技术服务人员稳定解决发酵、调味和产出差异。大客户复购有换线验证成本，但食品配料还会受分地区需求、汇率、糖蜜成本和竞争对手当地投产影响。制糖、水解糖、包装和酵母蛋白复配属于相邻链条，内部替代及产品吨不可加给酵母发酵总吨。 <a href="https://static.cninfo.com.cn/finalpage/2026-03-31/1225056953.PDF" target="_blank" rel="noopener">2025 年报物理页 11–16</a></p><p>2001–2006 年从 2.38 亿元扩到 8.64 亿元，旧会计制度财报只作早期规模背景。2007–2012 年发展多基地，末期收入 27.14 亿元；2013–2019 年深加工与国际化从 31.19 到 76.53 亿元。2022–2025 年规模由 128.43 到 167.29 亿元，核心利润率中位数约 10.69%，经营现金率中位数约 10.29%，新增资本回报代理中位数仅约 3.82%。2022 原料、汇率与渠道压力说明新基地扩容可以先于现金兑现。2025 公司报告 49 万吨发酵产能，2021 年为 31.6 万吨，产能与销售吨含义不同。CFO 与投产之差用原件和组合代理勾稽。 <a href="/stage15/stage-metrics.csv" target="_blank" rel="noopener">历史阶段与口径</a></p><p>替代机制是全球配料需求扩张与糖蜜和能源价差推升集团表现；产量持续成长在 2025 的确可见，但组均价下滑不能支持广泛定价权。竞争对照 AB Mauri 仍通过全球当地组合生产与技术能力销售，ABF 区段混有 ABFI 等。Lesaffre 2025-08-26 的根特生产线公告也表明同行能投资释放当地供给；两个案例支持本地工业服务价值，也强化因区域竞争估计产能折价的理由。 <a href="https://www.abf.co.uk/content/dam/abf/corporate/Documents/investors/annual-and-interim-reports/2025/abf-annual-report-2025.pdf" target="_blank" rel="noopener">ABF 2025 年报</a> · <a href="https://www.lesaffre.com/press-room/lesaffre-invests-in-a-new-state-of-the-art-yeast-production-for-fermented-beverages-and-packaging-facilities-on-its-production-plant-in-ghent-belgium/" target="_blank" rel="noopener">Lesaffre 根特工厂公告</a></p><h2 id="case-600298-section-2">2 从吨量、组均价到合并收入</h2><p>2021–2025 分产品、分地区和线上/线下分别求和。2025 三种口径均合计 16,653.68 百万元，距合并 16,728.84 百万元差额 75.17；主营成本 12,526.01 距合并差额 69.74 百万元。地域、产品和渠道交叉，差额不凭比例分摊。2024 年起食品原料从其他等项目细分，先合并再比；合并子公司、汇率和内部交易缺少两期同口径拆分时只留在组均价或范围差额。 <a href="/cases/600298/dimension-panel.csv" target="_blank" rel="noopener">分部底表</a> · <a href="/cases/600298/views-reconciliation.csv" target="_blank" rel="noopener">主营到合并对账</a></p><p>2025 酵母及深加工销量 467,870.07 吨，2024 为 403,914.67。按中点法贡献吨量 +1,675.99 百万元，组均价（含结构和价格）−581.29，合计增加 1,094.69 百万元。国外主营收入 5,712.40→6,848.21 百万元，国内 9,421.16→9,805.47，国外增量约占当年集团收入增量的 74.14%；只按公开地区分类，不能从此推导哪个厂或哪种客户贡献。2026 年 YTD9 收入 13,607.95 百万元（+15.45%），单 Q3 4,421.03；CFO 分别 1,712.44（−22.80%）和 1,512.59。合并 Q3 未披露同口径酵母量价及分区实际，单列为模型剩余区间证据缺项。 <a href="/cases/600298/unit-price-volume-bridge.csv" target="_blank" rel="noopener">量价和单位毛利桥</a> · <a href="https://static.cninfo.com.cn/finalpage/2026-10-30/1225641080.PDF" target="_blank" rel="noopener">三季报</a> · <a href="/cases/600298/interim.csv" target="_blank" rel="noopener">近期比较</a></p><h2 id="case-600298-section-3">3 成本、渠道和单位经济</h2><p>2024→2025 酵母及深加工吨 ASP 由 26,872 降至 25,539 元，吨成本由 18,933 降至 17,313 元，吨毛利升至 8,226 元。中点法毛利增量的量、组均价与单位成本贡献分别 +516.91、−581.29、+706.33 百万元。同期酵母原材料总额增加 617.28 百万元，单位原材料约 11,731→11,447 元；动力总额减少 144.75 百万元，单位动力约 2,851→2,152 元，单位制造费用约 3,489→2,909 元。规模摊薄、能源采购、热能改造与原料替代均可解释吨成本下降，尚无厂级糖蜜用量、价格、配方和汇率桥可唯一解释。2026H1 管理层披露热回收、配比和发酵单产工艺推进，但不把管理陈述直接变成吨节约。 <a href="https://static.cninfo.com.cn/finalpage/2026-03-31/1225056953.PDF" target="_blank" rel="noopener">年报物理页 14–16、26</a> · <a href="https://static.cninfo.com.cn/finalpage/2026-08-15/1225474683.PDF" target="_blank" rel="noopener">半年报物理页 9</a> · <a href="/cases/600298/cost-bridge.csv" target="_blank" rel="noopener">成本输入与桥</a></p><p>2025 家庭、经销电商和直供工业客户不能按集团线上线下口径区分，渠道披露只支持线下销售 12,462.42、线上 4,191.26 百万元，毛利率约 22.80%、30.68%。高毛利线上含产品组合，未披露足够退换、履约、租赁、账期分项来推算新增渠道回报。集团总研发 676.83、销售 940.64、管理 548.68 百万元，扣这些费用和税附得到 1,834.40 百万元分析 EBIT。报告利润 1,873.63 到分析利润的财务费、补助、投资、公允价值和资产类项目另列，以实际正负归属冲回。 <a href="/cases/600298/dimension-panel.csv" target="_blank" rel="noopener">毛利表</a> · <a href="/cases/600298/ebit-adjustments.csv" target="_blank" rel="noopener">分析 EBIT 调整</a></p><h2 id="case-600298-section-4">4 现金、资本和项目批次</h2><p>2025 分析 EBIT 1,834.40，扣 394.40 百万元模型现金税代理得 NOPAT 1,440.00；加 D&amp;A 916.21、减经营贸易营运变动 713.68 与现金购建 1,700.51，租赁前 FCFF 代理 −57.98 百万元；报表 CFO 2,477.96 减购建却为 +777.45，差 835.43。差额包含经营往来遗漏、所得税实际缴付期限和非现金转换，留为勾稽项。2025 存量 ROIC 子集 8.77%，增量代理 12.26%；项目认证和开工在前，实际现金回收在后，集团回报不可作为任何单厂签约收益。2026YTD9 同期 CFO−购建从 977.62 降到 407.19，9 月末贸易占用代理从 4,396.38 到 4,828.51；应收端点天数约 35.43→37.28，库存端点 144.67→131.90。库存周转改善和应收现金压力可以同时发生。 <a href="/cases/600298/cash-capital.csv" target="_blank" rel="noopener">逐财年现金桥</a> · <a href="/stage16/anqi-plant-cash.csv" target="_blank" rel="noopener">集团短期资本</a></p><p>半年报物理页 109 的重要工程表把预算、期初、增加、转固和期末分别列明。1.1 万吨蛋白示范线转固 <strong>510.08</strong> 百万元，期末在建 <strong>1.72</strong>，说明资产投用的先决进度；8,500 吨特种酵母转固 86.82。印尼 2 万吨项目预算 <strong>803.36</strong>，2025 年末在建 93.51，2026H1 增加 67.43 至 160.94，未见转固披露。埃及 2 万吨扩建部分转固 3.06，埃及工厂取得某类生产能力不可唯一归该项目。按 2026-10-27 股东会资料，宜昌酵母蛋白复配线计划 2027 年 8 月开工、15 个月，预算 135.21 百万元、预计收益率 16.55%，11 月 3 日议案结果通过；功能水解糖项目预算 101.35、计划 2026 年 12 月开工，预计收益率 13.74%。后者是替代原料和储配假设，不能计入发酵吨。白洋二期从 797.39 改为 1,060.99 百万元，包括多项目，3.2 万吨酵母蛋白及联产项目预计 2028 年建成，初估投资收益率 10.74%。11 月 17 日园区工厂调整是估值日后材料，只供事后验证。 <a href="https://static.cninfo.com.cn/finalpage/2026-08-15/1225474683.PDF" target="_blank" rel="noopener">中报工程表</a> · <a href="https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-27/600298_20261027_Q6TV.pdf" target="_blank" rel="noopener">交易所会议资料物理页 9、13</a> · <a href="https://static.cninfo.com.cn/finalpage/2026-09-25/1225581986.PDF" target="_blank" rel="noopener">白洋公告物理页 1–3</a> · <a href="/cases/600298/project-bridge.csv" target="_blank" rel="noopener">工程批次</a></p><p>项目诊断取资格与可销售比例 75%、利用率 85%、新增营运资本 30 百万元、经营税率 21.5%。印尼年可售 12,750 吨，总投入 833.36 百万元，要达到阶段 17 固定 7.5% WACC 所需边际回报 11.7547%，须 NOPAT 97.96 百万元及税前 EBIT <strong>9,787 元/吨</strong>。2025 集团酵母吨毛利 8,226 元，尚未扣可归属期间费用，只作保守检验尺度。1.1 万吨示范线和 2 万吨复配线按同样思路的厂级要求为 19,134 和 1,940 元/可售吨，因投资边界、产品和销售用途不同不能互套。 <a href="/cases/600298/project-unit-requirements.csv" target="_blank" rel="noopener">资格、利用率和占款矩阵</a></p><h2 id="case-600298-section-5">5 三条预测、校准和更新条件</h2><p>2026 年公开 YTD9 收入 13,607.95、分析 EBIT 1,620.32、购建 1,305.26、CFO 1,712.44 百万元，原基准剩余收入 5,436.63、分析 EBIT 636.09；2026Q4 用旧 Q4 同季为起点，余期现金按估值日剔除已过。2027–2029 基准用销量代理 10.30% 和组价结构 1.20%，压力 5.70%/−1.00%，改善 13.30%/1.60%。压力代表产线爬坡晚和单位毛利下移，改善代表转固后验证销量、成本利用和周转；10.30% 的集团体量不可全归印尼或复配线，外部真实新增销量在认证和客户下单后更新。建设支出、库存、应收和租赁在合并预测已设代理，项目预算不能再整笔加一次。2026实际和剩余期、2027–2031 各期路径分别在可执行模型导出。 <a href="/cases/600298/forecast.csv" target="_blank" rel="noopener">预测导出</a> · <a href="/cases/600298/model.json" target="_blank" rel="noopener">模型</a></p><p>2023/2024/2025 年销量留出误差 −13.15%/−11.03%/−2.33%，早期路径低估批量释放，近期误差缩小。基准留出用于识别爬坡时序，后续以认证后的可销售吨和回款再校，以免以累计固定资产增加替代销量。 <a href="/stage16/driver_holdouts.csv" target="_blank" rel="noopener">业务量误差</a> · <a href="/stage16/total-revenue-holdouts.csv" target="_blank" rel="noopener">收入误差</a></p><h2 id="case-600298-section-6">6 同日估值、反推、历史可比</h2><p>阶段 15 冻结基准 97.91 元，阶段 17 基准 57.71，关键变化来自融资和风险重估、现金及新增投资回报，实际分项、顺序与全精度数见旧桥。阶段 17 压力/基准/改善 11.12/57.71/135.67。基准 WACC 5.969%，稳定 g=2.20%、新增 ROIC=11.20%，稳定再投资与税后利润之比 19.64%，终值约占 EV 82.64%。经济普通股 867,815,671 股，合格现金减金融债、融资租赁和少数股东桥合计 −7,763.64 百万元；限制股注销拟议尚未当完成。财务费用与估值权益桥分用，避免利息被两扣。 <a href="/stage17/600298/report.md" target="_blank" rel="noopener">原报告及价值桥</a> · <a href="/stage17/value-bridge.csv" target="_blank" rel="noopener">阶段归因</a></p><p>阶段 15 用 155 周 β 0.437 收缩成 0.625，沿用 1.60% 无风险、5.32% 风险溢价、3.20% 边际税前债务成本和约 21.57% 债务权重，算得 4.40% WACC。该窗口的 R² 仅 7.68%，52 周 β −0.174，104 周 β 0.278。阶段 17 用单位 β 的结构条件保留 5.97% 基准。以 2026 年前三季度利息费用及期初期末平均宽口径债务近似，年化存量成本 2.26%，原表不含资本化利息，继续将 3.20% 视为新增融资情景。β 1.4 和同样债务成本可得约 7.64% WACC，经营不动时每股 34.72 元。复盘阶段 15 冻结经营时，市场价对应 6.99% WACC；采用现在的资本回收前提时，按本节逐条验证。 <a href="/stage16/anqi-risk.csv" target="_blank" rel="noopener">回归、融资与临界线</a> · <a href="/stage17/600298/model.json" target="_blank" rel="noopener">冻结模型</a></p><p>固定显式年现金和稳定 NOPAT，只改稳定再投资，WACC 7.50% 时 12.0017% 可回代 36.62；阶段 17 联动过渡段的 11.7547% 另保留。WACC 7.75% 时要约 17.90%；8.00% 时即使 ROIC=18%，也仅 34.29 元，低于收盘 2.33 元。这个区间给新增融资、认证、可售吨及占款的同一检验。 <a href="/cases/600298/current-price-bridge.csv" target="_blank" rel="noopener">独立回代</a> · <a href="/cases/600298/capex-and-roic.csv" target="_blank" rel="noopener">稳定终值二维矩阵</a> · <a href="/cases/600298/sensitivity.csv" target="_blank" rel="noopener">主模型矩阵</a></p><p>同日市值 31,779.41 百万元，EV 39,543.05，YTD9 滚动核心 EBIT 2,092.23、收入 18,550.34、归母盈利 1,599.16，计算 <strong>18.90×/2.13×/19.87×</strong>。ABF 上市集团混合零售、糖业和多种配料，不能以集团 EV 对 AB Mauri 经营分母；大统益属油脂；Lesaffre 无公开普通股市价，各淘汰。企业自身滚动只作条件量纲。 <a href="/stage15/relative.csv" target="_blank" rel="noopener">可比筛选及分母</a></p><h2 id="case-600298-section-7">7 证据判定、反方及下一期关口</h2><p>最强反方是新增产出要靠下降的组均价和延长回款消化，产线虽转固却赚不到资本成本。2026YTD9 收现涨 9.23%，落后收入涨 15.45%；同比贸易占用增 432.13 百万元，同比增长后的新增回报尚无项目级兑现证据。认定已释放产能的证据只到转固及有限工艺上线。优先核对同一项目环保/质量认证、可售吨数、收入和毛利、客户账期、库存，匹配实际投建和少数股权；用 12.00% 新增回报和 7.50% WACC 共同判边界，8.00% WACC 时直接核定价能否由显式期更强利润和周转补足。</p><p><a href="/cases/600298/operating-inputs.json" target="_blank" rel="noopener">原件定位与输入</a> · <a href="/cases/600298/operating-analysis.json" target="_blank" rel="noopener">全量机制计算</a> · <a href="/cases/600298/independent-review.md" target="_blank" rel="noopener">独立复核</a> · <a href="/cases/600298/report-map.md" target="_blank" rel="noopener">未来报告原料地图</a> · <a href="/research/facts.html?code=600298" target="_blank" rel="noopener">实时账本</a></p><p>复算命令 <code>python -X utf8 docs/cases/600298/rebuild_operations.py</code>。新增原件页、算术和条件估值与现有 Fact 权限分离，后续取得真实复核确认后由 ReviewStore 处理采用。</p><p>逐项核对主张、原件、计算、模型变量与下一项公开指标，见<a href="/cases/600298/claim-index.csv" target="_blank" rel="noopener">主张与模型索引</a>。</p></section><section class="chapter"><h2>三条路径与价值</h2><div class="scroll" tabindex="0"><table><thead><tr><th scope="col">情景</th><th scope="col">每股</th><th scope="col">WACC</th><th scope="col">显性期现值</th><th scope="col">终值现值</th><th scope="col">终值占比</th></tr></thead><tbody><tr><td class="">base</td><td class="numeric"><span title="57.71136084671705">57.7113608467</span></td><td class="numeric"><span title="0.059691703221152394">0.0596917032212</span></td><td class="numeric"><span title="10040.332711511459">10040.3327115</span></td><td class="numeric"><span title="47806.12822064543">47806.1282206</span></td><td class="numeric"><span title="0.8264313399693216">0.826431339969</span></td></tr><tr><td class="">stress</td><td class="numeric"><span title="11.116658497955338">11.116658498</span></td><td class="numeric"><span title="0.08">0.08</span></td><td class="numeric"><span title="5600.174458604569">5600.1744586</span></td><td class="numeric"><span title="12655.851008516398">12655.8510085</span></td><td class="numeric"><span title="0.6932424054353746">0.693242405435</span></td></tr><tr><td class="">improve</td><td class="numeric"><span title="135.6701660296606">135.67016603</span></td><td class="numeric"><span title="0.055">0.055</span></td><td class="numeric"><span title="16304.243666339062">16304.2436663</span></td><td class="numeric"><span title="108730.35420926225">108730.354209</span></td><td class="numeric"><span title="0.869602142580085">0.86960214258</span></td></tr></tbody></table></div><h2>双变量反解</h2><p>改变WACC与稳定新增ROIC，保留报告期实际、可售吨量和组均价。收益率下限高于增长率。</p><div class="scroll" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 978 412" role="img" aria-label="双变量条件估值矩阵"><rect width="978" height="412" rx="18" fill="#fffaf0"/><g font-family="sans-serif" fill="#263e36" font-size="13"><text x="20" y="29" font-weight="bold">同日每股价值 · CNY · 收盘 36.62</text><text x="20" y="51">WACC ＼ 新增资本回报</text><text x="114" y="80">0.045</text><text x="200" y="80">0.065</text><text x="286" y="80">0.08</text><text x="372" y="80">0.1</text><text x="458" y="80">0.112</text><text x="544" y="80">0.1175</text><text x="630" y="80">0.14</text><text x="716" y="80">0.175</text><text x="802" y="80">0.22</text><text x="888" y="80">0.3</text><text x="20" y="108">0.055</text><text x="20" y="147">0.0596917</text><text x="20" y="186">0.065</text><text x="20" y="225">0.07</text><text x="20" y="264">0.075</text><text x="20" y="303">0.08</text><text x="20" y="342">0.09</text><g><title>0.045／0.055 = 38.6948112412</title><rect x="107" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="114" y="110">38.69</text></g><g><title>0.065／0.055 = 54.0010112768</title><rect x="193" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="200" y="110">54.00</text></g><g><title>0.08／0.055 = 60.4583144168</title><rect x="279" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="286" y="110">60.46</text></g><g><title>0.1／0.055 = 66.0546438048</title><rect x="365" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="110">66.05</text></g><g><title>0.112／0.055 = 68.4530706854</title><rect x="451" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="110">68.45</text></g><g><title>0.1175／0.055 = 69.38862727</title><rect x="537" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="110">69.39</text></g><g><title>0.14／0.055 = 72.4504488197</title><rect x="623" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="110">72.45</text></g><g><title>0.175／0.055 = 75.6483513271</title><rect x="709" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="110">75.65</text></g><g><title>0.22／0.055 = 78.2648170151</title><rect x="795" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="110">78.26</text></g><g><title>0.3／0.055 = 80.9781888395</title><rect x="881" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="110">80.98</text></g><g><title>0.045／0.0596917 = 31.9281447562</title><rect x="107" y="128" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="149">31.93</text></g><g><title>0.065／0.0596917 = 45.1897793093</title><rect x="193" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="200" y="149">45.19</text></g><g><title>0.08／0.0596917 = 50.7845313863</title><rect x="279" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="286" y="149">50.78</text></g><g><title>0.1／0.0596917 = 55.6333165198</title><rect x="365" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="149">55.63</text></g><g><title>0.112／0.0596917 = 57.7113672913</title><rect x="451" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="149">57.71</text></g><g><title>0.1175／0.0596917 = 58.5219544716</title><rect x="537" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="149">58.52</text></g><g><title>0.14／0.0596917 = 61.1747852437</title><rect x="623" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="149">61.17</text></g><g><title>0.175／0.0596917 = 63.9455196057</title><rect x="709" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="149">63.95</text></g><g><title>0.22／0.0596917 = 66.2124840837</title><rect x="795" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="149">66.21</text></g><g><title>0.3／0.0596917 = 68.563410209</title><rect x="881" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="149">68.56</text></g><g><title>0.045／0.065 = 26.0906950049</title><rect x="107" y="167" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="188">26.09</text></g><g><title>0.065／0.065 = 37.5766808977</title><rect x="193" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="200" y="188">37.58</text></g><g><title>0.08／0.065 = 42.4223311962</title><rect x="279" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="286" y="188">42.42</text></g><g><title>0.1／0.065 = 46.6218947883</title><rect x="365" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="188">46.62</text></g><g><title>0.112／0.065 = 48.4217077563</title><rect x="451" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="188">48.42</text></g><g><title>0.1175／0.065 = 49.1237624602</title><rect x="537" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="188">49.12</text></g><g><title>0.14／0.065 = 51.4213960364</title><rect x="623" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="188">51.42</text></g><g><title>0.175／0.065 = 53.8211466604</title><rect x="709" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="188">53.82</text></g><g><title>0.22／0.065 = 55.7845789892</title><rect x="795" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="188">55.78</text></g><g><title>0.3／0.065 = 57.8207310338</title><rect x="881" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="188">57.82</text></g><g><title>0.045／0.07 = 21.8045644853</title><rect x="107" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="227">21.80</text></g><g><title>0.065／0.07 = 31.9770565933</title><rect x="193" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="227">31.98</text></g><g><title>0.08／0.07 = 36.2685767013</title><rect x="279" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="227">36.27</text></g><g><title>0.1／0.07 = 39.9878941283</title><rect x="365" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="372" y="227">39.99</text></g><g><title>0.112／0.07 = 41.5818873113</title><rect x="451" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="227">41.58</text></g><g><title>0.1175／0.07 = 42.2036577018</title><rect x="537" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="227">42.20</text></g><g><title>0.14／0.07 = 44.2385426162</title><rect x="623" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="227">44.24</text></g><g><title>0.175／0.07 = 46.3638668602</title><rect x="709" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="227">46.36</text></g><g><title>0.22／0.07 = 48.1027685144</title><rect x="795" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="227">48.10</text></g><g><title>0.3／0.07 = 49.9060739335</title><rect x="881" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="227">49.91</text></g><g><title>0.045／0.075 = 18.353393997</title><rect x="107" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="266">18.35</text></g><g><title>0.065／0.075 = 27.4602040908</title><rect x="193" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="266">27.46</text></g><g><title>0.08／0.075 = 31.3021395991</title><rect x="279" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="266">31.30</text></g><g><title>0.1／0.075 = 34.6318170396</title><rect x="365" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="372" y="266">34.63</text></g><g><title>0.112／0.075 = 36.058821657</title><rect x="451" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="458" y="266">36.06</text></g><g><title>0.1175／0.075 = 36.6154546638</title><rect x="537" y="245" width="82" height="32" rx="7" fill="#f8f1e5"/><text x="544" y="266">36.62</text></g><g><title>0.14／0.075 = 38.4371626859</title><rect x="623" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="266">38.44</text></g><g><title>0.175／0.075 = 40.3398355091</title><rect x="709" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="266">40.34</text></g><g><title>0.22／0.075 = 41.8965678189</title><rect x="795" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="266">41.90</text></g><g><title>0.3／0.075 = 43.510956881</title><rect x="881" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="266">43.51</text></g><g><title>0.045／0.08 = 15.5200674418</title><rect x="107" y="284" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="305">15.52</text></g><g><title>0.065／0.08 = 23.7450174488</title><rect x="193" y="284" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="305">23.75</text></g><g><title>0.08／0.08 = 27.214918233</title><rect x="279" y="284" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="305">27.21</text></g><g><title>0.1／0.08 = 30.2221655793</title><rect x="365" y="284" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="372" y="305">30.22</text></g><g><title>0.112／0.08 = 31.5109858706</title><rect x="451" y="284" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="458" y="305">31.51</text></g><g><title>0.1175／0.08 = 32.0137171899</title><rect x="537" y="284" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="544" y="305">32.01</text></g><g><title>0.14／0.08 = 33.6590196894</title><rect x="623" y="284" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="630" y="305">33.66</text></g><g><title>0.175／0.08 = 35.3774467444</title><rect x="709" y="284" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="716" y="305">35.38</text></g><g><title>0.22／0.08 = 36.7834325167</title><rect x="795" y="284" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="305">36.78</text></g><g><title>0.3／0.08 = 38.2414918361</title><rect x="881" y="284" width="82" height="32" rx="7" fill="#dceadf"/><text x="888" y="305">38.24</text></g><g><title>0.045／0.09 = 11.1580309474</title><rect x="107" y="323" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="344">11.16</text></g><g><title>0.065／0.09 = 18.0088361827</title><rect x="193" y="323" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="344">18.01</text></g><g><title>0.08／0.09 = 20.8990196414</title><rect x="279" y="323" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="344">20.90</text></g><g><title>0.1／0.09 = 23.4038453056</title><rect x="365" y="323" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="372" y="344">23.40</text></g><g><title>0.112／0.09 = 24.4773420188</title><rect x="451" y="323" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="458" y="344">24.48</text></g><g><title>0.1175／0.09 = 24.8960818715</title><rect x="537" y="323" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="544" y="344">24.90</text></g><g><title>0.14／0.09 = 26.2665032075</title><rect x="623" y="323" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="630" y="344">26.27</text></g><g><title>0.175／0.09 = 27.6978321585</title><rect x="709" y="323" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="716" y="344">27.70</text></g><g><title>0.22／0.09 = 28.868919482</title><rect x="795" y="323" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="802" y="344">28.87</text></g><g><title>0.3／0.09 = 30.0833804101</title><rect x="881" y="323" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="888" y="344">30.08</text></g></g></svg></div><details><summary>同源反解边界与回代</summary><div class="scroll" tabindex="0"><table><thead><tr><th scope="col">第二驱动取值</th><th scope="col">搜索首端价值</th><th scope="col">搜索末端价值</th><th scope="col">状态</th><th scope="col">首个解</th><th scope="col">回代价值</th></tr></thead><tbody><tr><td class="numeric"><span title="0.055">0.055</span></td><td class="numeric"><span title="38.69481124122113">38.6948112412</span></td><td class="numeric"><span title="80.97818883954137">80.9781888395</span></td><td class="">搜索区间无交点</td><td class="">—</td><td class="">—</td></tr><tr><td class="numeric"><span title="0.0596917">0.0596917</span></td><td class="numeric"><span title="31.92814475619197">31.9281447562</span></td><td class="numeric"><span title="68.56341020901571">68.563410209</span></td><td class="">有解</td><td class="numeric"><span title="0.0504970572151999">0.0504970572152</span></td><td class="numeric"><span title="36.620000000000005">36.62</span></td></tr><tr><td class="numeric"><span title="0.065">0.065</span></td><td class="numeric"><span title="26.09069500485496">26.0906950049</span></td><td class="numeric"><span title="57.820731033802886">57.8207310338</span></td><td class="">有解</td><td class="numeric"><span title="0.06267970476632873">0.0626797047663</span></td><td class="numeric"><span title="36.62">36.62</span></td></tr><tr><td class="numeric"><span title="0.07">0.07</span></td><td class="numeric"><span title="21.804564485320522">21.8045644853</span></td><td class="numeric"><span title="49.90607393351282">49.9060739335</span></td><td class="">有解</td><td class="numeric"><span title="0.08154089402256673">0.0815408940226</span></td><td class="numeric"><span title="36.62">36.62</span></td></tr><tr><td class="numeric"><span title="0.075">0.075</span></td><td class="numeric"><span title="18.353393997033972">18.353393997</span></td><td class="numeric"><span title="43.51095688102409">43.510956881</span></td><td class="">有解</td><td class="numeric"><span title="0.11754713611445602">0.117547136114</span></td><td class="numeric"><span title="36.62">36.62</span></td></tr><tr><td class="numeric"><span title="0.08">0.08</span></td><td class="numeric"><span title="15.520067441818208">15.5200674418</span></td><td class="numeric"><span title="38.24149183613546">38.2414918361</span></td><td class="">有解</td><td class="numeric"><span title="0.21361495929281415">0.213614959293</span></td><td class="numeric"><span title="36.62">36.62</span></td></tr><tr><td class="numeric"><span title="0.09">0.09</span></td><td class="numeric"><span title="11.158030947386882">11.1580309474</span></td><td class="numeric"><span title="30.083380410075993">30.0833804101</span></td><td class="">搜索区间无交点</td><td class="">—</td><td class="">—</td></tr></tbody></table></div></details><nav class="source-links"><a href="/cases/600298/sensitivity.csv">下载双变量底表</a> <a href="/research/facts.html?code=600298">查看原窗口事实</a></nav></section></main><script>
+(() => {
+  'use strict';
+  const query = (s, root = document) => root.querySelector(s);
+  const all = (s, root = document) => [...root.querySelectorAll(s)];
+  const selectors = all('[data-filter]');
+  const filterRows = all('[data-search-row]');
+  const status = query('#filter-status');
+  function filter() {
+    const terms = (query('#search')?.value || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+    let count = 0;
+    for (const row of filterRows) {
+      const fields = selectors.every(s => !s.value || (row.dataset[s.dataset.filter] || '').split('|').includes(s.value));
+      const matches = fields && terms.every(x => row.dataset.searchRow.toLowerCase().includes(x));
+      row.hidden = !matches;
+      const nav = document.getElementById('nav-' + row.id);
+      if (nav) nav.hidden = !matches;
+      if (matches) count++;
+    }
+    if (status) status.textContent = count + ' 项';
+  }
+  for (const input of [...selectors, query('#search')].filter(Boolean)) input.addEventListener('input', filter);
+  filter();
+  const config = query('#charts');
+  if (config) {
+    const colors = ['#286750','#ac894a','#7c91a1','#a96f62','#829756','#727493'];
+    const charts = JSON.parse(config.textContent);
+    for (const figure of all('[data-chart]')) {
+      const chart = charts[figure.dataset.chart], hidden = [];
+      const target = query('.chart', figure);
+      const draw = () => { target.innerHTML = ResultFeatures.chart(chart, hidden); };
+      all('button[data-series]', figure).forEach((button, n) => {
+        button.style.setProperty('--series', colors[n]);
+        button.addEventListener('click', () => {
+          const i = hidden.indexOf(n);
+          if (i < 0) hidden.push(n);
+          else hidden.splice(i, 1);
+          button.setAttribute('aria-pressed', i < 0 ? 'false' : 'true');
+          draw();
+        });
+      });
+      draw();
+    }
+  }
+  for (const link of all('a[href^="#"]')) {
+    link.addEventListener('click', () => {
+      const dest = document.getElementById(link.getAttribute('href').slice(1));
+      if (!dest) return;
+      const chapter = dest.closest('.chapter');
+      if (chapter?.hidden) {
+        for (const input of [...selectors, query('#search')].filter(Boolean)) input.value = '';
+        filter();
+      }
+      for (let el = dest; el; el = el.parentElement) if (el.tagName === 'DETAILS') el.open = true;
+      if (document.body.classList.contains('presenting') && chapter) {
+        slide = slides.indexOf(chapter);
+        drawSlide();
+      }
+    });
+  }
+  let slides = [], slide = 0;
+  const present = query('#present');
+  function drawSlide() {
+    slides.forEach((el, i) => el.classList.toggle('active-slide', i === slide));
+    if (query('#position')) query('#position').textContent =
+      (slide + 1) + ' / ' + slides.length + ' · ' + (query('h2', slides[slide])?.textContent || '');
+  }
+  function step(amount) {
+    slide = Math.max(0, Math.min(slides.length - 1, slide + amount));
+    drawSlide();
+    window.scrollTo(0, 0);
+  }
+  function end() {
+    document.body.classList.remove('presenting');
+    slides.forEach(x => x.classList.remove('active-slide'));
+    present?.focus();
+  }
+  present?.addEventListener('click', () => {
+    slides = all('.chapter').filter(el => !el.hidden && el.id !== 'methods');
+    if (!slides.length) return;
+    slide = 0;
+    document.body.classList.add('presenting');
+    drawSlide();
+    window.scrollTo(0, 0);
+    query('#exit').focus();
+  });
+  query('#previous')?.addEventListener('click', () => step(-1));
+  query('#next-slide')?.addEventListener('click', () => step(1));
+  query('#exit')?.addEventListener('click', end);
+  document.addEventListener('keydown', e => {
+    if (!document.body.classList.contains('presenting')) return;
+    if (e.key === 'Escape') end();
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      step(e.key === 'ArrowLeft' ? -1 : 1);
+    }
+  });
+})();
+</script></body></html>

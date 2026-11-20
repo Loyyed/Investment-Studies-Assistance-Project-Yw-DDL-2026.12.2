@@ -1,0 +1,142 @@
+{
+  "fixed_cash_flow_reverse": {
+    "base": {
+      "frozen_stage17_share_value": 178.69260074312152,
+      "wacc": 0.09772241084143635,
+      "stable_growth": 0.027,
+      "explicit_pv": 23742.21412497529,
+      "terminal_pv": 33170.55307955094,
+      "enterprise_value": 56912.76720452623,
+      "terminal_share": 0.5828314929819984,
+      "excess_adjusted_equity_items": 5029.9002961589695,
+      "common_shares_m": 346.643718,
+      "equity_for_ordinary": 61942.6675006852,
+      "reconstructed_price": 178.69260074312152,
+      "observed_close": 439.89,
+      "market_ev_isolated": 147455.204814861,
+      "required_terminal_pv": 123712.99068988572,
+      "terminal_fcff_baseline": 6624.659967549394,
+      "required_terminal_fcff_if_only_terminal_changes": 24707.35097252083,
+      "terminal_fcff_multiple": 3.729602891853877,
+      "terminal_revenue_required_if_cash_margin_same": 112035.52861254594
+    },
+    "stress": {
+      "frozen_stage17_share_value": 95.00990081390844,
+      "wacc": 0.09772241084143635,
+      "stable_growth": 0.02,
+      "explicit_pv": 12333.66977903303,
+      "terminal_pv": 16087.253473522967,
+      "enterprise_value": 28420.923252556,
+      "terminal_share": 0.5660355693081216,
+      "excess_adjusted_equity_items": 4513.662012388448,
+      "common_shares_m": 346.643718,
+      "equity_for_ordinary": 32934.58526494445,
+      "reconstructed_price": 95.00990081390844,
+      "observed_close": 439.89,
+      "market_ev_isolated": 147971.44309863154,
+      "required_terminal_pv": 135637.77331959852,
+      "terminal_fcff_baseline": 3530.8721294572533,
+      "required_terminal_fcff_if_only_terminal_changes": 29770.130389505935,
+      "terminal_fcff_multiple": 8.431381624143393,
+      "terminal_revenue_required_if_cash_margin_same": 168203.92230302162
+    },
+    "improve": {
+      "frozen_stage17_share_value": 294.2092214721936,
+      "wacc": 0.09772241084143635,
+      "stable_growth": 0.033,
+      "explicit_pv": 36040.640188589154,
+      "terminal_pv": 60507.08566035963,
+      "enterprise_value": 96547.72584894879,
+      "terminal_share": 0.6267064825019742,
+      "excess_adjusted_equity_items": 5438.052552057822,
+      "common_shares_m": 346.643718,
+      "equity_for_ordinary": 101985.77840100661,
+      "reconstructed_price": 294.2092214721936,
+      "observed_close": 439.89,
+      "market_ev_isolated": 147047.05255896217,
+      "required_terminal_pv": 111006.41237037301,
+      "terminal_fcff_baseline": 11058.971612892237,
+      "required_terminal_fcff_if_only_terminal_changes": 20288.80997746055,
+      "terminal_fcff_multiple": 1.8346018678453273,
+      "terminal_revenue_required_if_cash_margin_same": 78806.69007564704
+    }
+  },
+  "operating_reverse_stage16": [
+    {
+      "wacc": 0.09772241084143635,
+      "installations_growth": 0.09816350228915138,
+      "realization_growth": 0.003,
+      "utilization_domain": [
+        -0.03,
+        0.12
+      ],
+      "boundary_prices": [
+        155.04457725391,
+        267.51346911132583
+      ],
+      "utilization_root": null
+    },
+    {
+      "wacc": 0.09772241084143635,
+      "installations_growth": 0.13,
+      "realization_growth": 0.015,
+      "utilization_domain": [
+        -0.03,
+        0.12
+      ],
+      "boundary_prices": [
+        184.52777197041644,
+        329.98714142520123
+      ],
+      "utilization_root": null
+    },
+    {
+      "wacc": 0.09772241084143635,
+      "installations_growth": 0.16,
+      "realization_growth": 0.02,
+      "utilization_domain": [
+        -0.03,
+        0.12
+      ],
+      "boundary_prices": [
+        213.96145768070886,
+        391.65533838518473
+      ],
+      "utilization_root": null
+    },
+    {
+      "wacc": 0.08,
+      "installations_growth": 0.13,
+      "realization_growth": 0.015,
+      "utilization_domain": [
+        -0.03,
+        0.12
+      ],
+      "boundary_prices": [
+        253.34311216050372,
+        467.7772619803274
+      ],
+      "utilization_root": 0.10617140467605812,
+      "procedures_combined_2031": 10739272.771276485,
+      "instruments_value_verified_m": 21604.909392052523,
+      "combined_revenue_2031_m": 31449.230810174617
+    },
+    {
+      "wacc": 0.08,
+      "installations_growth": 0.16,
+      "realization_growth": 0.02,
+      "utilization_domain": [
+        -0.03,
+        0.12
+      ],
+      "boundary_prices": [
+        298.0392689787352,
+        561.422379469204
+      ],
+      "utilization_root": 0.06553223287197774,
+      "procedures_combined_2031": 10154472.438160516,
+      "instruments_value_verified_m": 20902.78774385277,
+      "combined_revenue_2031_m": 31595.08774284115
+    }
+  ]
+}

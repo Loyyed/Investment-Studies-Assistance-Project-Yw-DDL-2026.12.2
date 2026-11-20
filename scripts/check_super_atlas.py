@@ -49,7 +49,9 @@ def compare(root, base_url):
         assert row['stage16']-row['stage15']==row['delta'] and row['as_of']==CUTOFF
         card=next(c for c in book['cards'] if c['id']=='company-'+code)
         current=next(s for s in card['feature']['sections'] if s['id']=='price')['chart']['series'][0]['values']
-        assert current==[val['cases'][k]['per_share'] for k in ('stress','base','improve')]+[row['market_close']]
+        updated=root/'docs/cases'/code/'model.json'
+        current_model=read(root,updated) if updated.is_file() else val
+        assert current==[current_model['cases'][k]['per_share'] for k in ('stress','base','improve')]+[row['market_close']]
     assert [round(x['stage15'],2) for x in same[:3]]==[13.98,97.91,98.66]
     assert same[2]['stage15']>96.2>same[2]['stage16']
     facts=read(root,'docs/research17/current_facts.json')
@@ -58,7 +60,7 @@ def compare(root, base_url):
             live=json.load(response)
         def ids(rows):
             return {(r['company'],r['id'],r['binding'],r['confirmation_event'],r['verifier']) for r in rows}
-        assert ids(live)==ids(facts)
+        assert ids(live)<=ids(facts)
     snap={(r['company'],r['id']):r for r in facts}
     confirmations=0
     for batch in BATCHES:

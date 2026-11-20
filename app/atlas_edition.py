@@ -34,6 +34,8 @@ def resolve_links(coverage, offline, current):
             code, _, chapter = url.removeprefix('#company-').partition('-')
             if code in INDUSTRIES and code != current:
                 return company_link(code, False) + ('#company-' + code + '-' + chapter if chapter else '')
+        if offline and url.startswith('/cases/'):
+            return '..'+url
         return base(url)
 
     return resolve
@@ -161,6 +163,7 @@ def company_story(doc, code, card, charts, resolve, methods, *, offline):
             + '</div>'
         )
     references = [
+        ('深度案例', f'../cases/{code}/index.html' if offline else f'/cases/{code}/'),
         ('阶段17定稿', resolve(f'/stage17/{code}/report.html')),
         ('同源估值模型', resolve(f'/stage17/{code}/model.json')),
         (

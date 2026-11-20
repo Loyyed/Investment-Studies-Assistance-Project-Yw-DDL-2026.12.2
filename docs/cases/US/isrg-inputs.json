@@ -1,0 +1,384 @@
+{
+  "company": "Intuitive Surgical, Inc.",
+  "ticker": "NASDAQ:ISRG",
+  "market_cutoff": "2026-11-12T16:00:00-05:00",
+  "market_close_usd": 439.89,
+  "unit": "USD millions, unless recorded otherwise",
+  "sources": {
+    "Q3": {
+      "title": "Form 10-Q, quarter ended 2026-09-30",
+      "filed": "2026-10-21",
+      "available": "2026-10-21",
+      "source_id": "S83c179dfd93521d4",
+      "sha256": "df5b434e5ae926551c12632ba637d5d182aa1fdf3eab00b5668983bc86c3ac61",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm"
+    },
+    "FY25": {
+      "title": "Form 10-K, year ended 2025-12-31",
+      "filed": "2026-02-03",
+      "available": "2026-02-03",
+      "source_id": "Se7f95d2f97642180",
+      "sha256": "bdcd15add5b70b03a8342ffe169b54530d4805c9e4c12796985d3245993ac991",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000010/isrg-20251231.htm"
+    },
+    "FY20": {
+      "title": "Form 10-K, year ended 2020-12-31",
+      "filed": "2021-02-10",
+      "available": "2021-02-10",
+      "source_id": "Sa49ea83ea3ce7ef2",
+      "sha256": "7e479ab73172dfe398a60e2f000fd7946b0026ad34825ef578f4448d73556a5f",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526721000028/isrg-20201231.htm"
+    },
+    "RELEASE": {
+      "title": "Q3 2026 Financial Results, 8-K exhibit 99.1",
+      "filed": "2026-10-20",
+      "available": "2026-10-20",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000067/q326ex-991earningsrelease.htm"
+    },
+    "HUGO": {
+      "title": "Medtronic announces FDA clearance of Hugo RAS system for urologic surgical procedures",
+      "available": "2025-12-03",
+      "url": "https://news.medtronic.com/2025-12-03-Medtronic-announces-FDA-clearance-of-Hugo-TM-robotic-assisted-surgery-system-for-urologic-surgical-procedures"
+    },
+    "HUGO510K": {
+      "title": "Medtronic submits 510(k) filings to expand Hugo RAS system",
+      "available": "2026-06-03",
+      "url": "https://news.medtronic.com/2026-06-03-Medtronic-submits-510-k-filings-to-expand-Hugo-TM-robotic-assisted-surgery-system-into-general-and-gynecologic-specialties-in-the-United-States"
+    }
+  },
+  "columns_quarter": [
+    "2026Q3",
+    "2025Q3",
+    "2026YTD9",
+    "2025YTD9"
+  ],
+  "quarter_revenue": {
+    "us_instruments": [
+      1247.9,
+      1062,
+      3550.1,
+      3043.1
+    ],
+    "us_systems": [
+      505.5,
+      397.5,
+      1327.4,
+      1087.4
+    ],
+    "us_services": [
+      309.6,
+      258.1,
+      902,
+      754.7
+    ],
+    "ous_instruments": [
+      549.5,
+      456.8,
+      1668.6,
+      1317.5
+    ],
+    "ous_systems": [
+      263.6,
+      192.9,
+      777.4,
+      600.4
+    ],
+    "ous_services": [
+      172.6,
+      137.8,
+      486.3,
+      395.4
+    ],
+    "total_reported": [
+      3048.7,
+      2505.1,
+      8711.8,
+      7198.5
+    ],
+    "systems_operating_lease": [
+      275,
+      223,
+      787,
+      632
+    ],
+    "operating_variable": [
+      177.8,
+      138.3,
+      503.8,
+      380
+    ],
+    "systems_sales_type_lease": [
+      25.3,
+      30.9,
+      78.8,
+      72.5
+    ],
+    "systems_buyout_rounded": [
+      45,
+      22,
+      153,
+      91
+    ],
+    "ion_procedures": [
+      49700,
+      37900,
+      140300,
+      103900
+    ]
+  },
+  "quarter_profit": {
+    "product_cogs": [
+      797.7,
+      699.4,
+      2354.7,
+      2056.3
+    ],
+    "service_cogs": [
+      166.7,
+      143.3,
+      481.9,
+      404.2
+    ],
+    "sga": [
+      633.4,
+      573.3,
+      1864.6,
+      1697.9
+    ],
+    "rnd": [
+      408.3,
+      329.4,
+      1140.8,
+      958.9
+    ],
+    "settlement_charge_expense": [
+      450,
+      0,
+      450,
+      0
+    ],
+    "tariff_refund_benefit": [
+      27.8,
+      0,
+      63.7,
+      0
+    ],
+    "ebit_reported": [
+      592.6,
+      759.7,
+      2419.8,
+      2081.2
+    ],
+    "pretax": [
+      668.4,
+      855.2,
+      2663.4,
+      2355.8
+    ],
+    "income_tax_expense": [
+      144,
+      146,
+      489.8,
+      278.7
+    ]
+  },
+  "period_stock": {
+    "2026-09-30": {
+      "da_vinci": 12094,
+      "ion": 1152,
+      "da_vinci_fixed": 1581,
+      "da_vinci_usage": 1974,
+      "ion_fixed": 109,
+      "ion_usage": 302,
+      "receivables": 1721.3,
+      "inventory": 2128.2,
+      "payables": 279.5,
+      "deferred_current": 541.2,
+      "ppe": 5676.2
+    },
+    "2025-09-30": {
+      "da_vinci": 10763,
+      "ion": 954,
+      "da_vinci_fixed": 1379,
+      "da_vinci_usage": 1736,
+      "ion_fixed": 123,
+      "ion_usage": 239
+    },
+    "2025-12-31": {
+      "receivables": 1527.3,
+      "inventory": 1840,
+      "payables": 255.1,
+      "deferred_current": 506.7,
+      "ppe": 5342.4
+    }
+  },
+  "quarter_placements": {
+    "2026Q3": {
+      "da_vinci": 546,
+      "da_vinci_fixed": 131,
+      "da_vinci_usage": 160,
+      "da_vinci_sales_type": 12,
+      "ion": 56,
+      "ion_fixed": 11,
+      "ion_usage": 15,
+      "ion_sales_type": 2,
+      "da_vinci_5": 315,
+      "da_vinci_tradein": 150
+    },
+    "2025Q3": {
+      "da_vinci": 427,
+      "da_vinci_fixed": 116,
+      "da_vinci_usage": 115,
+      "da_vinci_sales_type": 12,
+      "ion": 50,
+      "ion_fixed": 11,
+      "ion_usage": 6,
+      "ion_sales_type": 5,
+      "da_vinci_5": 240,
+      "da_vinci_tradein": 141
+    }
+  },
+  "annual": [
+    {
+      "period": 2023,
+      "instruments": 4276.6,
+      "systems": 1679.7,
+      "services": 1167.8,
+      "us": 4688.6,
+      "ous": 2435.5,
+      "operating_lease": 500.5,
+      "sales_type_lease": 78.4,
+      "variable_lease_rounded": 217,
+      "da_vinci_proc": 2286000,
+      "ion_proc": 53800,
+      "da_vinci_open": 7544,
+      "da_vinci_close": 8606,
+      "revenue": 7124.1,
+      "product_cogs": 2041.8,
+      "service_cogs": 352.8,
+      "sga": 1963.9,
+      "rnd": 998.8,
+      "ebit": 1766.8,
+      "tax_paid": 447.8,
+      "cfo": 1813.8,
+      "cash_ppe": -1064.2,
+      "inventory_cf": -712.5,
+      "inventory_transfer": 422.4
+    },
+    {
+      "period": 2024,
+      "instruments": 5079,
+      "systems": 1966,
+      "services": 1307.1,
+      "us": 5589.4,
+      "ous": 2762.7,
+      "operating_lease": 654.2,
+      "sales_type_lease": 163.1,
+      "variable_lease_rounded": 338,
+      "da_vinci_proc": 2683000,
+      "ion_proc": 95500,
+      "da_vinci_open": 8606,
+      "da_vinci_close": 9902,
+      "revenue": 8352.1,
+      "product_cogs": 2313.1,
+      "service_cogs": 404.8,
+      "sga": 2140,
+      "rnd": 1145.3,
+      "ebit": 2348.9,
+      "tax_paid": 466.5,
+      "cfo": 2415,
+      "cash_ppe": -1111.2,
+      "inventory_cf": -830,
+      "inventory_transfer": 614.9
+    },
+    {
+      "period": 2025,
+      "instruments": 6018.9,
+      "systems": 2473.7,
+      "services": 1572.1,
+      "us": 6815.8,
+      "ous": 3248.9,
+      "operating_lease": 874.3,
+      "sales_type_lease": 97.3,
+      "variable_lease_rounded": 531,
+      "da_vinci_proc": 3153000,
+      "ion_proc": 144100,
+      "da_vinci_open": 9902,
+      "da_vinci_close": 11106,
+      "revenue": 10064.7,
+      "product_cogs": 2866.1,
+      "service_cogs": 556.3,
+      "sga": 2385,
+      "rnd": 1311.8,
+      "ebit": 2945.5,
+      "tax_paid": 537.9,
+      "cfo": 3030.5,
+      "cash_ppe": -539.8,
+      "inventory_cf": -1063.4,
+      "inventory_transfer": 808.9
+    }
+  ],
+  "ytd_cash": {
+    "2026YTD9": {
+      "net_income": 2173.6,
+      "ppe_depreciation_and_disposal": 559,
+      "amortization": 85,
+      "investment_results": -28.1,
+      "business_gain": -7.9,
+      "deferred_tax": 315.9,
+      "sbc": 632,
+      "ar_cf": -103.2,
+      "inventory_cf": -822,
+      "prepaids_other_assets_cf": -167.7,
+      "ap_cf": 26.1,
+      "comp_cf": -149.6,
+      "def_revenue_cf": 52.1,
+      "other_liabilities_cf": 631.8,
+      "cfo": 3197,
+      "cash_ppe": -329,
+      "inventory_transfer": 670.5,
+      "cash_repurchase": -4419.2,
+      "repurchase_cost": 4446.3,
+      "repurchased_m_shares": 11,
+      "cash_acquisition_other_investing": -518.6
+    },
+    "2025YTD9": {
+      "net_income": 2077.1,
+      "ppe_depreciation_and_disposal": 446.3,
+      "amortization": 37.3,
+      "investment_results": -42.3,
+      "business_gain": 0,
+      "deferred_tax": 58.6,
+      "sbc": 584.9,
+      "ar_cf": -34.2,
+      "inventory_cf": -810.4,
+      "prepaids_other_assets_cf": -248.9,
+      "ap_cf": 97,
+      "comp_cf": -80.2,
+      "def_revenue_cf": 47.6,
+      "other_liabilities_cf": 5.2,
+      "cfo": 2138,
+      "cash_ppe": -377.3,
+      "inventory_transfer": 580.1,
+      "cash_repurchase": -2094.3,
+      "repurchase_cost": 2100.6,
+      "repurchased_m_shares": 4.4,
+      "cash_acquisition_other_investing": -1.2
+    }
+  },
+  "forecast_context": {
+    "q3_yoy_utilization_reported": 0.02,
+    "q3_da_vinci_procedures_yoy_approx": 0.14,
+    "ytd_da_vinci_procedures_yoy_approx": 0.15,
+    "tax_rate_operating_proxy": 0.18,
+    "lease_manufacture_m_per_placement_assumption": 0.85,
+    "lease_maintenance_m_per_year_assumption": 0.1,
+    "lease_term_years_screen": 5,
+    "lease_residual_value_assumption": 0,
+    "lease_discount_screen": 0.08,
+    "q3_asp_m_current_and_prior": [
+      1.61,
+      1.6
+    ]
+  }
+}

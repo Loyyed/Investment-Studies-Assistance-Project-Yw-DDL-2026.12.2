@@ -19,6 +19,10 @@ python -X utf8 五公司工作台/start.py --open
 - [预选公司工作台](http://127.0.0.1:8781/)登记候选，记录真实确认，再按市场和代码创建独立研究区。
 - [离线 HTML](docs/super-atlas/atlas.html)可断网读全文与图表。[可编辑 JSON](docs/super-atlas/atlas-editable.json)支持导入。本地编辑保存在忽略目录。
 
+## 五家公司深度案例
+
+[案例中心](http://127.0.0.1:8780/cases/)提供五家正文、底表和素材地图。[复算说明](docs/cases/README.md)给出运行命令，程序从披露片段、经营参数、现金流和权益桥生成15条路径。
+
 ## 核验与交付
 
 冻结估值日为 **2026-11-12 各市场当地收盘**。发布时原披露 Fact 快照有 188 条。实时 Fact 由 ReviewStore 按实际原件及指纹判断。冷启动能阅读报告和快照。恢复公开原件可运行 `python -X utf8 scripts/recover_public_sources.py --scope facts --plan`，查看清单后移去 `--plan`。交易所若拒绝访问，可用已获授权的原件档案加 `--from-archive` 恢复。原件下载和校验结果留在本机。

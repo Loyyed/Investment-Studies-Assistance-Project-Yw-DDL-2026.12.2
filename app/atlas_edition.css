@@ -470,3 +470,15 @@
 
 .presenting .edition-header, .presenting .compare-heading, .presenting .compare-tabs,
 .presenting .methods, .presenting .edition-footer { display: none; }
+
+/* Warm editorial illustration layers, drawn in CSS for the offline edition. */
+.edition-body .company-card { border-radius: 20px; }
+.edition-body .sector-art { isolation: isolate; }
+.edition-body .sector-art i, .edition-body .sector-art b, .edition-body .sector-art em {
+  filter: drop-shadow(0 2px 0 #59493650) drop-shadow(0 4px 5px #59493627);
+}
+.edition-body .sector-002507 { --art: radial-gradient(ellipse at 34% 28%, #f3dcb3, #d7a97f); }
+.edition-body .sector-600298 { --art: radial-gradient(ellipse at 42% 20%, #e9eddb, #aac5ae); }
+.edition-body .sector-688188 { --art: radial-gradient(ellipse at 44% 20%, #fae4c7, #c6b1a3); }
+.edition-body .sector-09992 { --art: radial-gradient(ellipse at 42% 16%, #f9e1e1, #d6a2ae); }
+.edition-body .sector-us { --art: radial-gradient(ellipse at 48% 20%, #eaf0ed, #a5c3c1); }
