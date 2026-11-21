@@ -1,0 +1,33 @@
+{
+  "imported_from": "5c515fc6adc5b4cf4eb766f982721d8bdd9e309a",
+  "files": {
+    "docs/research15/valuation.json": "a7c0ca72654bff155828c5ee652c121ce0901c16ef43593a045f2e4712f48b55",
+    "docs/research16/valuation.json": "aa2aab89d37c169a6eead395370d64dd6ff4bef8e1458988db7332e583d58ac5",
+    "docs/research16/same-date.json": "ed290d6c8c6934c5f834a9c982bf502dca0a17530f7de4d38800574c797f6195",
+    "docs/research15/annual.json": "f0f4c6f56afacac90b1b16085fff457a71418f0c237f31aa73988f434db5fec1",
+    "docs/research15/interim.json": "06c0e759f901c889c86340ba42d202f8eeda84e3598e25a357e35e920daa2137",
+    "docs/research16/current_facts.json": "0f3c089cdc284ea10ed86d7f69873a9d2352b777ff9fec8e3f3b9d03ee50133d",
+    "docs/research16/evidence.json": "5a95bbdc44a7afbdc32beca4ba22559c4b5a76056c35811404cb788dad3aa422",
+    "docs/research17/evidence.json": "045b91a79d0e27a09067100cd41549b28a9ebe227f4208190e2d82ad93f0df1a",
+    "docs/research16/post-cutoff.json": "136a2034497f1d91fcb9dfa8f3b54a7a403a2cd04a4643d502aef2181c374401",
+    "docs/research17/valuation.json": "2a800cb436952b127c7d499d3c85541dcccfb72b32b19bb8099709267ff1e821",
+    "docs/research17/same-date.json": "1ea33be3a3331860a2ff99c47370e77254945835735c09518b59458a0eed26b1",
+    "docs/research15/backtests.json": "59841896c564382ab85f40c77c1dc48b8726d0ed1a3cc795279c1485b4d2df15",
+    "docs/research16/driver_holdouts.json": "3f663322601dab0f9809291c791691520bb5f67a8e02c89230393455ec092f3a",
+    "companies/002507_涪陵榨菜/work/research14/inputs.json": "e0632df5120c10999406904a8289de921a2817031685bbaf6681c67fe8ba9779",
+    "companies/002507_涪陵榨菜/work/research14/calculation.json": "b7f7422d9b90589d974d67f1243d5d6f4ce7a67748b7288f845808941a5b14c9",
+    "companies/002507_涪陵榨菜/work/research14/market.json": "e6e0526837e849ea3fbedb1a48f2721a1c8c6126a58bd542c4026da3f2274427",
+    "companies/600298_安琪酵母/work/research14/inputs.json": "71dfe6c72b6a025de608b1558e4c40144564f6d981bcdd07cceed26eb821d472",
+    "companies/600298_安琪酵母/work/research14/calculation.json": "0d14f6277f83db0d180b9631011447652853c7239e5ed152f8ecf10ec6c5034c",
+    "companies/600298_安琪酵母/work/research14/market.json": "5b5913e7ffddb169fb5873b84c1a683a78f4a0d06db11e53f72b6abe8058d628",
+    "companies/688188_柏楚电子/work/research14/inputs.json": "804f10bc7481be446ca6868cf6beb3c1a4cda9e889e13d385c973ea36b89c124",
+    "companies/688188_柏楚电子/work/research14/calculation.json": "c6b10483b26a2c9574e1ddb09c15c603d67ce7556e6f86432841c44a123a61ee",
+    "companies/688188_柏楚电子/work/research14/market.json": "40aadca497605238210743fa885781cef3d8e2635642c120294dec9aa9447a7c",
+    "companies/09992_泡泡玛特/work/research14/inputs.json": "e0f2b9658823d1cd9d488ba1e7fdeb9c2569dbe3b349f72a3090ff9a074e9e53",
+    "companies/09992_泡泡玛特/work/research14/calculation.json": "b398914dc5c137d41fa2ac05754911d1f756dfdac998f7176095f0179b4e10f1",
+    "companies/09992_泡泡玛特/work/research14/market.json": "2ead2c4faf80f24fb4f3095b91d2d9b6966faf1ffb5413ded297cd71e4b5cbd3",
+    "companies/US_ISRG_直觉外科/work/research14/inputs.json": "ceca4bdf5bd3771552d9b8c11f0ba1584538e50e47ec81858146b43f13a2bb17",
+    "companies/US_ISRG_直觉外科/work/research14/calculation.json": "f9a906001c5ed9df00618d11082f46f83b51e6a071aab3d8ccb1f53524e536ab",
+    "companies/US_ISRG_直觉外科/work/research14/market.json": "271169daa20cbac5e03210164813247d84864e74725f243185530a3f14d99167"
+  }
+}

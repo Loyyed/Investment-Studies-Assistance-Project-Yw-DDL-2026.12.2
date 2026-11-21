@@ -1,0 +1,690 @@
+{
+  "security": {
+    "ticker": "600298.SH",
+    "exchange": "上海证券交易所",
+    "right": "人民币普通股 A股",
+    "quote": "CNY",
+    "report": "CNY",
+    "shares": 867815671,
+    "fx": 1,
+    "close": "2026-11-12T15:00:00+08:00",
+    "shares_basis": "9月末已发行867,815,671。董事会拟注销61,000和16,750限制股，截止日未把提案当作已完成。",
+    "shares_at": "2026-09-30"
+  },
+  "cutoff": "2026-11-12",
+  "close": 36.62,
+  "operating": {
+    "end": 2035,
+    "window": [
+      2013,
+      2025
+    ],
+    "steady_window": [
+      2017,
+      2025
+    ],
+    "drivers": [
+      "可售销量",
+      "按产品与地区的组均价"
+    ],
+    "rates": [
+      [
+        0.078,
+        0.012
+      ],
+      [
+        0.032,
+        -0.01
+      ],
+      [
+        0.108,
+        0.016
+      ]
+    ],
+    "active_margin": [
+      0.117,
+      0.098,
+      0.137
+    ],
+    "stable_margin": [
+      0.121,
+      0.102,
+      0.15
+    ],
+    "roi": [
+      0.112,
+      0.08,
+      0.15
+    ],
+    "g": [
+      0.022,
+      0.012,
+      0.028
+    ],
+    "reserve_cost": [
+      0.043,
+      0.055,
+      0.038
+    ],
+    "wc": [
+      0.265,
+      0.3,
+      0.235
+    ],
+    "fade_capex_years": 5,
+    "residual_growth": [
+      0.1,
+      0.02,
+      0.16
+    ],
+    "check": "2025酵母量价与海外收入和2026前三季收入、现金；核新厂认证、实际吨毛利和存货周转。"
+  },
+  "calibration": {
+    "mature_core_margin": 0.11817297201715041,
+    "signed_backtest_error": -0.003398457911612751,
+    "absolute_backtest_error": 0.029194254676539355,
+    "margin_sources": [
+      "600298-a981ab70d1b425bc",
+      "600298-04f27cf27c131885",
+      "600298-1cc4438d64bb6b67",
+      "600298-5445efd3d106ef39",
+      "600298-67eeebe5a51dee86",
+      "600298-174439da1375f513",
+      "600298-e14665c0175d59df",
+      "600298-a14b53fefcfc0356"
+    ]
+  },
+  "source_windows": {
+    "latest_disclosed_period": "2026-Q3",
+    "frozen_stage17": "docs/research17/600298/model.json",
+    "operating_account": "companies/600298_安琪酵母/work/research14/inputs.json"
+  },
+  "holdouts": {
+    "driver_summary": {
+      "count": 3,
+      "median_signed_error": -0.11030208020730714,
+      "med_abs_error": 0.11030208020730714
+    },
+    "driver": [
+      {
+        "company": "600298_安琪酵母",
+        "period": "2023",
+        "metric": "酵母及深加工销售量",
+        "estimate": 302683.9865121588,
+        "actual": 348505.7,
+        "signed_error": -0.13148052811716193,
+        "forecast_growth": -0.0414070212933898,
+        "unit": "吨",
+        "info_cutoff": "2023-03-31",
+        "training": [
+          {
+            "company": "600298_安琪酵母",
+            "tag": "原文披露·Agent对读",
+            "period": "2021",
+            "metric": "酵母及深加工销售量",
+            "value": 329398,
+            "unit": "吨",
+            "source_id": "600298-5445efd3d106ef39",
+            "source_sha256": "c37993bc871727e1106dd9e8648eed3cb9a8821ad786582b194430f79079ba4d",
+            "url": "https://static.cninfo.com.cn/finalpage/2022-03-29/1212711931.PDF",
+            "locator": "PDF物理第18页",
+            "disclosed": "2022-03-29",
+            "checked": "2026-11-19",
+            "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+          },
+          {
+            "company": "600298_安琪酵母",
+            "tag": "原文披露·Agent对读",
+            "period": "2022",
+            "metric": "酵母及深加工销售量",
+            "value": 315758.61,
+            "unit": "吨",
+            "source_id": "600298-67eeebe5a51dee86",
+            "source_sha256": "983957d5c1bc03c6fb053609edac2bf18b500b83598db3f302d83900bcc53efb",
+            "url": "https://static.cninfo.com.cn/finalpage/2023-03-31/1216282931.PDF",
+            "locator": "PDF物理第18页",
+            "disclosed": "2023-03-31",
+            "checked": "2026-11-19",
+            "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+          }
+        ],
+        "target": {
+          "company": "600298_安琪酵母",
+          "tag": "原文披露·Agent对读",
+          "period": "2023",
+          "metric": "酵母及深加工销售量",
+          "value": 348505.7,
+          "unit": "吨",
+          "source_id": "600298-174439da1375f513",
+          "source_sha256": "a155225d4d63153d916fb1dee854bba75b8d5c0352a7738d4eaf926454528308",
+          "url": "https://static.cninfo.com.cn/finalpage/2024-03-19/1219331681.PDF",
+          "locator": "PDF物理第19页",
+          "disclosed": "2024-03-19",
+          "checked": "2026-11-19",
+          "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+        },
+        "tag": "留出算术"
+      },
+      {
+        "company": "600298_安琪酵母",
+        "period": "2024",
+        "metric": "酵母及深加工销售量",
+        "estimate": 359362.041672752,
+        "actual": 403914.67,
+        "signed_error": -0.11030208020730714,
+        "forecast_growth": 0.031151116531959067,
+        "unit": "吨",
+        "info_cutoff": "2024-03-19",
+        "training": [
+          {
+            "company": "600298_安琪酵母",
+            "tag": "原文披露·Agent对读",
+            "period": "2021",
+            "metric": "酵母及深加工销售量",
+            "value": 329398,
+            "unit": "吨",
+            "source_id": "600298-5445efd3d106ef39",
+            "source_sha256": "c37993bc871727e1106dd9e8648eed3cb9a8821ad786582b194430f79079ba4d",
+            "url": "https://static.cninfo.com.cn/finalpage/2022-03-29/1212711931.PDF",
+            "locator": "PDF物理第18页",
+            "disclosed": "2022-03-29",
+            "checked": "2026-11-19",
+            "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+          },
+          {
+            "company": "600298_安琪酵母",
+            "tag": "原文披露·Agent对读",
+            "period": "2022",
+            "metric": "酵母及深加工销售量",
+            "value": 315758.61,
+            "unit": "吨",
+            "source_id": "600298-67eeebe5a51dee86",
+            "source_sha256": "983957d5c1bc03c6fb053609edac2bf18b500b83598db3f302d83900bcc53efb",
+            "url": "https://static.cninfo.com.cn/finalpage/2023-03-31/1216282931.PDF",
+            "locator": "PDF物理第18页",
+            "disclosed": "2023-03-31",
+            "checked": "2026-11-19",
+            "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+          },
+          {
+            "company": "600298_安琪酵母",
+            "tag": "原文披露·Agent对读",
+            "period": "2023",
+            "metric": "酵母及深加工销售量",
+            "value": 348505.7,
+            "unit": "吨",
+            "source_id": "600298-174439da1375f513",
+            "source_sha256": "a155225d4d63153d916fb1dee854bba75b8d5c0352a7738d4eaf926454528308",
+            "url": "https://static.cninfo.com.cn/finalpage/2024-03-19/1219331681.PDF",
+            "locator": "PDF物理第19页",
+            "disclosed": "2024-03-19",
+            "checked": "2026-11-19",
+            "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+          }
+        ],
+        "target": {
+          "company": "600298_安琪酵母",
+          "tag": "原文披露·Agent对读",
+          "period": "2024",
+          "metric": "酵母及深加工销售量",
+          "value": 403914.67,
+          "unit": "吨",
+          "source_id": "600298-e14665c0175d59df",
+          "source_sha256": "9bf55c16321d41dc6ba7a7b980dfad4a76f291cdba5fb0bd447433028de31f46",
+          "url": "https://static.cninfo.com.cn/finalpage/2025-04-10/1223046779.PDF",
+          "locator": "PDF物理第19页",
+          "disclosed": "2025-04-10",
+          "checked": "2026-11-19",
+          "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+        },
+        "tag": "留出算术"
+      },
+      {
+        "company": "600298_安琪酵母",
+        "period": "2025",
+        "metric": "酵母及深加工销售量",
+        "estimate": 456968.73957093013,
+        "actual": 467870.07,
+        "signed_error": -0.023299909799893492,
+        "forecast_growth": 0.1313496971301641,
+        "unit": "吨",
+        "info_cutoff": "2025-04-10",
+        "training": [
+          {
+            "company": "600298_安琪酵母",
+            "tag": "原文披露·Agent对读",
+            "period": "2022",
+            "metric": "酵母及深加工销售量",
+            "value": 315758.61,
+            "unit": "吨",
+            "source_id": "600298-67eeebe5a51dee86",
+            "source_sha256": "983957d5c1bc03c6fb053609edac2bf18b500b83598db3f302d83900bcc53efb",
+            "url": "https://static.cninfo.com.cn/finalpage/2023-03-31/1216282931.PDF",
+            "locator": "PDF物理第18页",
+            "disclosed": "2023-03-31",
+            "checked": "2026-11-19",
+            "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+          },
+          {
+            "company": "600298_安琪酵母",
+            "tag": "原文披露·Agent对读",
+            "period": "2023",
+            "metric": "酵母及深加工销售量",
+            "value": 348505.7,
+            "unit": "吨",
+            "source_id": "600298-174439da1375f513",
+            "source_sha256": "a155225d4d63153d916fb1dee854bba75b8d5c0352a7738d4eaf926454528308",
+            "url": "https://static.cninfo.com.cn/finalpage/2024-03-19/1219331681.PDF",
+            "locator": "PDF物理第19页",
+            "disclosed": "2024-03-19",
+            "checked": "2026-11-19",
+            "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+          },
+          {
+            "company": "600298_安琪酵母",
+            "tag": "原文披露·Agent对读",
+            "period": "2024",
+            "metric": "酵母及深加工销售量",
+            "value": 403914.67,
+            "unit": "吨",
+            "source_id": "600298-e14665c0175d59df",
+            "source_sha256": "9bf55c16321d41dc6ba7a7b980dfad4a76f291cdba5fb0bd447433028de31f46",
+            "url": "https://static.cninfo.com.cn/finalpage/2025-04-10/1223046779.PDF",
+            "locator": "PDF物理第19页",
+            "disclosed": "2025-04-10",
+            "checked": "2026-11-19",
+            "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+          }
+        ],
+        "target": {
+          "company": "600298_安琪酵母",
+          "tag": "原文披露·Agent对读",
+          "period": "2025",
+          "metric": "酵母及深加工销售量",
+          "value": 467870.07,
+          "unit": "吨",
+          "source_id": "600298-a14b53fefcfc0356",
+          "source_sha256": "7bee6f0f30a5da24746dd431f1947f15c8189fa9fbf5db75df4d3ba3c512c800",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225056953.PDF",
+          "locator": "PDF物理第15页",
+          "disclosed": "2026-03-31",
+          "checked": "2026-11-19",
+          "note": "产品组合吨数。2026H1发酵产量单列，产量与销货量分别使用。"
+        },
+        "tag": "留出算术"
+      }
+    ],
+    "revenue": [
+      {
+        "company": "600298_安琪酵母",
+        "target": 2017,
+        "available_through": "2017-03-16",
+        "train_sources": [
+          "600298-99597759863c7b23",
+          "600298-016c82cbbef611ef",
+          "600298-ceb5415a2684d6ee",
+          "600298-2c929058f8536e0f"
+        ],
+        "actual_source": "600298-a981ab70d1b425bc",
+        "expected": 5607.1100820088095,
+        "actual": 5775.72816088,
+        "error": -0.029194254676539355,
+        "forecast_growth": 0.15359998465566793,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "600298_安琪酵母",
+        "target": 2018,
+        "available_through": "2018-05-12",
+        "train_sources": [
+          "600298-016c82cbbef611ef",
+          "600298-ceb5415a2684d6ee",
+          "600298-2c929058f8536e0f",
+          "600298-a981ab70d1b425bc"
+        ],
+        "actual_source": "600298-04f27cf27c131885",
+        "expected": 6662.879917766478,
+        "actual": 6685.600650189999,
+        "error": -0.003398457911612751,
+        "forecast_growth": 0.15359998465566793,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "600298_安琪酵母",
+        "target": 2019,
+        "available_through": "2019-03-23",
+        "train_sources": [
+          "600298-ceb5415a2684d6ee",
+          "600298-2c929058f8536e0f",
+          "600298-a981ab70d1b425bc",
+          "600298-04f27cf27c131885"
+        ],
+        "actual_source": "600298-1cc4438d64bb6b67",
+        "expected": 7738.808823545945,
+        "actual": 7652.75455171,
+        "error": 0.011244875456866366,
+        "forecast_growth": 0.15753381460587468,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "600298_安琪酵母",
+        "target": 2020,
+        "available_through": "2020-03-31",
+        "train_sources": [
+          "600298-2c929058f8536e0f",
+          "600298-a981ab70d1b425bc",
+          "600298-04f27cf27c131885",
+          "600298-1cc4438d64bb6b67"
+        ],
+        "actual_source": "600298-f3d954bf94ae5ae6",
+        "expected": 8858.322168483346,
+        "actual": 8933.03577774,
+        "error": -0.008363742306152111,
+        "forecast_growth": 0.15753381460587468,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "600298_安琪酵母",
+        "target": 2021,
+        "available_through": "2021-03-26",
+        "train_sources": [
+          "600298-a981ab70d1b425bc",
+          "600298-04f27cf27c131885",
+          "600298-1cc4438d64bb6b67",
+          "600298-f3d954bf94ae5ae6"
+        ],
+        "actual_source": "600298-5445efd3d106ef39",
+        "expected": 10340.290979818139,
+        "actual": 10675.33300767,
+        "error": -0.03138469100787211,
+        "forecast_growth": 0.15753381460587468,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "600298_安琪酵母",
+        "target": 2022,
+        "available_through": "2022-03-29",
+        "train_sources": [
+          "600298-04f27cf27c131885",
+          "600298-1cc4438d64bb6b67",
+          "600298-f3d954bf94ae5ae6",
+          "600298-5445efd3d106ef39"
+        ],
+        "actual_source": "600298-67eeebe5a51dee86",
+        "expected": 12461.281889080852,
+        "actual": 12843.29752348,
+        "error": -0.029744357607596528,
+        "forecast_growth": 0.16729678410291138,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "600298_安琪酵母",
+        "target": 2023,
+        "available_through": "2023-03-31",
+        "train_sources": [
+          "600298-1cc4438d64bb6b67",
+          "600298-f3d954bf94ae5ae6",
+          "600298-5445efd3d106ef39",
+          "600298-67eeebe5a51dee86"
+        ],
+        "actual_source": "600298-174439da1375f513",
+        "expected": 15348.251299002348,
+        "actual": 13581.13163582,
+        "error": 0.13011578935893686,
+        "forecast_growth": 0.19503976848179483,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "600298_安琪酵母",
+        "target": 2024,
+        "available_through": "2024-03-19",
+        "train_sources": [
+          "600298-f3d954bf94ae5ae6",
+          "600298-5445efd3d106ef39",
+          "600298-67eeebe5a51dee86",
+          "600298-174439da1375f513"
+        ],
+        "actual_source": "600298-e14665c0175d59df",
+        "expected": 16229.992405791112,
+        "actual": 15196.913197790002,
+        "error": 0.06797954259233019,
+        "forecast_growth": 0.19503976848179483,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "600298_安琪酵母",
+        "target": 2025,
+        "available_through": "2025-04-10",
+        "train_sources": [
+          "600298-5445efd3d106ef39",
+          "600298-67eeebe5a51dee86",
+          "600298-174439da1375f513",
+          "600298-e14665c0175d59df"
+        ],
+        "actual_source": "600298-a14b53fefcfc0356",
+        "expected": 17004.928376663946,
+        "actual": 16728.84277037,
+        "error": 0.016503568721618178,
+        "forecast_growth": 0.11897252786420287,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      }
+    ]
+  },
+  "native_driver_spec": {
+    "axis": "可售吨量×组均价和地域结构",
+    "marginal_financing_cost": 0.032,
+    "beta": 1.0,
+    "tax": 0.215,
+    "risk_free": 0.016,
+    "equity_risk_premium": 0.0532,
+    "plant_bridge": {
+      "rows": [
+        {
+          "metric": "收入",
+          "year_to_sep_2025": 11786.45119765,
+          "year_to_sep_2026": 13607.95084186,
+          "delta": 1821.49964421,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-5c763f656754f15e"
+          ]
+        },
+        {
+          "metric": "归并成本",
+          "year_to_sep_2025": 8776.270273799999,
+          "year_to_sep_2026": 10161.78147484,
+          "delta": 1385.5112010400007,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-5c763f656754f15e"
+          ]
+        },
+        {
+          "metric": "经营现金",
+          "year_to_sep_2025": 2218.1323550300003,
+          "year_to_sep_2026": 1712.4446483,
+          "delta": -505.6877067300004,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-5c763f656754f15e"
+          ]
+        },
+        {
+          "metric": "现金购建",
+          "year_to_sep_2025": 1240.50932436,
+          "year_to_sep_2026": 1305.25613834,
+          "delta": 64.74681398000007,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-5c763f656754f15e"
+          ]
+        },
+        {
+          "metric": "收现",
+          "year_to_sep_2025": 13646.21176538,
+          "year_to_sep_2026": 14905.17543489,
+          "delta": 1258.9636695099998,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-5c763f656754f15e"
+          ]
+        },
+        {
+          "metric": "财务费用",
+          "year_to_sep_2025": 92.89091333,
+          "year_to_sep_2026": 253.13388831999998,
+          "delta": 160.24297499,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-5c763f656754f15e"
+          ]
+        },
+        {
+          "metric": "应收",
+          "September_2025": 1529.77230852,
+          "December_2025": 1843.5483540799999,
+          "September_2026": 1858.29387484,
+          "delta_yoy": 328.5215663199999,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-a14b53fefcfc0356",
+            "600298-5c763f656754f15e"
+          ]
+        },
+        {
+          "metric": "存货",
+          "September_2025": 4650.86569522,
+          "December_2025": 5105.42967833,
+          "September_2026": 4909.50765767,
+          "delta_yoy": 258.6419624500004,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-a14b53fefcfc0356",
+            "600298-5c763f656754f15e"
+          ]
+        },
+        {
+          "metric": "应付",
+          "September_2025": 1784.25651576,
+          "December_2025": 2203.40890657,
+          "September_2026": 1939.2876468499999,
+          "delta_yoy": 155.03113108999992,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-a14b53fefcfc0356",
+            "600298-5c763f656754f15e"
+          ]
+        },
+        {
+          "metric": "固定资产",
+          "September_2025": 10533.12277225,
+          "December_2025": 11223.410690440001,
+          "September_2026": 11618.154397870001,
+          "delta_yoy": 1085.0316256200003,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-a14b53fefcfc0356",
+            "600298-5c763f656754f15e"
+          ]
+        },
+        {
+          "metric": "在建工程",
+          "September_2025": 1068.98720801,
+          "December_2025": 682.07358025,
+          "September_2026": 521.16658548,
+          "delta_yoy": -547.8206225299999,
+          "tag": "算术",
+          "source": [
+            "600298-7a9cbdaf728861fa",
+            "600298-a14b53fefcfc0356",
+            "600298-5c763f656754f15e"
+          ]
+        }
+      ],
+      "process": [
+        "2023投产线名单 → 2025印尼新厂仍建设 → 2026H1集团发酵产能49万吨及产量25.4万吨。",
+        "GMO酒精酵母获FDA-GRAS是产品口径。按厂投产、认证、售价、产量、现金回款缺对应。",
+        "集团分部2025吨售价、成本、毛利，之后以集团资产余额与现金实际对照。"
+      ],
+      "gross_per_ton_2025": 8225.8125375919,
+      "current_trade_ncwc": 4828.513885660001,
+      "prior_sep_trade_ncwc": 4396.381487979999,
+      "reported_cfo_less_capex": 407.1885099599999,
+      "comparison_cfo_less_capex": 977.6230306700004,
+      "cash_gap": "应收和库存是同比余额，融资和税款期间也变化。缺分厂成本和合并现金流调节，余额变化留作横向核查。",
+      "forecasts": {
+        "base_2027": {
+          "year": 2027,
+          "revenue": 21258.247555437792,
+          "operating_profit": 2502.9470436471256,
+          "margin": 0.11774004593369596,
+          "growth": 0.116236,
+          "driver_1": 0.10300000000000001,
+          "driver_2": 0.012,
+          "volume_sales_delta": 1961.5919019007565,
+          "price_mix_sales_delta": 252.07408168503312,
+          "cash_tax": 538.133614384132,
+          "nopat": 1964.8134292629936,
+          "depreciation": 1129.5350206067912,
+          "wc": 5633.435602191015,
+          "delta_wc": 586.6214856502347,
+          "cash_capex": 1722.727276324411,
+          "incremental_equipment_cash": 0.0,
+          "lease_cash": 83.87168795014237,
+          "capital_return_adjustment": 0.0,
+          "net_reinvestment": 1263.6854293179967,
+          "model_cash_after_date": 701.1279999449969,
+          "present_value": 667.6833101720202,
+          "t": 1.1342465753425586,
+          "tag": "Forecast",
+          "scope": "营运租赁/设备按独立假设"
+        },
+        "base_2031": {
+          "year": 2031,
+          "revenue": 31809.145815855154,
+          "operating_profit": 3751.6001310066044,
+          "margin": 0.1179409265726536,
+          "growth": 0.08911306122448992,
+          "driver_1": 0.07985714285714286,
+          "driver_2": 0.008571428571428572,
+          "volume_sales_delta": 2332.3450907149163,
+          "price_mix_sales_delta": 270.3326839874375,
+          "cash_tax": 806.5940281664199,
+          "nopat": 2945.0061028401847,
+          "depreciation": 1367.7932700817714,
+          "wc": 8429.423641201616,
+          "delta_wc": 689.709610296125,
+          "cash_capex": 1709.7415876022144,
+          "incremental_equipment_cash": 0.0,
+          "lease_cash": 83.66593545620663,
+          "capital_return_adjustment": 328.55560227052,
+          "net_reinvestment": 1443.8794655432946,
+          "model_cash_after_date": 1501.12663729689,
+          "present_value": 1203.1860172489478,
+          "t": 5.134246575342559,
+          "tag": "Forecast",
+          "scope": "营运租赁/设备按独立假设"
+        }
+      }
+    }
+  }
+}

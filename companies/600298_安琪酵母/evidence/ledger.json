@@ -916,6 +916,864 @@
         }
       ],
       "support_boundary": "两份同范围原件的年度收入列核对一致。早期主营业务收入按当时列名保留。"
+    },
+    "V22-2001-FINANCE": {
+      "id": "V22-2001-FINANCE",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "-3477837.00",
+      "claim": "财务费用 35",
+      "scope": {
+        "period": "2001-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "财务费用 35",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-96150fea2112f5ad",
+          "location": "PDF物理第56页，财务费用 35，第1数值列，本期／期末合并数，文本行16"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2001-RECEIVABLES": {
+      "id": "V22-2001-RECEIVABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "31110087.92",
+      "claim": "应收帐款 4",
+      "scope": {
+        "period": "2001-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应收帐款 4",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-96150fea2112f5ad",
+          "location": "PDF物理第54页，应收帐款 4，第1数值列，本期／期末合并数，文本行13"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2001-INVENTORY": {
+      "id": "V22-2001-INVENTORY",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "57724572.13",
+      "claim": "存货 7",
+      "scope": {
+        "period": "2001-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "存货 7",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-96150fea2112f5ad",
+          "location": "PDF物理第54页，存货 7，第1数值列，本期／期末合并数，文本行17"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2001-PAYABLES": {
+      "id": "V22-2001-PAYABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "27176325.51",
+      "claim": "应付帐款 16",
+      "scope": {
+        "period": "2001-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应付帐款 16",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-96150fea2112f5ad",
+          "location": "PDF物理第55页，应付帐款 16，第1数值列，本期／期末合并数，文本行10"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2001-CUSTOMER-ADVANCES": {
+      "id": "V22-2001-CUSTOMER-ADVANCES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "7599065.33",
+      "claim": "预收帐款 17",
+      "scope": {
+        "period": "2001-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "预收帐款 17",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-96150fea2112f5ad",
+          "location": "PDF物理第55页，预收帐款 17，第1数值列，本期／期末合并数，文本行11"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2001-FIXED-ASSETS-TOTAL": {
+      "id": "V22-2001-FIXED-ASSETS-TOTAL",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "358996922.03",
+      "claim": "固定资产合计",
+      "scope": {
+        "period": "2001-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "固定资产合计",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-96150fea2112f5ad",
+          "location": "PDF物理第54页，固定资产合计，第1数值列，本期／期末合并数，文本行36"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2002-FINANCE": {
+      "id": "V22-2002-FINANCE",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "402650.12",
+      "claim": "财务费用 36",
+      "scope": {
+        "period": "2002-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "财务费用 36",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-a043101a93d9abeb",
+          "location": "PDF物理第58页，财务费用 36，第1数值列，本期／期末合并数，文本行15"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2002-RECEIVABLES": {
+      "id": "V22-2002-RECEIVABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "36172899.62",
+      "claim": "应收帐款 4",
+      "scope": {
+        "period": "2002-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应收帐款 4",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-a043101a93d9abeb",
+          "location": "PDF物理第56页，应收帐款 4，第1数值列，本期／期末合并数，文本行15"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2002-INVENTORY": {
+      "id": "V22-2002-INVENTORY",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "99997122.01",
+      "claim": "存货 7",
+      "scope": {
+        "period": "2002-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "存货 7",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-a043101a93d9abeb",
+          "location": "PDF物理第56页，存货 7，第1数值列，本期／期末合并数，文本行19"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2002-PAYABLES": {
+      "id": "V22-2002-PAYABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "40125613.77",
+      "claim": "应付帐款 16",
+      "scope": {
+        "period": "2002-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应付帐款 16",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-a043101a93d9abeb",
+          "location": "PDF物理第57页，应付帐款 16，第1数值列，本期／期末合并数，文本行10"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2002-CUSTOMER-ADVANCES": {
+      "id": "V22-2002-CUSTOMER-ADVANCES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "6768355.22",
+      "claim": "预收帐款 17",
+      "scope": {
+        "period": "2002-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "预收帐款 17",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-a043101a93d9abeb",
+          "location": "PDF物理第57页，预收帐款 17，第1数值列，本期／期末合并数，文本行11"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2002-FIXED-ASSETS-TOTAL": {
+      "id": "V22-2002-FIXED-ASSETS-TOTAL",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "433581067.03",
+      "claim": "固定资产合计",
+      "scope": {
+        "period": "2002-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "固定资产合计",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-a043101a93d9abeb",
+          "location": "PDF物理第56页，固定资产合计，第1数值列，本期／期末合并数，文本行38"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2003-FINANCE": {
+      "id": "V22-2003-FINANCE",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "1940504.60",
+      "claim": "财务费用 37",
+      "scope": {
+        "period": "2003-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "财务费用 37",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e571e83c385479b8",
+          "location": "PDF物理第63页，财务费用 37，第1数值列，本期／期末合并数，文本行15"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2003-RECEIVABLES": {
+      "id": "V22-2003-RECEIVABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "41576995.93",
+      "claim": "应收帐款 4",
+      "scope": {
+        "period": "2003-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应收帐款 4",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e571e83c385479b8",
+          "location": "PDF物理第61页，应收帐款 4，第1数值列，本期／期末合并数，文本行13"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2003-INVENTORY": {
+      "id": "V22-2003-INVENTORY",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "104818816.13",
+      "claim": "存货 7",
+      "scope": {
+        "period": "2003-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "存货 7",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e571e83c385479b8",
+          "location": "PDF物理第61页，存货 7，第1数值列，本期／期末合并数，文本行17"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2003-PAYABLES": {
+      "id": "V22-2003-PAYABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "38153794.79",
+      "claim": "应付帐款 17",
+      "scope": {
+        "period": "2003-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应付帐款 17",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e571e83c385479b8",
+          "location": "PDF物理第62页，应付帐款 17，第1数值列，本期／期末合并数，文本行9"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2003-CUSTOMER-ADVANCES": {
+      "id": "V22-2003-CUSTOMER-ADVANCES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "7284347.95",
+      "claim": "预收帐款 18",
+      "scope": {
+        "period": "2003-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "预收帐款 18",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e571e83c385479b8",
+          "location": "PDF物理第62页，预收帐款 18，第1数值列，本期／期末合并数，文本行10"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2003-FIXED-ASSETS-TOTAL": {
+      "id": "V22-2003-FIXED-ASSETS-TOTAL",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "503620324.64",
+      "claim": "固定资产合计",
+      "scope": {
+        "period": "2003-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "固定资产合计",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e571e83c385479b8",
+          "location": "PDF物理第61页，固定资产合计，第1数值列，本期／期末合并数，文本行37"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2004-COST": {
+      "id": "V22-2004-COST",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "331678272.14",
+      "claim": "减：主营业务成本 33",
+      "scope": {
+        "period": "2004-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "减：主营业务成本 33",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第69页，减：主营业务成本 33，第3数值列，上年同期／期初合并数，文本行6"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2004-FINANCE": {
+      "id": "V22-2004-FINANCE",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "4450825.30",
+      "claim": "财务费用 36",
+      "scope": {
+        "period": "2004-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "财务费用 36",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第69页，财务费用 36，第3数值列，上年同期／期初合并数，文本行12"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2004-RECEIVABLES": {
+      "id": "V22-2004-RECEIVABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "40422044.86",
+      "claim": "应收帐款 4",
+      "scope": {
+        "period": "2004-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应收帐款 4",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第67页，应收帐款 4，第3数值列，上年同期／期初合并数，文本行11"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2004-INVENTORY": {
+      "id": "V22-2004-INVENTORY",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "85338646.05",
+      "claim": "存货 7",
+      "scope": {
+        "period": "2004-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "存货 7",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第67页，存货 7，第3数值列，上年同期／期初合并数，文本行15"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2004-PAYABLES": {
+      "id": "V22-2004-PAYABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "45721342.15",
+      "claim": "应付帐款 18",
+      "scope": {
+        "period": "2004-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应付帐款 18",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第68页，应付帐款 18，第3数值列，上年同期／期初合并数，文本行8"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2004-CUSTOMER-ADVANCES": {
+      "id": "V22-2004-CUSTOMER-ADVANCES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "10178314.99",
+      "claim": "预收帐款 19",
+      "scope": {
+        "period": "2004-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "预收帐款 19",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第68页，预收帐款 19，第3数值列，上年同期／期初合并数，文本行9"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2004-FIXED-ASSETS-TOTAL": {
+      "id": "V22-2004-FIXED-ASSETS-TOTAL",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "594551051.54",
+      "claim": "固定资产合计",
+      "scope": {
+        "period": "2004-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "固定资产合计",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第67页，固定资产合计，第3数值列，上年同期／期初合并数，文本行35"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2005-COST": {
+      "id": "V22-2005-COST",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "476888297.23",
+      "claim": "减：主营业务成本 33",
+      "scope": {
+        "period": "2005-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "减：主营业务成本 33",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第69页，减：主营业务成本 33，第2数值列，本期／期末合并数，文本行6"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2005-FINANCE": {
+      "id": "V22-2005-FINANCE",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "10312441.37",
+      "claim": "财务费用 36",
+      "scope": {
+        "period": "2005-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "财务费用 36",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第69页，财务费用 36，第2数值列，本期／期末合并数，文本行12"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2005-RECEIVABLES": {
+      "id": "V22-2005-RECEIVABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "37281650.44",
+      "claim": "应收帐款 4",
+      "scope": {
+        "period": "2005-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应收帐款 4",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第67页，应收帐款 4，第2数值列，本期／期末合并数，文本行11"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2005-INVENTORY": {
+      "id": "V22-2005-INVENTORY",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "179273871.77",
+      "claim": "存货 7",
+      "scope": {
+        "period": "2005-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "存货 7",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第67页，存货 7，第2数值列，本期／期末合并数，文本行15"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2005-PAYABLES": {
+      "id": "V22-2005-PAYABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "57415892.30",
+      "claim": "应付帐款 18",
+      "scope": {
+        "period": "2005-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应付帐款 18",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第68页，应付帐款 18，第2数值列，本期／期末合并数，文本行8"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2005-CUSTOMER-ADVANCES": {
+      "id": "V22-2005-CUSTOMER-ADVANCES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "27932280.59",
+      "claim": "预收帐款 19",
+      "scope": {
+        "period": "2005-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "预收帐款 19",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第68页，预收帐款 19，第2数值列，本期／期末合并数，文本行9"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2005-FIXED-ASSETS-TOTAL": {
+      "id": "V22-2005-FIXED-ASSETS-TOTAL",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "668805568.71",
+      "claim": "固定资产合计",
+      "scope": {
+        "period": "2005-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "固定资产合计",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-15f76fea162e70a3",
+          "location": "PDF物理第67页，固定资产合计，第2数值列，本期／期末合并数，文本行35"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2006-FINANCE": {
+      "id": "V22-2006-FINANCE",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "17443033.14",
+      "claim": "财务费用 35",
+      "scope": {
+        "period": "2006-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "财务费用 35",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e0d8c6a337061706",
+          "location": "PDF物理第60页，财务费用 35，第2数值列，本期／期末合并数，文本行10"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2006-RECEIVABLES": {
+      "id": "V22-2006-RECEIVABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "47142588.14",
+      "claim": "应收帐款 4",
+      "scope": {
+        "period": "2006-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应收帐款 4",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e0d8c6a337061706",
+          "location": "PDF物理第58页，应收帐款 4，第1数值列，本期／期末合并数，文本行9"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2006-INVENTORY": {
+      "id": "V22-2006-INVENTORY",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "276792156.35",
+      "claim": "存货 7",
+      "scope": {
+        "period": "2006-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "存货 7",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e0d8c6a337061706",
+          "location": "PDF物理第58页，存货 7，第1数值列，本期／期末合并数，文本行13"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2006-PAYABLES": {
+      "id": "V22-2006-PAYABLES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "105799064.76",
+      "claim": "应付帐款 15",
+      "scope": {
+        "period": "2006-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "应付帐款 15",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e0d8c6a337061706",
+          "location": "PDF物理第59页，应付帐款 15，第1数值列，本期／期末合并数，文本行6"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2006-CUSTOMER-ADVANCES": {
+      "id": "V22-2006-CUSTOMER-ADVANCES",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "17844403.59",
+      "claim": "预收帐款 16",
+      "scope": {
+        "period": "2006-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "预收帐款 16",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e0d8c6a337061706",
+          "location": "PDF物理第59页，预收帐款 16，第1数值列，本期／期末合并数，文本行7"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2006-FIXED-ASSETS-TOTAL": {
+      "id": "V22-2006-FIXED-ASSETS-TOTAL",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "784961997.56",
+      "claim": "固定资产合计",
+      "scope": {
+        "period": "2006-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "固定资产合计",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-e0d8c6a337061706",
+          "location": "PDF物理第58页，固定资产合计，第1数值列，本期／期末合并数，文本行33"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+    },
+    "V22-2005-CFO-CORRECTION": {
+      "id": "V22-2005-CFO-CORRECTION",
+      "kind": "disclosure",
+      "state": "Unknown",
+      "value": "122623618.86",
+      "claim": "经营活动产生的现金流量净额",
+      "scope": {
+        "period": "2005-FY",
+        "entity": "安琪酵母",
+        "basis": "历史合并原披露",
+        "definition": "经营活动产生的现金流量净额",
+        "unit": "人民币元",
+        "currency": "CNY"
+      },
+      "sources": [
+        {
+          "source_id": "600298-6e760efa72c47824",
+          "location": "PDF物理第1页，经营活动产生的现金流量净额，第1数值列，2005年"
+        }
+      ],
+      "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
     }
   },
   "events": [
@@ -4279,6 +5137,2619 @@
       },
       "previous_hash": "060cbcdd3d31ba1a2d28b0c16e3ab82e9ea9ab29d1ad55d6e10a67a5c0ea1b1e",
       "hash": "000e61e09946811b6a6c291add4b8e66350d61c69a43c951d29f0da61b7cdc7b"
+    },
+    {
+      "id": "E000090",
+      "time": "2026-11-20T22:47:56+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2001-FINANCE",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "-3477837.00",
+          "claim": "财务费用 35",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 35",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第56页，财务费用 35，第1数值列，本期／期末合并数，文本行16"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "000e61e09946811b6a6c291add4b8e66350d61c69a43c951d29f0da61b7cdc7b",
+      "hash": "019596b840f2a43a8762cd9f6ec16b8be0e4525794dea0e9d5e02c0ba3470664"
+    },
+    {
+      "id": "E000091",
+      "time": "2026-11-20T22:47:56+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2001-FINANCE",
+        "binding": "2ae8ecaaeff20b98e1ed65333103636366f97732e2d8a0ec028ddab2e519b02f",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第56页，财务费用 35，第1数值列，本期／期末合并数，文本行16为-3477837.00人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2001-FINANCE",
+          "claim": "财务费用 35",
+          "value": "-3477837.00",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 35",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第56页，财务费用 35，第1数值列，本期／期末合并数，文本行16"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "019596b840f2a43a8762cd9f6ec16b8be0e4525794dea0e9d5e02c0ba3470664",
+      "hash": "b7c3184f1075616d8f301df3ebfb29347edcc4b290ab55a34923b03918c89607"
+    },
+    {
+      "id": "E000092",
+      "time": "2026-11-20T22:47:56+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2001-RECEIVABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "31110087.92",
+          "claim": "应收帐款 4",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第54页，应收帐款 4，第1数值列，本期／期末合并数，文本行13"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "b7c3184f1075616d8f301df3ebfb29347edcc4b290ab55a34923b03918c89607",
+      "hash": "b544b30bad1cdbdca033d4bbeba921a39dc5b59f34fd36d28ea2ed846d805a89"
+    },
+    {
+      "id": "E000093",
+      "time": "2026-11-20T22:47:56+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2001-RECEIVABLES",
+        "binding": "2b1fcfbd0c50c469db58e43d8ef81acad4fa4e3e3254bacb59c4896ce749b3b7",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第54页，应收帐款 4，第1数值列，本期／期末合并数，文本行13为31110087.92人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2001-RECEIVABLES",
+          "claim": "应收帐款 4",
+          "value": "31110087.92",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第54页，应收帐款 4，第1数值列，本期／期末合并数，文本行13"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "b544b30bad1cdbdca033d4bbeba921a39dc5b59f34fd36d28ea2ed846d805a89",
+      "hash": "d8ebc80922368319fbb19e450f745b68b3cc2830227bdd98becc90066879a8a6"
+    },
+    {
+      "id": "E000094",
+      "time": "2026-11-20T22:47:57+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2001-INVENTORY",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "57724572.13",
+          "claim": "存货 7",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第54页，存货 7，第1数值列，本期／期末合并数，文本行17"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "d8ebc80922368319fbb19e450f745b68b3cc2830227bdd98becc90066879a8a6",
+      "hash": "1aa278625e5c9cd55e26906455c625ea69f43293f0dd97f97bc03748abc19434"
+    },
+    {
+      "id": "E000095",
+      "time": "2026-11-20T22:47:57+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2001-INVENTORY",
+        "binding": "0366282e798e5ae811c887906583b37830e3aae4f45ddbe60792676a5301f202",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第54页，存货 7，第1数值列，本期／期末合并数，文本行17为57724572.13人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2001-INVENTORY",
+          "claim": "存货 7",
+          "value": "57724572.13",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第54页，存货 7，第1数值列，本期／期末合并数，文本行17"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "1aa278625e5c9cd55e26906455c625ea69f43293f0dd97f97bc03748abc19434",
+      "hash": "5ad20e071777ded8e45f6ff6c59797e1c38d1f60cba3c8a84cb30909c6d35fb2"
+    },
+    {
+      "id": "E000096",
+      "time": "2026-11-20T22:47:57+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2001-PAYABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "27176325.51",
+          "claim": "应付帐款 16",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 16",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第55页，应付帐款 16，第1数值列，本期／期末合并数，文本行10"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "5ad20e071777ded8e45f6ff6c59797e1c38d1f60cba3c8a84cb30909c6d35fb2",
+      "hash": "ffee2db4b09464d80505c419dabad44bf0259f04c5b66f4e6141c5c477ee56d5"
+    },
+    {
+      "id": "E000097",
+      "time": "2026-11-20T22:47:57+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2001-PAYABLES",
+        "binding": "e07168b16f67fe228cb9d1c3cc96f29d6aea65288912fad8d3e968c1d58fb1d3",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第55页，应付帐款 16，第1数值列，本期／期末合并数，文本行10为27176325.51人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2001-PAYABLES",
+          "claim": "应付帐款 16",
+          "value": "27176325.51",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 16",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第55页，应付帐款 16，第1数值列，本期／期末合并数，文本行10"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "ffee2db4b09464d80505c419dabad44bf0259f04c5b66f4e6141c5c477ee56d5",
+      "hash": "44660136650c66e468b5b059c35f0e42e7cbe0134791dbc7ace29a60473b10bb"
+    },
+    {
+      "id": "E000098",
+      "time": "2026-11-20T22:47:57+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2001-CUSTOMER-ADVANCES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "7599065.33",
+          "claim": "预收帐款 17",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 17",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第55页，预收帐款 17，第1数值列，本期／期末合并数，文本行11"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "44660136650c66e468b5b059c35f0e42e7cbe0134791dbc7ace29a60473b10bb",
+      "hash": "1cf91c84332d77c96ec05269e29336ecac90684d608fe372b49e18044fd5ecbc"
+    },
+    {
+      "id": "E000099",
+      "time": "2026-11-20T22:47:58+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2001-CUSTOMER-ADVANCES",
+        "binding": "383f835de084dd064b4e980b8cf2e09476289acd5442dcd1eae638e0c75abf00",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第55页，预收帐款 17，第1数值列，本期／期末合并数，文本行11为7599065.33人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2001-CUSTOMER-ADVANCES",
+          "claim": "预收帐款 17",
+          "value": "7599065.33",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 17",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第55页，预收帐款 17，第1数值列，本期／期末合并数，文本行11"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "1cf91c84332d77c96ec05269e29336ecac90684d608fe372b49e18044fd5ecbc",
+      "hash": "75fc80fed40204df90e29d0d797984334df8a5f5ec8d0d6c9359933f04b2163a"
+    },
+    {
+      "id": "E000100",
+      "time": "2026-11-20T22:47:58+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2001-FIXED-ASSETS-TOTAL",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "358996922.03",
+          "claim": "固定资产合计",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第54页，固定资产合计，第1数值列，本期／期末合并数，文本行36"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "75fc80fed40204df90e29d0d797984334df8a5f5ec8d0d6c9359933f04b2163a",
+      "hash": "f947966c4ba2517072d6ca4ffb794abc130efccf10ae6f730e4a6705547e67c6"
+    },
+    {
+      "id": "E000101",
+      "time": "2026-11-20T22:47:58+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2001-FIXED-ASSETS-TOTAL",
+        "binding": "6ba8cb46ba476202cb5d9fecbf30221e055fa7af8ebececfeab6b72c213d0a7b",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第54页，固定资产合计，第1数值列，本期／期末合并数，文本行36为358996922.03人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2001-FIXED-ASSETS-TOTAL",
+          "claim": "固定资产合计",
+          "value": "358996922.03",
+          "scope": {
+            "period": "2001-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-96150fea2112f5ad",
+              "location": "PDF物理第54页，固定资产合计，第1数值列，本期／期末合并数，文本行36"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "f947966c4ba2517072d6ca4ffb794abc130efccf10ae6f730e4a6705547e67c6",
+      "hash": "3cf0afc459255dbeefc7b8cc127a19e260ea5dcadb446f5cfb9036419c4d2a65"
+    },
+    {
+      "id": "E000102",
+      "time": "2026-11-20T22:47:58+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2002-FINANCE",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "402650.12",
+          "claim": "财务费用 36",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 36",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第58页，财务费用 36，第1数值列，本期／期末合并数，文本行15"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "3cf0afc459255dbeefc7b8cc127a19e260ea5dcadb446f5cfb9036419c4d2a65",
+      "hash": "26a4add2550719d2132a14bc6c033cfb2413eb3662964a1982f3c8153573f46e"
+    },
+    {
+      "id": "E000103",
+      "time": "2026-11-20T22:47:58+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2002-FINANCE",
+        "binding": "a973d0582158fd6737049bca6e2fae8f3ea94c69f8f6eabbb8028da478868b8c",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第58页，财务费用 36，第1数值列，本期／期末合并数，文本行15为402650.12人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2002-FINANCE",
+          "claim": "财务费用 36",
+          "value": "402650.12",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 36",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第58页，财务费用 36，第1数值列，本期／期末合并数，文本行15"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "26a4add2550719d2132a14bc6c033cfb2413eb3662964a1982f3c8153573f46e",
+      "hash": "229632a9ee43a7773cd8e43838715bd6dd1c160ced9d4eef1d522164b48c04dd"
+    },
+    {
+      "id": "E000104",
+      "time": "2026-11-20T22:47:58+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2002-RECEIVABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "36172899.62",
+          "claim": "应收帐款 4",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第56页，应收帐款 4，第1数值列，本期／期末合并数，文本行15"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "229632a9ee43a7773cd8e43838715bd6dd1c160ced9d4eef1d522164b48c04dd",
+      "hash": "42548bd72fea76dbcc32c5866692e6f97f5f0d25b26bb1af0cb6816ad95ee64c"
+    },
+    {
+      "id": "E000105",
+      "time": "2026-11-20T22:47:59+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2002-RECEIVABLES",
+        "binding": "c46e909926d230c0f1faba47e7d62a55cdc75d033a01b17cd29151f5d1a7f4d2",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第56页，应收帐款 4，第1数值列，本期／期末合并数，文本行15为36172899.62人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2002-RECEIVABLES",
+          "claim": "应收帐款 4",
+          "value": "36172899.62",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第56页，应收帐款 4，第1数值列，本期／期末合并数，文本行15"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "42548bd72fea76dbcc32c5866692e6f97f5f0d25b26bb1af0cb6816ad95ee64c",
+      "hash": "d12606fb9e2649b8ef03b2a9cf44ad6b85769dae1739abe9b13fb56402ca8d60"
+    },
+    {
+      "id": "E000106",
+      "time": "2026-11-20T22:47:59+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2002-INVENTORY",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "99997122.01",
+          "claim": "存货 7",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第56页，存货 7，第1数值列，本期／期末合并数，文本行19"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "d12606fb9e2649b8ef03b2a9cf44ad6b85769dae1739abe9b13fb56402ca8d60",
+      "hash": "dfb1eec3bb91f8d542d79669ecb230883329333e1ac9ae6c7c1c6b6bb485d498"
+    },
+    {
+      "id": "E000107",
+      "time": "2026-11-20T22:47:59+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2002-INVENTORY",
+        "binding": "bb179212b52eb5e1fd1e9fb7333afd5613aed0442587148d3e2d22859a9b833f",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第56页，存货 7，第1数值列，本期／期末合并数，文本行19为99997122.01人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2002-INVENTORY",
+          "claim": "存货 7",
+          "value": "99997122.01",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第56页，存货 7，第1数值列，本期／期末合并数，文本行19"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "dfb1eec3bb91f8d542d79669ecb230883329333e1ac9ae6c7c1c6b6bb485d498",
+      "hash": "99267f3ada1e79dea47ea0806a59f627760714f7223fc00a38b29e2c3baacdf0"
+    },
+    {
+      "id": "E000108",
+      "time": "2026-11-20T22:47:59+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2002-PAYABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "40125613.77",
+          "claim": "应付帐款 16",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 16",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第57页，应付帐款 16，第1数值列，本期／期末合并数，文本行10"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "99267f3ada1e79dea47ea0806a59f627760714f7223fc00a38b29e2c3baacdf0",
+      "hash": "b2cf0be989f2eb68c3e604e59dbb9c3ab4dd8823799ffb7c7f754b32c725bfb1"
+    },
+    {
+      "id": "E000109",
+      "time": "2026-11-20T22:48:00+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2002-PAYABLES",
+        "binding": "80ac91847a5a52630de987dd90497fc723d0ad2ce36bd0a3c70e170daaef8df8",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第57页，应付帐款 16，第1数值列，本期／期末合并数，文本行10为40125613.77人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2002-PAYABLES",
+          "claim": "应付帐款 16",
+          "value": "40125613.77",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 16",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第57页，应付帐款 16，第1数值列，本期／期末合并数，文本行10"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "b2cf0be989f2eb68c3e604e59dbb9c3ab4dd8823799ffb7c7f754b32c725bfb1",
+      "hash": "d8ebf7939e2f1c0e1d92e1cc942c425725e2f9a51b813fb7d83bd1985979fe5f"
+    },
+    {
+      "id": "E000110",
+      "time": "2026-11-20T22:48:00+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2002-CUSTOMER-ADVANCES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "6768355.22",
+          "claim": "预收帐款 17",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 17",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第57页，预收帐款 17，第1数值列，本期／期末合并数，文本行11"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "d8ebf7939e2f1c0e1d92e1cc942c425725e2f9a51b813fb7d83bd1985979fe5f",
+      "hash": "1fce022ae0e387e8511d532e8abfadb9371736564dce4d99f39f13b9a9115cdb"
+    },
+    {
+      "id": "E000111",
+      "time": "2026-11-20T22:48:00+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2002-CUSTOMER-ADVANCES",
+        "binding": "bd760a309f10e0d27a1703c161aa8432aa78faf58af3028a9ac76cdb55c1811f",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第57页，预收帐款 17，第1数值列，本期／期末合并数，文本行11为6768355.22人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2002-CUSTOMER-ADVANCES",
+          "claim": "预收帐款 17",
+          "value": "6768355.22",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 17",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第57页，预收帐款 17，第1数值列，本期／期末合并数，文本行11"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "1fce022ae0e387e8511d532e8abfadb9371736564dce4d99f39f13b9a9115cdb",
+      "hash": "950d279afcb649487933a499fb6e7418a8c6e06bac3606b51b918769472cc749"
+    },
+    {
+      "id": "E000112",
+      "time": "2026-11-20T22:48:00+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2002-FIXED-ASSETS-TOTAL",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "433581067.03",
+          "claim": "固定资产合计",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第56页，固定资产合计，第1数值列，本期／期末合并数，文本行38"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "950d279afcb649487933a499fb6e7418a8c6e06bac3606b51b918769472cc749",
+      "hash": "7eb382c2a036b3d3e7e7c44c1a2ed8b8614e241bb73f79ad31b705e2575896cc"
+    },
+    {
+      "id": "E000113",
+      "time": "2026-11-20T22:48:00+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2002-FIXED-ASSETS-TOTAL",
+        "binding": "33223f8f3f6b9b41c42ff99423f60cf8a6c2eee840d0dc69db98e6befbca73df",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第56页，固定资产合计，第1数值列，本期／期末合并数，文本行38为433581067.03人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2002-FIXED-ASSETS-TOTAL",
+          "claim": "固定资产合计",
+          "value": "433581067.03",
+          "scope": {
+            "period": "2002-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-a043101a93d9abeb",
+              "location": "PDF物理第56页，固定资产合计，第1数值列，本期／期末合并数，文本行38"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "7eb382c2a036b3d3e7e7c44c1a2ed8b8614e241bb73f79ad31b705e2575896cc",
+      "hash": "f84f6b41b2a6cbc0256764f42572135055de1c6216c1f769e2614aa86ff0dd0d"
+    },
+    {
+      "id": "E000114",
+      "time": "2026-11-20T22:48:00+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2003-FINANCE",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "1940504.60",
+          "claim": "财务费用 37",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 37",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第63页，财务费用 37，第1数值列，本期／期末合并数，文本行15"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "f84f6b41b2a6cbc0256764f42572135055de1c6216c1f769e2614aa86ff0dd0d",
+      "hash": "fe09c9c85ae72b271f83e55ea1aabd8543a482e29bce4ab95c8f26024d00e98b"
+    },
+    {
+      "id": "E000115",
+      "time": "2026-11-20T22:48:01+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2003-FINANCE",
+        "binding": "53c3c33661b21e62350cccc43a6342ffaffaa11013de7f568f105dcf1483678d",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第63页，财务费用 37，第1数值列，本期／期末合并数，文本行15为1940504.60人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2003-FINANCE",
+          "claim": "财务费用 37",
+          "value": "1940504.60",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 37",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第63页，财务费用 37，第1数值列，本期／期末合并数，文本行15"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "fe09c9c85ae72b271f83e55ea1aabd8543a482e29bce4ab95c8f26024d00e98b",
+      "hash": "be1d6ec9dc6d344eded69138db9de96fe96ea3c5f33c5228c08ebf533e9c1fe0"
+    },
+    {
+      "id": "E000116",
+      "time": "2026-11-20T22:48:01+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2003-RECEIVABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "41576995.93",
+          "claim": "应收帐款 4",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第61页，应收帐款 4，第1数值列，本期／期末合并数，文本行13"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "be1d6ec9dc6d344eded69138db9de96fe96ea3c5f33c5228c08ebf533e9c1fe0",
+      "hash": "b435119ace53d8e6f8ec6ec893597fee130ec6a49113c52f6834dc221ada3807"
+    },
+    {
+      "id": "E000117",
+      "time": "2026-11-20T22:48:01+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2003-RECEIVABLES",
+        "binding": "239f9887e659a6c8cf4852bc603f1bb8844e3b5f2e8aad7f5fcdf3c5e1b229dc",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第61页，应收帐款 4，第1数值列，本期／期末合并数，文本行13为41576995.93人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2003-RECEIVABLES",
+          "claim": "应收帐款 4",
+          "value": "41576995.93",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第61页，应收帐款 4，第1数值列，本期／期末合并数，文本行13"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "b435119ace53d8e6f8ec6ec893597fee130ec6a49113c52f6834dc221ada3807",
+      "hash": "1846af0ba2bd125612b6ab8e91bbdcacf0114c43d86975d3f8018a5091889497"
+    },
+    {
+      "id": "E000118",
+      "time": "2026-11-20T22:48:01+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2003-INVENTORY",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "104818816.13",
+          "claim": "存货 7",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第61页，存货 7，第1数值列，本期／期末合并数，文本行17"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "1846af0ba2bd125612b6ab8e91bbdcacf0114c43d86975d3f8018a5091889497",
+      "hash": "3247cf8d6e674f0b0b4c7177e201de58e24d34681338cbbc92f553c72277d8cd"
+    },
+    {
+      "id": "E000119",
+      "time": "2026-11-20T22:48:02+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2003-INVENTORY",
+        "binding": "80a8c50356fe35ccd4c382b1f7d18c4225787ea24e0c5ba199332ee0f3d9db96",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第61页，存货 7，第1数值列，本期／期末合并数，文本行17为104818816.13人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2003-INVENTORY",
+          "claim": "存货 7",
+          "value": "104818816.13",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第61页，存货 7，第1数值列，本期／期末合并数，文本行17"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "3247cf8d6e674f0b0b4c7177e201de58e24d34681338cbbc92f553c72277d8cd",
+      "hash": "b4ec8242b011974f204fadc3eaadbb3acd58a6fb6905581f8732f51e425b6ce6"
+    },
+    {
+      "id": "E000120",
+      "time": "2026-11-20T22:48:02+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2003-PAYABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "38153794.79",
+          "claim": "应付帐款 17",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 17",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第62页，应付帐款 17，第1数值列，本期／期末合并数，文本行9"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "b4ec8242b011974f204fadc3eaadbb3acd58a6fb6905581f8732f51e425b6ce6",
+      "hash": "0d0f4d709de638a9e1ba93c8626e4f66301567d0c00d4321e823022d72a20dc5"
+    },
+    {
+      "id": "E000121",
+      "time": "2026-11-20T22:48:02+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2003-PAYABLES",
+        "binding": "9122149764bd23e1c13201dba4122ab78e02e6414fbb5bc76719aa40ab9f3efb",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第62页，应付帐款 17，第1数值列，本期／期末合并数，文本行9为38153794.79人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2003-PAYABLES",
+          "claim": "应付帐款 17",
+          "value": "38153794.79",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 17",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第62页，应付帐款 17，第1数值列，本期／期末合并数，文本行9"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "0d0f4d709de638a9e1ba93c8626e4f66301567d0c00d4321e823022d72a20dc5",
+      "hash": "d3151959458962e346f9019cf95bb741d2e24e02d479b205aa099e436f507eaa"
+    },
+    {
+      "id": "E000122",
+      "time": "2026-11-20T22:48:02+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2003-CUSTOMER-ADVANCES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "7284347.95",
+          "claim": "预收帐款 18",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 18",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第62页，预收帐款 18，第1数值列，本期／期末合并数，文本行10"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "d3151959458962e346f9019cf95bb741d2e24e02d479b205aa099e436f507eaa",
+      "hash": "d7b1dcca5ff8e04218f8af800072fa9809d7fc754aa57fcde744e63e5157477a"
+    },
+    {
+      "id": "E000123",
+      "time": "2026-11-20T22:48:02+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2003-CUSTOMER-ADVANCES",
+        "binding": "1b4a897e9bd072282ed831724ee80bd3bfb883f63a5368c7930ade2e4a373692",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第62页，预收帐款 18，第1数值列，本期／期末合并数，文本行10为7284347.95人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2003-CUSTOMER-ADVANCES",
+          "claim": "预收帐款 18",
+          "value": "7284347.95",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 18",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第62页，预收帐款 18，第1数值列，本期／期末合并数，文本行10"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "d7b1dcca5ff8e04218f8af800072fa9809d7fc754aa57fcde744e63e5157477a",
+      "hash": "566b8de86a3c80bd57fbde8c2d8e5de8f242aeb073e5cd06beac81a4b3f76ac3"
+    },
+    {
+      "id": "E000124",
+      "time": "2026-11-20T22:48:02+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2003-FIXED-ASSETS-TOTAL",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "503620324.64",
+          "claim": "固定资产合计",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第61页，固定资产合计，第1数值列，本期／期末合并数，文本行37"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "566b8de86a3c80bd57fbde8c2d8e5de8f242aeb073e5cd06beac81a4b3f76ac3",
+      "hash": "68753d71b5f919059893bae34b7f5519dfaad2379e342d7b072884467a54dfcc"
+    },
+    {
+      "id": "E000125",
+      "time": "2026-11-20T22:48:03+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2003-FIXED-ASSETS-TOTAL",
+        "binding": "0092482319e8894de8191c75ea5d23dfb5d12f4b5de091e34c22bf7a057d404c",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第61页，固定资产合计，第1数值列，本期／期末合并数，文本行37为503620324.64人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2003-FIXED-ASSETS-TOTAL",
+          "claim": "固定资产合计",
+          "value": "503620324.64",
+          "scope": {
+            "period": "2003-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e571e83c385479b8",
+              "location": "PDF物理第61页，固定资产合计，第1数值列，本期／期末合并数，文本行37"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "68753d71b5f919059893bae34b7f5519dfaad2379e342d7b072884467a54dfcc",
+      "hash": "bccd336450f136e92668b9e884b8f010602f43ae74112908db9c8120b34c1f72"
+    },
+    {
+      "id": "E000126",
+      "time": "2026-11-20T22:48:03+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2004-COST",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "331678272.14",
+          "claim": "减：主营业务成本 33",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "减：主营业务成本 33",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第69页，减：主营业务成本 33，第3数值列，上年同期／期初合并数，文本行6"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "bccd336450f136e92668b9e884b8f010602f43ae74112908db9c8120b34c1f72",
+      "hash": "a2137b8ca447b461e8a9710eb8fd04de937fbead36ed79315a3e363eba6d01c7"
+    },
+    {
+      "id": "E000127",
+      "time": "2026-11-20T22:48:03+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2004-COST",
+        "binding": "7658a50027e4a5ec16687d50e1bd3c85b57cc8980807106f082a161b51862112",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第69页，减：主营业务成本 33，第3数值列，上年同期／期初合并数，文本行6为331678272.14人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2004-COST",
+          "claim": "减：主营业务成本 33",
+          "value": "331678272.14",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "减：主营业务成本 33",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第69页，减：主营业务成本 33，第3数值列，上年同期／期初合并数，文本行6"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "a2137b8ca447b461e8a9710eb8fd04de937fbead36ed79315a3e363eba6d01c7",
+      "hash": "954a48c89f417242d0cf7f8ed182b7a061b6a51587cb6ab5ba9fe55751c189da"
+    },
+    {
+      "id": "E000128",
+      "time": "2026-11-20T22:48:03+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2004-FINANCE",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "4450825.30",
+          "claim": "财务费用 36",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 36",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第69页，财务费用 36，第3数值列，上年同期／期初合并数，文本行12"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "954a48c89f417242d0cf7f8ed182b7a061b6a51587cb6ab5ba9fe55751c189da",
+      "hash": "be44f9b8ee9c790bc3f70bd0a41c5ed7d5898e712e190b5af897051df8fbe18e"
+    },
+    {
+      "id": "E000129",
+      "time": "2026-11-20T22:48:04+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2004-FINANCE",
+        "binding": "5a4e42d9de28176b9229adf29829c3c2747013f76b9a2985b7b0db78fa280f98",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第69页，财务费用 36，第3数值列，上年同期／期初合并数，文本行12为4450825.30人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2004-FINANCE",
+          "claim": "财务费用 36",
+          "value": "4450825.30",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 36",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第69页，财务费用 36，第3数值列，上年同期／期初合并数，文本行12"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "be44f9b8ee9c790bc3f70bd0a41c5ed7d5898e712e190b5af897051df8fbe18e",
+      "hash": "1c2522644102cb99afdd042599cbc2b3416af87db017bacb4ad656addd1e753e"
+    },
+    {
+      "id": "E000130",
+      "time": "2026-11-20T22:48:04+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2004-RECEIVABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "40422044.86",
+          "claim": "应收帐款 4",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，应收帐款 4，第3数值列，上年同期／期初合并数，文本行11"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "1c2522644102cb99afdd042599cbc2b3416af87db017bacb4ad656addd1e753e",
+      "hash": "6ea6acbedb3ed956bfa4334c35410fceb94ed0ed627535049d3a1ab7c86152a7"
+    },
+    {
+      "id": "E000131",
+      "time": "2026-11-20T22:48:04+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2004-RECEIVABLES",
+        "binding": "32693b9641c3dff3cef6036e64a24720bf823d3d9af7c6b7a2a8f945335c2048",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第67页，应收帐款 4，第3数值列，上年同期／期初合并数，文本行11为40422044.86人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2004-RECEIVABLES",
+          "claim": "应收帐款 4",
+          "value": "40422044.86",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，应收帐款 4，第3数值列，上年同期／期初合并数，文本行11"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "6ea6acbedb3ed956bfa4334c35410fceb94ed0ed627535049d3a1ab7c86152a7",
+      "hash": "b12a88996c9bd30a5bae54293697e912718a26cace52cde84f52ab76b1bc3bcb"
+    },
+    {
+      "id": "E000132",
+      "time": "2026-11-20T22:48:04+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2004-INVENTORY",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "85338646.05",
+          "claim": "存货 7",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，存货 7，第3数值列，上年同期／期初合并数，文本行15"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "b12a88996c9bd30a5bae54293697e912718a26cace52cde84f52ab76b1bc3bcb",
+      "hash": "aebc0957c40a5d7040f167daf7d24d1382c94482e9eab26cbd08183649dd1ccf"
+    },
+    {
+      "id": "E000133",
+      "time": "2026-11-20T22:48:04+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2004-INVENTORY",
+        "binding": "3e35ae3d7a76c2f0e6580c9d2f0ae06510a12e99055f83bf24c70228529ae4e1",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第67页，存货 7，第3数值列，上年同期／期初合并数，文本行15为85338646.05人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2004-INVENTORY",
+          "claim": "存货 7",
+          "value": "85338646.05",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，存货 7，第3数值列，上年同期／期初合并数，文本行15"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "aebc0957c40a5d7040f167daf7d24d1382c94482e9eab26cbd08183649dd1ccf",
+      "hash": "f38791a81e708afb560d285bf71018799a98d8081583d22c7d36c11d37aa44ff"
+    },
+    {
+      "id": "E000134",
+      "time": "2026-11-20T22:48:05+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2004-PAYABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "45721342.15",
+          "claim": "应付帐款 18",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 18",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第68页，应付帐款 18，第3数值列，上年同期／期初合并数，文本行8"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "f38791a81e708afb560d285bf71018799a98d8081583d22c7d36c11d37aa44ff",
+      "hash": "c72608a4c13c23cb867fafeedcf04517c83193dff915fbeacdbaebc0015d75ac"
+    },
+    {
+      "id": "E000135",
+      "time": "2026-11-20T22:48:05+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2004-PAYABLES",
+        "binding": "4c29729ab835a9d7cb91501ccc4a2be6898188b8f90d68506da96f23670019da",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第68页，应付帐款 18，第3数值列，上年同期／期初合并数，文本行8为45721342.15人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2004-PAYABLES",
+          "claim": "应付帐款 18",
+          "value": "45721342.15",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 18",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第68页，应付帐款 18，第3数值列，上年同期／期初合并数，文本行8"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "c72608a4c13c23cb867fafeedcf04517c83193dff915fbeacdbaebc0015d75ac",
+      "hash": "e26b458ae702655244260ba345314e66cbadcd2ff2f61bd8217ef64f70e883d9"
+    },
+    {
+      "id": "E000136",
+      "time": "2026-11-20T22:48:05+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2004-CUSTOMER-ADVANCES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "10178314.99",
+          "claim": "预收帐款 19",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 19",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第68页，预收帐款 19，第3数值列，上年同期／期初合并数，文本行9"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "e26b458ae702655244260ba345314e66cbadcd2ff2f61bd8217ef64f70e883d9",
+      "hash": "157159296a22f22411aad99572390800f78de6abc65f8b27f42d15ef2209df07"
+    },
+    {
+      "id": "E000137",
+      "time": "2026-11-20T22:48:05+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2004-CUSTOMER-ADVANCES",
+        "binding": "567897cfa42b3bd8c8635153efa02c20481e3c8dd528a6be61b538996c30cc28",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第68页，预收帐款 19，第3数值列，上年同期／期初合并数，文本行9为10178314.99人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2004-CUSTOMER-ADVANCES",
+          "claim": "预收帐款 19",
+          "value": "10178314.99",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 19",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第68页，预收帐款 19，第3数值列，上年同期／期初合并数，文本行9"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "157159296a22f22411aad99572390800f78de6abc65f8b27f42d15ef2209df07",
+      "hash": "fcd389c1b979a05d68b2190a404872202c8aac4dae0d4650c8b420f439532552"
+    },
+    {
+      "id": "E000138",
+      "time": "2026-11-20T22:48:05+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2004-FIXED-ASSETS-TOTAL",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "594551051.54",
+          "claim": "固定资产合计",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，固定资产合计，第3数值列，上年同期／期初合并数，文本行35"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "fcd389c1b979a05d68b2190a404872202c8aac4dae0d4650c8b420f439532552",
+      "hash": "35c6be8fcb1e56c90df1338af5e5c046a763ab2b9525064b9d15426bfa656ee2"
+    },
+    {
+      "id": "E000139",
+      "time": "2026-11-20T22:48:06+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2004-FIXED-ASSETS-TOTAL",
+        "binding": "8650394b79f84b9cd5158db4328516f849e9da846bb04bf0dd50afb7f9531ecb",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第67页，固定资产合计，第3数值列，上年同期／期初合并数，文本行35为594551051.54人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2004-FIXED-ASSETS-TOTAL",
+          "claim": "固定资产合计",
+          "value": "594551051.54",
+          "scope": {
+            "period": "2004-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，固定资产合计，第3数值列，上年同期／期初合并数，文本行35"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "35c6be8fcb1e56c90df1338af5e5c046a763ab2b9525064b9d15426bfa656ee2",
+      "hash": "29cf38a97d50d6711f878838317e582c5169e2e863cb6a5d7497405977a11ce8"
+    },
+    {
+      "id": "E000140",
+      "time": "2026-11-20T22:48:06+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2005-COST",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "476888297.23",
+          "claim": "减：主营业务成本 33",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "减：主营业务成本 33",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第69页，减：主营业务成本 33，第2数值列，本期／期末合并数，文本行6"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "29cf38a97d50d6711f878838317e582c5169e2e863cb6a5d7497405977a11ce8",
+      "hash": "711445a1a59b86bcdf2dab430dd8ff270ff3fa95162ff154d54281de1a49164c"
+    },
+    {
+      "id": "E000141",
+      "time": "2026-11-20T22:48:06+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2005-COST",
+        "binding": "a2afdc3afc5d3825dd6fc370bcfc0ceb8b2a00ae58321726ead389f8a0d1026e",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第69页，减：主营业务成本 33，第2数值列，本期／期末合并数，文本行6为476888297.23人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2005-COST",
+          "claim": "减：主营业务成本 33",
+          "value": "476888297.23",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "减：主营业务成本 33",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第69页，减：主营业务成本 33，第2数值列，本期／期末合并数，文本行6"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "711445a1a59b86bcdf2dab430dd8ff270ff3fa95162ff154d54281de1a49164c",
+      "hash": "4e9ddc2ac28e17419333e396f37eaafcc5fb0720b0864e31977cf2a27114cc40"
+    },
+    {
+      "id": "E000142",
+      "time": "2026-11-20T22:48:06+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2005-FINANCE",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "10312441.37",
+          "claim": "财务费用 36",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 36",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第69页，财务费用 36，第2数值列，本期／期末合并数，文本行12"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "4e9ddc2ac28e17419333e396f37eaafcc5fb0720b0864e31977cf2a27114cc40",
+      "hash": "3bc332c732d9a7628142232ee3353d99e59fae624588595a7939d076ef3cf992"
+    },
+    {
+      "id": "E000143",
+      "time": "2026-11-20T22:48:06+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2005-FINANCE",
+        "binding": "0993ab308162b7b693efb1e8c85f6bc0302e82f6b0d3c22aed02c28cc7019f78",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第69页，财务费用 36，第2数值列，本期／期末合并数，文本行12为10312441.37人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2005-FINANCE",
+          "claim": "财务费用 36",
+          "value": "10312441.37",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 36",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第69页，财务费用 36，第2数值列，本期／期末合并数，文本行12"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "3bc332c732d9a7628142232ee3353d99e59fae624588595a7939d076ef3cf992",
+      "hash": "892e1a49e27d803ca1482ad7d5da62bd4b17e2f85eded26801322e61d66a91a2"
+    },
+    {
+      "id": "E000144",
+      "time": "2026-11-20T22:48:07+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2005-RECEIVABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "37281650.44",
+          "claim": "应收帐款 4",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，应收帐款 4，第2数值列，本期／期末合并数，文本行11"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "892e1a49e27d803ca1482ad7d5da62bd4b17e2f85eded26801322e61d66a91a2",
+      "hash": "c2b1ed3f7a58d5385ff88bcea3bf7e9971cc96f081ad3fa13ece076f9ce47643"
+    },
+    {
+      "id": "E000145",
+      "time": "2026-11-20T22:48:07+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2005-RECEIVABLES",
+        "binding": "d6d3af883edb54ab064dad8553def8f5eff2db03109d7bafeb9d480c139ffdb9",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第67页，应收帐款 4，第2数值列，本期／期末合并数，文本行11为37281650.44人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2005-RECEIVABLES",
+          "claim": "应收帐款 4",
+          "value": "37281650.44",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，应收帐款 4，第2数值列，本期／期末合并数，文本行11"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "c2b1ed3f7a58d5385ff88bcea3bf7e9971cc96f081ad3fa13ece076f9ce47643",
+      "hash": "b756975d4a9c35c710d8ac9236740f5057d1ab3edc0d714e0ca66ee769a52dfc"
+    },
+    {
+      "id": "E000146",
+      "time": "2026-11-20T22:48:07+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2005-INVENTORY",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "179273871.77",
+          "claim": "存货 7",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，存货 7，第2数值列，本期／期末合并数，文本行15"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "b756975d4a9c35c710d8ac9236740f5057d1ab3edc0d714e0ca66ee769a52dfc",
+      "hash": "e2d8dbb6717eac1fb39f3326276754070b9f26bdbf2d73e0124324bec583c6dc"
+    },
+    {
+      "id": "E000147",
+      "time": "2026-11-20T22:48:07+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2005-INVENTORY",
+        "binding": "3979e3f4020aa4bd0a48c51c09a4a9ca0ae6934125eb67d3d211ebd443654c2a",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第67页，存货 7，第2数值列，本期／期末合并数，文本行15为179273871.77人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2005-INVENTORY",
+          "claim": "存货 7",
+          "value": "179273871.77",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，存货 7，第2数值列，本期／期末合并数，文本行15"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "e2d8dbb6717eac1fb39f3326276754070b9f26bdbf2d73e0124324bec583c6dc",
+      "hash": "f9de2d2dd6be74105a8b75d3bf035b5d1ce29496e31c0f350bc00e251ccb19b6"
+    },
+    {
+      "id": "E000148",
+      "time": "2026-11-20T22:48:07+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2005-PAYABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "57415892.30",
+          "claim": "应付帐款 18",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 18",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第68页，应付帐款 18，第2数值列，本期／期末合并数，文本行8"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "f9de2d2dd6be74105a8b75d3bf035b5d1ce29496e31c0f350bc00e251ccb19b6",
+      "hash": "b7b25d22507c8b791e2527a21dd8889e8c50b5cee1cf1c718daf5f23c70a2190"
+    },
+    {
+      "id": "E000149",
+      "time": "2026-11-20T22:48:08+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2005-PAYABLES",
+        "binding": "ad1b72b118af70e17057732708c6cdf4b2192709545b1345959497866a143617",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第68页，应付帐款 18，第2数值列，本期／期末合并数，文本行8为57415892.30人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2005-PAYABLES",
+          "claim": "应付帐款 18",
+          "value": "57415892.30",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 18",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第68页，应付帐款 18，第2数值列，本期／期末合并数，文本行8"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "b7b25d22507c8b791e2527a21dd8889e8c50b5cee1cf1c718daf5f23c70a2190",
+      "hash": "5265a0f5d4e43f3a281f24aa16da61b8372c6a7d4b55bb1984edd24497c7ed86"
+    },
+    {
+      "id": "E000150",
+      "time": "2026-11-20T22:48:08+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2005-CUSTOMER-ADVANCES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "27932280.59",
+          "claim": "预收帐款 19",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 19",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第68页，预收帐款 19，第2数值列，本期／期末合并数，文本行9"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "5265a0f5d4e43f3a281f24aa16da61b8372c6a7d4b55bb1984edd24497c7ed86",
+      "hash": "f8bf35df887e210077efee88af8b6fef129cf7b14df0b66bbc69dad8724269f2"
+    },
+    {
+      "id": "E000151",
+      "time": "2026-11-20T22:48:08+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2005-CUSTOMER-ADVANCES",
+        "binding": "b4cfefad926d858c68a6c938af45b3be7df2f4ff2c79cc5d0cb72589c710b5b4",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第68页，预收帐款 19，第2数值列，本期／期末合并数，文本行9为27932280.59人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2005-CUSTOMER-ADVANCES",
+          "claim": "预收帐款 19",
+          "value": "27932280.59",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 19",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第68页，预收帐款 19，第2数值列，本期／期末合并数，文本行9"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "f8bf35df887e210077efee88af8b6fef129cf7b14df0b66bbc69dad8724269f2",
+      "hash": "6b0c5a02f1492ccc5efee13062fbc51aec626743e6601947a4eff8046fe2b1f1"
+    },
+    {
+      "id": "E000152",
+      "time": "2026-11-20T22:48:08+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2005-FIXED-ASSETS-TOTAL",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "668805568.71",
+          "claim": "固定资产合计",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，固定资产合计，第2数值列，本期／期末合并数，文本行35"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "6b0c5a02f1492ccc5efee13062fbc51aec626743e6601947a4eff8046fe2b1f1",
+      "hash": "db71824cf9d96ce573985c141d13a0977323adad2aea037d48f174d57d3dbcaf"
+    },
+    {
+      "id": "E000153",
+      "time": "2026-11-20T22:48:09+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2005-FIXED-ASSETS-TOTAL",
+        "binding": "4b10fac70a709cdde4063b4a391c65c309933b2ad9f0fadc80c3c825e2a2fa3a",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第67页，固定资产合计，第2数值列，本期／期末合并数，文本行35为668805568.71人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2005-FIXED-ASSETS-TOTAL",
+          "claim": "固定资产合计",
+          "value": "668805568.71",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-15f76fea162e70a3",
+              "location": "PDF物理第67页，固定资产合计，第2数值列，本期／期末合并数，文本行35"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "db71824cf9d96ce573985c141d13a0977323adad2aea037d48f174d57d3dbcaf",
+      "hash": "33a0eb7fbc9c0006bdd986ed65073a496f8e4f5fc41e0f03813f1c8bf43fa689"
+    },
+    {
+      "id": "E000154",
+      "time": "2026-11-20T22:48:09+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2006-FINANCE",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "17443033.14",
+          "claim": "财务费用 35",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 35",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第60页，财务费用 35，第2数值列，本期／期末合并数，文本行10"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "33a0eb7fbc9c0006bdd986ed65073a496f8e4f5fc41e0f03813f1c8bf43fa689",
+      "hash": "97a1fb0f4afc9434b41ad9f721be7dc3a2ed2a0fff974c72a52efa7d479a48cd"
+    },
+    {
+      "id": "E000155",
+      "time": "2026-11-20T22:48:09+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2006-FINANCE",
+        "binding": "11f037d40e2906e1d13055dcace509399536dbf1d9bad133ec7b222f6750e96c",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第60页，财务费用 35，第2数值列，本期／期末合并数，文本行10为17443033.14人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2006-FINANCE",
+          "claim": "财务费用 35",
+          "value": "17443033.14",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "财务费用 35",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第60页，财务费用 35，第2数值列，本期／期末合并数，文本行10"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "97a1fb0f4afc9434b41ad9f721be7dc3a2ed2a0fff974c72a52efa7d479a48cd",
+      "hash": "ddf51ce38688f1161ea51bf4151a8482389775c35a6550c18cb5529797ed9231"
+    },
+    {
+      "id": "E000156",
+      "time": "2026-11-20T22:48:09+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2006-RECEIVABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "47142588.14",
+          "claim": "应收帐款 4",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第58页，应收帐款 4，第1数值列，本期／期末合并数，文本行9"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "ddf51ce38688f1161ea51bf4151a8482389775c35a6550c18cb5529797ed9231",
+      "hash": "dc31e5b5a9fa54e00b53e52934720053e957b95b7140bd29f19c21b1b687dc6a"
+    },
+    {
+      "id": "E000157",
+      "time": "2026-11-20T22:48:10+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2006-RECEIVABLES",
+        "binding": "c0af9471a263977c2eea95f804d04cc92fb31cbb7e6eff869c0fc17fcb72e193",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第58页，应收帐款 4，第1数值列，本期／期末合并数，文本行9为47142588.14人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2006-RECEIVABLES",
+          "claim": "应收帐款 4",
+          "value": "47142588.14",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应收帐款 4",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第58页，应收帐款 4，第1数值列，本期／期末合并数，文本行9"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "dc31e5b5a9fa54e00b53e52934720053e957b95b7140bd29f19c21b1b687dc6a",
+      "hash": "67bfb7b17b715154a2f4c56f1cb566742f7d909c102546b7dbc6e39b7c65c25c"
+    },
+    {
+      "id": "E000158",
+      "time": "2026-11-20T22:48:10+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2006-INVENTORY",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "276792156.35",
+          "claim": "存货 7",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第58页，存货 7，第1数值列，本期／期末合并数，文本行13"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "67bfb7b17b715154a2f4c56f1cb566742f7d909c102546b7dbc6e39b7c65c25c",
+      "hash": "1622bed8eae21aeaec3af5fb611c5733a10e9c2ea03f18616cccd5183c1eeb4d"
+    },
+    {
+      "id": "E000159",
+      "time": "2026-11-20T22:48:10+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2006-INVENTORY",
+        "binding": "11358108bf801a4b685fe16407ba39a989964411686b14b8e79e8e76ca7099f9",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第58页，存货 7，第1数值列，本期／期末合并数，文本行13为276792156.35人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2006-INVENTORY",
+          "claim": "存货 7",
+          "value": "276792156.35",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "存货 7",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第58页，存货 7，第1数值列，本期／期末合并数，文本行13"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "1622bed8eae21aeaec3af5fb611c5733a10e9c2ea03f18616cccd5183c1eeb4d",
+      "hash": "33caab587152abb8e8ef2aea0174c7fe303dc39f3e37182b73250cfba08fe46e"
+    },
+    {
+      "id": "E000160",
+      "time": "2026-11-20T22:48:10+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2006-PAYABLES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "105799064.76",
+          "claim": "应付帐款 15",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 15",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第59页，应付帐款 15，第1数值列，本期／期末合并数，文本行6"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "33caab587152abb8e8ef2aea0174c7fe303dc39f3e37182b73250cfba08fe46e",
+      "hash": "b5cb7452099ae4efc93a356dcb845ef41f1a8a50d390e6affc2dee3f62d0305f"
+    },
+    {
+      "id": "E000161",
+      "time": "2026-11-20T22:48:10+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2006-PAYABLES",
+        "binding": "73a0ffa8b55e88c7d4e4407dabf1ee918626888d522c7663635548280f4f31e2",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第59页，应付帐款 15，第1数值列，本期／期末合并数，文本行6为105799064.76人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2006-PAYABLES",
+          "claim": "应付帐款 15",
+          "value": "105799064.76",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "应付帐款 15",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第59页，应付帐款 15，第1数值列，本期／期末合并数，文本行6"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "b5cb7452099ae4efc93a356dcb845ef41f1a8a50d390e6affc2dee3f62d0305f",
+      "hash": "5713d372c66769a8b59bb1c407aff8a58595193dee1cdbb16cc5437d16dd3083"
+    },
+    {
+      "id": "E000162",
+      "time": "2026-11-20T22:48:11+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2006-CUSTOMER-ADVANCES",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "17844403.59",
+          "claim": "预收帐款 16",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 16",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第59页，预收帐款 16，第1数值列，本期／期末合并数，文本行7"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "5713d372c66769a8b59bb1c407aff8a58595193dee1cdbb16cc5437d16dd3083",
+      "hash": "85cdd7de6be34c71c3d984f00c226ed75c6e0a196ae8d3e12c0c057e10f3406f"
+    },
+    {
+      "id": "E000163",
+      "time": "2026-11-20T22:48:11+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2006-CUSTOMER-ADVANCES",
+        "binding": "c6f917929ddc0d074b2a72acc8c0e3e84f4038ae6064d485b1c67c146ff98d08",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第59页，预收帐款 16，第1数值列，本期／期末合并数，文本行7为17844403.59人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2006-CUSTOMER-ADVANCES",
+          "claim": "预收帐款 16",
+          "value": "17844403.59",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "预收帐款 16",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第59页，预收帐款 16，第1数值列，本期／期末合并数，文本行7"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "85cdd7de6be34c71c3d984f00c226ed75c6e0a196ae8d3e12c0c057e10f3406f",
+      "hash": "f801b51aa63a72ecceb63f6cb351dd82be25a9a7f262bdd1acb6f572aebf5623"
+    },
+    {
+      "id": "E000164",
+      "time": "2026-11-20T22:48:11+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2006-FIXED-ASSETS-TOTAL",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "784961997.56",
+          "claim": "固定资产合计",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第58页，固定资产合计，第1数值列，本期／期末合并数，文本行33"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "f801b51aa63a72ecceb63f6cb351dd82be25a9a7f262bdd1acb6f572aebf5623",
+      "hash": "65da92be18965a1d7d65511dcde2509905dd26940b34b939fc0a0eec7a790490"
+    },
+    {
+      "id": "E000165",
+      "time": "2026-11-20T22:48:11+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2006-FIXED-ASSETS-TOTAL",
+        "binding": "9239fe6c6591bd5876695564f1144e09b9811fd07a60a1f6737d05648373a979",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第58页，固定资产合计，第1数值列，本期／期末合并数，文本行33为784961997.56人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2006-FIXED-ASSETS-TOTAL",
+          "claim": "固定资产合计",
+          "value": "784961997.56",
+          "scope": {
+            "period": "2006-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "固定资产合计",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-e0d8c6a337061706",
+              "location": "PDF物理第58页，固定资产合计，第1数值列，本期／期末合并数，文本行33"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "65da92be18965a1d7d65511dcde2509905dd26940b34b939fc0a0eec7a790490",
+      "hash": "12d45efffb2c1a1dac9346a3bcafd644affa0383359d5d8323cd44da792c5a04"
+    },
+    {
+      "id": "E000166",
+      "time": "2026-11-20T22:48:11+08:00",
+      "action": "candidate-created",
+      "data": {
+        "record": {
+          "id": "V22-2005-CFO-CORRECTION",
+          "kind": "disclosure",
+          "state": "Unknown",
+          "value": "122623618.86",
+          "claim": "经营活动产生的现金流量净额",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "经营活动产生的现金流量净额",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-6e760efa72c47824",
+              "location": "PDF物理第1页，经营活动产生的现金流量净额，第1数值列，2005年"
+            }
+          ],
+          "support_boundary": "保留报告本期或指明比较版本。派生利润、资本回报和条件估值另表计算。"
+        },
+        "previous": null
+      },
+      "previous_hash": "12d45efffb2c1a1dac9346a3bcafd644affa0383359d5d8323cd44da792c5a04",
+      "hash": "774b4a7b983a5e683bba9fadb5fa8ec867a9ca19405c64f7d361c219c0ad22b1"
+    },
+    {
+      "id": "E000167",
+      "time": "2026-11-20T22:48:12+08:00",
+      "action": "record-confirmed",
+      "data": {
+        "record_id": "V22-2005-CFO-CORRECTION",
+        "binding": "b9fdbe61a3cf8f87096c81eebf9e9984585afe08f1051657e89bf3fabce56ce0",
+        "actor": "agent",
+        "statement_original": "原件指纹和 PDF 物理页、科目、列头及单位已核对。PDF物理第1页，经营活动产生的现金流量净额，第1数值列，2005年为122623618.86人民币元。",
+        "delegation_id": "D0001",
+        "reviewed_record": {
+          "id": "V22-2005-CFO-CORRECTION",
+          "claim": "经营活动产生的现金流量净额",
+          "value": "122623618.86",
+          "scope": {
+            "period": "2005-FY",
+            "entity": "安琪酵母",
+            "basis": "历史合并原披露",
+            "definition": "经营活动产生的现金流量净额",
+            "unit": "人民币元",
+            "currency": "CNY"
+          },
+          "sources": [
+            {
+              "source_id": "600298-6e760efa72c47824",
+              "location": "PDF物理第1页，经营活动产生的现金流量净额，第1数值列，2005年"
+            }
+          ],
+          "formula": null
+        },
+        "reviewer_name": ""
+      },
+      "previous_hash": "774b4a7b983a5e683bba9fadb5fa8ec867a9ca19405c64f7d361c219c0ad22b1",
+      "hash": "8dbc33927826083ad15861dfb76e596e3643417a34f8232a854464f9f380c0c0"
     }
   ],
   "delegations": [

@@ -1,0 +1,3 @@
+﻿period,control_units,control_inventory,hardware_units,hardware_inventory,hardware_to_control_shipments,control_finished_stock_days,hardware_finished_stock_days,combined_main_revenue_per_control_equivalent_cny,label,source
+2024,60993,5226,35118,3127,0.5757709901136195,31.273916678963158,32.500569508514154,28165.11627416261,出货当量代理；组均价×组合；库存是件数,2024年报p26、2025年报p29
+2025,65064,7340,56824,7963,0.8733554653879257,41.176380179515554,51.14907433478812,33300.20841386942,出货当量代理；组均价×组合；库存是件数,2024年报p26、2025年报p29

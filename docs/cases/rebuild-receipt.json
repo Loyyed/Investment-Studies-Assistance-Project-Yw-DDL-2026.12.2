@@ -1,0 +1,122 @@
+{
+  "version": "2026-11-20.3",
+  "valuation_date": "2026-11-12",
+  "clone": "5b1d4c78de62a581727e1460868db9749cec7976",
+  "cold_rebuild": {
+    "clone_sha": "bf8e2f3e94fe05d2a4b71aa7fc64765ccee293f2",
+    "cold_facts": 0,
+    "programs": {
+      "scripts/recalculate_research15.py": "Stage 15: [('002507_涪陵榨菜', [13.98, 10.34, 18.22]), ('09992_泡泡玛特', [215.04, 66.14, 544.05]), ('600298_安琪酵母', [97.91, 35.16, 210.83]), ('688188_柏楚电子', [98.66, 50.38, 172.65]), ('US_ISRG_直觉外科', [191.2, 98.79, 299.75])]\r\n",
+      "scripts/recalculate_research16.py": "[('002507_涪陵榨菜', [('base', 15.094), ('stress', 11.003), ('improve', 19.872)]), ('09992_泡泡玛特', [('base', 166.655), ('stress', 48.534), ('improve', 536.366)]), ('600298_安琪酵母', [('base', 57.711), ('stress', 11.117), ('improve', 135.67)]), ('688188_柏楚电子', [('base', 92.758), ('stress', 49.276), ('improve', 167.747)]), ('US_ISRG_直觉外科', [('base', 178.693), ('stress', 95.01), ('improve', 294.209)])]\r\n",
+      "scripts/build_cases.py": "{'annual': 65, 'interim': 49, 'cold_or_current_facts': 0, 'frozen_facts': 188, 'old_price_roundtrips': 62, 'path_count': 15, 'new_joint_reversals': {'002507': 0, '600298': 5, '688188': 5, '09992': 5, 'US': 5}, 'paths': {'002507': {'base': 15.093513086746889, 'stress': 11.002522448525678, 'improve': 19.871660760554118}, '600298': {'base': 57.71136084671705, 'stress': 11.116658497955338, 'improve': 135.6701660296606}, '688188': {'base': 92.75774737785618, 'stress': 49.27648753192086, 'improve': 167.74678116640987}, '09992': {'base': 166.65471957516075, 'stress': 48.53435822480893, 'improve': 536.3658597824261}, 'US': {'base': 178.6925027453693, 'stress': 95.010168459657, 'improve': 294.20845181157534}}}\r\n",
+      "scripts/verify_case_release.py": "{'annual': 65, 'interim': 49, 'cold_or_current_facts': 0, 'frozen_facts': 188, 'old_price_roundtrips': 62, 'path_count': 15, 'new_joint_reversals': {'002507': 0, '600298': 5, '688188': 5, '09992': 5, 'US': 5}, 'paths': {'002507': {'base': 15.093513086746889, 'stress': 11.002522448525678, 'improve': 19.871660760554118}, '600298': {'base': 57.71136084671705, 'stress': 11.116658497955338, 'improve': 135.6701660296606}, '688188': {'base': 92.75774737785618, 'stress': 49.27648753192086, 'improve': 167.74678116640987}, '09992': {'base': 166.65471957516075, 'stress': 48.53435822480893, 'improve': 536.3658597824261}, 'US': {'base': 178.6925027453693, 'stress': 95.010168459657, 'improve': 294.20845181157534}}}\r\n{\r\n  \"stage17\": {\r\n    \"valuation_date\": \"2026-11-12\",\r\n    \"baseline\": \"98d1d2e0fd31aa4031cc83e51638fafb38d7c22e\",\r\n    \"company_reconciliations\": 5,\r\n    \"current_facts\": 188,\r\n    \"batch_positions\": 48,\r\n    \"followup_rows\": 9,\r\n    \"local_followup_fingerprints\": 0\r\n  },\r\n  \"companies\": {\r\n    \"002507\": {\r\n      \"model\": \"f7d7d0ae5c6b5016d60cf53a9fe53e72529204e68a31d365abec4f705a3213f3\",\r\n      \"quoted\": 11.42,\r\n      \"base\": 15.093513086746889,\r\n      \"value_bridge_delta\": 0.0,\r\n      \"new_reverse_count\": 0\r\n    },\r\n    \"600298\": {\r\n      \"model\": \"eb490d26db94297adb2eb61a792509ffb74ba654d4a4e650b6e5df895c40b76f\",\r\n      \"quoted\": 36.62,\r\n      \"base\": 57.71136084671705,\r\n      \"value_bridge_delta\": 0.0,\r\n      \"new_reverse_count\": 5\r\n    },\r\n    \"688188\": {\r\n      \"model\": \"438caa8fc6728ac41c7ddd1d4920f48d7f09cfec7450a91750c062b52678e746\",\r\n      \"quoted\": 96.2,\r\n      \"base\": 92.75774737785618,\r\n      \"value_bridge_delta\": 0.0,\r\n      \"new_reverse_count\": 5\r\n    },\r\n    \"09992\": {\r\n      \"model\": \"d589d4a76e476b8a3b82ee79d8b4dd820d3f928ec00f4d096fb67041de483f91\",\r\n      \"quoted\": 143.4,\r\n      \"base\": 166.65471957516075,\r\n      \"value_bridge_delta\": 0.0,\r\n      \"new_reverse_count\": 5\r\n    },\r\n    \"US\": {\r\n      \"model\": \"b4cf3afa5cdc74d3a6b5590900db7f097a2b430c8082507c8618650eabade223\",\r\n      \"quoted\": 439.89,\r\n      \"base\": 178.6925027453693,\r\n      \"value_bridge_delta\": -9.799775222063545e-05,\r\n      \"new_reverse_count\": 5\r\n    }\r\n  },\r\n  \"matrix_rows\": 60,\r\n  \"publication_routes\": 32,\r\n  \"case_manifest\": 175\r\n}\r\n"
+    }
+  },
+  "warm_rebuild": {
+    "restored_files": 66,
+    "live_facts": 188,
+    "case_check": "4cf3afa5cdc74d3a6b5590900db7f097a2b430c8082507c8618650eabade223\",\r\n      \"quoted\": 439.89,\r\n      \"base\": 178.6925027453693,\r\n      \"value_bridge_delta\": -9.799775222063545e-05,\r\n      \"new_reverse_count\": 5\r\n    }\r\n  },\r\n  \"matrix_rows\": 60,\r\n  \"publication_routes\": 32,\r\n  \"case_manifest\": 175\r\n}\r\n",
+    "coverage_cold": "{\"source_commit\": \"5c515fc6adc5b4cf4eb766f982721d8bdd9e309a\", \"cutoff\": \"2026-11-12\", \"research_companies\": 5, \"desk_companies\": 5, \"audited_batch_positions\": 48, \"frozen_facts\": 188, \"live_facts_in_this_run\": 0, \"followup_records\": 9, \"covered\": 394, \"statuses\": {\"已验证访问\": 272, \"附公开原件链接\": 122}}",
+    "coverage_restored": "{\"source_commit\": \"5c515fc6adc5b4cf4eb766f982721d8bdd9e309a\", \"cutoff\": \"2026-11-12\", \"research_companies\": 5, \"desk_companies\": 5, \"audited_batch_positions\": 48, \"frozen_facts\": 188, \"live_facts_in_this_run\": 188, \"followup_records\": 9, \"covered\": 394, \"statuses\": {\"已验证访问\": 338, \"附公开原件链接\": 56}}"
+  },
+  "browser": {
+    "browser": "Chromium",
+    "widths": {
+      "320": [
+        "002507",
+        "600298",
+        "688188",
+        "09992",
+        "US",
+        "预选工作台"
+      ],
+      "390": [
+        "002507",
+        "600298",
+        "688188",
+        "09992",
+        "US",
+        "预选工作台"
+      ],
+      "1440": [
+        "002507",
+        "600298",
+        "688188",
+        "09992",
+        "US",
+        "预选工作台"
+      ]
+    },
+    "tested_case_downloads": [
+      "002507",
+      "600298",
+      "688188",
+      "09992",
+      "US"
+    ],
+    "edit_reopened": true,
+    "offline": true,
+    "reduced_motion": true,
+    "legacy_link": true,
+    "chart_toggle_table": true,
+    "browser_errors": [],
+    "evidence_clicks": [
+      "002507",
+      "600298",
+      "688188",
+      "09992",
+      "US"
+    ],
+    "issuer_links_present": [
+      "002507",
+      "600298",
+      "688188",
+      "09992",
+      "US"
+    ]
+  },
+  "independent_programs": [
+    {
+      "code": "002507",
+      "script": "rebuild_operations.py",
+      "passed": true,
+      "result": "002507: 12 tables, 288 rows"
+    },
+    {
+      "code": "600298",
+      "script": "rebuild_operations.py",
+      "passed": true,
+      "result": "600298: 11 tables, 249 rows"
+    },
+    {
+      "code": "688188",
+      "script": "operating.py",
+      "passed": true,
+      "result": ", \"notified_buyback_cash_or_buffer\": 0, \"excess_cash_proxy\": 5330.5722629, \"financial_debt\": 20.322, \"finance_treated_lease\": 8.677110650000001, \"non_controlling_book\": 48.346, \"non_controlling_deduction\": 77.3536, \"litigation_separate_pv\": 0, \"bridge_net\": 5224.21955225}, \"unknown_service_cost_bucket\": \"未披露，阈值以下单列\", \"terminal_roi_required\": 0.235}"
+    },
+    {
+      "code": "09992",
+      "script": "operating.py",
+      "passed": true,
+      "result": " {\"additional_persisted_margin\": -0.015, \"per_share_hkd\": 157.18619136326907}, {\"additional_persisted_margin\": 0, \"per_share_hkd\": 166.65471957516073}, {\"additional_persisted_margin\": 0.015, \"per_share_hkd\": 176.10357373001742}], \"post_cutoff_reported_shares\": 2390000, \"post_cutoff_reported_paid_hkd\": 342472620, \"explanation\": \"披露、算术与条件边界；无Fact写入\"}"
+    },
+    {
+      "code": "US",
+      "script": "audit_isrg.py",
+      "passed": true,
+      "result": "ISRG revenue, GAAP EBIT, CFO, WACC, terminal FCFF, equity and observed-price bridges verified."
+    }
+  ],
+  "fixes": [
+    {
+      "failure": "Chromium下载拦截，直接HTTP文件已可访问",
+      "fix": "静态案例HTML启用只支持用户发起下载的沙盒许可",
+      "verified": true
+    },
+    {
+      "failure": "ISRG原文宽表在390像素下超出整个视口",
+      "fix": "Markdown宽表套现有可聚焦滚动容器",
+      "verified": true
+    }
+  ]
+}

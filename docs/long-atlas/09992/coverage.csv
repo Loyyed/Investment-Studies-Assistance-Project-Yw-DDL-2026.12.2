@@ -1,0 +1,21 @@
+﻿company,group,field,first,last,comparable_count,missing,stages,entry,locations
+09992,收入及增速,revenue,2020-FY,2025-FY,6,,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,收入及增速,revenue_growth,2021-FY,2025-FY,5,2020-FY,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,成本及毛利,cost,2020-FY,2025-FY,6,,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,成本及毛利,gross_profit,2020-FY,2025-FY,6,,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,核心经营利润,report_operating_profit,2020-FY,2025-FY,6,,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,核心经营利润,analysis_ebit,2020-FY,2025-FY,6,,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,经营现金与资本支出,cfo_reported,2020-FY,2025-FY,6,,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,经营现金与资本支出,cash_capex,2020-FY,2025-FY,6,,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,营运资本,wc_trade_subset,2020-FY,2024-FY,5,2025-FY,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,营运资本,delta_wc_trade_subset,2021-FY,2024-FY,4,2020-FY、2025-FY,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,资本与回报,capital_subset,2020-FY,2024-FY,5,2025-FY,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,资本与回报,roic_subset,2021-FY,2024-FY,4,2020-FY、2025-FY,门店和自主IP扩张／需求放缓后恢复／毛绒与海外爆发,/cases/09992/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+09992,头部 IP 及其余 IP 的收入变化,H1 同比收入变化,2026中报物理p26，2025及2026 H1未审人民币千元,2026中报物理p26，2025及2026 H1未审人民币千元,11,,百万元人民币,/cases/09992/ip-contribution.csv,原专题表 source、口径及有条件代理列
+09992,门店数与店效代理的收入变化桥,门店数贡献,PRC 门店整体,中国大陆门店,2,,百万元人民币,/cases/09992/store-cohort-proxy.csv,原专题表 source、口径及有条件代理列
+09992,门店数与店效代理的收入变化桥,销售强度与批次混合,PRC 门店整体,中国大陆门店,2,,百万元人民币,/cases/09992/store-cohort-proxy.csv,原专题表 source、口径及有条件代理列
+09992,本版逐页核对补充,operating_lease_cash,2020-FY,2025-FY,6,,IFRS使用权及租赁现金流分类,/long-atlas/09992/historical-lease-cash.csv,/long-atlas/09992/historical-original-locators.csv
+09992,本版逐页核对补充,financing_lease_cash,2020-FY,2025-FY,6,,IFRS使用权及租赁现金流分类,/long-atlas/09992/historical-lease-cash.csv,/long-atlas/09992/historical-original-locators.csv
+09992,本版逐页核对补充,rou_da,2020-FY,2025-FY,6,,IFRS使用权及租赁现金流分类,/long-atlas/09992/historical-lease-cash.csv,/long-atlas/09992/historical-original-locators.csv
+09992,本版逐页核对补充,after_rent_cfo_and_capex,2020-FY,2025-FY,6,,IFRS使用权及租赁现金流分类,/long-atlas/09992/historical-lease-cash.csv,/long-atlas/09992/historical-original-locators.csv
+09992,经营数据覆盖,地区渠道收入,2025-H1,2026-H1,16,覆盖表仅计原表观察行，拆分缺项见源表说明,产品、地区或公司专项口径,/cases/09992/region-channel-bridge.csv,源表期间列、行组说明与来源定位

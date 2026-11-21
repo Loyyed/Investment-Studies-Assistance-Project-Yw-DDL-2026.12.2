@@ -1,0 +1,81 @@
+{
+  "browser": "121.0.6167.57",
+  "companies": {
+    "600298": {
+      "visual": [
+        1440,
+        390,
+        320
+      ],
+      "han": 20883,
+      "figures": 14,
+      "mechanisms": 4
+    },
+    "688188": {
+      "visual": [
+        1440,
+        390,
+        320
+      ],
+      "han": 21890,
+      "figures": 13,
+      "mechanisms": 4
+    },
+    "002507": {
+      "visual": [
+        1440,
+        390,
+        320
+      ],
+      "han": 21652,
+      "figures": 14,
+      "mechanisms": 4
+    },
+    "09992": {
+      "visual": [
+        1440,
+        390,
+        320
+      ],
+      "han": 21461,
+      "figures": 14,
+      "mechanisms": 4
+    },
+    "US": {
+      "visual": [
+        1440,
+        390,
+        320
+      ],
+      "han": 20828,
+      "figures": 13,
+      "mechanisms": 4
+    }
+  },
+  "fileEdits": {},
+  "widths": [
+    1440,
+    390,
+    320
+  ],
+  "pageErrors": [],
+  "edit": {
+    "reload": true,
+    "export": true,
+    "md": true,
+    "publishedJson": true,
+    "offlineZip": true
+  },
+  "keyboard": true,
+  "offline": {
+    "browserOffline": true,
+    "companies": [
+      "002507",
+      "600298",
+      "688188",
+      "09992",
+      "US"
+    ],
+    "tables": true
+  }
+}

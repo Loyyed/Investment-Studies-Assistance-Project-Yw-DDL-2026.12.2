@@ -1,0 +1,207 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ISRG证券投资案例</title><style>
+:root{--paper:#f4f0e8;--surface:#fcfaf5;--ink:#192c2b;--muted:#516460;--line:#d9d6c7;--green:#21554a;--rust:#a24931;--dark:#143b35;--serif:"Noto Serif CJK SC","Songti SC","SimSun",Georgia,serif;--sans:system-ui,"Microsoft YaHei",sans-serif;font:16px/1.65 var(--sans);color:var(--ink);background:var(--paper)}
+
+*{box-sizing:border-box}
+body{margin:0}
+a{color:var(--green);text-underline-offset:.23em}
+button,input,select{font:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{line-height:1.27}
+.shell{width:min(1370px,100%);margin:auto;padding:0 clamp(14px,4vw,52px)}
+.mast{background:var(--dark);color:#faf6ea}
+.mast .shell{padding-top:20px;padding-bottom:30px}
+.nav{display:flex;align-items:center;gap:9px 20px;flex-wrap:wrap}
+.mast .nav{padding-bottom:18px;border-bottom:1px solid #87a49755}
+.mast a{color:#fdf9e9}
+.mast a.action:not(.main){color:var(--green)}
+.mark{margin-right:auto;font-weight:700;text-decoration:none}
+.titleblock{padding-top:30px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:end}
+.titleblock h1{font:700 clamp(2rem,4.4vw,4.7rem)/1.14 var(--serif);margin:8px 0 15px;overflow-wrap:anywhere}
+.titleblock p{color:#d9e8de;max-width:62ch}
+.dateline{font-size:.83rem;color:#e8d3a6}
+.edition{border-block:1px solid #9cbaaa75;padding:8px 0;color:#e1eee7;font-size:.83rem;max-width:30ch;text-align:right}
+.hero-actions{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0}
+.action,button{display:inline-block;padding:6px 11px;border:1px solid #a8ada1;border-radius:3px;text-decoration:none;background:var(--surface);color:var(--green);cursor:pointer;min-height:36px}
+.action:hover,button:hover{border-color:var(--green);background:#e9efe5}
+.action.main{background:#ecdfbf;color:#153b35;border-color:#ecdfbf}
+.toolbar{display:flex;align-items:end;gap:10px;flex-wrap:wrap;padding:15px 0;border-bottom:1px solid var(--line)}
+.toolbar label{display:flex;flex-direction:column;gap:2px;font-size:.84rem;color:var(--muted);min-width:0}
+.toolbar label:first-child{flex:1 1 235px}
+.toolbar input,.toolbar select{background:var(--surface);border:1px solid #b5bcaf;border-radius:3px;color:var(--ink);padding:6px;max-width:100%}
+.toolbar .status{color:var(--muted);font-size:.82rem;align-self:center}
+.layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:26px;align-items:start}
+.outline{position:sticky;top:0;max-height:95vh;overflow:auto;padding:18px 0}
+.outline a{display:block;padding:5px 7px;border-left:2px solid var(--line);text-decoration:none;font-size:.9rem}
+.outline a:hover,.outline a:focus-visible{background:#e5eadf;border-color:var(--green)}
+.outline strong{display:block;font-size:.79rem;color:var(--muted);margin-bottom:8px}
+.reading{min-width:0;padding-bottom:36px}
+.chapter{margin:22px 0 32px;background:var(--surface);padding:clamp(15px,3vw,37px);border:1px solid var(--line);scroll-margin-top:13px;overflow-wrap:anywhere}
+.chapter>header{border-bottom:1px solid var(--line);padding-bottom:14px}
+.chapter>header h2{font:700 clamp(1.55rem,3vw,2.8rem)/1.2 var(--serif);margin:5px 0 10px}
+.chapter>header p{max-width:75ch}
+.kicker{color:var(--rust);font-size:.87rem;font-weight:650}
+.segment{padding:18px 0;border-bottom:1px solid var(--line)}
+.segment h3{font:700 clamp(1.12rem,2.4vw,1.55rem)/1.35 var(--serif);margin-bottom:9px}
+.segment p{max-width:79ch;margin:0 0 10px}
+.source-links{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:9px;font-size:.84rem}
+.chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:0;list-style:none}
+.chain li{background:#e9eee5;padding:5px 8px;border-left:2px solid #927c59;font-size:.83rem}
+.chart-box{margin:15px 0}
+.chart{background:white;min-width:0;overflow:auto;border:1px solid var(--line);margin-top:5px}
+.chart svg{display:block;width:100%;min-width:510px;height:auto;max-height:400px}
+.legend{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.legend button{font-size:.81rem;border-left:4px solid var(--series,#326c53);min-height:30px;padding:3px 7px}
+.legend button[aria-pressed=false]{opacity:.55;text-decoration:line-through}
+figcaption,.annotation{color:var(--muted);font-size:.88rem;margin:5px 0 8px}
+summary{cursor:pointer;color:var(--green);padding:5px 0}
+details{margin:6px 0}
+.scroll{overflow:auto;max-height:65vh;border:1px solid var(--line);background:white}
+.scroll:focus{outline:2px solid var(--green)}
+table{border-collapse:collapse;min-width:100%;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{padding:6px 9px;border-bottom:1px solid #e7e4db;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+th{position:sticky;top:0;z-index:1;white-space:nowrap;background:#e9ede4}
+td{min-width:60px}
+td.numeric{text-align:right;white-space:nowrap}
+td.long{min-width:195px;max-width:450px}
+.matrix{margin:13px 0}
+.matrix tbody td:nth-child(6){font-weight:750;color:var(--green)}
+.cover-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:10px;margin:14px 0}
+.tile{border:1px solid var(--line);background:var(--surface);padding:16px;min-width:0;overflow-wrap:anywhere}
+.tile h2{font-family:var(--serif);font-size:1.28rem;margin-bottom:7px}
+.tile p,.tile .nav{font-size:.87rem;margin-top:5px}
+.subtle{color:var(--muted)}
+.note{padding:15px 0}
+.wide{padding-bottom:22px}
+.wide .scroll{max-height:67vh}
+.version-grid a{word-break:break-word}
+.foot{padding:25px 0;border-top:1px solid var(--line);font-size:.86rem}
+.presenting .toolbar,.presenting .outline,.presenting .mast,.presenting .foot{display:none}
+.presenting .layout{display:block}
+.presenting .chapter{display:none;font-size:clamp(1.12rem,2vw,1.5rem)}
+.presenting .chapter.active-slide{display:block}
+.presenting .presentation{display:flex}
+.presentation{display:none;position:sticky;top:0;z-index:4;gap:7px;flex-wrap:wrap;padding:8px;background:var(--dark);align-items:center;color:#fff}
+.presentation span{padding:0 8px}
+[hidden]{display:none!important}
+.knowledge-card:target{border-left:4px solid var(--rust);padding-left:9px}
+
+@media(max-width:780px){.layout{display:block}
+.outline{position:static;max-height:none;display:flex;gap:5px 10px;flex-wrap:wrap;padding:10px 0}
+.outline strong{width:100%}
+.outline a{font-size:.83rem}
+.titleblock{display:block}
+.edition{text-align:left;margin-top:14px;max-width:none}
+.chapter{padding:14px}
+.mast .nav{gap:8px 14px}
+}
+
+@media print{.mast{background:white;color:black}
+.mast p,.dateline{color:black}
+.nav,.edition,.toolbar,.outline,.legend,.presentation,.foot{display:none!important}
+.layout{display:block}
+.scroll{overflow:visible;max-height:none}
+.chart{overflow:visible}
+.chart svg{min-width:0}
+.chapter{break-before:page;border:0;margin:0}
+.chapter:first-child{break-before:auto}
+th,td{break-inside:avoid}
+}
+</style></head><body><header class="mast"><div class="shell"><nav class="nav"><a href="/desk/">工作台</a> <a href="/cases/">五家公司案例</a> <a href="/atlas/">超级图册</a> <a href="/research/">证据与覆盖</a> <a href="/research/follow-up.html">期后记录</a> <a href="/cases/002507/">涪陵榨菜</a> <a href="/cases/600298/">安琪酵母</a> <a href="/cases/688188/">柏楚电子</a> <a href="/cases/09992/">泡泡玛特</a></nav><div class="titleblock"><div><div class="dateline">2026-11-12 各市场当地收盘</div><h1>ISRG证券投资案例</h1><p>基准 178.69 USD，同日收盘 439.89 USD。商业模式、经营变化与价格条件沿同一模型核对。</p></div><div class="edition">冻结窗口 2026-11-12</div></div></div></header><main class="shell note"><div class="chapter"><h2>数据与复核</h2><nav class="source-links"><a href="/cases/US/case.md">案例正文 MD</a> <a href="/cases/US/report-map.md">未来报告素材地图</a> <a href="/cases/US/independent-review.md">独立复核</a> <a href="/cases/US/history.csv">历史财务桥</a> <a href="/cases/US/interim.csv">近期累计／单季／余额</a> <a href="/cases/US/operating-bridges.csv">经营活动桥</a> <a href="/cases/US/forecast.csv">2026实际＋预测底表</a> <a href="/cases/US/inputs.json">程序输入索引</a> <a href="/cases/US/model.json">完整模型与结果</a> <a href="/cases/US/sensitivity.csv">双变量矩阵</a> <a href="/cases/US/reverse.csv">价格反推与无解边界</a> <a href="/cases/US/value-bridge.csv">阶段17—新版价值桥</a> <a href="/cases/US/evidence-index.csv">来源与定位</a> <a href="/cases/US/relative.csv">相对估值底表</a> <a href="/cases/US/sensitivity.svg">灵敏度图</a> <a href="/cases/US/2026-bridge.csv">2026-bridge.csv</a> <a href="/cases/US/annual-unit-history.csv">annual-unit-history.csv</a> <a href="/cases/US/audit_isrg.py">audit_isrg.py</a> <a href="/cases/US/contract-thresholds.csv">contract-thresholds.csv</a> <a href="/cases/US/historical-capital-proxy.csv">historical-capital-proxy.csv</a> <a href="/cases/US/independent-valuation.json">independent-valuation.json</a> <a href="/cases/US/instrument-volume-mix.csv">instrument-volume-mix.csv</a> <a href="/cases/US/isrg-evidence-detail.csv">isrg-evidence-detail.csv</a> <a href="/cases/US/isrg-evidence-detail.json">isrg-evidence-detail.json</a> <a href="/cases/US/isrg-inputs.json">isrg-inputs.json</a> <a href="/cases/US/lease-revenue-proxy.csv">lease-revenue-proxy.csv</a> <a href="/cases/US/parameters.csv">parameters.csv</a> <a href="/cases/US/quarter-cash-accounting.csv">quarter-cash-accounting.csv</a> <a href="/cases/US/quarter-revenue-bridge.csv">quarter-revenue-bridge.csv</a> <a href="/cases/US/system-placement-bridge.csv">system-placement-bridge.csv</a></nav><nav class="source-links"><a href="#case-US-section-1">1　医院怎样为这门业务付款</a><a href="#case-US-section-2">2　从术量与装机对到收入</a><a href="#case-US-section-3">3　毛利、履约与租赁单位经济</a><a href="#case-US-section-4">4　经营现金、资本与归属于普通股的价值</a><a href="#case-US-section-5">5　三条经营路径和更新的条件</a><a href="#case-US-section-6">6　估值、价格反推与旧新桥</a><a href="#case-US-section-7">7　正方、反方与下一项能查的证据</a></nav></div><section class="chapter case-body"><h1>Intuitive Surgical｜常用得起来的手术机器人，值多少资本</h1><p><strong>2026-11-12 纳斯达克当地未复权收盘 439.89 美元。</strong> 医院通过已安装的 da Vinci 系统重复购买器械和服务，能够支持持续的经营增长。按可核的设备周转、术量密度与租赁现金回收，收盘仍高于冻结改善情景 294.21 美元。以 9.772% 折现，在装机年增 16%、每例耗材变现年增 2%、每台术量年增上探 12% 的有利试算中，边界只有 391.66 美元。准入、手术资源、租赁回收和长期折现四个条件需要一起改善，才允许把较强业务直接转换成当前价格。 <a href="/stage17/US/model.json" target="_blank" rel="noopener">阶段 17 主模型</a> · <a href="/cases/US/independent-valuation.json" target="_blank" rel="noopener">同日独立复核</a></p><p>本文金额为美元百万，单股、术量、台数与每例收入另标。术量、装机与渠道价格以估值截点前公开的 SEC 文件为准。2026 年完整年度及 2038 年稳定期均为模型。 <a href="/cases/US/isrg-evidence-detail.csv" target="_blank" rel="noopener">来源、原表列和口径</a></p><h2 id="case-US-section-1">1　医院怎样为这门业务付款</h2><p>医院或手术中心评估机器人项目，安排资本预算、台班、收费流程和人员培训。外科医生与手术团队使用系统，医院根据术式量、手术安全与效率、付款方覆盖、培训和关闭手术室的成本决定扩容或换代。厂家通过设备销售、销售型租赁、固定经营租赁、按用量经营租赁、用于手术的多品种器械耗材与维护合同变现。一次性设备收入和买断随出货、贸易置换及选择权变化。耗材随手术消耗，服务依托已安装且持续提供服务的设备。美国医疗保险及私人支付方向医院或医生报销医疗服务，Intuitive 确认的是与医院及经销商的产品和服务收入。新用途获监管许可后仍要跨过客户培训、医生安排和医院手术总成本的门槛。 <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000010/isrg-20251231.htm" target="_blank" rel="noopener">2025 Form 10-K，业务与支付方</a></p><p>既有收入证明的是术量复购。2023–2025 年，da Vinci 每期初期末平均设备的年术量从 283 到 300，含 Ion 术量的合并耗材变现始终约 1,826–1,828 美元每例。更早的 2019–2020 是压力样本。厂家年末装机 5,582→5,989，客户术量 122.9→124.3 万例，按平均装机归一的年术量约 233→215 例。设备出货 1,119→936 台，公司收入 4,478.5→4,358.4，其中设备收入跌约 12%，器械耗材收入反而涨约 2%，营业利润 1,374.5→1,049.8。设备增加而使用变稀表明医院手术排班可以压住兑现，已有病例的耗材消费为收入提供支撑。2021 年术量反弹至 159.4 万例，之后从术量恢复走向普外与海外扩容，2025 年 da Vinci 5 与经营租赁又共同推高供给。 <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526721000028/isrg-20201231.htm" target="_blank" rel="noopener">2020 Form 10-K，COVID 与经营表现</a> · <a href="/cases/US/annual-unit-history.csv" target="_blank" rel="noopener">历史术量和变现</a></p><p>另一种解释认为医院主要受术式恢复和增加容量驱动，更新高价 da Vinci 5 抬高收入，产品议价能力并未增强。2026 第三季新装机 546 台同比多 119 台，其中含置换 150 台，上年含置换 141 台。da Vinci 5 占新装机 57.7%，与上年 56.2% 接近。管理层披露三季度 da Vinci 术量约增 14%，每套设备年化术量同比仅增 2%。这组观测支持设备基数和病例消耗共同驱动收入，长期大幅提高单台手术密度仍是估值条件。竞争压力有真实检验点。Medtronic 于 2025 年 12 月公布 Hugo 取得美国泌尿外科准入，2026 年 6 月宣布提交一般及妇科用途申请。ISRG 的三季报另披露中国受竞争与招投标因素影响，装机低于公司预期。应在同术式追踪同医院复购、改用概率与招标价格，现有披露不足以给出竞品渗透和流失率。 <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm" target="_blank" rel="noopener">三季报装机和竞争</a> · <a href="https://news.medtronic.com/2025-12-03-Medtronic-announces-FDA-clearance-of-Hugo-TM-robotic-assisted-surgery-system-for-urologic-surgical-procedures" target="_blank" rel="noopener">Hugo 美国泌尿用途</a> · <a href="https://news.medtronic.com/2026-06-03-Medtronic-submits-510-k-filings-to-expand-Hugo-TM-robotic-assisted-surgery-system-into-general-and-gynecologic-specialties-in-the-United-States" target="_blank" rel="noopener">用途扩展提交</a></p><h2 id="case-US-section-2">2　从术量与装机对到收入</h2><div class="scroll" tabindex="0"><table><tbody><tr><td>财年</td><td>器械耗材</td><td>设备</td><td>服务</td><td>合并</td><td>美国／海外</td><td>da Vinci／Ion 术量（万例）</td><td>da Vinci 每平均设备例数</td><td>合并耗材每例美元</td></tr><tr><td>2023</td><td>4,276.6</td><td>1,679.7</td><td>1,167.8</td><td>7,124.1</td><td>4,688.6／2,435.5</td><td>228.60／5.38</td><td>283.10</td><td>1,827.76</td></tr><tr><td>2024</td><td>5,079.0</td><td>1,966.0</td><td>1,307.1</td><td>8,352.1</td><td>5,589.4／2,762.7</td><td>268.30／9.55</td><td>289.93</td><td>1,827.96</td></tr><tr><td>2025</td><td>6,018.9</td><td>2,473.7</td><td>1,572.1</td><td>10,064.7</td><td>6,815.8／3,248.9</td><td>315.30／14.41</td><td>300.17</td><td>1,825.51</td></tr></tbody></table></div><p>产品和地区切面均勾稽合并收入，产品行可以再按国内外拆。地区和产品贡献不能相加。合并耗材强度将 Ion 与 da Vinci 术量分母相加，计算结果是合并收入每例代理，不能读取成单独平台报价。两期中点拆分中，量用两期每例变现均值，价和组合用两期总术量均值，交互由两项各分一半。2024→2025 年 939.9 耗材收入增量中，da Vinci 病例量贡献 858.57，Ion 病例量贡献 88.78，变现与组合合计 −7.45。Ion 的量贡献用共同变现比率计量，不能据此给 Ion 估收入与每例毛利。2025 年器械耗材、服务与经营租赁合计 8,465.3，占收入 84.1%。重复性的核心是系统使用。 <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000010/isrg-20251231.htm" target="_blank" rel="noopener">FY 10-K 产品与病例</a> · <a href="/cases/US/instrument-volume-mix.csv" target="_blank" rel="noopener">中点量价计算</a></p><p>2026 前三季合并收入 8,711.8，同比增加 1,513.3。耗材、系统、服务分别增加 858.1、417.0 和 238.2，美国和海外分别增加 894.3 和 619.0。Ion 病例 14.03 万，上年同期 10.39 万，da Vinci 仅采用公司披露的约 15% 增速。第三季独立取表，与半年累计做差可还原可比上半年。美国与海外的耗材、系统、服务六格均回到财务报表的三大类与总收入。2026 年 3 月公司用现金接管南欧部分经销业务，Note 7 给出 533.1 现金对价并记录 15.6 季内卖方退款。公司称单列当前年度相关收入与利润不重大，未给具体值。海外增长 26.8% 同时受需求、渠道并表、地域与价格影响，可辨的现金对价隔离到并购，收入端保留并表未知，不能把 619.0 全部归给同店手术增长。 <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm" target="_blank" rel="noopener">10-Q，Note 5、7</a> · <a href="/cases/US/quarter-revenue-bridge.csv" target="_blank" rel="noopener">六格收入与 H1、Q3、YTD9</a></p><p>设备收入分为经营租赁、销售型租赁、买断和直接销售残差。前三季原表经营租赁 787.0、变量租赁 503.8，固定代理余 283.2，另有销售型租赁 78.8、买断约 153，设备直接和未拆残差 1,086.0。计算时保留原表的十分位，并把 MD&amp;A 的四舍五入 504 和 283 作为旧版记录。第三季设备收入增 178.7，扣除经营租赁 +52.0、买断约 +23.0，普通销售与销售型租赁合计 +103.7。用 da Vinci 非经营租赁投放 196→255 台及所披露的约 1.60→1.61 百万美元 ASP，对应数量 +94.695、价格组合 +2.255，余 +6.75 来自 Ion、条件差异、非合同同口径和取整。旧设备换新仍计入产能使用链，原设备退役数量未单列，不能把出货台数都当成净增。 <a href="/cases/US/system-placement-bridge.csv" target="_blank" rel="noopener">装机收入更新桥</a> · <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm" target="_blank" rel="noopener">10-Q，System Demand 和 Systems Revenue</a></p><h2 id="case-US-section-3">3　毛利、履约与租赁单位经济</h2><p>2026 前三季产品、服务销售成本 2,354.7 和 481.9，毛利 5,875.2。产品毛利率从 66.00% 提至 67.85%，服务从 64.86% 到 65.29%。分财年产品/服务毛利率保留在底表。前三季收入 +1,513.3、产品成本增 298.4、服务成本增 77.7，所以毛利 +1,137.2，SG&amp;A 多 166.7、研发多 181.9、一次性和解 450.0 后，报告营业利润增加 338.6。2026 年余留确认关税成本 72.4，且公司在成本中确认历年 IEEPA 退税利益 63.7。分析 EBIT 加回和解、剔除退税利益为 2,806.1，实际正常化率 32.21%，同比 +724.9。正常化保留当期关税成本与股权薪酬。独立维修、售后工资、派件物流、保修及单件制造成本未披露可归属切面，仅能在合并成本和合同条件中处理。 <a href="/cases/US/quarter-cash-accounting.csv" target="_blank" rel="noopener">利润与现金联动底表</a> · <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm" target="_blank" rel="noopener">10-Q 收益、关税和解表</a></p><p>客户产品交易通常按账单 30–60 天付款，服务预收按季或年，随后履约确认。公司承担经营租赁设备制造、库存占款和大部分服务承诺。销售型租赁在初始确认销售，后续租赁应收另列，固定经营租赁按期确认，按用量租赁收入随临床术量兑现。2026 年 9 月末合同资产 33.8、递延收入 669.4，后者包括并购带入 20.0。截至第三季累计购建 329.0，包含制造设施等实际现金；行业渠道没有可用分摊，故不会给医院、机型或渠道虚填采购、维保、保修与占款。融资安排的设备装机或收入占比扩大，可能移走取得客户时点的现金，而不显著改变合同总毛利率。 <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm" target="_blank" rel="noopener">10-Q，Note 5 与 System Leasing</a></p><div class="scroll" tabindex="0"><table><tbody><tr><td>合同</td><td>2025 YTD9 年化每期末存量台确认收入</td><td>2026 YTD9 同口径</td><td>五年、8%、每台制造 0.85、年维护 0.10 的现金门槛</td><td>90% 收现假设下、当前收入对应单台 NPV</td></tr><tr><td>固定付款代理</td><td>0.22370</td><td>0.22343</td><td>0.31289／年</td><td>−0.44638</td></tr><tr><td>按量代理</td><td>0.25654</td><td>0.29514</td><td>0.31289／年</td><td>−0.18871</td></tr></tbody></table></div><p>两平台分母同时纳入，固定为 1581+109 台，按量为 1974+302 台。三季收入乘 4/3 再除以期末租赁设备台数是观察代理，投放时间、合同期限和残值均会改变单台真实收入。若按确认收入 90% 收现，需每年确认 0.34765，固定约比观察值高 55.60%，按量高 17.79%。下一步应核查租赁群组收现与消耗、实际合同寿命、保修、维护、可回收设备残值。即便固定设备年收入水平成立，可能有更低真实制造成本或更高残值。反过来，按量租赁通常无最低付款，利用率不足会使现金回收弱于集团确认收入。 <a href="/cases/US/lease-revenue-proxy.csv" target="_blank" rel="noopener">租赁分母与收入代理</a> · <a href="/cases/US/contract-thresholds.csv" target="_blank" rel="noopener">制造投入 × 收现压力全表</a></p><h2 id="case-US-section-4">4　经营现金、资本与归属于普通股的价值</h2><p>前三季现金原表梯子逐项按符号复算。2026 年合并净利 2,173.6，加折旧及处置 559.0、摊销 85.0、递延税 315.9、股权薪酬 632.0，减投资调整 28.1 和业务出售获益 7.9，营运及其他负债合计现金项 −532.5，得到 CFO 3,197.0。营运各项为应收 −103.2、库存 −822.0、预付及其他资产 −167.7、应付 +26.1、职工薪酬 −149.6、递延收入 +52.1、其他负债 +631.8。其他负债包含付款时点因素，无法从合并行拆到 450 和解额。剥离假设若全额假设归在此行，+631.8 只剩 +181.8；实际案款支付尚未得到估值日前可核对证据。 <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm" target="_blank" rel="noopener">10-Q，现金流及 Note 8</a> · <a href="/cases/US/quarter-cash-accounting.csv" target="_blank" rel="noopener">现金逐行重算</a></p><p>用可比较的 18% 经营税代理乘分析 EBIT 2,806.1，得经营税代理 505.10、NOPAT 2,301.00。加折旧处置及摊销代理 644.0，使用剥离和解假设后的合并营运现金代理 −982.5，减现金购建 329.0，得到暂未分配残差的 FCFF 代理 1,633.50。CFO－现金购建 2,868.0，二者差额 1,234.50 源于原报表净利与正常化 NOPAT 差、股权薪酬、递延税、投资及处置损益与和解分配假设。同期 CFO－现金购建－股权薪酬的诊断值 2,236.0，体现经济成本与会计 CFO 的差异。DCF 保留股权薪酬费用，以避免先把它从利润加回再让普通股股东承担稀释的技术混淆。资本开支分现金设备购建、租赁制造情景、转到固定资产的非现金库存。670.5 是存货转入 PP&amp;E，不能再与 329.0 合并为现金购建，也不能等同租赁制造成本。模型单列制造现金时，集团净营运资本和库存制造现金要按上下游位置划界，实际科目未能按批次划分。并购及其他投资行 −518.6 已进入可用现金，另从企业价值扣同一并购就会重复计入。 <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm" target="_blank" rel="noopener">10-Q，现金流附表</a></p><p>历史资本用经营性应收、库存、应付及流动递延收入加净固定资产做透明代理，排除现金、投资、商誉与部分其他经营性资本。2023–2025 该口径 ROIC 为 32.49%／32.23%／32.98%，资本周转 1.60／1.40／1.37 倍，新增 NOPAT／新增资本代理 9.79%／33.07%／39.11%。销售和租赁资产组合变化、投用与摊销时滞限制年度边际比例的解释力，不能把 39.11% 归给当年新增租赁台数或直接延续进稳定期。2023–2025 CFO 分别 1,813.8、2,415.0、3,030.5，现金购建 1,064.2、1,111.2、539.8，非现金库存转设备 422.4、614.9、808.9。资本部署从直接设施购建减速而租赁设备划转加速，现金报表分流仍由原科目控制。 <a href="/cases/US/historical-capital-proxy.csv" target="_blank" rel="noopener">合并 ROIC 与边际代理</a> · <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000010/isrg-20251231.htm" target="_blank" rel="noopener">FY 10-K 现金附表与已付税</a></p><p>阶段 17 基准企业价值 56,912.77。加现金和合格投资 6,800.4，减经营储备 1,150、少数权益代理 210.56 和和解现值 409.94，权益为 61,942.67。经营租赁支付进入营业/经营现金后，权益桥使用本模型百分比口径而不追加经营租赁债务扣除；作为出租人的制造现金走经营再投资。股数 346,643,718 来自 10-Q 封面 2026-10-15 实际流通在外普通股，9 月基本和稀释加权股数用于 EPS。年前三季现金流回购 4,419.2，与权益表确认回购成本 4,446.3 口径有别，当前股数和现金已经吸收已完成交易，剩余授权仅记录上限，不能先用没有到账的授权继续减权益。 <a href="/cases/US/independent-valuation.json" target="_blank" rel="noopener">权益与折现精确复算</a> · <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm" target="_blank" rel="noopener">10-Q，封面和 Note 9</a></p><h2 id="case-US-section-5">5　三条经营路径和更新的条件</h2><p>2026 年基准披露期前三季 8,711.8，Q4 模型估计 3,296.13，全年 12,007.93。折现时仅留下估值日后经营现金部分，不能拿 Q4 全期收入当估值日起可得 FCFF。2027 起模型将 da Vinci 期末设备转换为平均设备×活跃代理×每台病例数，另计 Ion；合并病例×每例耗材变现确认耗材收入。服务由平均设备对应服务收入代理提供，租赁以合同结构、单位或病例使用量进入每年的利润，设备投放和制造现金与营运资本随扩张变化。研发与销售履约按合理利润率反映，税收和前期制造投入进入 FCFF。独立专项复算不会把产品成本转成无证的未来某一 SKU 成本。 <a href="/cases/US/forecast.csv" target="_blank" rel="noopener">主预测出入与逐年明细</a> · <a href="/stage17/US/model.json" target="_blank" rel="noopener">阶段 17 原模型行</a></p><div class="scroll" tabindex="0"><table><tbody><tr><td>路径</td><td>2031 收入</td><td>2031 EBIT 率</td><td>2031 FCFF</td><td>2031 年末 da Vinci 装机代理</td><td>每台平均活跃术量</td><td>合并每例耗材美元</td><td>冻结基准口径每股</td></tr><tr><td>压力</td><td>15,717.8</td><td>25.79%</td><td>1,544.2</td><td>17,041</td><td>305</td><td>1,745</td><td>95.01</td></tr><tr><td>基准</td><td>20,164.3</td><td>31.41%</td><td>3,290.6</td><td>19,457</td><td>339</td><td>1,903</td><td>178.69</td></tr><tr><td>改善</td><td>24,956.1</td><td>34.98%</td><td>5,090.2</td><td>22,472</td><td>357</td><td>2,030</td><td>294.21</td></tr></tbody></table></div><p>压力重点是现有设备难以提高每台例数、海外价格与消耗组合下行和租赁投入前置。基准由可核的期末设备增长与利用率缓慢提高驱动；2026 季报 +2% 的可观测每台设备利用率支持渐进改善。改善要求 da Vinci 5、SP 与 Ion 联动通用术式和临床转化，价格组合以及资本回收同时顺畅。对 2021–2024 历史相邻两期测算预测下一年单台术量，2023、2024、2025 的相对误差 −2.73%、+5.22%、−1.08%；用 2023–2024 预测 2025 合并每例耗材误差 +0.15%；冻结阶段 16 安装序列留出六次，误差中位 −1.67%，绝对误差中位 2.08%。基准优先校正可测装机，利用率与变现维持小幅分离的设置。下一次更新看 da Vinci、Ion 的在用与术量对照、医疗机构重复购买和合约实际转现金。 <a href="/stage16/isrg-operating.json" target="_blank" rel="noopener">冻结经营驱动与留出</a> · <a href="/cases/US/isrg-inputs.json" target="_blank" rel="noopener">参数来源与实际</a></p><h2 id="case-US-section-6">6　估值、价格反推与旧新桥</h2><p>显性期按各年实际折现期限和 9.772% 基准 WACC，阶段 17 基准显性价值 23,742.21，稳定期现值 33,170.55，占企业价值 58.28%。稳定增长 2.7% 对应新增资本回报 20%，所以再投资为 NOPAT 的 13.5%；2038 年 NOPAT 7,658.57，扣再投资 1,033.91，稳定首年 FCFF 6,624.66。WACC 沿用已有 USD 普通股、零金融债及长期业务风险代理，模型近期进展只改变经营证明，折现率 8% 用于有利边界条件。资本增长高于折现率或稳定短期增量回报被外推时，模型需要另作推导。 <a href="/stage17/US/model.json" target="_blank" rel="noopener">冻结 DCF 和股数</a> · <a href="/cases/US/independent-valuation.json" target="_blank" rel="noopener">逐项回代</a></p><p>在固定阶段 17 股本、净权益调整和显性现金流时，市场价格对应企业价值 147,455.20，稳定首年 FCFF 需 24,707.35，约基准 3.73 倍。它是固定其他项后的反解用识别值。US 安装×利用率原模型边界检验给出两条可达到 439.89 的有利组合：</p><div class="scroll" tabindex="0"><table><tbody><tr><td>装机年增</td><td>每台活跃术量年增</td><td>每例耗材年增</td><td>WACC</td><td>2031 da Vinci 术量（万例）</td><td>2031 含 Ion 术量（万例）</td><td>2031 耗材每例美元</td><td>2031 制造现金</td></tr><tr><td>13%</td><td>10.617%</td><td>1.5%</td><td>8%</td><td>1,040.51</td><td>1,073.93</td><td>2,011.77</td><td>1,451.77</td></tr><tr><td>16%</td><td>6.553%</td><td>2.0%</td><td>8%</td><td>977.66</td><td>1,015.45</td><td>2,058.48</td><td>1,748.89</td></tr></tbody></table></div><p>两条均在每台新租赁制造现金 0.85 的条件下求得。新版双变量安装×活跃术量网格另固定 WACC 8%、每例变现增长 1.5%。例如每台活跃术量增长 6% 时，装机需以 16.93% 增长，模型回代 439.89 美元。保留不同固定条件，不能把网格的公司价值视作 9.772% WACC 的基准敏感度。若仅把该成本变至 1.03，旧两条同价路径分别降到 435.25 和 434.41。若保留基准 WACC 9.772%，路径一在利用率 −3% 至 12% 的搜索范围上沿只有 329.99 美元，路径二上沿 391.66 美元。到达 439.89 需要放宽假设域，不能把同一较低折现率下的根迁移给基准。 <a href="/cases/US/independent-valuation.json" target="_blank" rel="noopener">同价路径全精度与加总复核</a> · <a href="/stage17/US/model.json" target="_blank" rel="noopener">阶段 17 回代与设备制造敏感</a> · <a href="/cases/US/sensitivity.csv" target="_blank" rel="noopener">新版安装×利用率敏感性</a></p><p>相对估值屏除 Medtronic，因为机器人经营分部与普通股权利无法从集团分拆；Stryker Mako 系统与骨科植入综合变现，手术与耗材分母不同；未上市 CMR 无同日普通股价格。比较仅用同一证券同日观察。按 USD 百万市值 152,485.11、普通股 LTM 收益 2,957.2，为 51.56 倍；同日企业价值 147,455.20，以 LTM 经旧模型正常化 EBIT 3,734.1 为分母等于 39.49 倍，收入 11,578 为分母等于 12.74 倍。若对 EBIT 统一移除 63.7 的退税利益，分母 3,670.4，倍数为 40.17 倍；同税同权益保持一致。若只对 3,670.4 做明确条件的 25／30／35 倍 EV 静态量纲测试，回到每股约 279.22／332.16／385.10 美元，均低于观测收盘。这三个倍数是可证伪的条件刻度，直接同业样本为零，不能读作同业目标。 <a href="/stage15/relative.json" target="_blank" rel="noopener">旧倍数分子分母和淘汰</a> · <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm" target="_blank" rel="noopener">10-Q 利润与退税</a></p><p>阶段 15 基准 191.1979801 → 清除合并收入误差回填 −8.1830150 → 五收入流及独立制造资本 −7.5035625 → 安装单变量证据 +3.1811982 → 阶段 17 基准 178.6926007。本轮精确对读 Note 5 的可变租赁 503.8 及固定残差 283.2，合并总租赁在起始披露期间不变。固定与变量租金随后分别按设备与术量驱动，因此长年路径微调。新版基准 178.692502745 美元较阶段 17 减 0.000097998。经营税及利润贡献 −0.000045661、营运资本与再投资 +0.000014798、终值 −0.000067135 美元，融资折现和股数权益项均无变动。新版压力／基准／改善四舍五入仍为 95.01／178.69／294.21。 <a href="/stage17/value-bridge.csv" target="_blank" rel="noopener">冻结原值和顺序</a> · <a href="/cases/US/model.json" target="_blank" rel="noopener">本轮模型</a></p><h2 id="case-US-section-7">7　正方、反方与下一项能查的证据</h2><p>维持同日判断。最有力的反方是医院能将三季报中渠道扩容和 da Vinci 5 的功能提升转成持续更快的单台例数，并用按量租赁保障净现金。它必须用至少两期同口径证据分开装机净增、新批次的每台术量、耗材净变现与服务现金。若具备 16% 的装机净增与 6.55% 的可持续每台活跃术量增速，且合并每例耗材变现增约 2%、租赁实际年收现达到 0.313、市场折现理由支持 8%，则现价在有利路径下可回代。当前 2026Q3 利用率观测 +2%，固定与按量每台确认收入代理 0.223 与 0.295，两条现金证据距离门槛不同。 <a href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm" target="_blank" rel="noopener">10-Q 管理层披露</a></p><p>下一期查源顺序是 10-K／10-Q 的全球、美国和海外装机与病例数，Ion 术量，经营租赁的固定与可变原数、租赁资产与制造现金分拆，医院合同的单台维护、取消和残值。若取不到真正按合同分的收现与维护数据，保留制造×收现联合网格，使用 0.85 制造与 0.10 维护的条件值，而不用非现金设备划转作制造发生额。若按量近四季每台确认收入代理回落到 0.257，即使全收现、五年及 8% 且不计残值，扣维护后的合约价值只能承担约 0.626 制造现金。竞争或和解条款变化优先进入单例收益、单位成本和长期稳定利润率。450 和解的最终批准、实际付款、法院条款属于后续验证，不把未到当时截点的结果加入本金或现金。 <a href="/cases/US/contract-thresholds.csv" target="_blank" rel="noopener">量化合同边界</a> · <a href="/cases/US/independent-review.md" target="_blank" rel="noopener">复核、口径冲突和需要证据</a> · <a href="/cases/US/report-map.md" target="_blank" rel="noopener">40 页素材地图</a></p></section><section class="chapter"><h2>三条路径与价值</h2><div class="scroll" tabindex="0"><table><thead><tr><th scope="col">情景</th><th scope="col">每股</th><th scope="col">WACC</th><th scope="col">显性期现值</th><th scope="col">终值现值</th><th scope="col">终值占比</th></tr></thead><tbody><tr><td class="">base</td><td class="numeric"><span title="178.6925027453693">178.692502745</span></td><td class="numeric"><span title="0.09772241084143635">0.0977224108414</span></td><td class="numeric"><span title="23742.20342651761">23742.2034265</span></td><td class="numeric"><span title="33170.52980770344">33170.5298077</span></td><td class="numeric"><span title="0.5828314319607889">0.582831431961</span></td></tr><tr><td class="">stress</td><td class="numeric"><span title="95.010168459657">95.0101684597</span></td><td class="numeric"><span title="0.09772241084143635">0.0977224108414</span></td><td class="numeric"><span title="12333.698794093838">12333.6987941</span></td><td class="numeric"><span title="16087.317236179548">16087.3172362</span></td><td class="numeric"><span title="0.5660359650423378">0.566035965042</span></td></tr><tr><td class="">improve</td><td class="numeric"><span title="294.20845181157534">294.208451812</span></td><td class="numeric"><span title="0.09772241084143635">0.0977224108414</span></td><td class="numeric"><span title="36040.56321410324">36040.5632141</span></td><td class="numeric"><span title="60506.89583682724">60506.8958368</span></td><td class="numeric"><span title="0.6267062482183896">0.626706248218</span></td></tr></tbody></table></div><h2>双变量反解</h2><p>固定WACC 8%、每例净收入增长1.5%与基准租赁设备现金，装机和活跃术量共同驱动耗材、服务及使用量租赁。</p><div class="scroll" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 891 334" role="img" aria-label="双变量条件估值矩阵"><rect width="891" height="334" rx="18" fill="#fffaf0"/><g font-family="sans-serif" fill="#263e36" font-size="13"><text x="20" y="29" font-weight="bold">同日每股价值 · USD · 收盘 439.89</text><text x="20" y="51">每台活跃设备术量增速 ＼ 装机增速</text><text x="114" y="80">0.02</text><text x="200" y="80">0.05</text><text x="286" y="80">0.08</text><text x="372" y="80">0.098164</text><text x="458" y="80">0.13</text><text x="544" y="80">0.16</text><text x="630" y="80">0.2</text><text x="716" y="80">0.25</text><text x="802" y="80">0.3</text><text x="20" y="108">0</text><text x="20" y="147">0.03</text><text x="20" y="186">0.06</text><text x="20" y="225">0.09</text><text x="20" y="264">0.12</text><g><title>0.02／0.0 = 168.256558667</title><rect x="107" y="89" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="110">168.26</text></g><g><title>0.05／0.0 = 193.227216442</title><rect x="193" y="89" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="110">193.23</text></g><g><title>0.08／0.0 = 222.591959391</title><rect x="279" y="89" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="110">222.59</text></g><g><title>0.0981635／0.0 = 242.792074926</title><rect x="365" y="89" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="372" y="110">242.79</text></g><g><title>0.13／0.0 = 283.201065662</title><rect x="451" y="89" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="458" y="110">283.20</text></g><g><title>0.16／0.0 = 327.888798533</title><rect x="537" y="89" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="544" y="110">327.89</text></g><g><title>0.2／0.0 = 399.141780193</title><rect x="623" y="89" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="630" y="110">399.14</text></g><g><title>0.25／0.0 = 510.693736665</title><rect x="709" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="110">510.69</text></g><g><title>0.3／0.0 = 652.940818541</title><rect x="795" y="89" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="110">652.94</text></g><g><title>0.02／0.03 = 186.652304797</title><rect x="107" y="128" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="149">186.65</text></g><g><title>0.05／0.03 = 215.301019362</title><rect x="193" y="128" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="149">215.30</text></g><g><title>0.08／0.03 = 249.004712138</title><rect x="279" y="128" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="149">249.00</text></g><g><title>0.0981635／0.03 = 272.196198938</title><rect x="365" y="128" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="372" y="149">272.20</text></g><g><title>0.13／0.03 = 318.601562663</title><rect x="451" y="128" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="458" y="149">318.60</text></g><g><title>0.16／0.03 = 369.93527223</title><rect x="537" y="128" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="544" y="149">369.94</text></g><g><title>0.2／0.03 = 451.807841323</title><rect x="623" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="149">451.81</text></g><g><title>0.25／0.03 = 580.023693771</title><rect x="709" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="149">580.02</text></g><g><title>0.3／0.03 = 743.56317921</title><rect x="795" y="128" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="149">743.56</text></g><g><title>0.02／0.06 = 208.306718044</title><rect x="107" y="167" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="188">208.31</text></g><g><title>0.05／0.06 = 241.319805637</title><rect x="193" y="167" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="188">241.32</text></g><g><title>0.08／0.06 = 280.175250379</title><rect x="279" y="167" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="188">280.18</text></g><g><title>0.0981635／0.06 = 306.920073579</title><rect x="365" y="167" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="372" y="188">306.92</text></g><g><title>0.13／0.06 = 360.451449871</title><rect x="451" y="167" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="458" y="188">360.45</text></g><g><title>0.16／0.06 = 419.687093376</title><rect x="537" y="167" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="544" y="188">419.69</text></g><g><title>0.2／0.06 = 514.192686589</title><rect x="623" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="188">514.19</text></g><g><title>0.25／0.06 = 662.243697197</title><rect x="709" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="188">662.24</text></g><g><title>0.3／0.06 = 851.14246099</title><rect x="795" y="167" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="188">851.14</text></g><g><title>0.02／0.09 = 233.734514644</title><rect x="107" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="227">233.73</text></g><g><title>0.05／0.09 = 271.909323076</title><rect x="193" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="227">271.91</text></g><g><title>0.08／0.09 = 316.86115679</title><rect x="279" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="227">316.86</text></g><g><title>0.0981635／0.09 = 347.812606088</title><rect x="365" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="372" y="227">347.81</text></g><g><title>0.13／0.09 = 409.783561214</title><rect x="451" y="206" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="458" y="227">409.78</text></g><g><title>0.16／0.09 = 478.382034017</title><rect x="537" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="227">478.38</text></g><g><title>0.2／0.09 = 587.863378687</title><rect x="623" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="227">587.86</text></g><g><title>0.25／0.09 = 759.440849178</title><rect x="709" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="227">759.44</text></g><g><title>0.3／0.09 = 978.434446495</title><rect x="795" y="206" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="227">978.43</text></g><g><title>0.02／0.12 = 263.520302307</title><rect x="107" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="114" y="266">263.52</text></g><g><title>0.05／0.12 = 307.780501965</title><rect x="193" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="200" y="266">307.78</text></g><g><title>0.08／0.12 = 359.923385945</title><rect x="279" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="286" y="266">359.92</text></g><g><title>0.0981635／0.12 = 395.838693173</title><rect x="365" y="245" width="82" height="32" rx="7" fill="#f4dcd3"/><text x="372" y="266">395.84</text></g><g><title>0.13／0.12 = 467.772166999</title><rect x="451" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="458" y="266">467.77</text></g><g><title>0.16／0.12 = 547.427701844</title><rect x="537" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="544" y="266">547.43</text></g><g><title>0.2／0.12 = 674.60252528</title><rect x="623" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="630" y="266">674.60</text></g><g><title>0.25／0.12 = 873.99013076</title><rect x="709" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="716" y="266">873.99</text></g><g><title>0.3／0.12 = 1128.57599597</title><rect x="795" y="245" width="82" height="32" rx="7" fill="#dceadf"/><text x="802" y="266">1128.58</text></g></g></svg></div><details><summary>同源反解边界与回代</summary><div class="scroll" tabindex="0"><table><thead><tr><th scope="col">第二驱动取值</th><th scope="col">搜索首端价值</th><th scope="col">搜索末端价值</th><th scope="col">状态</th><th scope="col">首个解</th><th scope="col">回代价值</th></tr></thead><tbody><tr><td class="numeric"><span title="0.0">0</span></td><td class="numeric"><span title="168.25655866713223">168.256558667</span></td><td class="numeric"><span title="652.9408185414167">652.940818541</span></td><td class="">有解</td><td class="numeric"><span title="0.21972207270820543">0.219722072708</span></td><td class="numeric"><span title="439.89">439.89</span></td></tr><tr><td class="numeric"><span title="0.03">0.03</span></td><td class="numeric"><span title="186.65230479670265">186.652304797</span></td><td class="numeric"><span title="743.5631792095312">743.56317921</span></td><td class="">有解</td><td class="numeric"><span title="0.19465532370454475">0.194655323705</span></td><td class="numeric"><span title="439.89">439.89</span></td></tr><tr><td class="numeric"><span title="0.06">0.06</span></td><td class="numeric"><span title="208.3067180444374">208.306718044</span></td><td class="numeric"><span title="851.1424609895344">851.14246099</span></td><td class="">有解</td><td class="numeric"><span title="0.16925905280203912">0.169259052802</span></td><td class="numeric"><span title="439.8899999999998">439.89</span></td></tr><tr><td class="numeric"><span title="0.09">0.09</span></td><td class="numeric"><span title="233.73451464418477">233.734514644</span></td><td class="numeric"><span title="978.4344464947553">978.434446495</span></td><td class="">有解</td><td class="numeric"><span title="0.1437423034612788">0.143742303461</span></td><td class="numeric"><span title="439.8899999999999">439.89</span></td></tr><tr><td class="numeric"><span title="0.12">0.12</span></td><td class="numeric"><span title="263.5203023065147">263.520302307</span></td><td class="numeric"><span title="1128.5759959720563">1128.57599597</span></td><td class="">有解</td><td class="numeric"><span title="0.11828469459228474">0.118284694592</span></td><td class="numeric"><span title="439.8899999999997">439.89</span></td></tr></tbody></table></div></details><nav class="source-links"><a href="/cases/US/sensitivity.csv">下载双变量底表</a> <a href="/research/facts.html?code=US">查看原窗口事实</a></nav></section></main><script>
+(() => {
+  'use strict';
+  const query = (s, root = document) => root.querySelector(s);
+  const all = (s, root = document) => [...root.querySelectorAll(s)];
+  const selectors = all('[data-filter]');
+  const filterRows = all('[data-search-row]');
+  const status = query('#filter-status');
+  function filter() {
+    const terms = (query('#search')?.value || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+    let count = 0;
+    for (const row of filterRows) {
+      const fields = selectors.every(s => !s.value || (row.dataset[s.dataset.filter] || '').split('|').includes(s.value));
+      const matches = fields && terms.every(x => row.dataset.searchRow.toLowerCase().includes(x));
+      row.hidden = !matches;
+      const nav = document.getElementById('nav-' + row.id);
+      if (nav) nav.hidden = !matches;
+      if (matches) count++;
+    }
+    if (status) status.textContent = count + ' 项';
+  }
+  for (const input of [...selectors, query('#search')].filter(Boolean)) input.addEventListener('input', filter);
+  filter();
+  const config = query('#charts');
+  if (config) {
+    const colors = ['#286750','#ac894a','#7c91a1','#a96f62','#829756','#727493'];
+    const charts = JSON.parse(config.textContent);
+    for (const figure of all('[data-chart]')) {
+      const chart = charts[figure.dataset.chart], hidden = [];
+      const target = query('.chart', figure);
+      const draw = () => { target.innerHTML = ResultFeatures.chart(chart, hidden); };
+      all('button[data-series]', figure).forEach((button, n) => {
+        button.style.setProperty('--series', colors[n]);
+        button.addEventListener('click', () => {
+          const i = hidden.indexOf(n);
+          if (i < 0) hidden.push(n);
+          else hidden.splice(i, 1);
+          button.setAttribute('aria-pressed', i < 0 ? 'false' : 'true');
+          draw();
+        });
+      });
+      draw();
+    }
+  }
+  for (const link of all('a[href^="#"]')) {
+    link.addEventListener('click', () => {
+      const dest = document.getElementById(link.getAttribute('href').slice(1));
+      if (!dest) return;
+      const chapter = dest.closest('.chapter');
+      if (chapter?.hidden) {
+        for (const input of [...selectors, query('#search')].filter(Boolean)) input.value = '';
+        filter();
+      }
+      for (let el = dest; el; el = el.parentElement) if (el.tagName === 'DETAILS') el.open = true;
+      if (document.body.classList.contains('presenting') && chapter) {
+        slide = slides.indexOf(chapter);
+        drawSlide();
+      }
+    });
+  }
+  let slides = [], slide = 0;
+  const present = query('#present');
+  function drawSlide() {
+    slides.forEach((el, i) => el.classList.toggle('active-slide', i === slide));
+    if (query('#position')) query('#position').textContent =
+      (slide + 1) + ' / ' + slides.length + ' · ' + (query('h2', slides[slide])?.textContent || '');
+  }
+  function step(amount) {
+    slide = Math.max(0, Math.min(slides.length - 1, slide + amount));
+    drawSlide();
+    window.scrollTo(0, 0);
+  }
+  function end() {
+    document.body.classList.remove('presenting');
+    slides.forEach(x => x.classList.remove('active-slide'));
+    present?.focus();
+  }
+  present?.addEventListener('click', () => {
+    slides = all('.chapter').filter(el => !el.hidden && el.id !== 'methods');
+    if (!slides.length) return;
+    slide = 0;
+    document.body.classList.add('presenting');
+    drawSlide();
+    window.scrollTo(0, 0);
+    query('#exit').focus();
+  });
+  query('#previous')?.addEventListener('click', () => step(-1));
+  query('#next-slide')?.addEventListener('click', () => step(1));
+  query('#exit')?.addEventListener('click', end);
+  document.addEventListener('keydown', e => {
+    if (!document.body.classList.contains('presenting')) return;
+    if (e.key === 'Escape') end();
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      step(e.key === 'ArrowLeft' ? -1 : 1);
+    }
+  });
+})();
+</script></body></html>

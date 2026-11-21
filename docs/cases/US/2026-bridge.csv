@@ -1,0 +1,4 @@
+﻿scenario,period,unit,actual_revenue,remaining_revenue,full_year_revenue,reported_core_ebit,estimated_unreported_ebit,estimated_full_year_operating_ebit,ending_wc,cash_after_valuation_date,time_to_valuation,tag
+base,2026-Q3,USD 百万,8711.8,3296.129999999999,12007.929999999998,,,3844.38095,3242.1411,210.71574252760067,0.13424657534255857,已披露实际与情景估计分栏；估值仅纳入截点后现金
+stress,2026-Q3,USD 百万,8711.8,3095.495999999999,11807.295999999998,,,3610.92896,3613.0325759999996,-91.5665170262207,0.13424657534255857,已披露实际与情景估计分栏；估值仅纳入截点后现金
+improve,2026-Q3,USD 百万,8711.8,3468.101999999999,12179.901999999998,,,4019.9357,3028.8,406.60500215168327,0.13424657534255857,已披露实际与情景估计分栏；估值仅纳入截点后现金

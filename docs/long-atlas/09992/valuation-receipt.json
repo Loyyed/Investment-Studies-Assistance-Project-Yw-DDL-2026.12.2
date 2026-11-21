@@ -1,0 +1,226 @@
+{
+  "code": "09992",
+  "cutoff": "2026-11-12",
+  "quoted_currency": "HKD",
+  "close": 143.4,
+  "scenarios": [
+    {
+      "scenario": "base",
+      "wacc": 0.05395836367616964,
+      "recomputed": 166.65471957516075,
+      "model": 166.65471957516075,
+      "difference": 0.0,
+      "explicit_pv": 43163.01626418519,
+      "terminal_pv": 135445.51384324484,
+      "enterprise": 178608.53010743004,
+      "equity": 189516.39194222805,
+      "terminal_share": 0.7583373188378889,
+      "bridge": {
+        "financial_cash": 12442.065,
+        "eligible_short_long_investments": 1721.96,
+        "working_cash_reserve": 2500,
+        "notified_buyback_cash_or_buffer": 446.404315202,
+        "excess_cash_proxy": 11217.620684798001,
+        "financial_debt": 0,
+        "finance_treated_lease": 0,
+        "non_controlling_book": 229.451,
+        "non_controlling_deduction": 309.75885,
+        "litigation_separate_pv": 0,
+        "bridge_net": 10907.861834798001
+      }
+    },
+    {
+      "scenario": "stress",
+      "wacc": 0.05395836367616964,
+      "recomputed": 48.53435822480893,
+      "model": 48.53435822480893,
+      "difference": 0.0,
+      "explicit_pv": 14598.72038647483,
+      "terminal_pv": 31443.075589108557,
+      "enterprise": 46041.79597558339,
+      "equity": 55192.29506038139,
+      "terminal_share": 0.6829246106251646,
+      "bridge": {
+        "financial_cash": 12442.065,
+        "eligible_short_long_investments": 1721.96,
+        "working_cash_reserve": 4200,
+        "notified_buyback_cash_or_buffer": 446.404315202,
+        "excess_cash_proxy": 9517.620684798001,
+        "financial_debt": 0,
+        "finance_treated_lease": 0,
+        "non_controlling_book": 229.451,
+        "non_controlling_deduction": 367.1216,
+        "litigation_separate_pv": 0,
+        "bridge_net": 9150.499084798
+      }
+    },
+    {
+      "scenario": "improve",
+      "wacc": 0.05395836367616964,
+      "recomputed": 536.3658597824261,
+      "model": 536.3658597824261,
+      "difference": 0.0,
+      "explicit_pv": 93807.65804749053,
+      "terminal_pv": 504671.5747829275,
+      "enterprise": 598479.232830418,
+      "equity": 609944.457415216,
+      "terminal_share": 0.8432566196092699,
+      "bridge": {
+        "financial_cash": 12442.065,
+        "eligible_short_long_investments": 1721.96,
+        "working_cash_reserve": 2000,
+        "notified_buyback_cash_or_buffer": 446.404315202,
+        "excess_cash_proxy": 11717.620684798001,
+        "financial_debt": 0,
+        "finance_treated_lease": 0,
+        "non_controlling_book": 229.451,
+        "non_controlling_deduction": 252.39610000000002,
+        "litigation_separate_pv": 0,
+        "bridge_net": 11465.224584798001
+      }
+    }
+  ],
+  "historical_bridge": [
+    {
+      "step": "去总收入误差回填",
+      "start": 215.0420418183681,
+      "end": 193.44906882490505,
+      "change": -21.592972993463036,
+      "tag": "算术"
+    },
+    {
+      "step": "改用门店证据条件校正",
+      "start": 193.44906882490505,
+      "end": 173.87888597429995,
+      "change": -19.570182850605107,
+      "tag": "算术"
+    },
+    {
+      "step": "全期统一现金租金及投入",
+      "start": 173.87888597429995,
+      "end": 166.65471957516075,
+      "change": -7.224166399139193,
+      "tag": "算术"
+    }
+  ],
+  "stage17_to_current": [
+    {
+      "step": "阶段17冻结值",
+      "per_share": 166.65471957516075,
+      "delta": 0.0
+    },
+    {
+      "step": "量价、成本与经营税",
+      "per_share": 166.65471957516075,
+      "delta": 0.0
+    },
+    {
+      "step": "营运资本和再投资",
+      "per_share": 166.65471957516075,
+      "delta": 0.0
+    },
+    {
+      "step": "融资及折现",
+      "per_share": 166.65471957516075,
+      "delta": 0.0
+    },
+    {
+      "step": "终值",
+      "per_share": 166.65471957516075,
+      "delta": 0.0
+    },
+    {
+      "step": "净债务、其他权益及股数",
+      "per_share": 166.65471957516075,
+      "delta": 0.0
+    }
+  ],
+  "reverse_boundaries": [
+    {
+      "y": 0.8,
+      "low": 0.0,
+      "high": 22000.0,
+      "value_low": 133.79417739076146,
+      "value_high": 267.88174135205645,
+      "gap_low": -9.605822609238544,
+      "gap_high": 124.48174135205645,
+      "status": "有解",
+      "roots": [
+        {
+          "x": 1580.8348836649207,
+          "recovered": 143.4,
+          "gap": 0.0
+        }
+      ]
+    },
+    {
+      "y": 0.9,
+      "low": 0.0,
+      "high": 22000.0,
+      "value_low": 131.34646279899522,
+      "value_high": 265.4421208537556,
+      "gap_low": -12.053537201004787,
+      "gap_high": 122.04212085375562,
+      "status": "有解",
+      "roots": [
+        {
+          "x": 1983.7309143386997,
+          "recovered": 143.4,
+          "gap": 0.0
+        }
+      ]
+    },
+    {
+      "y": 1.0,
+      "low": 0.0,
+      "high": 22000.0,
+      "value_low": 128.89874820722892,
+      "value_high": 263.00250035545474,
+      "gap_low": -14.501251792771086,
+      "gap_high": 119.60250035545474,
+      "status": "有解",
+      "roots": [
+        {
+          "x": 2386.709726764977,
+          "recovered": 143.39999999999998,
+          "gap": -2.842170943040401e-14
+        }
+      ]
+    },
+    {
+      "y": 1.1,
+      "low": 0.0,
+      "high": 22000.0,
+      "value_low": 126.45103361546262,
+      "value_high": 260.5628798571539,
+      "gap_low": -16.948966384537385,
+      "gap_high": 117.16287985715391,
+      "status": "有解",
+      "roots": [
+        {
+          "x": 2789.68853919126,
+          "recovered": 143.4,
+          "gap": 0.0
+        }
+      ]
+    },
+    {
+      "y": 1.25,
+      "low": 0.0,
+      "high": 22000.0,
+      "value_low": 122.77946172781316,
+      "value_high": 256.90344910970254,
+      "gap_low": -20.62053827218685,
+      "gap_high": 113.50344910970253,
+      "status": "有解",
+      "roots": [
+        {
+          "x": 3394.156757830682,
+          "recovered": 143.39999999999992,
+          "gap": -8.526512829121202e-14
+        }
+      ]
+    }
+  ],
+  "source": "/cases/09992/model.json"
+}

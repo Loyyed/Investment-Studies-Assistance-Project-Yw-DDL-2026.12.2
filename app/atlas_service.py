@@ -16,7 +16,7 @@ from atlas_render import (CONTENT, attributes, csv_payload, data_table, filter_b
 
 SPACE = 'securities-atlas'
 FILES = {'.csv':'text/csv', '.md':'text/markdown', '.json':'application/json', '.html':'text/html'}
-TOP = [('工作台','/'),('研究成果中心','/research/'),('超级图册','/atlas/'),
+TOP = [('工作台','/'),('研究成果中心','/research/'),('长篇图册','/long-atlas/'),('既有图册','/atlas/'),
        ('投研准备与方法','/preparation/'),('材料与方法增补','/#updates')]
 
 
@@ -67,7 +67,7 @@ def hub_page(root, mapping, code='', nonce=None):
         title='五家公司证券分析工作台'
         label='工程入口汇集定稿、经营底表、条件估值和期后跟踪。'
         codes=list(NAMES)
-    actions='<div class="hero-actions">'+link('打开超级图册','/atlas/','action main')+link('当前定稿','/stage17/index.html','action')
+    actions='<div class="hero-actions">'+link('打开五家公司长篇图册','/long-atlas/','action main')+link('既有图册','/atlas/','action')+link('当前定稿','/stage17/index.html','action')
     actions+=link('同日对照','/stage17/same-date.html','action')+link('覆盖清单','/research/coverage.html'+('?code='+code if code else ''),'action')+'</div>'
     content=mast(title,label,f'{VERSION} · 阶段17 {BASE[:8]}',TOP,actions)
     tiles=''
@@ -78,7 +78,7 @@ def hub_page(root, mapping, code='', nonce=None):
           ('公司成果中心','/?project='+quote(project)+'#report')] if project else []
         anchors=[('当前定稿',f'/stage17/{key}/report.html'),('模型',f'/stage17/{key}/model.json'),
                  ('证据',f'/stage17/{key}/basis.json'),('当前 Fact',f'/research/facts.html?code={key}'),
-                 ('图册专题',f'/atlas/company/{key}'),('全部版本与下载',f'/research/coverage.html?code={key}'),*native]
+                 ('长篇公司图册',f'/long-atlas/{key}/'),('既有图册专题',f'/atlas/company/{key}'),('全部版本与下载',f'/research/coverage.html?code={key}'),*native]
         tiles+='<div class="tile"><h2>'+link(NAMES[key],'/research/company/'+key)+'</h2>'+links(anchors)+'</div>'
     topics=[
         ('资料与比较',[('原件与版本','/stage15/coverage.html'),('长期年度','/stage15/annual.html'),('近期季度','/stage15/interim.html'),
@@ -198,6 +198,13 @@ class ResearchHost:
             for key in ('cards','maps'):
                 existing={item['id'] for item in doc[key]}
                 doc[key].extend(deepcopy(item) for item in self.seed[key] if item['id'] not in existing)
+            fresh={card['id']:card for card in self.seed['cards']}
+            for card in doc['cards']:
+                if card.get('kind')=='result' and card['id'] in fresh and 'feature' in card:
+                    sections=card['feature']['sections']
+                    used={section['id'] for section in sections}
+                    items=fresh[card['id']].get('feature',{}).get('sections',[])
+                    sections.extend(deepcopy(s) for s in items if s['id'].startswith('deepcase') and s['id'] not in used)
             doc['atlas_version']=self.seed['atlas_version']
         return doc
 

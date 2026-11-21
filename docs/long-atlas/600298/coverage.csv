@@ -1,0 +1,23 @@
+﻿company,group,field,first,last,comparable_count,missing,stages,entry,locations
+600298,收入及增速,revenue,2001-FY,2025-FY,25,,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,收入及增速,revenue_growth,2002-FY,2025-FY,24,2001-FY,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,成本及毛利,cost,2001-FY,2025-FY,18,2003-FY、2004-FY、2005-FY、2007-FY、2013-FY、2014-FY、2016-FY,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,成本及毛利,gross_profit,2001-FY,2025-FY,18,2003-FY、2004-FY、2005-FY、2007-FY、2013-FY、2014-FY、2016-FY,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,核心经营利润,report_operating_profit,2001-FY,2025-FY,25,,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,核心经营利润,analysis_ebit,2008-FY,2025-FY,14,2001-FY、2002-FY、2003-FY、2004-FY、2005-FY、2006-FY、2007-FY、2013-FY、2014-FY、2016-FY、2020-FY,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,经营现金与资本支出,cfo_reported,2001-FY,2025-FY,25,,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,经营现金与资本支出,cash_capex,2001-FY,2025-FY,25,,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,营运资本,wc_trade_subset,2008-FY,2025-FY,13,2001-FY、2002-FY、2003-FY、2004-FY、2005-FY、2006-FY、2007-FY、2013-FY、2014-FY、2016-FY、2018-FY、2020-FY,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,营运资本,delta_wc_trade_subset,2009-FY,2025-FY,8,2001-FY、2002-FY、2003-FY、2004-FY、2005-FY、2006-FY、2007-FY、2008-FY、2013-FY、2014-FY、2015-FY、2016-FY、2017-FY、2018-FY、2019-FY、2020-FY、2021-FY,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,资本与回报,capital_subset,2008-FY,2025-FY,13,2001-FY、2002-FY、2003-FY、2004-FY、2005-FY、2006-FY、2007-FY、2013-FY、2014-FY、2016-FY、2018-FY、2020-FY,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,资本与回报,roic_subset,2009-FY,2025-FY,8,2001-FY、2002-FY、2003-FY、2004-FY、2005-FY、2006-FY、2007-FY、2008-FY、2013-FY、2014-FY、2015-FY、2016-FY、2017-FY、2018-FY、2019-FY、2020-FY、2021-FY,早期扩产与旧会计制度／准则转换与多基地扩张／投产、深加工及国际化／需求与原料周期／海外爬坡及资本回收,/cases/600298/history.csv,history.csv 的 source_id、filed、sha256、locators；核心及资本派生字段使用原组件定位
+600298,酵母及深加工吨成本与吨毛利,吨成本,2021-FY,2025-FY,5,,元／吨,/cases/600298/unit-economics.csv,原专题表 source、口径及有条件代理列
+600298,酵母及深加工吨成本与吨毛利,吨毛利,2021-FY,2025-FY,5,,元／吨,/cases/600298/unit-economics.csv,原专题表 source、口径及有条件代理列
+600298,重点项目的工程余额与转固,期末在建,2026-08-15,2026-08-15,5,宜昌2万吨酵母蛋白复配线、宜昌高新区50万吨功能水解糖线、宜昌高新区白洋生物科技园二期调整,百万元人民币,/cases/600298/project-bridge.csv,原专题表 source、口径及有条件代理列
+600298,重点项目的工程余额与转固,本期转固,2026-08-15,2026-08-15,3,印尼2万吨酵母、普洱3.2万吨酵母绿色制造、宜昌2万吨酵母蛋白复配线、宜昌高新区50万吨功能水解糖线、宜昌高新区白洋生物科技园二期调整,百万元人民币,/cases/600298/project-bridge.csv,原专题表 source、口径及有条件代理列
+600298,本版逐页核对补充,cost,2001-FY,2006-FY,6,,旧会计制度；2007起分段,/long-atlas/600298/early-capital.csv,/long-atlas/600298/historical-original-locators.csv
+600298,本版逐页核对补充,analysis_ebit_m,2001-FY,2006-FY,6,,旧会计制度；2007起分段,/long-atlas/600298/early-capital.csv,/long-atlas/600298/historical-original-locators.csv
+600298,本版逐页核对补充,wc_narrow_m,2001-FY,2006-FY,6,,旧会计制度；2007起分段,/long-atlas/600298/early-capital.csv,/long-atlas/600298/historical-original-locators.csv
+600298,本版逐页核对补充,capital_narrow_m,2001-FY,2006-FY,6,,旧会计制度；2007起分段,/long-atlas/600298/early-capital.csv,/long-atlas/600298/historical-original-locators.csv
+600298,本版逐页核对补充,pretax_roic_proxy,2001-FY,2006-FY,6,,旧会计制度；2007起分段,/long-atlas/600298/early-capital.csv,/long-atlas/600298/historical-original-locators.csv
+600298,经营数据覆盖,产品与地区收入和成本,2021-FY,2025-FY,44,覆盖表仅计原表观察行，拆分缺项见源表说明,产品、地区或公司专项口径,/cases/600298/dimension-panel.csv,源表期间列、行组说明与来源定位

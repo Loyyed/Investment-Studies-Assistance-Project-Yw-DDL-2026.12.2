@@ -1,0 +1,384 @@
+{
+  "security": {
+    "ticker": "9992.HK",
+    "exchange": "香港联合交易所",
+    "right": "普通股",
+    "quote": "HKD",
+    "report": "CNY",
+    "shares": 1327969203,
+    "fx": 0.85633,
+    "close": "2026-11-12T16:10:00+08:00",
+    "shares_basis": "11月11日17:02表的登记已发行1,331,779,203，已公告未注销回购3,810,000，估值用扣除后的经济股数。11月12日16:48新增460,000回购公告在收盘之后，未纳入。",
+    "shares_at": "2026-11-11"
+  },
+  "cutoff": "2026-11-12",
+  "close": 143.4,
+  "operating": {
+    "end": 2034,
+    "window": [
+      2020,
+      2025
+    ],
+    "steady_window": [
+      2020,
+      2024
+    ],
+    "drivers": [
+      "等效渠道容量",
+      "每单位渠道净销售"
+    ],
+    "rates": [
+      [
+        0.1,
+        -0.025
+      ],
+      [
+        0.025,
+        -0.065
+      ],
+      [
+        0.15,
+        0.025
+      ]
+    ],
+    "active_margin": [
+      0.306,
+      0.195,
+      0.36
+    ],
+    "stable_margin": [
+      0.255,
+      0.175,
+      0.315
+    ],
+    "roi": [
+      0.17,
+      0.1,
+      0.24
+    ],
+    "g": [
+      0.022,
+      0.01,
+      0.028
+    ],
+    "reserve_cost": [
+      0.018,
+      0.026,
+      0.015
+    ],
+    "wc": [
+      0.135,
+      0.175,
+      0.1
+    ],
+    "fade_capex_years": 4,
+    "residual_growth": [
+      0.53,
+      0.37,
+      0.65
+    ],
+    "check": "2022利润回落、2025区域/IP桥、2026H1经营现金与Q3七区间；以剔除头部IP后的同店销售和存货年龄验证。"
+  },
+  "calibration": {
+    "mature_core_margin": 0.24384816366268494,
+    "signed_backtest_error": -0.4305880481548529,
+    "absolute_backtest_error": 0.4305880481548529,
+    "margin_sources": [
+      "S3a717e3a572b1f30",
+      "Sae0f1e1845c9aa8f",
+      "S113a569cdaac64d5",
+      "S1312bd4fec38932f",
+      "S9b89a4686ffb5fe8"
+    ]
+  },
+  "source_windows": {
+    "latest_disclosed_period": "2026-H1",
+    "frozen_stage17": "docs/research17/09992/model.json",
+    "operating_account": "companies/09992_泡泡玛特/work/research14/inputs.json"
+  },
+  "holdouts": {
+    "driver_summary": {
+      "count": 2,
+      "median_signed_error": 0.18231303150212352,
+      "med_abs_error": 0.18231303150212352
+    },
+    "driver": [
+      {
+        "company": "09992_泡泡玛特",
+        "period": "2022",
+        "metric": "中国内地年末实体门店",
+        "estimate": 443.5508021390374,
+        "actual": 329,
+        "signed_error": 0.3481787299058887,
+        "forecast_growth": 0.5401069518716577,
+        "unit": "家",
+        "info_cutoff": "2022-04-27",
+        "training": [
+          {
+            "company": "09992_泡泡玛特",
+            "tag": "原文披露·Agent对读",
+            "period": "2020",
+            "metric": "中国内地年末实体门店",
+            "value": 187,
+            "unit": "家",
+            "source_id": "Sae0f1e1845c9aa8f",
+            "source_sha256": "ae0f1e1845c9aa8fae5109d4feaf5febc59dcc12ed5bb8fa51a6d93a108021a2",
+            "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2021_f37dfccf93.pdf",
+            "locator": "PDF物理第12页",
+            "disclosed": "2022-04-27",
+            "checked": "2026-11-19",
+            "note": "内地旧口径，2025起中国区重述分列。仅校正扩店情景。"
+          },
+          {
+            "company": "09992_泡泡玛特",
+            "tag": "原文披露·Agent对读",
+            "period": "2021",
+            "metric": "中国内地年末实体门店",
+            "value": 288,
+            "unit": "家",
+            "source_id": "Sae0f1e1845c9aa8f",
+            "source_sha256": "ae0f1e1845c9aa8fae5109d4feaf5febc59dcc12ed5bb8fa51a6d93a108021a2",
+            "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2021_f37dfccf93.pdf",
+            "locator": "PDF物理第12页",
+            "disclosed": "2022-04-27",
+            "checked": "2026-11-19",
+            "note": "内地旧口径，2025起中国区重述分列。仅校正扩店情景。"
+          }
+        ],
+        "target": {
+          "company": "09992_泡泡玛特",
+          "tag": "原文披露·Agent对读",
+          "period": "2022",
+          "metric": "中国内地年末实体门店",
+          "value": 329,
+          "unit": "家",
+          "source_id": "S1312bd4fec38932f",
+          "source_sha256": "1312bd4fec38932f30608c7cec35ec19cc31a6cbaccb36aba9efe2b6dc8d6afa",
+          "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2023_c2e4bab1ae.pdf",
+          "locator": "PDF物理第14页",
+          "disclosed": "2024-04-25",
+          "checked": "2026-11-19",
+          "note": "内地旧口径，2025起中国区重述分列。仅校正扩店情景。"
+        },
+        "tag": "留出算术"
+      },
+      {
+        "company": "09992_泡泡玛特",
+        "period": "2024",
+        "metric": "中国内地年末实体门店",
+        "estimate": 407.5953805724417,
+        "actual": 401,
+        "signed_error": 0.01644733309835833,
+        "forecast_growth": 0.12285228807835191,
+        "unit": "家",
+        "info_cutoff": "2024-04-25",
+        "training": [
+          {
+            "company": "09992_泡泡玛特",
+            "tag": "原文披露·Agent对读",
+            "period": "2021",
+            "metric": "中国内地年末实体门店",
+            "value": 288,
+            "unit": "家",
+            "source_id": "Sae0f1e1845c9aa8f",
+            "source_sha256": "ae0f1e1845c9aa8fae5109d4feaf5febc59dcc12ed5bb8fa51a6d93a108021a2",
+            "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2021_f37dfccf93.pdf",
+            "locator": "PDF物理第12页",
+            "disclosed": "2022-04-27",
+            "checked": "2026-11-19",
+            "note": "内地旧口径，2025起中国区重述分列。仅校正扩店情景。"
+          },
+          {
+            "company": "09992_泡泡玛特",
+            "tag": "原文披露·Agent对读",
+            "period": "2022",
+            "metric": "中国内地年末实体门店",
+            "value": 329,
+            "unit": "家",
+            "source_id": "S1312bd4fec38932f",
+            "source_sha256": "1312bd4fec38932f30608c7cec35ec19cc31a6cbaccb36aba9efe2b6dc8d6afa",
+            "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2023_c2e4bab1ae.pdf",
+            "locator": "PDF物理第14页",
+            "disclosed": "2024-04-25",
+            "checked": "2026-11-19",
+            "note": "内地旧口径，2025起中国区重述分列。仅校正扩店情景。"
+          },
+          {
+            "company": "09992_泡泡玛特",
+            "tag": "原文披露·Agent对读",
+            "period": "2023",
+            "metric": "中国内地年末实体门店",
+            "value": 363,
+            "unit": "家",
+            "source_id": "S1312bd4fec38932f",
+            "source_sha256": "1312bd4fec38932f30608c7cec35ec19cc31a6cbaccb36aba9efe2b6dc8d6afa",
+            "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2023_c2e4bab1ae.pdf",
+            "locator": "PDF物理第14页",
+            "disclosed": "2024-04-25",
+            "checked": "2026-11-19",
+            "note": "内地旧口径，2025起中国区重述分列。仅校正扩店情景。"
+          }
+        ],
+        "target": {
+          "company": "09992_泡泡玛特",
+          "tag": "原文披露·Agent对读",
+          "period": "2024",
+          "metric": "中国内地年末实体门店",
+          "value": 401,
+          "unit": "家",
+          "source_id": "S9b89a4686ffb5fe8",
+          "source_sha256": "9b89a4686ffb5fe838abd5ae8df9e7683b1de2019480e112420e49154fcfde19",
+          "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2024_976e7e443e.pdf",
+          "locator": "PDF物理第15页",
+          "disclosed": "2025-04-23",
+          "checked": "2026-11-19",
+          "note": "内地旧口径，2025起中国区重述分列。仅校正扩店情景。"
+        },
+        "tag": "留出算术"
+      }
+    ],
+    "revenue": [
+      {
+        "company": "09992_泡泡玛特",
+        "target": 2024,
+        "available_through": "2024-04-25",
+        "train_sources": [
+          "S3a717e3a572b1f30",
+          "Sae0f1e1845c9aa8f",
+          "S113a569cdaac64d5",
+          "S1312bd4fec38932f"
+        ],
+        "actual_source": "S9b89a4686ffb5fe8",
+        "expected": 8598.62253634443,
+        "actual": 13037.749,
+        "error": -0.3404825835852162,
+        "forecast_growth": 0.36464367672703957,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      },
+      {
+        "company": "09992_泡泡玛特",
+        "target": 2025,
+        "available_through": "2025-04-23",
+        "train_sources": [
+          "Sae0f1e1845c9aa8f",
+          "S113a569cdaac64d5",
+          "S1312bd4fec38932f",
+          "S9b89a4686ffb5fe8"
+        ],
+        "actual_source": "S47095a39c6425b11",
+        "expected": 17791.881731604284,
+        "actual": 37120.052,
+        "error": -0.5206935127244896,
+        "forecast_growth": 0.36464367672703957,
+        "tag": "留出检验",
+        "method": "仅使用先前四个原年报首次可见值的三次同比中位数"
+      }
+    ]
+  },
+  "native_driver_spec": {
+    "capacity": 0.07500000000000001,
+    "h2_reference": 23243.776000000005,
+    "lease_history": [
+      {
+        "period": "2024-FY",
+        "revenue": 13037.749,
+        "ifrs_core": 4110.208,
+        "rou_depreciation": 452.318,
+        "expensed_short_variable": 457.906,
+        "lease_operating_cash": 424.926,
+        "lease_financing_cash": 505.104,
+        "cash_scope_ebit": 4090.4019999999996,
+        "cash_scope_margin": 0.3137352928024615,
+        "calculated_delta": -19.80600000000004,
+        "source": "S47095a39c6425b11，第301页附注16",
+        "tag": "算术",
+        "scope": "税前现金租金代理。以报告现金分类替换，已含费用的短租和可变租金先加回，现金全扣一次。"
+      },
+      {
+        "period": "2025-FY",
+        "revenue": 37120.052,
+        "ifrs_core": 16912.369,
+        "rou_depreciation": 592.713,
+        "expensed_short_variable": 1338.24,
+        "lease_operating_cash": 1284.337,
+        "lease_financing_cash": 608.288,
+        "cash_scope_ebit": 16950.697,
+        "cash_scope_margin": 0.4566452924149998,
+        "calculated_delta": 38.32800000000134,
+        "source": "S47095a39c6425b11，第301页附注16",
+        "tag": "算术",
+        "scope": "税前现金租金代理。以报告现金分类替换，已含费用的短租和可变租金先加回，现金全扣一次。"
+      },
+      {
+        "period": "2025-H1",
+        "revenue": 13876.276,
+        "ifrs_core": 5798.068999999999,
+        "rou_depreciation": 254.184,
+        "expensed_short_variable": 513.331,
+        "lease_operating_cash": 433.149,
+        "lease_financing_cash": 263.592,
+        "cash_scope_ebit": 5868.842999999999,
+        "cash_scope_margin": 0.4229407803649912,
+        "calculated_delta": 70.77400000000034,
+        "source": "S01b68f6b1c14e53d，第102页附注15",
+        "tag": "算术",
+        "scope": "税前现金租金代理。以报告现金分类替换，已含费用的短租和可变租金先加回，现金全扣一次。"
+      },
+      {
+        "period": "2026-H1",
+        "revenue": 17172.921,
+        "ifrs_core": 7108.0909999999985,
+        "rou_depreciation": 451.934,
+        "expensed_short_variable": 673.12,
+        "lease_operating_cash": 708.255,
+        "lease_financing_cash": 502.889,
+        "cash_scope_ebit": 7022.000999999998,
+        "cash_scope_margin": 0.40889962750076114,
+        "calculated_delta": -86.09000000000015,
+        "source": "S01b68f6b1c14e53d，第102页附注15",
+        "tag": "算术",
+        "scope": "税前现金租金代理。以报告现金分类替换，已含费用的短租和可变租金先加回，现金全扣一次。"
+      }
+    ],
+    "axis": "等效渠道增长×销售密度；现金固定和浮动租赁另算",
+    "calibration": [
+      {
+        "method": "阶段15校正",
+        "driver_1": 0.125,
+        "store_adjustment": 0.024999999999999994,
+        "driver_2": -0.025,
+        "h2_revenue_factor": 0.53,
+        "wacc": 0.05395836367616964,
+        "per_share": 215.0420418183681,
+        "delta_vs_stage15": 0.0,
+        "evidence": "阶段15总收入留出表",
+        "tag": "估值情景"
+      },
+      {
+        "method": "移除校正",
+        "driver_1": 0.1,
+        "store_adjustment": 0.0,
+        "driver_2": -0.025,
+        "h2_revenue_factor": 0.53,
+        "wacc": 0.05395836367616964,
+        "per_share": 193.44906882490505,
+        "delta_vs_stage15": -21.592972993463036,
+        "evidence": "冻结阶段15所有其他条件，误差校正设零",
+        "tag": "估值情景"
+      },
+      {
+        "method": "渠道证据校正",
+        "driver_1": 0.07500000000000001,
+        "store_adjustment": -0.024999999999999994,
+        "driver_2": -0.025,
+        "h2_revenue_factor": 0.53,
+        "wacc": 0.05395836367616964,
+        "per_share": 173.87888597429995,
+        "delta_vs_stage15": -41.16315584406814,
+        "evidence": "Sae0f1e1845c9aa8f第12页；S1312bd4fec38932f第14页；S9b89a4686ffb5fe8第15页；S01b68f6b1c14e53d第12–13页作近端对照",
+        "tag": "估值情景"
+      }
+    ]
+  }
+}

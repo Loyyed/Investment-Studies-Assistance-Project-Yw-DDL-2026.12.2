@@ -9,7 +9,7 @@ OUT = Path('docs/super-atlas')
 BASE = '98d1d2e0fd31aa4031cc83e51638fafb38d7c22e'
 CUTOFF = '2026-11-12'
 RELEASE = '2026-11-20'
-VERSION = 'atlas-2026-11-20.2'
+VERSION = 'atlas-2026-11-20.3'
 COMPANIES = {
     '002507':'002507_涪陵榨菜', '600298':'600298_安琪酵母', '688188':'688188_柏楚电子',
     '09992':'09992_泡泡玛特', 'US':'US_ISRG_直觉外科',

@@ -1,0 +1,1515 @@
+{
+  "checked_date": "2026-11-20",
+  "angel": [
+    {
+      "period": "2001-FY",
+      "cells": {
+        "revenue": {
+          "page": 56,
+          "line": 9,
+          "value": "237579144.72",
+          "column": 1,
+          "label": "一、主营业务收入 30",
+          "other_columns": [
+            "212288337.77",
+            "184038896.19"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "cost": {
+          "page": 56,
+          "line": 10,
+          "value": "138948475.80",
+          "column": 1,
+          "label": "减：主营业务成本 30",
+          "other_columns": [
+            "121022927.41",
+            "102299249.73"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "tax_surcharge": {
+          "page": 56,
+          "line": 11,
+          "value": "2271764.69",
+          "column": 1,
+          "label": "主营业务税金及附加 31",
+          "other_columns": [
+            "2051885.39",
+            "1620796.64"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "sales": {
+          "page": 56,
+          "line": 14,
+          "value": "30541870.53",
+          "column": 1,
+          "label": "减：营业费用 33",
+          "other_columns": [
+            "26553969.38",
+            "22767169.84"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "admin": {
+          "page": 56,
+          "line": 15,
+          "value": "16392862.36",
+          "column": 1,
+          "label": "管理费用 34",
+          "other_columns": [
+            "14231500.59",
+            "11577593.82"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "finance": {
+          "page": 56,
+          "line": 16,
+          "value": "-3477837.00",
+          "column": 1,
+          "label": "财务费用 35",
+          "other_columns": [
+            "-4176000.75",
+            "90544.40"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "operating_profit": {
+          "page": 56,
+          "line": 17,
+          "value": "52850707.10",
+          "column": 1,
+          "label": "三、营业利润(亏损以“-”号填列)",
+          "other_columns": [
+            "52557356.68",
+            "45850846.14"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "other_operating_profit": {
+          "page": 56,
+          "line": 13,
+          "value": "-51301.24",
+          "column": 1,
+          "label": "加：其他业务利润(亏损以“-”号填列) 32",
+          "other_columns": [
+            "-46699.07",
+            "167304.38"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "receivables": {
+          "page": 54,
+          "line": 13,
+          "value": "31110087.92",
+          "column": 1,
+          "label": "应收帐款 4",
+          "other_columns": [
+            "28041477.48",
+            "20723746.89"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "inventory": {
+          "page": 54,
+          "line": 17,
+          "value": "57724572.13",
+          "column": 1,
+          "label": "存货 7",
+          "other_columns": [
+            "54673510.92",
+            "44842573.10"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "payables": {
+          "page": 55,
+          "line": 10,
+          "value": "27176325.51",
+          "column": 1,
+          "label": "应付帐款 16",
+          "other_columns": [
+            "24805809.09",
+            "17101892.38"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "customer_advances": {
+          "page": 55,
+          "line": 11,
+          "value": "7599065.33",
+          "column": 1,
+          "label": "预收帐款 17",
+          "other_columns": [
+            "7198766.51",
+            "4047671.30"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "fixed_assets_total": {
+          "page": 54,
+          "line": 36,
+          "value": "358996922.03",
+          "column": 1,
+          "label": "固定资产合计",
+          "other_columns": [
+            "328814359.31",
+            "137320382.27"
+          ],
+          "source": "600298-96150fea2112f5ad",
+          "sha256": "03a4ff70ff9194e446890f784b30d19071c73a935f060d832bdd6d68baab1493",
+          "available": "2002-03-14",
+          "url": "https://static.cninfo.com.cn/finalpage/2002-03-14/552574.PDF",
+          "column_header": "本期／期末合并数"
+        }
+      },
+      "base_cfo_m": 41.49879579,
+      "base_capex_m": 187.44356663
+    },
+    {
+      "period": "2002-FY",
+      "cells": {
+        "revenue": {
+          "page": 58,
+          "line": 8,
+          "value": "293694321.45",
+          "column": 1,
+          "label": "一、主营业务收入 31",
+          "other_columns": [
+            "258728324.30",
+            "237579144.72",
+            "212288337.77"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "cost": {
+          "page": 58,
+          "line": 9,
+          "value": "183691530.62",
+          "column": 1,
+          "label": "减：主营业务成本 31",
+          "other_columns": [
+            "160584288.94",
+            "138948475.80",
+            "121022927.41"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "tax_surcharge": {
+          "page": 58,
+          "line": 10,
+          "value": "1712060.63",
+          "column": 1,
+          "label": "主营业务税金及附加 32",
+          "other_columns": [
+            "1372923.49",
+            "2271764.69",
+            "2051885.39"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "sales": {
+          "page": 58,
+          "line": 13,
+          "value": "49373678.04",
+          "column": 1,
+          "label": "减：营业费用 34",
+          "other_columns": [
+            "43120324.24",
+            "30541870.53",
+            "26553969.38"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "admin": {
+          "page": 58,
+          "line": 14,
+          "value": "26783529.38",
+          "column": 1,
+          "label": "管理费用 35",
+          "other_columns": [
+            "22860847.65",
+            "16392862.36",
+            "14231500.59"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "finance": {
+          "page": 58,
+          "line": 15,
+          "value": "402650.12",
+          "column": 1,
+          "label": "财务费用 36",
+          "other_columns": [
+            "55251.19",
+            "-3477837.00",
+            "-4176000.75"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "operating_profit": {
+          "page": 58,
+          "line": 16,
+          "value": "32019558.29",
+          "column": 1,
+          "label": "三、营业利润(亏损以“-”号填列)",
+          "other_columns": [
+            "30903837.83",
+            "52850707.10",
+            "52557356.68"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "other_operating_profit": {
+          "page": 58,
+          "line": 12,
+          "value": "288685.63",
+          "column": 1,
+          "label": "加：其他业务利润(亏损以“-”号填列) 33",
+          "other_columns": [
+            "169149.04",
+            "-51301.24",
+            "-46699.07"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "receivables": {
+          "page": 56,
+          "line": 15,
+          "value": "36172899.62",
+          "column": 1,
+          "label": "应收帐款 4",
+          "other_columns": [
+            "33461198.35",
+            "31110087.92",
+            "28041477.48"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "inventory": {
+          "page": 56,
+          "line": 19,
+          "value": "99997122.01",
+          "column": 1,
+          "label": "存货 7",
+          "other_columns": [
+            "97621882.41",
+            "57724572.13",
+            "54673510.92"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "payables": {
+          "page": 57,
+          "line": 10,
+          "value": "40125613.77",
+          "column": 1,
+          "label": "应付帐款 16",
+          "other_columns": [
+            "37829037.61",
+            "27176325.51",
+            "24805809.09"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "customer_advances": {
+          "page": 57,
+          "line": 11,
+          "value": "6768355.22",
+          "column": 1,
+          "label": "预收帐款 17",
+          "other_columns": [
+            "6512420.50",
+            "7599065.33",
+            "7198766.51"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "fixed_assets_total": {
+          "page": 56,
+          "line": 38,
+          "value": "433581067.03",
+          "column": 1,
+          "label": "固定资产合计",
+          "other_columns": [
+            "403994365.77",
+            "358996922.03",
+            "328814359.31"
+          ],
+          "source": "600298-a043101a93d9abeb",
+          "sha256": "d8cc03b472775ae754a84af21a9d208db1962fd513fb42e4c3fc23edb0e7d471",
+          "available": "2003-03-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2003-03-28/10385549.PDF",
+          "column_header": "本期／期末合并数"
+        }
+      },
+      "base_cfo_m": 55.175117590000006,
+      "base_capex_m": 115.42453822
+    },
+    {
+      "period": "2003-FY",
+      "cells": {
+        "revenue": {
+          "page": 63,
+          "line": 8,
+          "value": "395007824.43",
+          "column": 1,
+          "label": "一、主营业务收入 32",
+          "other_columns": [
+            "358561153.68",
+            "293694321.45",
+            "258728324.30"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "cost": {
+          "page": 63,
+          "line": 9,
+          "value": "242156230.62",
+          "column": 1,
+          "label": "减：主营业务成本 32",
+          "other_columns": [
+            "220237329.98",
+            "183691530.62",
+            "160584288.94"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "tax_surcharge": {
+          "page": 63,
+          "line": 10,
+          "value": "3358433.35",
+          "column": 1,
+          "label": "主营业务税金及附加 33",
+          "other_columns": [
+            "3115174.85",
+            "1712060.63",
+            "1372923.49"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "sales": {
+          "page": 63,
+          "line": 13,
+          "value": "56562494.37",
+          "column": 1,
+          "label": "减：营业费用 35",
+          "other_columns": [
+            "50831065.04",
+            "49373678.04",
+            "43120324.24"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "admin": {
+          "page": 63,
+          "line": 14,
+          "value": "33128060.48",
+          "column": 1,
+          "label": "管理费用 36",
+          "other_columns": [
+            "28943679.21",
+            "26783529.38",
+            "22860847.65"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "finance": {
+          "page": 63,
+          "line": 15,
+          "value": "1940504.60",
+          "column": 1,
+          "label": "财务费用 37",
+          "other_columns": [
+            "1403352.52",
+            "402650.12",
+            "55251.19"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "operating_profit": {
+          "page": 63,
+          "line": 16,
+          "value": "58063177.01",
+          "column": 1,
+          "label": "三、营业利润",
+          "other_columns": [
+            "54225423.50",
+            "32019558.29",
+            "30903837.83"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "other_operating_profit": {
+          "page": 63,
+          "line": 12,
+          "value": "201076.00",
+          "column": 1,
+          "label": "加：其他业务利润 34",
+          "other_columns": [
+            "194871.42",
+            "288685.63",
+            "169149.04"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "receivables": {
+          "page": 61,
+          "line": 13,
+          "value": "41576995.93",
+          "column": 1,
+          "label": "应收帐款 4",
+          "other_columns": [
+            "37476012.96",
+            "36172899.62",
+            "33461198.35"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "inventory": {
+          "page": 61,
+          "line": 17,
+          "value": "104818816.13",
+          "column": 1,
+          "label": "存货 7",
+          "other_columns": [
+            "95965888.49",
+            "99997122.01",
+            "97621882.41"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "payables": {
+          "page": 62,
+          "line": 9,
+          "value": "38153794.79",
+          "column": 1,
+          "label": "应付帐款 17",
+          "other_columns": [
+            "30166978.13",
+            "40125613.77",
+            "37829037.61"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "customer_advances": {
+          "page": 62,
+          "line": 10,
+          "value": "7284347.95",
+          "column": 1,
+          "label": "预收帐款 18",
+          "other_columns": [
+            "7016315.55",
+            "6768355.22",
+            "6512420.50"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "fixed_assets_total": {
+          "page": 61,
+          "line": 37,
+          "value": "503620324.64",
+          "column": 1,
+          "label": "固定资产合计",
+          "other_columns": [
+            "444427965.46",
+            "433581067.03",
+            "403994365.77"
+          ],
+          "source": "600298-e571e83c385479b8",
+          "sha256": "099d3b3a4afb83033847c73424c1cc3ee1028d37b07e3bd750b547a8bc9f9cd1",
+          "available": "2004-02-28",
+          "url": "https://static.cninfo.com.cn/finalpage/2004-02-28/13741495.PDF",
+          "column_header": "本期／期末合并数"
+        }
+      },
+      "base_cfo_m": 79.1593404,
+      "base_capex_m": 73.05853458
+    },
+    {
+      "period": "2004-FY",
+      "cells": {
+        "revenue": {
+          "page": 69,
+          "line": 5,
+          "value": "544749978.68",
+          "column": 3,
+          "label": "一、主营业务收入 33",
+          "other_columns": [
+            "664446097.15",
+            "705623582.20",
+            "506076314.54"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "cost": {
+          "page": 69,
+          "line": 6,
+          "value": "331678272.14",
+          "column": 3,
+          "label": "减：主营业务成本 33",
+          "other_columns": [
+            "499243507.99",
+            "476888297.23",
+            "317167795.77"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "tax_surcharge": {
+          "page": 69,
+          "line": 7,
+          "value": "4345812.92",
+          "column": 3,
+          "label": "主营业务税金及附加 34",
+          "other_columns": [
+            "4111863.02",
+            "5634329.90",
+            "3933613.53"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "sales": {
+          "page": 69,
+          "line": 10,
+          "value": "75276381.39",
+          "column": 3,
+          "label": "减：营业费用",
+          "other_columns": [
+            "90905263.59",
+            "100592560.15",
+            "68712020.52"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "admin": {
+          "page": 69,
+          "line": 11,
+          "value": "45267647.15",
+          "column": 3,
+          "label": "管理费用",
+          "other_columns": [
+            "33239625.06",
+            "40808345.49",
+            "41390328.80"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "finance": {
+          "page": 69,
+          "line": 12,
+          "value": "4450825.30",
+          "column": 3,
+          "label": "财务费用 36",
+          "other_columns": [
+            "6058028.30",
+            "10312441.37",
+            "3861135.35"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "operating_profit": {
+          "page": 69,
+          "line": 13,
+          "value": "83978512.94",
+          "column": 3,
+          "label": "三、营业利润",
+          "other_columns": [
+            "31367224.94",
+            "72079837.95",
+            "71292456.98"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "other_operating_profit": {
+          "page": 69,
+          "line": 9,
+          "value": "247473.16",
+          "column": 3,
+          "label": "加：其他业务利润 35",
+          "other_columns": [
+            "479415.75",
+            "692229.89",
+            "281036.41"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "receivables": {
+          "page": 67,
+          "line": 11,
+          "value": "40422044.86",
+          "column": 3,
+          "label": "应收帐款 4",
+          "other_columns": [
+            "33908916.98",
+            "37281650.44",
+            "43738451.82"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "inventory": {
+          "page": 67,
+          "line": 15,
+          "value": "85338646.05",
+          "column": 3,
+          "label": "存货 7",
+          "other_columns": [
+            "130723369.85",
+            "179273871.77",
+            "115598823.31"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "payables": {
+          "page": 68,
+          "line": 8,
+          "value": "45721342.15",
+          "column": 3,
+          "label": "应付帐款 18",
+          "other_columns": [
+            "44463106.27",
+            "57415892.30",
+            "27041827.99"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "customer_advances": {
+          "page": 68,
+          "line": 9,
+          "value": "10178314.99",
+          "column": 3,
+          "label": "预收帐款 19",
+          "other_columns": [
+            "27209538.55",
+            "27932280.59",
+            "9787766.63"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        },
+        "fixed_assets_total": {
+          "page": 67,
+          "line": 35,
+          "value": "594551051.54",
+          "column": 3,
+          "label": "固定资产合计",
+          "other_columns": [
+            "419835066.05",
+            "668805568.71",
+            "421340847.73"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "上年同期／期初合并数"
+        }
+      },
+      "base_cfo_m": 70.97514894,
+      "base_capex_m": 132.13002522
+    },
+    {
+      "period": "2005-FY",
+      "cells": {
+        "revenue": {
+          "page": 69,
+          "line": 5,
+          "value": "705623582.20",
+          "column": 2,
+          "label": "一、主营业务收入 33",
+          "other_columns": [
+            "664446097.15",
+            "544749978.68",
+            "506076314.54"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "cost": {
+          "page": 69,
+          "line": 6,
+          "value": "476888297.23",
+          "column": 2,
+          "label": "减：主营业务成本 33",
+          "other_columns": [
+            "499243507.99",
+            "331678272.14",
+            "317167795.77"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "tax_surcharge": {
+          "page": 69,
+          "line": 7,
+          "value": "5634329.90",
+          "column": 2,
+          "label": "主营业务税金及附加 34",
+          "other_columns": [
+            "4111863.02",
+            "4345812.92",
+            "3933613.53"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "sales": {
+          "page": 69,
+          "line": 10,
+          "value": "100592560.15",
+          "column": 2,
+          "label": "减：营业费用",
+          "other_columns": [
+            "90905263.59",
+            "75276381.39",
+            "68712020.52"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "admin": {
+          "page": 69,
+          "line": 11,
+          "value": "40808345.49",
+          "column": 2,
+          "label": "管理费用",
+          "other_columns": [
+            "33239625.06",
+            "45267647.15",
+            "41390328.80"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "finance": {
+          "page": 69,
+          "line": 12,
+          "value": "10312441.37",
+          "column": 2,
+          "label": "财务费用 36",
+          "other_columns": [
+            "6058028.30",
+            "4450825.30",
+            "3861135.35"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "operating_profit": {
+          "page": 69,
+          "line": 13,
+          "value": "72079837.95",
+          "column": 2,
+          "label": "三、营业利润",
+          "other_columns": [
+            "31367224.94",
+            "83978512.94",
+            "71292456.98"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "other_operating_profit": {
+          "page": 69,
+          "line": 9,
+          "value": "692229.89",
+          "column": 2,
+          "label": "加：其他业务利润 35",
+          "other_columns": [
+            "479415.75",
+            "247473.16",
+            "281036.41"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "receivables": {
+          "page": 67,
+          "line": 11,
+          "value": "37281650.44",
+          "column": 2,
+          "label": "应收帐款 4",
+          "other_columns": [
+            "33908916.98",
+            "40422044.86",
+            "43738451.82"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "inventory": {
+          "page": 67,
+          "line": 15,
+          "value": "179273871.77",
+          "column": 2,
+          "label": "存货 7",
+          "other_columns": [
+            "130723369.85",
+            "85338646.05",
+            "115598823.31"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "payables": {
+          "page": 68,
+          "line": 8,
+          "value": "57415892.30",
+          "column": 2,
+          "label": "应付帐款 18",
+          "other_columns": [
+            "44463106.27",
+            "45721342.15",
+            "27041827.99"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "customer_advances": {
+          "page": 68,
+          "line": 9,
+          "value": "27932280.59",
+          "column": 2,
+          "label": "预收帐款 19",
+          "other_columns": [
+            "27209538.55",
+            "10178314.99",
+            "9787766.63"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "fixed_assets_total": {
+          "page": 67,
+          "line": 35,
+          "value": "668805568.71",
+          "column": 2,
+          "label": "固定资产合计",
+          "other_columns": [
+            "419835066.05",
+            "594551051.54",
+            "421340847.73"
+          ],
+          "source": "600298-15f76fea162e70a3",
+          "sha256": "c4a68f888eb935c04bf403f2b0b62b2d8c1146fb04e8f608243eee3b63376d9e",
+          "available": "2006-03-23",
+          "url": "https://static.cninfo.com.cn/finalpage/2006-03-23/16601073.PDF",
+          "column_header": "本期／期末合并数"
+        }
+      },
+      "base_cfo_m": 122.56461886,
+      "base_capex_m": 49.74383912
+    },
+    {
+      "period": "2006-FY",
+      "cells": {
+        "revenue": {
+          "page": 60,
+          "line": 3,
+          "value": "863855911.69",
+          "column": 1,
+          "label": "一、主营业务收入 31",
+          "other_columns": [
+            "824948059.64",
+            "705623582.20",
+            "664446097.15"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "cost": {
+          "page": 60,
+          "line": 4,
+          "value": "564985610.03",
+          "column": 1,
+          "label": "减：主营业务成本 31",
+          "other_columns": [
+            "652383307.96",
+            "476888297.23",
+            "499243507.99"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "tax_surcharge": {
+          "page": 60,
+          "line": 5,
+          "value": "6072565.69",
+          "column": 1,
+          "label": "主营业务税金及附加 32",
+          "other_columns": [
+            "3627054.37",
+            "5634329.90",
+            "4111863.02"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "sales": {
+          "page": 60,
+          "line": 8,
+          "value": "114059056.25",
+          "column": 1,
+          "label": "减：营业费用",
+          "other_columns": [
+            "98967615.77",
+            "100592560.15",
+            "90905263.59"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "admin": {
+          "page": 60,
+          "line": 9,
+          "value": "55004148.57",
+          "column": 1,
+          "label": "管理费用 34",
+          "other_columns": [
+            "44461347.41",
+            "40808345.49",
+            "33239625.06"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "finance": {
+          "page": 60,
+          "line": 10,
+          "value": "17443033.14",
+          "column": 2,
+          "label": "财务费用 35",
+          "other_columns": [
+            "10760192.86",
+            "10312441.37",
+            "6058028.30"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "operating_profit": {
+          "page": 60,
+          "line": 11,
+          "value": "107173448.77",
+          "column": 1,
+          "label": "三、营业利润",
+          "other_columns": [
+            "16269373.48",
+            "72079837.95",
+            "31367224.94"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "other_operating_profit": {
+          "page": 60,
+          "line": 7,
+          "value": "881950.76",
+          "column": 1,
+          "label": "加：其他业务利润 33",
+          "other_columns": [
+            "1520832.21",
+            "692229.89",
+            "479415.75"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "receivables": {
+          "page": 58,
+          "line": 9,
+          "value": "47142588.14",
+          "column": 1,
+          "label": "应收帐款 4",
+          "other_columns": [
+            "43709072.43",
+            "37281650.44",
+            "33908916.98"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "inventory": {
+          "page": 58,
+          "line": 13,
+          "value": "276792156.35",
+          "column": 1,
+          "label": "存货 7",
+          "other_columns": [
+            "186406598.77",
+            "179273871.77",
+            "130723369.85"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "payables": {
+          "page": 59,
+          "line": 6,
+          "value": "105799064.76",
+          "column": 1,
+          "label": "应付帐款 15",
+          "other_columns": [
+            "34372746.60",
+            "57415892.30",
+            "44463106.27"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "customer_advances": {
+          "page": 59,
+          "line": 7,
+          "value": "17844403.59",
+          "column": 1,
+          "label": "预收帐款 16",
+          "other_columns": [
+            "17214816.49",
+            "27932280.59",
+            "27209538.55"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        },
+        "fixed_assets_total": {
+          "page": 58,
+          "line": 33,
+          "value": "784961997.56",
+          "column": 1,
+          "label": "固定资产合计",
+          "other_columns": [
+            "409420777.87",
+            "668805568.71",
+            "419835066.05"
+          ],
+          "source": "600298-e0d8c6a337061706",
+          "sha256": "e4ed8f6e6e918eec61c9684fb90a1549bd209fa6b2115f79b76b7fd561e446e7",
+          "available": "2007-02-10",
+          "url": "https://static.cninfo.com.cn/finalpage/2007-02-10/20859239.PDF",
+          "column_header": "本期／期末合并数"
+        }
+      },
+      "base_cfo_m": 159.2373225,
+      "base_capex_m": 147.01876546
+    }
+  ],
+  "angel_cfo_correction": {
+    "period": "2005-FY",
+    "value": "122623618.86",
+    "id": "600298-6e760efa72c47824",
+    "sha256": "78b2fa5006d3f7c06bac6a46fc4466f8489d20f49f651933d5a71d6126b8eb80",
+    "date": "2006-04-08",
+    "url": "https://static.cninfo.com.cn/finalpage/2006-04-08/16869529.PDF",
+    "page": 1,
+    "table": "更正公告前三年主要会计数据和财务指标",
+    "line": "经营活动产生的现金流量净额",
+    "column": "2005年"
+  },
+  "pop": [
+    {
+      "period": "2020-FY",
+      "date": "2021-04-26",
+      "sha256": "3a717e3a572b1f3041e360158ab39dd2b67f900684d49460ea829e39aa47d047",
+      "id": "S3a717e3a572b1f30",
+      "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2020_550d851914.pdf",
+      "lease_note_page": 215,
+      "cfo_page": 144,
+      "financing_page": 145,
+      "column": "本期审计合并人民币千元／上年比较列另保留",
+      "rou_da": 142940,
+      "lease_interest_expense": 10946,
+      "short_lease_expense": 8335,
+      "variable_lease_expense": 35285,
+      "operating_lease_cash": 40027,
+      "financing_lease_cash": 147995,
+      "operating_cash_before_tax_and_interest": 899881,
+      "cfo": 703358,
+      "capex": 223592,
+      "core_ifrs_ebit": 684072,
+      "revenue": 2513471
+    },
+    {
+      "period": "2021-FY",
+      "date": "2022-04-27",
+      "sha256": "ae0f1e1845c9aa8fae5109d4feaf5febc59dcc12ed5bb8fa51a6d93a108021a2",
+      "id": "Sae0f1e1845c9aa8f",
+      "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2021_f37dfccf93.pdf",
+      "lease_note_page": 247,
+      "cfo_page": 173,
+      "financing_page": 174,
+      "column": "本期审计合并人民币千元／上年比较列另保留",
+      "rou_da": 221698,
+      "lease_interest_expense": 21186,
+      "short_lease_expense": 42341,
+      "variable_lease_expense": 43977,
+      "operating_lease_cash": 88126,
+      "financing_lease_cash": 220126,
+      "operating_cash_before_tax_and_interest": 1042075,
+      "cfo": 779097,
+      "capex": 333748,
+      "core_ifrs_ebit": 1095037,
+      "revenue": 4490651
+    },
+    {
+      "period": "2022-FY",
+      "date": "2023-04-21",
+      "sha256": "113a569cdaac64d528ccd5d78b5da00d7d4d2aeeff3eb95cb8bb926f26b099ce",
+      "id": "S113a569cdaac64d5",
+      "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2022_e5c3886181.pdf",
+      "lease_note_page": 260,
+      "cfo_page": 186,
+      "financing_page": 187,
+      "column": "本期审计合并人民币千元／上年比较列另保留",
+      "rou_da": 335630,
+      "lease_interest_expense": 34057,
+      "short_lease_expense": 38095,
+      "variable_lease_expense": 41112,
+      "operating_lease_cash": 72512,
+      "financing_lease_cash": 323041,
+      "operating_cash_before_tax_and_interest": 1133500,
+      "cfo": 891022,
+      "capex": 347623,
+      "core_ifrs_ebit": 497510,
+      "revenue": 4617324
+    },
+    {
+      "period": "2023-FY",
+      "date": "2024-04-25",
+      "sha256": "1312bd4fec38932f30608c7cec35ec19cc31a6cbaccb36aba9efe2b6dc8d6afa",
+      "id": "S1312bd4fec38932f",
+      "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2023_c2e4bab1ae.pdf",
+      "lease_note_page": 260,
+      "cfo_page": 188,
+      "financing_page": 189,
+      "column": "本期审计合并人民币千元／上年比较列另保留",
+      "rou_da": 348390,
+      "lease_interest_expense": 30754,
+      "short_lease_expense": 72590,
+      "variable_lease_expense": 113303,
+      "operating_lease_cash": 175516,
+      "financing_lease_cash": 384999,
+      "operating_cash_before_tax_and_interest": 2143208,
+      "cfo": 1990596,
+      "capex": 392466,
+      "core_ifrs_ebit": 1152065,
+      "revenue": 6301002
+    },
+    {
+      "period": "2024-FY",
+      "date": "2025-04-23",
+      "sha256": "9b89a4686ffb5fe838abd5ae8df9e7683b1de2019480e112420e49154fcfde19",
+      "id": "S9b89a4686ffb5fe8",
+      "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2024_976e7e443e.pdf",
+      "lease_note_page": 272,
+      "cfo_page": 196,
+      "financing_page": 197,
+      "column": "本期审计合并人民币千元／上年比较列另保留",
+      "rou_da": 452318,
+      "lease_interest_expense": 42628,
+      "short_lease_expense": 140514,
+      "variable_lease_expense": 317392,
+      "operating_lease_cash": 424926,
+      "financing_lease_cash": 505104,
+      "operating_cash_before_tax_and_interest": 5415453,
+      "cfo": 4954220,
+      "capex": 516690,
+      "core_ifrs_ebit": 4110208,
+      "revenue": 13037749
+    },
+    {
+      "period": "2025-FY",
+      "date": "2026-04-21",
+      "sha256": "47095a39c6425b11e5aaa091f456e178498d20a77d4ff6a969e351e4f5dfaaf7",
+      "id": "S47095a39c6425b11",
+      "url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2025_bd4e173872.pdf",
+      "lease_note_page": 301,
+      "cfo_page": 226,
+      "financing_page": 227,
+      "column": "本期审计合并人民币千元／上年比较列另保留",
+      "rou_da": 592713,
+      "lease_interest_expense": 81887,
+      "short_lease_expense": 210264,
+      "variable_lease_expense": 1127976,
+      "operating_lease_cash": 1284337,
+      "financing_lease_cash": 608288,
+      "operating_cash_before_tax_and_interest": 14704780,
+      "cfo": 10865152,
+      "capex": 1171537,
+      "core_ifrs_ebit": 16912369,
+      "revenue": 37120052
+    }
+  ],
+  "pop_2022_rou_as_later_comparative": {
+    "current_file_value": 335630,
+    "later_comparative": 330124,
+    "year": "2022-FY",
+    "later_id": "S1312bd4fec38932f",
+    "later_url": "https://prod-out-res.popmart.com/cms/ANNUAL_REPORT_2023_c2e4bab1ae.pdf",
+    "page": 260,
+    "note": "2023年报比较列零售门店263772，2022年报本期269278。保留两版；连续历史用各年本期，计算后续比较影响。"
+  }
+}

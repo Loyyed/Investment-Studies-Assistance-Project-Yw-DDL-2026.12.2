@@ -318,4 +318,5 @@ def build_document(root):
         note='研究基础来自阶段 17 冻结定稿，期后事项使用 2026-11-19 首轮核查。',
         cards=results+cards,maps=[dict(id='atlas-overview',title='研究到价格的导图',nodes=nodes,archived=False)])
 
-    return apply_stories(document,models)
+    from atlas_case import attach_cases
+    return attach_cases(root, apply_stories(document,models))

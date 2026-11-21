@@ -38,7 +38,8 @@ def build(root, target):
                  'docs/research15/annual.json','docs/research15/interim.json','docs/research15/operating-bridges.json',
                  'docs/research17/valuation.json','docs/research17/same-date.json','docs/research17/critical-points.json',
                  'docs/research17/post-cutoff.json','docs/analysis-preparation/writing-v2.md',
-                 'shared/runtime/companybench/result_features.js')})
+                 'shared/runtime/companybench/result_features.js',
+                 'docs/cases/model-acceptance.json', 'app/atlas_case.py')})
     (target/'version.json').write_bytes(json_bytes(meta))
     print(f'{VERSION}: {len(coverage)} coverage rows; {len(seed["cards"])} native showcase cards')
 

@@ -1,0 +1,226 @@
+{
+  "code": "US",
+  "cutoff": "2026-11-12",
+  "quoted_currency": "USD",
+  "close": 439.89,
+  "scenarios": [
+    {
+      "scenario": "base",
+      "wacc": 0.09772241084143635,
+      "recomputed": 178.6925027453693,
+      "model": 178.6925027453693,
+      "difference": 0.0,
+      "explicit_pv": 23742.20342651761,
+      "terminal_pv": 33170.52980770344,
+      "enterprise": 56912.73323422105,
+      "equity": 61942.63353038002,
+      "terminal_share": 0.5828314319607889,
+      "bridge": {
+        "financial_cash": 2978.1,
+        "eligible_short_long_investments": 3822.3,
+        "working_cash_reserve": 1150,
+        "notified_buyback_cash_or_buffer": 0,
+        "excess_cash_proxy": 5650.4,
+        "financial_debt": 0,
+        "finance_treated_lease": 0,
+        "non_controlling_book": 131.6,
+        "non_controlling_deduction": 210.56,
+        "litigation_separate_pv": 409.9397038410301,
+        "bridge_net": 5029.9002961589695
+      }
+    },
+    {
+      "scenario": "stress",
+      "wacc": 0.09772241084143635,
+      "recomputed": 95.010168459657,
+      "model": 95.010168459657,
+      "difference": 0.0,
+      "explicit_pv": 12333.698794093838,
+      "terminal_pv": 16087.317236179548,
+      "enterprise": 28421.016030273386,
+      "equity": 32934.678042661835,
+      "terminal_share": 0.5660359650423378,
+      "bridge": {
+        "financial_cash": 2978.1,
+        "eligible_short_long_investments": 3822.3,
+        "working_cash_reserve": 1600,
+        "notified_buyback_cash_or_buffer": 0,
+        "excess_cash_proxy": 5200.4,
+        "financial_debt": 0,
+        "finance_treated_lease": 0,
+        "non_controlling_book": 131.6,
+        "non_controlling_deduction": 263.2,
+        "litigation_separate_pv": 423.5379876115523,
+        "bridge_net": 4513.662012388448
+      }
+    },
+    {
+      "scenario": "improve",
+      "wacc": 0.09772241084143635,
+      "recomputed": 294.20845181157534,
+      "model": 294.20845181157534,
+      "difference": 0.0,
+      "explicit_pv": 36040.56321410324,
+      "terminal_pv": 60506.89583682724,
+      "enterprise": 96547.45905093048,
+      "equity": 101985.5116029883,
+      "terminal_share": 0.6267062482183896,
+      "bridge": {
+        "financial_cash": 2978.1,
+        "eligible_short_long_investments": 3822.3,
+        "working_cash_reserve": 800,
+        "notified_buyback_cash_or_buffer": 0,
+        "excess_cash_proxy": 6000.4,
+        "financial_debt": 0,
+        "finance_treated_lease": 0,
+        "non_controlling_book": 131.6,
+        "non_controlling_deduction": 171.08,
+        "litigation_separate_pv": 391.26744794217797,
+        "bridge_net": 5438.052552057822
+      }
+    }
+  ],
+  "historical_bridge": [
+    {
+      "step": "去总收入误差回填",
+      "start": 191.19798010524067,
+      "end": 183.01496505712413,
+      "change": -8.183015048116545,
+      "tag": "算术"
+    },
+    {
+      "step": "五类收入与独立租赁制造现金",
+      "start": 183.01496505712413,
+      "end": 175.51140251521622,
+      "change": -7.503562541907911,
+      "tag": "算术"
+    },
+    {
+      "step": "用安装序列代替总收入校正",
+      "start": 175.51140251521622,
+      "end": 178.69260074312152,
+      "change": 3.1811982279052984,
+      "tag": "算术"
+    }
+  ],
+  "stage17_to_current": [
+    {
+      "step": "阶段17冻结值",
+      "per_share": 178.69260074312152,
+      "delta": 0.0
+    },
+    {
+      "step": "量价、成本与经营税",
+      "per_share": 178.6925550819501,
+      "delta": -4.5661171412803014e-05
+    },
+    {
+      "step": "营运资本和再投资",
+      "per_share": 178.69256988014283,
+      "delta": 1.4798192722764725e-05
+    },
+    {
+      "step": "融资及折现",
+      "per_share": 178.69256988014283,
+      "delta": 0.0
+    },
+    {
+      "step": "终值",
+      "per_share": 178.6925027453693,
+      "delta": -6.713477353059716e-05
+    },
+    {
+      "step": "净债务、其他权益及股数",
+      "per_share": 178.6925027453693,
+      "delta": 0.0
+    }
+  ],
+  "reverse_boundaries": [
+    {
+      "y": 0.0,
+      "low": 0.02,
+      "high": 0.3,
+      "value_low": 168.25655866713223,
+      "value_high": 652.9408185414167,
+      "gap_low": -271.63344133286773,
+      "gap_high": 213.05081854141667,
+      "status": "有解",
+      "roots": [
+        {
+          "x": 0.21972207270820543,
+          "recovered": 439.89,
+          "gap": 0.0
+        }
+      ]
+    },
+    {
+      "y": 0.03,
+      "low": 0.02,
+      "high": 0.3,
+      "value_low": 186.65230479670265,
+      "value_high": 743.5631792095312,
+      "gap_low": -253.23769520329733,
+      "gap_high": 303.6731792095312,
+      "status": "有解",
+      "roots": [
+        {
+          "x": 0.19465532370454475,
+          "recovered": 439.89,
+          "gap": 0.0
+        }
+      ]
+    },
+    {
+      "y": 0.06,
+      "low": 0.02,
+      "high": 0.3,
+      "value_low": 208.3067180444374,
+      "value_high": 851.1424609895344,
+      "gap_low": -231.5832819555626,
+      "gap_high": 411.25246098953437,
+      "status": "有解",
+      "roots": [
+        {
+          "x": 0.16925905280203912,
+          "recovered": 439.8899999999998,
+          "gap": -1.7053025658242404e-13
+        }
+      ]
+    },
+    {
+      "y": 0.09,
+      "low": 0.02,
+      "high": 0.3,
+      "value_low": 233.73451464418477,
+      "value_high": 978.4344464947553,
+      "gap_low": -206.15548535581522,
+      "gap_high": 538.5444464947553,
+      "status": "有解",
+      "roots": [
+        {
+          "x": 0.1437423034612788,
+          "recovered": 439.8899999999999,
+          "gap": -1.1368683772161603e-13
+        }
+      ]
+    },
+    {
+      "y": 0.12,
+      "low": 0.02,
+      "high": 0.3,
+      "value_low": 263.5203023065147,
+      "value_high": 1128.5759959720563,
+      "gap_low": -176.3696976934853,
+      "gap_high": 688.6859959720563,
+      "status": "有解",
+      "roots": [
+        {
+          "x": 0.11828469459228474,
+          "recovered": 439.8899999999997,
+          "gap": -2.8421709430404007e-13
+        }
+      ]
+    }
+  ],
+  "source": "/cases/US/model.json"
+}
