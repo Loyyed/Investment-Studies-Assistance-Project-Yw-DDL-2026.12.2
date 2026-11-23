@@ -1,6 +1,8 @@
 # 柏楚电子证券投资分析审阅稿｜第二批
 
-**阅读入口。** [40 页 PDF](review.pdf) · [连续 HTML](review.html) · [单文件 Markdown](review.md) · [可编辑九章](chapters/) · [独立复核](data/independent-audit.json)
+**阅读入口**　[Markdown 审阅主稿](review.md) · [图表目录](figures/README.md) · [HTML 连续浏览与新版打印](review.html) · [可编辑九章](chapters/) · [独立复核](data/independent-audit.json)
+
+[已验 PDF 快照](https://github.com/Loyyed/Investment-Studies-Assistance-Project-Yw-DDL-2026.12.2/blob/aa2ddd8bd06971fde02802b4ffb715d8810a7079/docs/cases/688188/deep-research-batch-2/review.pdf) 对应 `aa2ddd8bd06971fde02802b4ffb715d8810a7079`。
 
 研究日 2026-11-23，冻结估值仍为 2026-11-12 上交所含权未复权收盘。基线为首批 `f354d3c65baabc77e8760c3bf277ca10d7d75755`。第二批责任范围为本目录及旧报告地图入口，发行人原件、事实账本、原估值和第一批结果按原版保留。当前是团队审阅稿。
 
@@ -14,6 +16,21 @@
 | 募投和追踪 | [募集原计划、批次与结项](../deep-research-batch-1/project-stages.csv)、[项目条件规模及现金](data/project-conditional-scale.csv)、[权益实施与说明会](data/post-window.csv)、[原始入口](data/links.json) |
 | 预测和留出 | [三情景输入](assumptions.json)、[逐年程序](forecast.py)、[逐年模型](data/model.json)、[明细 CSV](data/forecast.csv)、[年度留出](data/annual-holdouts.csv)、[研报留出](../deep-research-batch-1/forecast-holdout.csv)、[华创成本单位](data/analyst-unit-test.csv)、[十篇材料](../deep-research-batch-1/external-evidence.csv) |
 | 估值和审阅 | [旧新价值桥](data/value-bridge.csv)、[权益与现金](data/equity-bridge.csv)、[同价阈值](data/price-contours.csv)、[逐年根回代](data/price-witnesses.json)、[终值多变量](data/terminal-sensitivity.csv)、[倍数与自身历史](data/own-relative.csv)、[倍数退出条件](data/exit-sensitivity.csv)、[章节图表映射](data/claims-and-figures.csv) |
+
+## 重建评审版
+
+日常改稿编辑 `chapters/01.md` 至 `chapters/09.md`。`build_review.py` 用已提交的 PNG、Mermaid 源和底表生成 Markdown、HTML、图表目录及 40 项映射。仅改正文时可直接运行最后一条。绘图依赖使用 `requirements-review.txt`，字体和 Mermaid 资源下载后按 SHA-256 校验并缓存。
+
+~~~text
+python -m pip install -r docs/cases/688188/deep-research-batch-2/requirements-review.txt
+python -m playwright install chromium
+python -X utf8 docs/cases/688188/deep-research-batch-2/draw_review_figures.py
+python -X utf8 docs/cases/688188/deep-research-batch-2/render_review_diagrams.py
+python -X utf8 docs/cases/688188/deep-research-batch-2/build_review.py
+python -X utf8 docs/cases/688188/deep-research-batch-2/check_review_edition.py
+~~~
+
+已有 Chromium、Edge 或 Chrome 时，可给 `render_review_diagrams.py` 加 `--browser "<浏览器可执行文件>"`。数据图和热力图网格由原 CSV 或 JSON 生成。图形字节复现使用同一绘图库、字体和浏览器版本。评审者可直接查看已提交的静态图。
 
 ## 复算
 
@@ -32,7 +49,7 @@ python -X utf8 scripts/build_cases.py --check
 python -X utf8 scripts/check_super_atlas.py
 ~~~
 
-只复算估值时请保留已签发的原件核验回执。冷热两种环境均可重复生成数值、图表与正文。在 Chromium 打开 `review.html`，用 A4、无页眉页脚、打印背景生成 PDF。先保存为临时 PDF，再运行 `python -X utf8 docs/cases/688188/deep-research-batch-2/link_pdf.py <临时PDF>`，将本机证据链接改为议题分支的公开入口。打印版物理页对应正文，共 40 页。HTML 在克隆目录打开后可用同一组相对链接访问本机底表。
+只复算估值时保留已有原件核验回执。HTML 在克隆目录中打开即可访问相对路径指向的底表。打印新版时，打开 `review.html` 并点击「打印新版」，选择 A4，启用背景图形，关闭浏览器页眉和页脚。新版分页按图文长度排版；上方固定提交链接保留原 40 页 PDF。
 
 ## 审阅要点与证据身份
 

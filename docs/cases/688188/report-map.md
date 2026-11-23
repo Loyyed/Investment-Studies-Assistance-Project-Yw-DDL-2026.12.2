@@ -19,4 +19,4 @@
 
 首批独立取证、长期对账与冻结估值复算见[柏楚电子首批取证与复算](deep-research-batch-1/README.md)。
 
-第二批连续审阅稿、程序和原件抽核见[柏楚电子四十页证券分析审阅稿](deep-research-batch-2/README.md)。
+第二批连续审阅稿、程序和原件抽核见[柏楚电子证券分析 Markdown 审阅主稿](deep-research-batch-2/review.md) · [图表、证据与复算](deep-research-batch-2/README.md)。

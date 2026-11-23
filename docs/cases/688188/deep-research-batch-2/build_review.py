@@ -1,5 +1,6 @@
 """Render one continuous Markdown/HTML report from chapters and the audit tables."""
 from html import escape
+from pathlib import PurePosixPath
 import re
 
 from forecast import CASE, HERE, OUT, PRIOR, read_json, rows
@@ -7,6 +8,60 @@ from forecast import CASE, HERE, OUT, PRIOR, read_json, rows
 CHAPTERS = ("摘要与判断","商业模式与竞争","多年经营阶段","收入、成本和费用","资本、现金和回报",
             "新业务和海外","逐年预测和留出","估值、权益和反推","反方与裁定")
 COLORS = ("#1c705e","#8b6947","#537890")
+
+
+# Image, reporting period, display unit, evidence identity, links to inputs.
+VISUALS = {
+    "scenarios": ("01-valuation.png", "2026-11-12", "元／股",
+                  "三情景条件估值，市场点为未复权含权收盘", ("data/model.json",)),
+    "toc": ("02-overview.mmd", "2016–2026实绩及同日估值窗口", "机制示意",
+            "研究结构与反证路线", ("README.md", "data/claims-and-figures.csv")),
+    "chain": ("03-industry.mmd", "研究截至2026-11-23", "机制示意",
+              "合同职责示意，具体付款、验收及质保逐单核对",
+              ("../deep-research-batch-1/mechanisms.md", "data/links.json")),
+    "renewal": ("05-renewal.mmd", "研究截至2026-11-23", "机制示意",
+                "续购解释与替代路径，未估计客户实际续购率",
+                ("../deep-research-batch-1/mechanisms.md",)),
+    "history": ("09-operating-history.png", "2016–2025年度；2025与2026前三季", "百万元人民币",
+                "年报或招股书实绩与同期累计；核心 EBIT 为同口径重算",
+                ("../deep-research-batch-1/financial-bridge.csv", "../deep-research-batch-1/pre-ipo.csv",
+                 "../deep-research-batch-1/restatement-bridge.csv", "data/recent-income-bridge.csv")),
+    "volume": ("14-revenue-bridge.png", "2024→2025主营", "百万元人民币",
+               "原披露合计与量价算术；组均价格含组合",
+               ("../operating-summary.json", "data/group-restatement.csv")),
+    "gross": ("15-gross-margin.png", "2024→2025主营", "%／百分点",
+              "原披露与中点分解；表另含2023衔接的区间采用值",
+              ("data/gross-contribution.csv", "data/group-restatement.csv")),
+    "quarterprofit": ("17-quarter-signals.png", "2025Q3、2026Q3单季", "百万元人民币／%",
+                      "实际口径及同期累计差分，CFO－购建为现金代理",
+                      ("data/recent-income-bridge.csv", "../deep-research-batch-1/filing-cells.csv")),
+    "bundle": ("23-bundle-heatmap.png", "2026-11-12模型窗口的条件试算", "天；元／每100元增量净收入",
+               "50%硬件毛利、原公式逐格计算，黑线为零现金",
+               ("data/bundle-cash-heatmap.csv", "data/bundle-cash-thresholds.csv")),
+    "pipeline": ("24-commercial-stage.png", "证据截至2026-11-23", "项目 × 证据阶段",
+                 "公开材料及期后管理层表述，条件规模另列",
+                 ("data/commercialization-stages.csv", "data/project-conditional-scale.csv",
+                  "../deep-research-batch-1/project-stages.csv", "data/post-window.csv")),
+    "drivers": ("28-drivers.mmd", "2026全年估计至2036稳定期", "机制示意",
+                "预测计算次序；各输入条件及未披露字段保留在模型",
+                ("assumptions.json", "data/forecast.csv")),
+    "forecast_short": ("31-fcff-path.png", "2025/26前三季；2026–2036情景及截点桩段", "百万元人民币",
+                       "左实绩现金代理，中间全年估计及预测，右估值日后未折现现金",
+                       ("data/recent-income-bridge.csv", "data/forecast.csv", "data/model.json")),
+    "valuechange": ("34-value-bridge.png", "2026-11-12", "元／股",
+                    "冻结值到新版条件估值的桥接",
+                    ("data/value-bridge.csv",)),
+    "contour": ("37-price-contour.png", "2026-11-12价格，2027量增和稳定核心率", "%／百分点／元",
+                 "同价反推；无解点断线，库存与售后条件分列",
+                 ("data/price-contours.csv", "data/price-witnesses.json")),
+}
+
+KEY_JUMPS = (
+    ("scenarios", "估值点图"), ("toc", "研究思维导图"), ("chain", "产业链"),
+    ("history", "历史分面"), ("gross", "毛利瀑布"), ("quarterprofit", "单季四指标"),
+    ("bundle", "配套热力图"), ("pipeline", "项目矩阵"), ("drivers", "预测驱动"),
+    ("forecast_short", "FCFF"), ("valuechange", "新旧价值桥"), ("contour", "价格等值线"),
+)
 
 
 def make_table(headers, values):
@@ -44,31 +99,13 @@ def bars(labels, series, data, fmt=lambda n:f"{n:.1f}"):
     return html,table[1]
 
 
-def contour_graph(grid):
-    runs=[(25,"备货与售后负担高"),(0,"基准周转与售后"),(-25,"周转与售后较轻")]
-    svg=['<div class="cross-plot">']
-    for i in (52,54,56,58,60,62):
-        svg.append(f'<span class="yl" style="--y:{(i-50)*100/16}%">{i}%</span>')
-    for i in (6,8,10,12,14):
-        svg.append(f'<span class="xl" style="--x:{(i-5)*100/10}%">{i}%</span>')
-    table = []
-    for i,(inventory,label) in enumerate(runs):
-        series=[r for r in grid if int(r["inventory_days_shift"])==inventory and r["root"]]
-        pts = []
-        for r in series:
-            x0=float(r["computed_2027_volume_growth"])*100
-            y0=float(r["stable_core_ebit_margin"])*100
-            if not (5<=x0<=15 and 50<=y0<=66):
-                continue
-            x,y=(x0-5)*10,(y0-50)*6.25
-            pts.append((x,100-y))
-            svg.append(f'<b style="--x:{x}%;--y:{y}%;--c:{COLORS[i]}" title="{label} 量增{x0:.2f}% 利润率{y0:.2f}%"></b>')
-        for (x1,y1),(x2,y2) in zip(pts,pts[1:]):
-            shape=f"{x1}% {y1-.35}%,{x1}% {y1+.35}%,{x2}% {y2+.35}%,{x2}% {y2-.35}%"
-            svg.insert(1,f'<i class="segment" style="--shape:{shape};--c:{COLORS[i]}"></i>')
-        r=next(r for r in series if float(r["control_new_shock_of_prior_units"])==.06)
-        table.append((label,f"{float(r['computed_2027_volume_growth']):.2%}",f"{float(r['stable_core_ebit_margin']):.2%}",f"{float(r['reprice']):.2f}"))
-    return "".join(svg)+"</div>"+legends([x[1] for x in runs])+make_table(("资本与履约条件","2027控制量增速","所需稳定核心率","回代元"),table)[0],make_table(("资本与履约条件","2027控制量增速","所需稳定核心率","回代元"),table)[1]
+def contour_table(grid):
+    labels={25:"备货与售后负担高",0:"基准周转与售后",-25:"周转与售后较轻"}
+    hits=[r for r in grid if float(r["control_new_shock_of_prior_units"])==.06 and r["root"]]
+    return make_table(("资本与履约条件","2027控制量增速","所需稳定核心率","回代元"),
+                      [(labels[int(r["inventory_days_shift"])],
+                        pct(r["computed_2027_volume_growth"]),pct(r["stable_core_ebit_margin"]),
+                        ins(r["reprice"])) for r in hits])
 
 
 def m(x):
@@ -92,7 +129,9 @@ def build_tables(model, audit, first_pages):
     def tab(k,title,headers,values,source,desc):
         put(k,title,make_table(headers,values),source,desc)
     def b(k,title,labels,series,data,source,desc,fmt=ins):
-        put(k,title,bars(labels,series,data,fmt),source,desc)
+        chart=(make_table(("期间",*series),[(x,*(fmt(y) for y in z)) for x,z in zip(labels,data)])
+               if k in VISUALS else bars(labels,series,data,fmt))
+        put(k,title,chart,source,desc)
 
     rec=model["receipt"]
     cases=model["scenarios"]
@@ -109,7 +148,7 @@ def build_tables(model, audit, first_pages):
          for n,c in cases.items()],"data/model.json","截至同日可得资料，三情景无概率权重。")
     t='<ul class="toc">'+"".join(f'<li><a href="#page-{p}"><span>{i+1:02d} {name}</span><span>{p:02d}</span></a></li>'
                                 for i,(name,p) in enumerate(zip(CHAPTERS,first_pages)))+"</ul>"
-    put("toc","九章阅读路径",(t,"\n".join(f"- {i+1:02d} {name}　p{p}" for i,(name,p) in enumerate(zip(CHAPTERS,first_pages)))),
+    put("toc","九章阅读路径",(t,"\n".join(f"- [{i+1:02d} {name}](#chapter-{i+1:02d}) · p{p:02d}" for i,(name,p) in enumerate(zip(CHAPTERS,first_pages)))),
         "README.md","正文 40 页；逐年明细和原件索引在同目录证据包。")
     drv("chain","设备、验收与收款的流向",[
         ("光源／光学","为工艺提供能量及传输"),("控制与头","图纸、刀路、工艺、随动协调"),
@@ -278,7 +317,7 @@ def build_tables(model, audit, first_pages):
         +[("净权益桥",ins(rec["cash_bridge"]),ins(rec["cash_bridge"]/(rec["shares"]/1e6)))],
         "data/equity-bridge.csv","证券桥读原三季报及阶段17；冻结金融资产使用权为代理。")
     put("contour","96.20 元等值线｜纵轴稳定核心 EBIT 率，横轴 2027 控制量增速",
-        contour_graph(rows(OUT/"price-contours.csv")),"data/price-contours.csv","点为等价根，无解点和两侧界价留在CSV。")
+        contour_table(rows(OUT/"price-contours.csv")),"data/price-contours.csv","点为等价根，无解点和两侧界价留在CSV。")
     tab("relative","自身不同估值日的同口径 P/E",("市场日","原价·元","股数·百万","滚动归母·百万元","P/E"),
         [(r["date"],ins(r["price_unadjusted"]),ins(r["shares_m"]),ins(r["trailing_parent_profit_m"]),ins(r["pe"]))
          for r in rows(OUT/"own-relative.csv")],"data/own-relative.csv","只用该日可得分母，历史报价采用原研报时点。")
@@ -301,6 +340,41 @@ def format_inline(string):
     esc = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)",r'<a href="\2">\1</a>',esc)
     return re.sub(r"\*\*(.*?)\*\*",r"<strong>\1</strong>",esc)
 
+
+
+def visual_for(name, title):
+    if name not in VISUALS:
+        return "", "", "", "", "", "", ()
+    asset, period, unit, identity, inputs = VISUALS[name]
+    png = str(PurePosixPath("figures",asset).with_suffix(".png"))
+    if not (HERE/png).is_file():
+        raise FileNotFoundError(f"{png} 缺失，先执行绘图或 Mermaid 渲染脚本")
+    mermaid_src = f"figures/{asset}" if asset.endswith(".mmd") else ""
+    if mermaid_src:
+        code=(HERE/mermaid_src).read_text(encoding="utf-8").strip()
+        markdown=f"\n\n```mermaid\n{code}\n```\n\n[图像备份]({png})"
+    else:
+        markdown=f"\n\n![{title}]({png})"
+    return png, mermaid_src, markdown, period, unit, identity, inputs
+
+
+def figure_directory(used):
+    lines=["# 柏楚电子审阅图表目录",
+           "",
+           "图表按正文编号排列。数据图可打开原尺寸；四张机制图同时提供 Mermaid 源和离线图。",
+           "",
+           "[返回 Markdown 主稿](../review.md) · [全量映射 CSV](../data/claims-and-figures.csv)",
+           "",
+           "| 正文位置 | 图文件 | 对应来源 |",
+           "| --- | --- | --- |"]
+    for row in used:
+        link=f'[{row["figure"]} · {row["claim"]}](../{row["markdown_anchor"]})'
+        art=f'[PNG](../{row["figure_file"]})' if row["figure_file"] else "核对表"
+        if row["mermaid_source"]:
+            art+=f' · [Mermaid](../{row["mermaid_source"]})'
+        data=" · ".join(f"[{PurePosixPath(s).name}](../{s})" for s in row["data_sources"].split("；"))
+        lines.append(f"| {link.replace('|','／')} | {art} | {data} |")
+    (HERE/"figures/README.md").write_text("\n".join(lines)+"\n",encoding="utf-8",newline="\n")
 
 def assemble():
     model=read_json(OUT/"model.json")
@@ -328,8 +402,10 @@ def assemble():
     exhibits=build_tables(model,audit,first_pages)
     css=(HERE/"review.css").read_text(encoding="utf-8")
     html=[f'<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>柏楚电子 · 证券投资分析审阅稿</title><style>{css}</style><body>',
-          '<nav class="reader-nav"><strong>柏楚电子 · 研究审阅</strong><span><a href="#page-2">目录</a>　<a href="review.pdf">PDF</a>　<a href="README.md">复算与证据</a></span></nav><main>']
-    markdown=[]
+          '<nav class="reader-nav"><strong>柏楚电子 · 研究审阅</strong><span><a href="#page-2">目录</a>　<a href="review.md">Markdown</a>　<button type="button" onclick="window.print()">打印新版</button></span></nav><main>']
+    markdown=["## 九章目录", "\n".join(f"{i+1}. [{name}](#chapter-{i+1:02d})" for i,name in enumerate(CHAPTERS)),
+              "**关键图表**　"+" · ".join(f"[{label}](#figure-{key})" for key,label in KEY_JUMPS),
+              "[图表文件与数据索引](figures/README.md) · [HTML 浏览及打印](review.html) · [证据、复算与版本](README.md)"]
     used=[]
     for p,(chapter,text) in enumerate(pages,1):
         def substitute(match):
@@ -339,24 +415,40 @@ def assemble():
         if len(start.splitlines())>1:
             paragraphs.insert(0,"\n".join(start.splitlines()[1:]))
         html.append(f'<section class="sheet{" hero" if p==1 else ""}" id="page-{p}"><div class="mast"><span>柏楚电子 · 688188.SH</span><span>{CHAPTERS[chapter]}　/　团队审阅</span></div><div class="sheet-content"><h1>{escape(title)}</h1>')
-        markdown.append("## "+title)
+        if p in first_pages:
+            markdown.append(f'<a name="chapter-{chapter+1:02d}"></a>\n\n## 第 {chapter+1} 章　{CHAPTERS[chapter]}')
+        markdown.append("### "+title)
         for paragraph in paragraphs:
             key=re.fullmatch(r"\[\[(\w+)\]\]",paragraph.strip())
             if key:
                 name=key[1]
                 titlex,(graph,matrix),source,desc=exhibits[name]
                 label=f"图表 {len(used)+1:02d}"
-                html.append(f'<figure id="figure-{name}"><h2>{label}　{escape(titlex)}</h2>{graph}<figcaption>{escape(desc)} <a href="{escape(source,quote=True)}">同源底表／证据</a></figcaption></figure>')
-                markdown.append(f"**{label}　{titlex}**\n\n{matrix}\n\n{desc} [同源底表／证据]({source})")
+                png, diagram, visual_md, period, unit, identity, sources=visual_for(name,titlex)
+                sources=sources or (source,)
+                info=f"{period}｜{unit}｜{identity}" if png else ""
+                visual = (f'<a class="figure-image" href="{png}"><img src="{png}" alt="{escape(titlex,quote=True)}"></a>'
+                          if png else "")
+                more=(" ".join(f'<a href="{escape(s,quote=True)}">{escape(PurePosixPath(s).name)}</a>'
+                               for s in sources))
+                html.append(f'<figure id="figure-{name}"><h2>{label}　{escape(titlex)}</h2>{visual}{graph}'
+                            f'<figcaption>{escape(info)} {escape(desc)} {more}</figcaption></figure>')
+                refs=" · ".join(f"[{PurePosixPath(s).name}]({s})" for s in sources)
+                md_title=f'<a name="figure-{name}"></a>\n\n#### {label}　{titlex}'
+                markdown.append(f"{md_title}{visual_md}\n\n{info+'。' if info else ''}{desc} {refs}\n\n{matrix}")
                 used.append(dict(figure=label,chapter=CHAPTERS[chapter],page=p,key=name,claim=titlex,summary=desc,
-                                 file=source,report_anchor=f"review.html#figure-{name}"))
+                                 file=source,report_anchor=f"review.html#figure-{name}",
+                                 markdown_anchor=f"review.md#figure-{name}",figure_file=png,mermaid_source=diagram,
+                                 data_sources="；".join(sources),period=period,unit=unit,evidence_identity=identity))
             else:
                 html.append("<p>"+format_inline(paragraph).replace("\n","<br>")+"</p>")
                 markdown.append(paragraph)
         html.append(f'</div><footer class="foot"><span>同日估值 2026-11-12　·　截至 2026-11-23</span><span>{p:02d} / 40</span></footer></section>')
     html.append("</main></body></html>")
     from forecast import write_csv
+    assert len(used)==40 and len({row["key"] for row in used})==40
     write_csv("claims-and-figures.csv",used)
+    figure_directory(used)
     (HERE/"review.html").write_text("\n".join(html)+"\n",encoding="utf-8",newline="\n")
     (HERE/"review.md").write_text("# 柏楚电子证券投资分析审阅稿\n\n"+"\n\n".join(markdown)+"\n",encoding="utf-8",newline="\n")
     print(f"{len(pages)} pages, {len(used)} figures, {len(re.findall(r'[\u4e00-\u9fff]', ''.join(s for _,s in pages)))} Chinese body-source characters")
