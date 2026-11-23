@@ -1,0 +1,41 @@
+﻿figure,chapter,page,key,claim,summary,file,report_anchor
+图表 01,摘要与判断,1,scenarios,每股估值与含权价差,截至同日可得资料，三情景无概率权重。,data/model.json,review.html#figure-scenarios
+图表 02,摘要与判断,2,toc,九章阅读路径,正文 40 页；逐年明细和原件索引在同目录证据包。,README.md,review.html#figure-toc
+图表 03,商业模式与竞争,3,chain,设备、验收与收款的流向,流程为产业机制；实际付款和质保依订单。,../deep-research-batch-1/mechanisms.md,review.html#figure-chain
+图表 04,商业模式与竞争,4,p23,旧产品分类与主营闭合,2023年报 p24 原本期，质保重列前。,data/2023-product-original.csv,review.html#figure-p23
+图表 05,商业模式与竞争,5,renewal,续购应分别看到选择、现场成本与价格,客户覆盖、实际可重选数和复购数分列。,../deep-research-batch-1/mechanisms.md,review.html#figure-renewal
+图表 06,商业模式与竞争,6,delivery,合同边界与现金暴露,典型合同责任分析；具体订单条款待核。,data/bundle-cash-thresholds.csv,review.html#figure-delivery
+图表 07,商业模式与竞争,7,counting,同一合同额和设备怎样计一次,分母不足的市场数字留在取证表。,../deep-research-batch-1/external-evidence.csv,review.html#figure-counting
+图表 08,多年经营阶段,8,ipo,招股书年报原量,招股书 p249、p250；2018与2019年报比较列相勾稽。,../deep-research-batch-1/pre-ipo.csv,review.html#figure-ipo
+图表 09,多年经营阶段,9,history,经营规模与现金的拐点（百万元）,集团合并现列；历史成本重分类影响毛利、同额销售费用。,../deep-research-batch-1/financial-bridge.csv,review.html#figure-history
+图表 10,多年经营阶段,10,shock22,2022年压力的两条线,2022年报p98、p102–103及p107独立抽核。,data/independent-audit.json,review.html#figure-shock22
+图表 11,多年经营阶段,11,turns,出货增速分化（套／件当量）,同名范围有随动集成断点，硬件包含配套及单卖。,../volume-and-stock.csv,review.html#figure-turns
+图表 12,多年经营阶段,12,recent,年内累计与单季闭合,本期和比较均以三季累计减同年上半年。,data/recent-income-bridge.csv,review.html#figure-recent
+图表 13,收入、成本和费用,13,group,按解决方案重组收入（百万元）,2023三列保留到0.001百万元见CSV。采用值与主营精确闭合；比较成本直接取重列表。,data/group-restatement.csv,review.html#figure-group
+图表 14,收入、成本和费用,14,volume,2024→2025主营量与组价桥,组均额叠加组合影响，保留参数代理边界。,../operating-summary.json,review.html#figure-volume
+图表 15,收入、成本和费用,15,gross,主营毛利率中点贡献（百分点）,每段按两期中点，交叉项均摊；含2023则组收入为区间估计。,data/gross-contribution.csv,review.html#figure-gross
+图表 16,收入、成本和费用,16,costs,材料、人工与制造的比较桥,2025余项不按质保分配；2024材料与制造比较列等额变动。,data/cost-attribution.csv,review.html#figure-costs
+图表 17,收入、成本和费用,17,quarterprofit,2026Q3带来的利润变化,其他收益来自独立累计差分；扣非归母3.0212亿元是季报首页披露。,data/recent-income-bridge.csv,review.html#figure-quarterprofit
+图表 18,收入、成本和费用,18,normalization,从销售到归母的口径链,利息收入是财务费用子项，调整只进一次。,../analysis-ebit-bridge.csv,review.html#figure-normalization
+图表 19,资本、现金和回报,19,cashhistory,历史现金回收的三种尺度,历史代理缺长期租赁及完整其他营运资本，差额保留。,data/cash-history.csv,review.html#figure-cashhistory
+图表 20,资本、现金和回报,20,cfostream,前三季现金流同比贡献,现金流量正负为净流影响；净增58.8023百万元。,data/cfo-change.csv,review.html#figure-cfostream
+图表 21,资本、现金和回报,21,working,贸易营运资本分项,占款仅包含贸易子项；表头为期末，天数用平均余额另算。,data/trade-days.csv,review.html#figure-working
+图表 22,资本、现金和回报,22,roic,窄口径历史资本与回报,研发费用化、小资本分母等限制跨业务比较。,data/capital-returns.csv,review.html#figure-roic
+图表 23,资本、现金和回报,23,bundle,50%硬件毛利时的首批现金敏感性,每100元增量净收入的条件试算；首批建立资本。,data/bundle-cash-thresholds.csv,review.html#figure-bundle
+图表 24,新业务和海外,24,pipeline,项目进入基准要逐层通过,设备测试与公司公告是证据层，不是订单已转化。,data/project-conditional-scale.csv,review.html#figure-pipeline
+图表 25,新业务和海外,25,funding,切割头支出范围（万元）,批次表原项目预算重复列示；聚合承诺和实际，不能把原投资加两次。,../deep-research-batch-1/project-stages.csv,review.html#figure-funding
+图表 26,新业务和海外,26,projects,条件规模与首批现金区间,均为明确情景尺度。前三个新项目增量不纳入三条主预测。,data/project-conditional-scale.csv,review.html#figure-projects
+图表 27,新业务和海外,27,followup,路演期后答复及下一步,2026-11-20会后转录，隔离于含权估值窗。,data/post-window.csv,review.html#figure-followup
+图表 28,逐年预测和留出,28,drivers,每台设备只经过一个控制订单池,系统销量锚可核，池规模和客户转化为条件。,assumptions.json,review.html#figure-drivers
+图表 29,逐年预测和留出,29,cohorts,基准前四年控制与硬件量,预测；接受含前期未验收且本期接回的条件数量。,data/forecast.csv,review.html#figure-cohorts
+图表 30,逐年预测和留出,30,q4,2026Q4预测与前三季保持隔离,Q4量价为条件；桩段现金折现使用11月12日至12月31日。,data/model.json,review.html#figure-q4
+图表 31,逐年预测和留出,31,forecast_short,三情景逐年现金（百万元）,2026展示全年，估值只折现桩段。2036取稳定期。中间年及各费用在CSV。,data/forecast.csv,review.html#figure-forecast_short
+图表 32,逐年预测和留出,32,holdouts,封存原财年后的留出误差,同时保留原规模持平基线，所有目标实际均来自次年公告。,data/annual-holdouts.csv,review.html#figure-holdouts
+图表 33,逐年预测和留出,33,brokers,同年集团与分业务外部留出,华创三维成本原印及单位诊断见同源补表。,../deep-research-batch-1/forecast-holdout.csv,review.html#figure-brokers
+图表 34,估值、权益和反推,34,valuechange,从冻结估值到新稿（元/股）,沿用同日的WACC、合并证券权利及权益桥；完整精度留在CSV。,data/value-bridge.csv,review.html#figure-valuechange
+图表 35,估值、权益和反推,35,wacc,同一长期增长下的资本纪律对照,联合变化层的完整网格可下载。,data/terminal-sensitivity.csv,review.html#figure-wacc
+图表 36,估值、权益和反推,36,equity,企业价值到普通股权益,证券桥读原三季报及阶段17；冻结金融资产使用权为代理。,data/equity-bridge.csv,review.html#figure-equity
+图表 37,估值、权益和反推,37,contour,96.20 元等值线｜纵轴稳定核心 EBIT 率，横轴 2027 控制量增速,点为等价根，无解点和两侧界价留在CSV。,data/price-contours.csv,review.html#figure-contour
+图表 38,估值、权益和反推,38,relative,自身不同估值日的同口径 P/E,只用该日可得分母，历史报价采用原研报时点。,data/own-relative.csv,review.html#figure-relative
+图表 39,反方与裁定,39,switches,正反两种经营下的重算（元/股）,阈值需要利润率和现金验证，局部上修仍低于市场价。,data/model.json,review.html#figure-switches
+图表 40,反方与裁定,40,actions,团队裁定与参数方向,团队审阅邀请与投资决定另留正式记录。,data/claims-and-figures.csv,review.html#figure-actions
