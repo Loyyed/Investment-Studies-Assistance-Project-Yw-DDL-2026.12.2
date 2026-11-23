@@ -1,0 +1,209 @@
+{
+  "window": "2026-11-12",
+  "market_close": 96.2,
+  "shares": 405984426,
+  "wacc": 0.06927418747201654,
+  "stable_growth": 0.023,
+  "incremental_roic": 0.235,
+  "source_sha256": {
+    "docs/research17/valuation.json": "2a800cb436952b127c7d499d3c85541dcccfb72b32b19bb8099709267ff1e821",
+    "docs/cases/688188/model.json": "438caa8fc6728ac41c7ddd1d4920f48d7f09cfec7450a91750c062b52678e746",
+    "companies/688188_柏楚电子/work/research14/calculation.json": "c6b10483b26a2c9574e1ddb09c15c603d67ce7556e6f86432841c44a123a61ee",
+    "docs/cases/688188/operating.py": "4b6f0f5878c94461ed6b4156f3898e04ca85f9b5543f0fe8ecbe3f034b4e2109",
+    "docs/cases/688188/inputs.json": "c87caed5afdd9cd341c8d75cf7912345cd5c4be9b7b4069159f51fbd33fa31eb",
+    "docs/cases/688188/reverse.csv": "10026518f9f06da968c187d36ff3eaba10daed65e51a41d59c5efcf10294df53",
+    "docs/long-atlas/688188/valuation-receipt.json": "a1425c079eb5642a5499eaac2a0f95592064bceac7d8dcbc1de67d6c700a1dbb"
+  },
+  "frozen_value": 92.75774737785618,
+  "difference": 0.0,
+  "base": {
+    "value": 92.75774737785618,
+    "ev": 32433.981274001948,
+    "bridge": 5224.21955225,
+    "equity": 37658.200826251945,
+    "explicit_pv": 9860.819462206742,
+    "terminal_pv": 22573.161811795206,
+    "terminal_share_of_ev": 0.6959725856994663,
+    "terminal_nopat": 2134.8632163832417,
+    "terminal_fcff": 1925.919156907435,
+    "terminal_reinvestment_rate": 0.09787234042553192,
+    "stub": {
+      "operating": 272.2253066801168,
+      "da": 11.148480924726954,
+      "capex": 9.447175592,
+      "trade_wc": -12.151223279388773,
+      "other_wc": 1.1796846050030418,
+      "lease": 4.981106928341521,
+      "pre_proration": 279.9170437588879,
+      "proration": 0.532608695652174
+    },
+    "flows": [
+      {
+        "year": 2026,
+        "t": 0.13424657534246576,
+        "undiscounted": 149.0862515672338,
+        "pv": 147.75169975752607
+      },
+      {
+        "year": 2027,
+        "t": 1.1342465753425586,
+        "revenue": 2806.3567026901987,
+        "control_driver": 0.06674536422212385,
+        "nopat": 1197.0059016188254,
+        "plant_lease_net": -0.5224162721686305,
+        "trade_wc_delta": 34.35884952759301,
+        "net_reinvestment": 33.83643325542438,
+        "undiscounted": 1163.169468363401,
+        "pv": 1078.074568502985
+      },
+      {
+        "year": 2028,
+        "t": 2.1342465753425586,
+        "revenue": 3119.4020590722903,
+        "control_driver": 0.06674536422212385,
+        "nopat": 1316.231698825553,
+        "plant_lease_net": 7.465937067172992,
+        "trade_wc_delta": 38.19153347861521,
+        "net_reinvestment": 45.65747054578821,
+        "undiscounted": 1270.5742282797648,
+        "pv": 1101.328216906185
+      },
+      {
+        "year": 2029,
+        "t": 3.1342465753425586,
+        "revenue": 3467.367208458047,
+        "control_driver": 0.06674536422212385,
+        "nopat": 1463.0555936088729,
+        "plant_lease_net": 17.242971260703428,
+        "trade_wc_delta": 42.45174822506232,
+        "net_reinvestment": 59.694719485765745,
+        "undiscounted": 1403.3608741231071,
+        "pv": 1137.619441719669
+      },
+      {
+        "year": 2030,
+        "t": 4.134246575342559,
+        "revenue": 3809.5057961918264,
+        "control_driver": 0.060496026476106156,
+        "nopat": 1600.1192011437977,
+        "plant_lease_net": 17.69175472880918,
+        "trade_wc_delta": 41.74090770352109,
+        "net_reinvestment": 141.3569895770566,
+        "undiscounted": 1458.7622115667411,
+        "pv": 1105.9183468563417
+      },
+      {
+        "year": 2031,
+        "t": 5.134246575342559,
+        "revenue": 4136.643637473312,
+        "control_driver": 0.05424668873008846,
+        "nopat": 1729.5991780894594,
+        "plant_lease_net": 17.850800627197682,
+        "trade_wc_delta": 39.910816636341224,
+        "net_reinvestment": 205.89804096082048,
+        "undiscounted": 1523.701137128639,
+        "pv": 1080.3121660929708
+      },
+      {
+        "year": 2032,
+        "t": 6.134246575342559,
+        "revenue": 4439.236171814033,
+        "control_driver": 0.04799735098407077,
+        "nopat": 1847.6093368529746,
+        "plant_lease_net": 17.69685760841095,
+        "trade_wc_delta": 36.916289189567976,
+        "net_reinvestment": 245.9360065483798,
+        "undiscounted": 1601.6733303045949,
+        "pv": 1062.024012930017
+      },
+      {
+        "year": 2033,
+        "t": 7.134246575342559,
+        "revenue": 4707.80764060284,
+        "control_driver": 0.04174801323805308,
+        "nopat": 1950.365170433188,
+        "plant_lease_net": 17.219479805064825,
+        "trade_wc_delta": 32.76571919223443,
+        "net_reinvestment": 255.00093777000592,
+        "undiscounted": 1695.364232663182,
+        "pv": 1051.3185464201854
+      },
+      {
+        "year": 2034,
+        "t": 8.134246575342559,
+        "revenue": 4933.427719231312,
+        "control_driver": 0.035498675492035385,
+        "nopat": 2034.3797401149325,
+        "plant_lease_net": 16.422500335435036,
+        "trade_wc_delta": 27.52564959267363,
+        "net_reinvestment": 228.16358911281503,
+        "undiscounted": 1806.2161510021174,
+        "pv": 1047.4949737984562
+      },
+      {
+        "year": 2035,
+        "t": 9.134246575342559,
+        "revenue": 5108.193576113695,
+        "control_driver": 0.029249337746017692,
+        "nopat": 2096.656309198125,
+        "plant_lease_net": 15.324580728341083,
+        "trade_wc_delta": 21.32143453965068,
+        "net_reinvestment": 162.58258376645324,
+        "undiscounted": 1934.0737254316718,
+        "pv": 1048.9774892224084
+      }
+    ]
+  },
+  "control": {
+    "root_growth_2027": 0.0753340575665028,
+    "base_growth_2027": 0.06674536422212385,
+    "shift": 0.008588693344378943,
+    "search_shift": [
+      -0.06,
+      0.08
+    ],
+    "price": 96.20000000000003,
+    "residual": 2.842170943040401e-14,
+    "fixed": "稳定核心营业利润率、周转比例及其余冻结参数；2030起平移逐年退坡，2036归零"
+  },
+  "margin": {
+    "root": 0.49801129732619265,
+    "search": [
+      0.02,
+      0.8
+    ],
+    "price": 96.19999999999999,
+    "residual": -1.4210854715202004e-14,
+    "fixed": "控制量路径、周转比例及其余冻结参数；利润率调整自2030起逐步纳入"
+  },
+  "inventory_and_volume": [
+    {
+      "inventory_days_less": 15,
+      "wc_share": 0.11086946970864113,
+      "value_with_base_volume": 92.84288921306513,
+      "control_growth_2027": 0.07511701580633978,
+      "root_shift": 0.008371651584215926,
+      "price": 96.20000000000003,
+      "residual": 2.842170943040401e-14
+    },
+    {
+      "inventory_days_less": 30,
+      "wc_share": 0.09973893941728226,
+      "value_with_base_volume": 92.94440830390292,
+      "control_growth_2027": 0.0748601287542163,
+      "root_shift": 0.008114764532092457,
+      "price": 96.19999999999999,
+      "residual": -1.4210854715202004e-14
+    },
+    {
+      "inventory_days_less": 45,
+      "wc_share": 0.0886084091259234,
+      "value_with_base_volume": 93.04349227587998,
+      "control_growth_2027": 0.07460877529922871,
+      "root_shift": 0.007863411077104858,
+      "price": 96.20000000000005,
+      "residual": 4.263256414560601e-14
+    }
+  ],
+  "status": "AgentCalculated"
+}
