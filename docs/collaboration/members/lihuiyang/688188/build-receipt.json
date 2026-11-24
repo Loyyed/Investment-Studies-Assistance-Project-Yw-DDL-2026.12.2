@@ -1,0 +1,51 @@
+{
+  "base_report": "报告留存处/柏楚电子证券投资图册/original/report.md",
+  "base_sha256": "1c676d917371cda2d4bffa796b38f30537c1ed44904b59f07fb319e64e440cb8",
+  "report": "报告留存处/2026-11-24_SSE-688188_柏楚电子证券投资分析报告Version2.md",
+  "report_sha256": "17ad7e3bf5aa991d07ffd3fb8aa98fdd6557ec55700b7a7f2e8fbf3b225c4263",
+  "model_sha256": "9b6cf08b33538477469a8a4c654af3784af2f605c64adc0c4917ebcfb99fda52",
+  "image_count": 14,
+  "han_count": 22735,
+  "external_estimate": [
+    {
+      "label": "原文保守",
+      "profit_anchor_2025_yi": "11.13",
+      "growth": "0.24",
+      "years": 5,
+      "pe": "30",
+      "shares_yi": "4.08",
+      "profit_2030_yi": "32.628986944512",
+      "future_price_cny": "239.9190216508235294117647059",
+      "status": "article-conditional-arithmetic-not-adopted"
+    },
+    {
+      "label": "原文中性",
+      "profit_anchor_2025_yi": "11.13",
+      "growth": "0.28",
+      "years": 5,
+      "pe": "37",
+      "shares_yi": "4.08",
+      "profit_2030_yi": "38.242388803584",
+      "future_price_cny": "346.8059768952470588235294118",
+      "status": "article-conditional-arithmetic-not-adopted"
+    },
+    {
+      "label": "原文乐观",
+      "profit_anchor_2025_yi": "11.13",
+      "growth": "0.34",
+      "years": 5,
+      "pe": "45",
+      "shares_yi": "4.08",
+      "profit_2030_yi": "48.086055810912",
+      "future_price_cny": "530.3609096791764705882352941",
+      "status": "article-conditional-arithmetic-not-adopted"
+    }
+  ],
+  "capex_minus_da_yuan": "-2151971.41000000",
+  "cfo_less_capex_yuan": "1069117902.50",
+  "cfo_parent_ratio": "0.9926053667522256195332689124",
+  "cfo_group_ratio": "0.9767334556100347313899645147",
+  "weighted_controller_share": "0.6459175809648578617899903393",
+  "cutoff": "2026-11-12 SSE close; user adopted 2026-11-24",
+  "status": "draft-for-team-review"
+}

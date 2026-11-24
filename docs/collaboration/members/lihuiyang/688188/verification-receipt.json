@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "research_date": "2026-11-24",
+  "valuation_date": "2026-11-12",
+  "calculations": {
+    "cases": {
+      "stress": {
+        "explicit_pv_m": 4724.8833824684025,
+        "terminal_pv_m": 7110.610387516408,
+        "terminal_share": 0.600786965521383,
+        "equity_value_m": 17059.708722234813,
+        "per_share_cny": 42.0205988941921,
+        "price_residual": 0.0
+      },
+      "base": {
+        "explicit_pv_m": 8834.666854147561,
+        "terminal_pv_m": 19155.430738376734,
+        "terminal_share": 0.6843645569672054,
+        "equity_value_m": 33214.31254477429,
+        "per_share_cny": 81.81178985613181,
+        "price_residual": 0.0
+      },
+      "improve": {
+        "explicit_pv_m": 13086.722547164254,
+        "terminal_pv_m": 36429.64735547332,
+        "terminal_share": 0.7357091690506342,
+        "equity_value_m": 54740.584854887566,
+        "per_share_cny": 134.83419892291033,
+        "price_residual": 0.0
+      }
+    },
+    "first_cohort_cash_samples": {
+      "110/45": "10.38205479452054794520547945",
+      "150/65": "-0.57684931506849315068493151"
+    },
+    "external_estimate": [
+      {
+        "label": "原文保守",
+        "profit_anchor_2025_yi": "11.13",
+        "growth": "0.24",
+        "years": 5,
+        "pe": "30",
+        "shares_yi": "4.08",
+        "profit_2030_yi": "32.628986944512",
+        "future_price_cny": "239.9190216508235294117647059",
+        "status": "article-conditional-arithmetic-not-adopted"
+      },
+      {
+        "label": "原文中性",
+        "profit_anchor_2025_yi": "11.13",
+        "growth": "0.28",
+        "years": 5,
+        "pe": "37",
+        "shares_yi": "4.08",
+        "profit_2030_yi": "38.242388803584",
+        "future_price_cny": "346.8059768952470588235294118",
+        "status": "article-conditional-arithmetic-not-adopted"
+      },
+      {
+        "label": "原文乐观",
+        "profit_anchor_2025_yi": "11.13",
+        "growth": "0.34",
+        "years": 5,
+        "pe": "45",
+        "shares_yi": "4.08",
+        "profit_2030_yi": "48.086055810912",
+        "future_price_cny": "530.3609096791764705882352941",
+        "status": "article-conditional-arithmetic-not-adopted"
+      }
+    ],
+    "cash_bridge_m": 5224.21495225
+  },
+  "frozen_regression": {
+    "valuation_date": "2026-11-12",
+    "baseline": "98d1d2e0fd31aa4031cc83e51638fafb38d7c22e",
+    "company_reconciliations": 5,
+    "current_facts": 188,
+    "batch_positions": 48,
+    "followup_rows": 9,
+    "local_followup_fingerprints": 0
+  },
+  "original_pdf": {
+    "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+    "physical_pages": [
+      8,
+      25,
+      126,
+      130,
+      2,
+      113
+    ],
+    "exact_value_probes": 19,
+    "role": "Agent original-page check"
+  },
+  "report_sha256": "17ad7e3bf5aa991d07ffd3fb8aa98fdd6557ec55700b7a7f2e8fbf3b225c4263",
+  "limitations": "Checks cash identities, archived outputs and local files; not parameter validation, live ReviewStore, human review, or rendered PDF page count.",
+  "links": {
+    "local_files": 150,
+    "documents": 6,
+    "figures": 14,
+    "report_anchors": 49
+  }
+}
