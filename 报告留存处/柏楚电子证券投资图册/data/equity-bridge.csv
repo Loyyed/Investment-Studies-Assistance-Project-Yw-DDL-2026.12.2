@@ -1,0 +1,10 @@
+﻿item,source_balance_m,sign,delta_m,delta_per_share,locator
+financial_cash,2134.54113072,1,2134.54113072,5.257692152752678,2026Q3 p5、p7；阶段17权益桥与留存假设
+eligible_short_long_investments,3596.03113218,1,3596.03113218,8.857559309873626,2026Q3 p5、p7；阶段17权益桥与留存假设
+working_cash_reserve,400,-1,-400,-0.9852594690418002,2026Q3 p5、p7；阶段17权益桥与留存假设
+notified_buyback_cash_or_buffer,0,-1,0,0.0,2026Q3 p5、p7；阶段17权益桥与留存假设
+financial_debt,20.322,-1,-20.322,-0.050056107324668656,2026Q3 p5、p7；阶段17权益桥与留存假设
+finance_treated_lease,8.677110650000001,-1,-8.677110650000001,-0.021373013579589876,2026Q3 p5、p7；阶段17权益桥与留存假设
+non_controlling_deduction,77.3536,-1,-77.3536,-0.1905334171611795,2026Q3 p5、p7；阶段17权益桥与留存假设
+litigation_separate_pv,0,-1,0,0.0,2026Q3 p5、p7；阶段17权益桥与留存假设
+cash_not_equivalent,0.0046,-1,-0.0046,-1.1330483893980702e-05,2026Q3 p5与p12；2026H1 p137与p154旁证

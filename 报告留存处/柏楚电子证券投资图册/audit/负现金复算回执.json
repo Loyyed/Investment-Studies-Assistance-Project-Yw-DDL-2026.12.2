@@ -1,0 +1,251 @@
+{
+  "date": "2026-11-24",
+  "executor": "Codex（实施 Agent）",
+  "archive_base": "133e490635bbdbb8bfcec3c48c53c9a1f2150cd4",
+  "calculation_baseline": "5f485482174392124261b1654ed102d16c19030c",
+  "issuer": {
+    "current_fact_count": 24,
+    "change_facts": false,
+    "sources": [
+      {
+        "year": 2024,
+        "issuer": "上海柏楚电子科技股份有限公司",
+        "field_scope": "经营情况讨论与分析，发行人主要产品销售量",
+        "available": "2025-04-03",
+        "url": "https://static.cninfo.com.cn/finalpage/2025-04-03/1222993275.PDF",
+        "source_id": "688188-4daf701c6095d460",
+        "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+        "physical_page": 26,
+        "heading": "主要产品 单位 生产量 销售量 库存量",
+        "lines": {
+          "control": {
+            "source_line": "控制系统 套 60,138.00 60,993.00 5,226.00 -11.90 -10.83 -14.29",
+            "unit": "套",
+            "sales_raw": "60,993.00",
+            "sales": 60993
+          },
+          "hardware": {
+            "source_line": "智能硬件 套 34,398.00 35,118.00 3,127.00 19.45 25.06 -19.28",
+            "unit": "套",
+            "sales_raw": "35,118.00",
+            "sales": 35118
+          }
+        },
+        "sales_volume_fact_binding": null,
+        "status": "原披露，经实施 Agent 原表对读"
+      },
+      {
+        "year": 2025,
+        "issuer": "上海柏楚电子科技股份有限公司",
+        "field_scope": "经营情况讨论与分析，发行人主要产品销售量",
+        "available": "2026-04-10",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF",
+        "source_id": "688188-a343f0dc3c27d114",
+        "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+        "physical_page": 29,
+        "heading": "主要产品 单位 生产量 销售量 库存量",
+        "lines": {
+          "control": {
+            "source_line": "控制系统 套 67,434.00 65,064.00 7,340.00 12.13 6.67 40.45",
+            "unit": "套",
+            "sales_raw": "65,064.00",
+            "sales": 65064
+          },
+          "hardware": {
+            "source_line": "智能硬件 套 59,626.00 56,824.00 7,963.00 73.34 61.81 154.65",
+            "unit": "套",
+            "sales_raw": "56,824.00",
+            "sales": 56824
+          }
+        },
+        "sales_volume_fact_binding": null,
+        "status": "原披露，经实施 Agent 原表对读"
+      }
+    ]
+  },
+  "calculation": {
+    "volume_ratios": [
+      {
+        "year": 2024,
+        "ratio": "0.575770990113619595691308838719197284934336727",
+        "percentage": "57.5770990113619595691308838719197284934336727",
+        "ratio_minus_csv": "9.5691308838719197284934336727E-17",
+        "status": "AgentCalculated"
+      },
+      {
+        "year": 2025,
+        "ratio": "0.873355465387925734661256608877413008729865978",
+        "percentage": "87.3355465387925734661256608877413008729865978",
+        "ratio_minus_csv": "3.4661256608877413008729865978E-17",
+        "status": "AgentCalculated"
+      }
+    ],
+    "attach_2025": "0.55",
+    "planned_bundle_2025": "35785.20",
+    "single_residual_2025": "21038.80",
+    "projection": [
+      {
+        "scenario": "stress",
+        "attach_gain": "0.006",
+        "single_rate": "0.06",
+        "acceptance_2027": "0.93",
+        "attach_2026_q4": "0.556",
+        "attach_2027": "0.562",
+        "unit_equivalents_single_2027": "23639.195680"
+      },
+      {
+        "scenario": "base",
+        "attach_gain": "0.025",
+        "single_rate": "0.093",
+        "acceptance_2027": "0.975",
+        "attach_2026_q4": "0.575",
+        "attach_2027": "0.600",
+        "unit_equivalents_single_2027": "25133.98138120"
+      },
+      {
+        "scenario": "improve",
+        "attach_gain": "0.043",
+        "single_rate": "0.107",
+        "acceptance_2027": "0.99",
+        "attach_2026_q4": "0.593",
+        "attach_2027": "0.636",
+        "unit_equivalents_single_2027": "25781.97642120"
+      }
+    ],
+    "cash": [
+      {
+        "inventory_days": 110,
+        "ar_days": 45,
+        "all_inputs": {
+          "gross_margin": "0.5",
+          "net_sales": "100",
+          "cost": "50.0",
+          "installation": "4",
+          "control_allowance": "2",
+          "service_scenario": "5",
+          "cash_tax": "0.13",
+          "ap_days": "50",
+          "gross_capex": "3"
+        },
+        "post_tax_before_wc_and_capex": "33.930",
+        "inventory": "15.0684931506849315068493150684931506849315068",
+        "receivable": "12.3287671232876712328767123287671232876712329",
+        "payable": "6.84931506849315068493150684931506849315068493",
+        "trade_capital": "20.5479452054794520547945205479452054794520548",
+        "cash": "10.3820547945205479452054794520547945205479452",
+        "published_cash": "10.382054794520549",
+        "cash_minus_published": "-1.0547945205479452054794520548E-15",
+        "service_break_even": "16.9333963155408597071327350023618327822390175",
+        "ar_days_zero": "82.8945"
+      },
+      {
+        "inventory_days": 150,
+        "ar_days": 65,
+        "all_inputs": {
+          "gross_margin": "0.5",
+          "net_sales": "100",
+          "cost": "50.0",
+          "installation": "4",
+          "control_allowance": "2",
+          "service_scenario": "5",
+          "cash_tax": "0.13",
+          "ap_days": "50",
+          "gross_capex": "3"
+        },
+        "post_tax_before_wc_and_capex": "33.930",
+        "inventory": "20.5479452054794520547945205479452054794520548",
+        "receivable": "17.8082191780821917808219178082191780821917808",
+        "payable": "6.84931506849315068493150684931506849315068493",
+        "trade_capital": "31.5068493150684931506849315068493150684931507",
+        "cash": "-0.5768493150684931506849315068493150684931507",
+        "published_cash": "-0.5768493150684897",
+        "cash_minus_published": "-3.4506849315068493150684931507E-15",
+        "service_break_even": "4.33695481026609982679892930247205164541017161",
+        "ar_days_zero": "62.8945"
+      }
+    ],
+    "market_window": "2026-11-12",
+    "market": "96.2",
+    "frozen_prices": {
+      "stress": "42.0205988941921",
+      "base": "81.81178985613181",
+      "improve": "134.83419892291033"
+    },
+    "model_sha256": "9b6cf08b33538477469a8a4c654af3784af2f605c64adc0c4917ebcfb99fda52",
+    "separate_price_witnesses": [
+      {
+        "inventory_days_shift": "25",
+        "add_on_service_shift": "0.02",
+        "control_new_shock_of_prior_units": "0.06",
+        "computed_2027_volume_growth": "0.1171077154517497",
+        "stable_margin_shift": "0.10332448211565698",
+        "stable_core_ebit_margin": "0.5704771285176427",
+        "root": "0.10332448211565698",
+        "reprice": "96.2",
+        "residual": "0.0",
+        "lower": "-0.12",
+        "upper": "0.14",
+        "lower_price": "70.2271000154879",
+        "upper_price": "100.28255591806455"
+      },
+      {
+        "inventory_days_shift": "0",
+        "add_on_service_shift": "0",
+        "control_new_shock_of_prior_units": "0.06",
+        "computed_2027_volume_growth": "0.1171077154517497",
+        "stable_margin_shift": "0.09856492579293863",
+        "stable_core_ebit_margin": "0.5683149342936397",
+        "root": "0.09856492579293863",
+        "reprice": "96.2",
+        "residual": "0.0",
+        "lower": "-0.12",
+        "upper": "0.14",
+        "lower_price": "70.7599550005611",
+        "upper_price": "100.81236860929778"
+      },
+      {
+        "inventory_days_shift": "-25",
+        "add_on_service_shift": "-0.006",
+        "control_new_shock_of_prior_units": "0.06",
+        "computed_2027_volume_growth": "0.1171077154517497",
+        "stable_margin_shift": "0.0963332845385855",
+        "stable_core_ebit_margin": "0.5668625016689012",
+        "root": "0.0963332845385855",
+        "reprice": "96.2",
+        "residual": "0.0",
+        "lower": "-0.12",
+        "upper": "0.14",
+        "lower_price": "71.00928409113959",
+        "upper_price": "101.06078501172424"
+      }
+    ]
+  },
+  "cross_check_by_implementation_agent": {
+    "page": 29,
+    "sales_column": "销售量",
+    "hardware": [
+      "智能硬件",
+      "套",
+      "59,626.00",
+      "56,824.00",
+      "7,963.00",
+      "73.34",
+      "61.81",
+      "154.65"
+    ],
+    "control": [
+      "控制系统",
+      "套",
+      "67,434.00",
+      "65,064.00",
+      "7,340.00",
+      "12.13",
+      "6.67",
+      "40.45"
+    ],
+    "negative_cash_exact": "-4211/7300",
+    "tools": "pdfplumber (PDFMiner) and Python fractions.Fraction",
+    "proposer_review_status": "待登记。此交叉复算由实施 Agent 执行。",
+    "implementation_review_archive_base": "133e490635bbdbb8bfcec3c48c53c9a1f2150cd4"
+  }
+}

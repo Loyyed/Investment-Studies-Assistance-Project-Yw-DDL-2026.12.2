@@ -1,0 +1,15 @@
+{
+  "archive_commit": "133e490635bbdbb8bfcec3c48c53c9a1f2150cd4",
+  "archive_url": "https://github.com/Loyyed/Investment-Studies-Assistance-Project-Yw-DDL-2026.12.2/blob/133e490635bbdbb8bfcec3c48c53c9a1f2150cd4/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A11.23%E4%B8%80%E7%89%88.md",
+  "archive_amendment": "2026-11-24 图册正文接入两处已核计算说明",
+  "report_sha256": "1c676d917371cda2d4bffa796b38f30537c1ed44904b59f07fb319e64e440cb8",
+  "model_commit": "5f485482174392124261b1654ed102d16c19030c",
+  "source_root": "https://github.com/Loyyed/Investment-Studies-Assistance-Project-Yw-DDL-2026.12.2/blob/5f485482174392124261b1654ed102d16c19030c/docs/cases/688188/deep-research-batch-2/",
+  "model_sha256": "9b6cf08b33538477469a8a4c654af3784af2f605c64adc0c4917ebcfb99fda52",
+  "audit_date": "2026-11-24",
+  "data_window": "2026-11-12 上交所当地未复权含权收盘",
+  "evidence_status": "实施 Agent 对读和复算。当前 Fact 数量为当时核查回执，提词器独立裁定待登记",
+  "reference": "茅台 V2.2 本机 HTML，以 Edge 实际打开",
+  "built_for": "GitHub 归档审阅",
+  "archive_figures": "柏楚电子证券投资分析报告11.23一版_图件"
+}
