@@ -1,0 +1,1155 @@
+{
+  "method": "Separate PDF lookup and recompute, no Forecast or original extractor imports. Price roots first author's path, independent legacy roots rerun separately.",
+  "reviewer": "实施 Agent 的独立公式复核，无独立人审签署",
+  "frozen": 92.75774737785618,
+  "frozen_control": {
+    "root_growth_2027": 0.0753340575665028,
+    "base_growth_2027": 0.06674536422212385,
+    "shift": 0.008588693344378943,
+    "search_shift": [
+      -0.06,
+      0.08
+    ],
+    "price": 96.20000000000003,
+    "residual": 2.842170943040401e-14,
+    "fixed": "稳定核心营业利润率、周转比例及其余冻结参数；2030起平移逐年退坡，2036归零"
+  },
+  "frozen_margin": {
+    "root": 0.49801129732619265,
+    "search": [
+      0.02,
+      0.8
+    ],
+    "price": 96.19999999999999,
+    "residual": -1.4210854715202004e-14,
+    "fixed": "控制量路径、周转比例及其余冻结参数；利润率调整自2030起逐步纳入"
+  },
+  "comparison": [
+    {
+      "case": "stress",
+      "independent": 42.0205988941921,
+      "generated": 42.0205988941921,
+      "residual": 0.0,
+      "terminal_pv": 7110.610387516408,
+      "explicit_pv": 4724.8833824684025
+    },
+    {
+      "case": "base",
+      "independent": 81.8117898561318,
+      "generated": 81.81178985613181,
+      "residual": -1.4210854715202004e-14,
+      "terminal_pv": 19155.430738376734,
+      "explicit_pv": 8834.666854147561
+    },
+    {
+      "case": "improve",
+      "independent": 134.83419892291036,
+      "generated": 134.83419892291033,
+      "residual": 2.842170943040401e-14,
+      "terminal_pv": 36429.647355473324,
+      "explicit_pv": 13086.722547164254
+    }
+  ],
+  "root_cashflows_independently_verified": [
+    {
+      "inventory_shift": 25,
+      "rebuilt_price": 96.19999999999999,
+      "error": -1.4210854715202004e-14
+    },
+    {
+      "inventory_shift": 0,
+      "rebuilt_price": 96.19999999999999,
+      "error": -1.4210854715202004e-14
+    },
+    {
+      "inventory_shift": -25,
+      "rebuilt_price": 96.19999999999999,
+      "error": -1.4210854715202004e-14
+    }
+  ],
+  "price_root_count": 15,
+  "maximum_grid_residual": 4.263256414560601e-14,
+  "no_root_count": 6,
+  "same_day_difference": -10.945957521724367,
+  "sources": {
+    "deep-research-batch-2/assumptions.json": "5404b01e6d2f1b191c28f3ee17c2e5984a55a5b25fae4e5a5f8c7201e531da0a",
+    "deep-research-batch-2/supplement.json": "75b8a21e704cf5cdca43cca1d7b77f132760d4d36cb3d206bd3eb8a9160dadb6",
+    "model.json": "438caa8fc6728ac41c7ddd1d4920f48d7f09cfec7450a91750c062b52678e746",
+    "volume-and-stock.csv": "148aa342ebea765268d304303908e254fce8cb357d5b32ff47d400ad83373b0f",
+    "product-bridge.csv": "28abf5c3063f38eb5277beb3134a6dd636f16565d33da104367081ac6ab33d68",
+    "deep-research-batch-1/financial-bridge.csv": "5bdb541be248cbdcd98862d8c56ce3c1350d8ff4aaf627a0d6a284f9a3db469f",
+    "deep-research-batch-1/working-capital.csv": "eed3b738071b5601c5362ea7025fdc3668ac4f61a45651343eebe87cc7b3a558",
+    "deep-research-batch-1/valuation-reproduction.json": "5073ff48b4636a844d394b3bf64a3201e14dcdb0e49f9cbf5ffcc75458d17790"
+  },
+  "raw_count": 103,
+  "raw_cells": [
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 102,
+      "field": "revenue",
+      "column": "本期",
+      "yuan": "898491949.44",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 102,
+      "field": "revenue",
+      "column": "比较",
+      "yuan": "913439700.70",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 102,
+      "field": "cost",
+      "column": "本期",
+      "yuan": "188928394.55",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 102,
+      "field": "cost",
+      "column": "比较",
+      "yuan": "180008920.92",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 103,
+      "field": "reported_ebit",
+      "column": "本期",
+      "yuan": "553174635.15",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 103,
+      "field": "reported_ebit",
+      "column": "比较",
+      "yuan": "604514413.82",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 103,
+      "field": "parent_profit",
+      "column": "本期",
+      "yuan": "479523399.84",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 103,
+      "field": "parent_profit",
+      "column": "比较",
+      "yuan": "550198665.07",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 98,
+      "field": "inventory",
+      "column": "期末",
+      "yuan": "120467731.46",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 98,
+      "field": "inventory",
+      "column": "上年末",
+      "yuan": "137167987.14",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 107,
+      "field": "cfo",
+      "column": "本期",
+      "yuan": "619282545.20",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 107,
+      "field": "cfo",
+      "column": "比较",
+      "yuan": "498734982.64",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 107,
+      "field": "capex",
+      "column": "本期",
+      "yuan": "96755436.87",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2022-FY",
+      "source_id": "688188-be6a5c9bc7b468ca",
+      "sha256": "efcbca4038fb072b6787cb854c93a6cb856285a7b07eba525f3ea385b0fd8925",
+      "page": 107,
+      "field": "capex",
+      "column": "比较",
+      "yuan": "163453490.99",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 112,
+      "field": "revenue",
+      "column": "本期",
+      "yuan": "1735455070.67",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 112,
+      "field": "revenue",
+      "column": "比较",
+      "yuan": "1407113183.52",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 112,
+      "field": "cost",
+      "column": "本期",
+      "yuan": "348199065.22",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 112,
+      "field": "cost",
+      "column": "比较",
+      "yuan": "281140773.82",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 113,
+      "field": "reported_ebit",
+      "column": "本期",
+      "yuan": "1036240027.64",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 113,
+      "field": "reported_ebit",
+      "column": "比较",
+      "yuan": "827317108.55",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 113,
+      "field": "parent_profit",
+      "column": "本期",
+      "yuan": "882710217.15",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 113,
+      "field": "parent_profit",
+      "column": "比较",
+      "yuan": "728914349.94",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 108,
+      "field": "inventory",
+      "column": "期末",
+      "yuan": "164775083.57",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 108,
+      "field": "inventory",
+      "column": "上年末",
+      "yuan": "153547124.47",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 116,
+      "field": "cfo",
+      "column": "本期",
+      "yuan": "952442961.66",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 116,
+      "field": "cfo",
+      "column": "比较",
+      "yuan": "860939749.10",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 117,
+      "field": "capex",
+      "column": "本期",
+      "yuan": "113217692.93",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 117,
+      "field": "capex",
+      "column": "比较",
+      "yuan": "151518774.90",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 125,
+      "field": "revenue",
+      "column": "本期",
+      "yuan": "2195632312.92",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 125,
+      "field": "revenue",
+      "column": "比较",
+      "yuan": "1735455070.67",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 125,
+      "field": "cost",
+      "column": "本期",
+      "yuan": "490538075.96",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 125,
+      "field": "cost",
+      "column": "比较",
+      "yuan": "348199065.22",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 126,
+      "field": "reported_ebit",
+      "column": "本期",
+      "yuan": "1245124160.70",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 126,
+      "field": "reported_ebit",
+      "column": "比较",
+      "yuan": "1036240027.64",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 126,
+      "field": "parent_profit",
+      "column": "本期",
+      "yuan": "1112547607.75",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 126,
+      "field": "parent_profit",
+      "column": "比较",
+      "yuan": "882710217.15",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 121,
+      "field": "inventory",
+      "column": "期末",
+      "yuan": "250063767.90",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 121,
+      "field": "inventory",
+      "column": "上年末",
+      "yuan": "164775083.57",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 130,
+      "field": "cfo",
+      "column": "本期",
+      "yuan": "1104320726.22",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 130,
+      "field": "cfo",
+      "column": "比较",
+      "yuan": "952442961.66",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 130,
+      "field": "capex",
+      "column": "本期",
+      "yuan": "35202823.72",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 130,
+      "field": "capex",
+      "column": "比较",
+      "yuan": "113217692.93",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 65,
+      "field": "revenue",
+      "column": "本期",
+      "yuan": "1278250073.15",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 65,
+      "field": "revenue",
+      "column": "比较",
+      "yuan": "1103477754.17",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 65,
+      "field": "cost",
+      "column": "本期",
+      "yuan": "333257369.05",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 65,
+      "field": "cost",
+      "column": "比较",
+      "yuan": "233615001.72",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 66,
+      "field": "surcharge",
+      "column": "本期",
+      "yuan": "14371274.50",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 66,
+      "field": "surcharge",
+      "column": "比较",
+      "yuan": "13916308.45",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 66,
+      "field": "sales",
+      "column": "本期",
+      "yuan": "57392702.80",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 66,
+      "field": "sales",
+      "column": "比较",
+      "yuan": "52340616.43",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 66,
+      "field": "admin",
+      "column": "本期",
+      "yuan": "71385274.89",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 66,
+      "field": "admin",
+      "column": "比较",
+      "yuan": "61161141.88",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 66,
+      "field": "rd",
+      "column": "本期",
+      "yuan": "132498999.24",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 66,
+      "field": "rd",
+      "column": "比较",
+      "yuan": "118382580.88",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 66,
+      "field": "reported_ebit",
+      "column": "本期",
+      "yuan": "884000153.87",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 66,
+      "field": "reported_ebit",
+      "column": "比较",
+      "yuan": "734857430.09",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 69,
+      "field": "cfo",
+      "column": "本期",
+      "yuan": "506934141.41",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 69,
+      "field": "cfo",
+      "column": "比较",
+      "yuan": "556092922.22",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 70,
+      "field": "capex",
+      "column": "本期",
+      "yuan": "17355180.83",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 70,
+      "field": "capex",
+      "column": "比较",
+      "yuan": "20640787.27",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "revenue",
+      "column": "本期",
+      "yuan": "1879566682.64",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "revenue",
+      "column": "比较",
+      "yuan": "1619596504.09",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "cost",
+      "column": "本期",
+      "yuan": "509067298.13",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "cost",
+      "column": "比较",
+      "yuan": "354808911.06",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "surcharge",
+      "column": "本期",
+      "yuan": "21496200.10",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "surcharge",
+      "column": "比较",
+      "yuan": "20865381.97",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "sales",
+      "column": "本期",
+      "yuan": "89714783.33",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "sales",
+      "column": "比较",
+      "yuan": "82408592.69",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "admin",
+      "column": "本期",
+      "yuan": "117213024.97",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "admin",
+      "column": "比较",
+      "yuan": "96376463.13",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "rd",
+      "column": "本期",
+      "yuan": "203881478.84",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 8,
+      "field": "rd",
+      "column": "比较",
+      "yuan": "180918624.99",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 9,
+      "field": "reported_ebit",
+      "column": "本期",
+      "yuan": "1226031039.42",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 9,
+      "field": "reported_ebit",
+      "column": "比较",
+      "yuan": "1030239517.91",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 9,
+      "field": "parent_profit",
+      "column": "本期",
+      "yuan": "1100464521.48",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 9,
+      "field": "parent_profit",
+      "column": "比较",
+      "yuan": "904312426.25",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 6,
+      "field": "inventory",
+      "column": "期末",
+      "yuan": "403390554.78",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 6,
+      "field": "inventory",
+      "column": "上年末",
+      "yuan": "250063767.90",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 11,
+      "field": "cfo",
+      "column": "本期",
+      "yuan": "843409700.06",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 11,
+      "field": "cfo",
+      "column": "比较",
+      "yuan": "784607386.38",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 11,
+      "field": "capex",
+      "column": "本期",
+      "yuan": "22216815.67",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 11,
+      "field": "capex",
+      "column": "比较",
+      "yuan": "23393854.23",
+      "record": "PDF原表定位与发行人指纹；未改账本"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 25,
+      "field": "平面解决方案",
+      "column": "本期／期末（首金额）",
+      "yuan": "1124812900.80",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 25,
+      "field": "平面解决方案",
+      "column": "本期／期末；成本第二值",
+      "yuan": "194656514.01",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 25,
+      "field": "管材解决方案",
+      "column": "本期／期末（首金额）",
+      "yuan": "380231096.85",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 25,
+      "field": "管材解决方案",
+      "column": "本期／期末；成本第二值",
+      "yuan": "47359387.52",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 25,
+      "field": "三维解决方案",
+      "column": "本期／期末（首金额）",
+      "yuan": "36776654.06",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 25,
+      "field": "三维解决方案",
+      "column": "本期／期末；成本第二值",
+      "yuan": "7109759.59",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 25,
+      "field": "其他",
+      "column": "本期／期末（首金额）",
+      "yuan": "176054285.20",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2024-FY",
+      "source_id": "688188-4daf701c6095d460",
+      "sha256": "fdba15e44169cf958098ed9e88faf42452ebd3eb190a52c61caa69ee0609e629",
+      "page": 25,
+      "field": "其他",
+      "column": "本期／期末；成本第二值",
+      "yuan": "85319457.18",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 27,
+      "field": "平面解决方案",
+      "column": "本期／期末（首金额）",
+      "yuan": "1292909787.48",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 27,
+      "field": "平面解决方案",
+      "column": "本期／期末；成本第二值",
+      "yuan": "238589506.50",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 27,
+      "field": "管材解决方案",
+      "column": "本期／期末（首金额）",
+      "yuan": "487449750.00",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 27,
+      "field": "管材解决方案",
+      "column": "本期／期末；成本第二值",
+      "yuan": "76018471.33",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 28,
+      "field": "三维解决方案",
+      "column": "本期／期末（首金额）",
+      "yuan": "63892666.55",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 28,
+      "field": "三维解决方案",
+      "column": "本期／期末；成本第二值",
+      "yuan": "11084962.89",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 28,
+      "field": "其他",
+      "column": "本期／期末（首金额）",
+      "yuan": "322392556.21",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2025-FY",
+      "source_id": "688188-a343f0dc3c27d114",
+      "sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+      "page": 28,
+      "field": "其他",
+      "column": "本期／期末；成本第二值",
+      "yuan": "152697820.74",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 5,
+      "field": "货币资金",
+      "column": "本期／期末（首金额）",
+      "yuan": "2134541130.72",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 5,
+      "field": "交易性金融资产",
+      "column": "本期／期末（首金额）",
+      "yuan": "3596031132.18",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 7,
+      "field": "实收资本（或股本）",
+      "column": "本期／期末（首金额）",
+      "yuan": "405984426.00",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2026-YTD9",
+      "source_id": "688188-fed67b607fa475a7",
+      "sha256": "33f3c5e4de011f9858e98a1034e672104e0435fda3bdeec651a04c83fd6887ef",
+      "page": 12,
+      "field": "六、期末现金及现金等价物余额",
+      "column": "本期／期末（首金额）",
+      "yuan": "2134536530.72",
+      "record": "新组原表及权益独立核验"
+    },
+    {
+      "report": "2026-H1",
+      "source_id": "688188-20b73bb3528dbdbe",
+      "sha256": "caa94577eda863f238933d192305884ec05c01cf6aad7a2ba89fe96ef8259eb1",
+      "page": 137,
+      "field": "货币资金",
+      "column": "本期／期末（首金额）",
+      "yuan": "4600.00",
+      "record": "新组原表及权益独立核验"
+    }
+  ],
+  "quarter": {
+    "revenue_z": "0.165074141528874762488884546",
+    "gross_pp": "-5.755709829223799949871578180",
+    "core_z": "0.033414585648990150116201566",
+    "single_cash_z": "0.468869026870108332231742584",
+    "deduction_yuan": "302120212.71",
+    "deduction_disclosed_yoy_pct": "20.83",
+    "quarter_0": {
+      "admin": "45827750.08",
+      "capex": "4861634.84",
+      "cfo": "336475558.65",
+      "cost": "175809929.08",
+      "rd": "71382479.60",
+      "reported_ebit": "342030885.55",
+      "revenue": "601316609.49",
+      "sales": "32322080.53",
+      "surcharge": "7124925.60",
+      "gross": "425506680.41",
+      "core": "268849444.60",
+      "cfo_less_capex": "331613923.81"
+    },
+    "quarter_1": {
+      "admin": "35215321.25",
+      "capex": "2753066.96",
+      "cfo": "228514464.16",
+      "cost": "121193909.34",
+      "rd": "62536044.11",
+      "reported_ebit": "295382087.82",
+      "revenue": "516118749.92",
+      "sales": "30067976.26",
+      "surcharge": "6949073.52",
+      "gross": "394924840.58",
+      "core": "260156425.44",
+      "cfo_less_capex": "225761397.20"
+    },
+    "2022_CFO_less_capex_col_0": "522527108.33",
+    "2022_CFO_less_capex_col_1": "335281491.65"
+  }
+}
