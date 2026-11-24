@@ -108,15 +108,27 @@ function stepPlot(id,bar,title,rows,unit,opts={}){
 function overview(){
     const labels=["压力","基准","改善"];
     out("widget-overview",wrap("overview-card","同日估值区间","元／股 · 冻结模型 · 含权收盘为虚线",
-        plot("scenario-plot")+`<div class="map">${[[2,"采购与续购"],[3,"历史检验"],[5,"利润到现金"],[7,"经营到预测"],[8,"价值与现价"],[9,"反证与抽查"]].map(([i,t])=>`<a href="#chapter-0${i}"><span>第 0${i} 章</span>${t} ↗</a>`).join("")}</div>`+
+        plot("scenario-plot")+`<div class="map">${[[2,"采购与续购"],[3,"历史检验"],[5,"利润到现金"],[7,"经营到预测"],[8,"价值与现价"],[9,"反证与抽查"],[10,"最终投资建议"]].map(([i,t])=>`<a href="#chapter-${String(i).padStart(2,"0")}"><span>第 ${String(i).padStart(2,"0")} 章</span>${t} ↗</a>`).join("")}</div>`+
         detail("展开三情景数值",kv(["路径","每股价值","相对收盘"],D.prices.map((p,i)=>[labels[i],f(p)+" 元",signed(p-D.market)+" 元"]))+raw("模型 JSON","model.json"))));
+    scenarioPlot("scenario-plot",labels);
+}
+function scenarioPlot(id,labels){
     const xf=v=>145+v/150*510;
     let m=`<line class="price" x1="${xf(D.market)}" x2="${xf(D.market)}" y1="32" y2="164"/><text class="chart-label" x="${xf(D.market)}" y="23" text-anchor="middle">${f(D.market)} 元</text>`;
     D.prices.forEach((p,i)=>{
         const y=60+i*42;
         m+=`<line class="grid" x1="145" x2="655" y1="${y}" y2="${y}"/><text class="axis" x="125" y="${y+5}" text-anchor="end">${labels[i]}</text><circle cx="${xf(p)}" cy="${y}" r="7" fill="${palette[i]}"/><text class="chart-label" x="${xf(p)+12}" y="${y+5}">${f(p)}</text>`;
     });
-    out("scenario-plot",svg("压力 42.02、基准 81.81、改善 134.83 元与收盘 96.20 元",m,720,175));
+    const title=D.prices.map((price,i)=>labels[i]+" "+f(price)).join("、")+" 元与收盘 "+f(D.market)+" 元";
+    out(id,svg(title,m,720,175));
+}
+function conclusion(){
+    const labels=["压力","基准","改善"];
+    out("widget-conclusion",wrap("conclusion-card","三条路径与 96.20 元含权收盘","2026-11-12 · 元／股 · 虚线为含权收盘",
+        plot("conclusion-plot")+
+        detail("展开三情景数值",kv(["路径","每股价值","相对收盘"],D.prices.map((price,i)=>[labels[i],f(price)+" 元",signed(price-D.market)+" 元"])))+
+        links([["逐年预测","#widget-forecast"],["旧新价值桥","#valuation-bridge"],["价格等值线","#valuation-contour"],["销量原证据","#volume-evidence"],["现金试算与底表","#cash-proof"],["本地批注（可选第 10 章）","#notes"]])));
+    scenarioPlot("conclusion-plot",labels);
 }
 function roles(){
     const people=[
@@ -392,7 +404,10 @@ function valuation(){
         $("#valuation-visual").hidden=k==="equity";
         if(k==="waterfall")bridge();else if(k==="contour")contour();else equity();
     };
-    clickTabs("valuation-tabs",go);bridge();
+    clickTabs("valuation-tabs",go);
+    $('#valuation-tabs [data-key="waterfall"]').id="valuation-bridge";
+    $('#valuation-tabs [data-key="contour"]').id="valuation-contour";
+    bridge();
 }
 function notes(){
     const noteKey="bochu-atlas-v1";
@@ -423,7 +438,7 @@ function review(){
         detail("查配套判断的下修条件",`<p>同机型净价下滑、延迟验收、库龄上升、付款更慢和售后发生率恶化，会使单位现金变薄。对照品类周转和回款批次区分安全备货和滞销。</p>`+raw("库存与配置的量化入口","volume-and-stock.csv"))+
         `<h4>老师抽查路线</h4><ol><li>${link("87.34% 原表路线","#volume-evidence")} → 年报「销售量」列 → 55% 参数与倒算 → ${link("图表 23 公式与回执","#cash-proof")}。</li><li>${link("配套判断与采纳","#decision-record")} → ${link("11 月 24 日完整抽查记录","audit/老师抽查路线与改前改后.md")} → ${link("现金复算回执","audit/负现金复算回执.json")}。</li></ol>
         <div id="decision-record" class="highlight"><b>判断与复核身份</b><p>实施 Agent 对读年报并复算，看到集团相对销量上升，图册收窄表述并沿用冻结估值。原始输入重算得到负现金 −4211/7300 元。发行人 ReviewStore 回执记录 ${D.facts} 条当时有效 Fact，销量单元格无独立确认绑定。提词器独立抽核待登记。</p></div>
-        <details class="notes" id="notes"><summary>本地批注</summary><label for="notes-chapter">批注章节</label><select id="notes-chapter">${D.title.map((x,i)=>`<option value="0${i+1}" ${i===8?"selected":""}>0${i+1} · ${enc(x)}</option>`).join("")}</select><label for="note-text">审阅记录</label><textarea id="note-text" placeholder="记录原件页、变量或需确认的事项"></textarea><div class="actions"><button id="note-save" type="button">保存批注</button><button id="note-export" type="button">导出 JSON</button></div><output id="note-status" aria-live="polite"></output></details>`));
+        <details class="notes" id="notes"><summary>本地批注</summary><label for="notes-chapter">批注章节</label><select id="notes-chapter">${D.title.map((x,i)=>`<option value="${String(i+1).padStart(2,"0")}" ${i===8?"selected":""}>${String(i+1).padStart(2,"0")} · ${enc(x)}</option>`).join("")}</select><label for="note-text">审阅记录</label><textarea id="note-text" placeholder="记录原件页、变量或需确认的事项"></textarea><div class="actions"><button id="note-save" type="button">保存批注</button><button id="note-export" type="button">导出 JSON</button></div><output id="note-status" aria-live="polite"></output></details>`));
     notes();
 }
 
@@ -509,11 +524,19 @@ function setupUI(){
         if(!hash||hash==="#")return;
         const item=document.getElementById(decodeURIComponent(hash.slice(1)));
         if(!item)return;
+        if(item.matches("#valuation-bridge,#valuation-contour")&&item.getAttribute("aria-pressed")!=="true")item.click();
         for(let node=item;node;node=node.parentElement)if(node.tagName==="DETAILS")node.open=true;
         item.classList.remove("flash");
         requestAnimationFrame(()=>item.classList.add("flash"));
     }
-    window.addEventListener("hashchange",()=>reveal(location.hash));
+    window.addEventListener("hashchange",()=>{
+        reveal(location.hash);
+        const target=sections.find(section=>"#"+section.id===location.hash);
+        if(target){
+            target.scrollIntoView({behavior:"instant"});
+            updateProgress(target.id);
+        }
+    });
     if(location.hash){
         reveal(location.hash);
         requestAnimationFrame(()=>document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView());
@@ -544,13 +567,16 @@ function setupUI(){
     }
     input.addEventListener("input",lookup);lookup();
 
-    function updateProgress(){
+    function updateProgress(chapter){
         const range=document.documentElement.scrollHeight-window.innerHeight;
         const value=range>0?Math.max(0,Math.min(100,Math.round(scrollY/range*100))):100;
         $("#reading").value=value;
         $("#progress-label").textContent=value+"%";
-        let current=null;
-        for(const section of sections)if(section.getBoundingClientRect().top<=145)current=section.id;
+        let current=typeof chapter==="string"?chapter:null;
+        if(!current){
+            const readingLine=Math.max(145,window.innerHeight/4);
+            for(const section of sections)if(section.getBoundingClientRect().top<=readingLine)current=section.id;
+        }
         for(const anchor of $$("#nav-area nav a")){
             if(anchor.getAttribute("href")==="#"+current)anchor.setAttribute("aria-current","location");
             else anchor.removeAttribute("aria-current");
@@ -561,4 +587,4 @@ function setupUI(){
     window.addEventListener("resize",updateProgress);
     updateProgress();
 }
-overview();roles();history();income();cash();projects();forecast();valuation();review();setupUI();
+overview();roles();history();income();cash();projects();forecast();valuation();review();conclusion();setupUI();

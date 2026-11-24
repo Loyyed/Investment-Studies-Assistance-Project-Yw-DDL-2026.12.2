@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "src"
 DATA = ROOT / "data"
 META = json.loads((SRC / "versions.json").read_text(encoding="utf-8"))
-WIDGETS = ("overview", "roles", "history", "income", "cash", "projects", "forecast", "valuation", "review")
+WIDGETS = ("overview", "roles", "history", "income", "cash", "projects", "forecast", "valuation", "review", "conclusion")
 
 
 def read(path):
@@ -121,7 +121,7 @@ def markdown(text, archive=False):
         elif line == "---":
             html.append("<hr>")
         else:
-            kind = ' class="takeaway"' if line.startswith("**本章落点。**") else ""
+            kind = ' class="takeaway"' if line.startswith(("**本章落点。**", "> **最终投资建议：")) else ""
             html.append(f"<p{kind}>{inline(line.removeprefix('> '), archive)}</p>")
         index += 1
     return "\n".join(html)
@@ -130,7 +130,7 @@ def markdown(text, archive=False):
 report = read(ROOT / "original" / "report.md")
 report_parts = list(re.finditer(r"^## 第 ([1-9]) 章.*$", report, re.M))
 boundary = report.index("## 依据与研究边界")
-assert len(report_parts) == 9
+assert [int(part[1]) for part in report_parts] == list(range(1, 10))
 chapters = []
 nav = []
 chapter_titles = []
@@ -140,16 +140,18 @@ for i, widget in enumerate(WIDGETS, 1):
     title, body = authored.removeprefix("# ").split("\n", 1)
     chapter_titles.append(title)
     assert "{{" + widget + "}}" in body
-    start = report_parts[i-1].end()
-    stop = report_parts[i].start() if i < 9 else boundary
-    archive = markdown(report[start:stop], True)
+    original = ""
+    if i <= len(report_parts):
+        start = report_parts[i-1].end()
+        stop = report_parts[i].start() if i < len(report_parts) else boundary
+        archive = markdown(report[start:stop], True)
+        original = f'    <details class="original"><summary>阅读本章归档研究正文</summary><div class="archive-body">{archive}</div></details>\n'
     nav.append(f'<a href="#chapter-{token}"><span>{token}</span>{escape(title.rstrip("？"))}</a>')
-    jump = f'<a href="#chapter-{i+1:02d}">下一章 ↓</a>' if i < 9 else '<a href="#sources">版本与证据索引 ↓</a>'
+    jump = f'<a href="#chapter-{i+1:02d}">下一章 ↓</a>' if i < len(WIDGETS) else '<a href="#sources">版本与证据索引 ↓</a>'
     chapters.append(f'''<section class="chapter" id="chapter-{token}" aria-labelledby="title-{token}">
     <header class="chapter-header"><p class="kicker">第 {token} 章</p><h2 id="title-{token}">{escape(title)}</h2></header>
     <div class="prose">{markdown(body)}</div>
-    <details class="original"><summary>阅读本章归档研究正文</summary><div class="archive-body">{archive}</div></details>
-    <div class="chapter-next">{jump}</div></section>''')
+{original}    <div class="chapter-next">{jump}</div></section>''')
 
 model = json.loads(read(DATA / "model.json"))
 assumptions = json.loads(read(DATA / "assumptions.json"))
