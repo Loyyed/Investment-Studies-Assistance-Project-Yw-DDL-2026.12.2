@@ -93,7 +93,8 @@ def observe(b, width, height, url, output):
     b.events.clear()
     b.rpc("Page.navigate", url=url)
     b.wait('document.readyState==="complete" && !!document.querySelector("#cash-result")')
-    assert b.js("document.querySelectorAll('section.chapter').length") == 9
+    assert b.js("document.querySelectorAll('section.chapter').length") == 10
+    assert b.js("document.querySelectorAll('section.chapter > .original').length") == 9
     assert b.js('document.documentElement.scrollWidth <= innerWidth + 1')
     assert b.js("[...document.querySelectorAll('[id]')].map(x=>x.id).filter((id,i,a)=>a.indexOf(id)!==i)") == []
     b.shot(output / f"封面-{width}.png")
@@ -141,11 +142,22 @@ def observe(b, width, height, url, output):
     b.js('document.querySelector("#chapter-04 .chapter-next a").click()')
     assert b.wait('location.hash==="#chapter-05"')
     assert b.js('document.querySelector("#cash-result").textContent')=="+10.38 元"
-    b.js('document.querySelector("#preset-slow").scrollIntoView({block:"center",behavior:"instant"})')
     if mobile:
-        x,y=b.js('(()=>{let r=document.querySelector("#preset-slow").getBoundingClientRect();return [r.x+r.width/2,r.y+r.height/2]})()')
-        b.rpc("Input.dispatchTouchEvent",type="touchStart",touchPoints=[{"x":x,"y":y}])
-        b.rpc("Input.dispatchTouchEvent",type="touchEnd",touchPoints=[])
+        for _ in range(3):
+            b.js('document.querySelector("#preset-slow").scrollIntoView({block:"center",behavior:"instant"})')
+            x, y = b.wait('''(() => {
+                const button = document.querySelector("#preset-slow");
+                const rect = button.getBoundingClientRect();
+                const x = rect.x + rect.width / 2, y = rect.y + rect.height / 2;
+                return button.contains(document.elementFromPoint(x, y)) && [x, y];
+            })()''')
+            b.rpc("Input.dispatchTouchEvent",type="touchStart",touchPoints=[{"x":x,"y":y}])
+            b.rpc("Input.dispatchTouchEvent",type="touchEnd",touchPoints=[])
+            try:
+                b.wait('document.querySelector("#cash-result").textContent==="−0.58 元"', timeout=1)
+                break
+            except AssertionError:
+                continue
     else:
         b.js('document.querySelector("#preset-slow").click()')
     assert b.wait('document.querySelector("#cash-result").textContent==="−0.58 元"')
@@ -199,17 +211,53 @@ def observe(b, width, height, url, output):
     b.js('document.querySelector(\'#roles-card a[href="#figure-chain"]\').click()')
     assert b.wait('location.hash==="#figure-chain"&&document.getElementById("figure-chain").closest("details").open')
     assert b.wait('Array.from(document.querySelectorAll(".archive-fig img")).some(x=>x.naturalWidth>0)')
+
+    if mobile:
+        b.js('document.querySelector("#nav-toggle").click()')
+    assert b.js('!!document.querySelector(\'#nav-area a[href="#chapter-10"]\').getClientRects().length')
+    b.js('document.querySelector(\'#nav-area a[href="#chapter-09"]\').click()')
+    assert b.wait('location.hash==="#chapter-09"')
+    b.js('document.querySelector("#chapter-09 .chapter-next a").scrollIntoView({block:"center",behavior:"instant"})')
+    b.js('document.querySelector("#chapter-09 .chapter-next a").click()')
+    assert b.wait('location.hash==="#chapter-10"')
+    assert b.wait('location.hash==="#chapter-10" && document.querySelector(\'#nav-area a[href="#chapter-10"]\').getAttribute("aria-current")==="location"')
+    assert b.js('document.querySelector("#reading").value') > 0
+    for position in ("first", "last"):
+        assert "最终投资建议：不投" in b.js(f'document.querySelector("#chapter-10 .prose > p:{position}-child").innerText')
+    text = b.js('document.querySelector("#chapter-10").innerText')
+    for value in ("团队审阅稿", "14.39", "10.95", "−8.42", "11.71%", "56.69%", "57.05%"):
+        assert value in text
+    chart = b.js('document.querySelector("#conclusion-plot svg").textContent')
+    assert all(value in chart for value in ("42.02", "81.81", "134.83", "96.20"))
+    assert b.js('!!document.querySelector("#conclusion-plot .price")')
+    for anchor, check in (
+        ("widget-forecast", '!!document.querySelector("#forecast-note")'),
+        ("valuation-bridge", 'document.querySelector("#valuation-bridge").getAttribute("aria-pressed")==="true"'),
+        ("valuation-contour", 'document.querySelector("#valuation-contour").getAttribute("aria-pressed")==="true"'),
+        ("volume-evidence", 'document.querySelector("#volume-evidence").open'),
+        ("cash-proof", 'document.querySelector("#cash-proof").open'),
+        ("notes", 'document.querySelector("#notes").open')
+    ):
+        b.js(f'document.querySelector(\'#conclusion-card a[href="#{anchor}"]\').click()')
+        assert b.wait(f'location.hash==="#{anchor}" && ({check})')
+    b.js('document.querySelector("#search-open").click()')
+    b.js('(()=>{const q=document.querySelector("#search-input");q.value="不投";q.dispatchEvent(new Event("input"));})()')
+    assert b.js('!!document.querySelector(\'#results a[href^="#chapter-10"]\')')
+    b.js('document.querySelector("#search-dialog [data-close]").click()')
+    assert b.js('document.querySelectorAll("#notes-chapter option").length') == 10
+    b.js('document.querySelector("#notes-chapter").value="10";document.querySelector("#notes-chapter").dispatchEvent(new Event("change"))')
     b.js('document.querySelector("#notes").open=true;document.querySelector("#note-text").value="验收临时记录";document.querySelector("#note-save").click()')
     assert "已保存在本浏览器" in b.js('document.querySelector("#note-status").innerText')
     b.rpc("Page.reload")
     b.wait('document.readyState==="complete"&&!!document.querySelector("#note-text")')
+    b.js('document.querySelector("#notes-chapter").value="10";document.querySelector("#notes-chapter").dispatchEvent(new Event("change"))')
     assert b.js('document.querySelector("#note-text").value')=="验收临时记录"
     b.js('localStorage.removeItem("bochu-atlas-v1")')
     assert b.js('document.documentElement.scrollWidth<=innerWidth+1')
     errors=[e for e in b.events if e["method"]=="Runtime.exceptionThrown"]
     assert not errors, errors
     return {"宽度":width, "输入模式":"触屏模拟与键盘" if mobile else "桌面与键盘",
-            "通过":"九章、导航、搜索、销量与源页、两格现金、四个范围输入、项目、预测、15个价格根、无解、原文、图件、批注重开",
+            "通过":"十章与九章原文、末章决定与深链、导航、搜索、销量与源页、两格现金、四个范围输入、项目、预测、15个价格根、无解、原文、图件、批注重开",
             "最终场景":"42.02 / 81.81 / 134.83 元"}
 
 
