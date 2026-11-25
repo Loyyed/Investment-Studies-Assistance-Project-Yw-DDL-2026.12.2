@@ -1,0 +1,88 @@
+{
+  "process": {
+    "title": "从加工图到工件",
+    "unit": "流程示意",
+    "period": "2025",
+    "evidence": "E01",
+    "blocks": [],
+    "file": "charts/process.png"
+  },
+  "contract": {
+    "title": "从采购到回款",
+    "unit": "流程示意",
+    "period": "2025",
+    "evidence": "E02、E03",
+    "blocks": [],
+    "file": "charts/contract.png"
+  },
+  "structure2024": {
+    "title": "主营收入与毛利结构",
+    "unit": "人民币百万元、% ",
+    "period": "2024",
+    "evidence": "E05",
+    "blocks": [
+      "B04"
+    ],
+    "file": "charts/structure2024.png"
+  },
+  "structure2025": {
+    "title": "主营收入与毛利结构",
+    "unit": "人民币百万元、% ",
+    "period": "2025",
+    "evidence": "E05",
+    "blocks": [
+      "B04"
+    ],
+    "file": "charts/structure2025.png"
+  },
+  "history": {
+    "title": "七年经营",
+    "unit": "人民币百万元",
+    "period": "2019–2025",
+    "evidence": "E07",
+    "blocks": [
+      "B01"
+    ],
+    "file": "charts/history.png"
+  },
+  "margin": {
+    "title": "主营毛利率变动分解",
+    "unit": "百分点",
+    "period": "2024→2025",
+    "evidence": "E11",
+    "blocks": [
+      "B04"
+    ],
+    "file": "charts/margin.png"
+  },
+  "cash2022": {
+    "title": "利润到现金桥",
+    "unit": "人民币百万元",
+    "period": "2021→2022",
+    "evidence": "E13",
+    "blocks": [
+      "B09"
+    ],
+    "file": "charts/cash2022.png"
+  },
+  "cash2025": {
+    "title": "利润到现金桥",
+    "unit": "人民币百万元",
+    "period": "2024→2025",
+    "evidence": "E13",
+    "blocks": [
+      "B09"
+    ],
+    "file": "charts/cash2025.png"
+  },
+  "liability": {
+    "title": "合同负债构成",
+    "unit": "人民币百万元",
+    "period": "2024年末、2025年末",
+    "evidence": "E15",
+    "blocks": [
+      "L213"
+    ],
+    "file": "charts/liability.png"
+  }
+}

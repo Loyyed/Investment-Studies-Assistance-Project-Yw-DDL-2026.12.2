@@ -1,0 +1,30 @@
+{
+  "years": 30,
+  "firstYearRevenueAndCost": "Fraction独立计算",
+  "dcf": "Fraction逐年折现与终值独立计算",
+  "cashIdentity": "30行闭合",
+  "negativeGrowth": "压力首年下降",
+  "terminal": [
+    {
+      "scenario": "压力",
+      "price": 38.80680625180679,
+      "lastGrowth": 0.010000000000000009,
+      "lastReinvestmentRate": 0.0825082508250886,
+      "stableReinvestmentRate": 0.08333333333333334
+    },
+    {
+      "scenario": "基准",
+      "price": 85.0857741275993,
+      "lastGrowth": 0.019999999999999796,
+      "lastReinvestmentRate": 0.09803921568627394,
+      "stableReinvestmentRate": 0.09999999999999999
+    },
+    {
+      "scenario": "改善",
+      "price": 150.2509755113371,
+      "lastGrowth": 0.02499999999999991,
+      "lastReinvestmentRate": 0.08710801393728325,
+      "stableReinvestmentRate": 0.08928571428571429
+    }
+  ]
+}
