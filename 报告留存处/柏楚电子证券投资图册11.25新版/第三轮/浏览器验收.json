@@ -1,0 +1,29 @@
+{
+  "browser": "Chromium 121（本机已有运行时）",
+  "offline": true,
+  "results": [
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "loadedImages": 9,
+      "chapters": 8
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "loadedImages": 9,
+      "chapters": 8
+    },
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "loadedImages": 9,
+      "chapters": 8
+    }
+  ],
+  "checkedLinks": 91,
+  "yearSwitch": true,
+  "sourcePage213": true,
+  "dataFilter": 20,
+  "errors": []
+}

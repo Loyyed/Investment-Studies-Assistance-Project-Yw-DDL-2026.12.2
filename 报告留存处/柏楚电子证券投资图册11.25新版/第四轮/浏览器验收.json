@@ -1,0 +1,45 @@
+{
+  "browser": "Chromium121",
+  "offline": true,
+  "widths": [
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "images": 14,
+      "chapters": 11
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "images": 14,
+      "chapters": 11
+    },
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "images": 14,
+      "chapters": 11
+    }
+  ],
+  "links": 111,
+  "pythonJS": [
+    {
+      "name": "压力",
+      "delta": 0
+    },
+    {
+      "name": "基准",
+      "delta": 2.842170943040401e-14
+    },
+    {
+      "name": "改善",
+      "delta": 2.842170943040401e-14
+    },
+    {
+      "name": "基准",
+      "delta": 2.1316282072803006e-14
+    }
+  ],
+  "controls": "情景、回款参数与恢复基准通过",
+  "errors": []
+}
