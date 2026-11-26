@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-26",
+  "root": "D:/投资学/Investment-Studies-Assistance-Project-Yw-DDL-2026.12.2",
+  "source": "D:/投资学/Investment-Studies-Assistance-Project-Yw-DDL-2026.12.2-codex-collaboration-workbenches",
+  "worktree": "D:/投资学/.publish-1126-1795705877581/integrate",
+  "heads": {
+    "main": "84b3cf8a4dd62f09503cb5ce2852c2ccbce092c5",
+    "default": "08bbe1b7d0140ba8252c443d1bc8662decb78d23",
+    "member1": "63fc83d9dff03e849ec7585b8e838f6cad4acf4b"
+  },
+  "commonAncestorMainMember1": "84b3cf8a4dd62f09503cb5ce2852c2ccbce092c5",
+  "commonAncestorDefaultMember1": "6081db63f02627b0b464817bca86bf3b6b8a7abb",
+  "member1Files": [
+    {
+      "name": "README.md",
+      "sha256": "545aa3732b8a4c20c3b8aece928b92566963e445ec27f238cd2e6f98ee436409"
+    },
+    {
+      "name": "会话与采纳记录.md",
+      "sha256": "10fe1853fad58c605b1b524add473fc76901a0e8366c7630a87c5ea3f864680d"
+    },
+    {
+      "name": "可合并章节.md",
+      "sha256": "5a6caf3c3a497c42c98069a16c803713f365db6fbb8bdaaadcbe0e23fb1cdfbd"
+    },
+    {
+      "name": "复核.py",
+      "sha256": "0c7a19c6267c8808e55150ac2f8095bda1fa3bd9d9866488443a9982e1660c37"
+    },
+    {
+      "name": "复核与教师抽查.md",
+      "sha256": "f32d8f58be8dec97cf285cdbbd2ad2ed52189f46d31dc6d1577a3d04696af74d"
+    },
+    {
+      "name": "工作规划.md",
+      "sha256": "48c1244197347a0506963cce160b4c64b143a6c050c83de8ef3ebc2767e648d2"
+    },
+    {
+      "name": "护城河因果图.svg",
+      "sha256": "0b790216e3c9590f1334e0b63e6efdb8088c7d1f11a9f3fbdd344d10b64b53e8"
+    },
+    {
+      "name": "文章补充规划.md",
+      "sha256": "5523baff90e5425dac98d6531961682471f9ba4211865e78d9d56d208ebc06cb"
+    },
+    {
+      "name": "步骤完成记录.md",
+      "sha256": "d9926e3a32fa346035dc2ede6dfa90d9fb046eeacfe6552e63e4e7cb6e09229c"
+    },
+    {
+      "name": "证据与改判.md",
+      "sha256": "94721246a0ba993a1306dea46c9f959956d1a4a444bb087f9199ad401cf04475"
+    }
+  ]
+}

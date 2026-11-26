@@ -1,0 +1,199 @@
+{
+  "date": "2026-11-26",
+  "actor": "Codex 子Agent /root/member1_verification；独立内容复查，未冒充原成员一或刘翔宇人工签署",
+  "scope": [
+    "正式11.26 Markdown",
+    "正式index.html ch01/ch02/ch07",
+    "逐条采用表CSV/MD",
+    "八篇文章采用表",
+    "依据与路线"
+  ],
+  "claims": [
+    {
+      "id": "M1-01",
+      "topic": "CAD/CAM/NC/随动加工闭环",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-02",
+      "topic": "买方/使用者/组测支持及责任分层",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-03",
+      "topic": "签收验收/交付激活/折扣及到账",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-04",
+      "topic": "工艺接口复用→验证节省与采购",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-05",
+      "topic": "2019/2021/2022/2023历史与代际变化",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-06",
+      "topic": "功能集成反例与变形管",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-07",
+      "topic": "两组出货比57.58→87.34",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-08",
+      "topic": "2020研发→2025方案→2026展示",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-09",
+      "topic": "宏石系统控制类三期与窄口径",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-10",
+      "topic": "8000A BLT或其他品牌",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-11",
+      "topic": "部件分工及竞争对象",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-12",
+      "topic": "LS6000M ≥12kW候选",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-13",
+      "topic": "FSWeld/IWM工艺区分",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-14",
+      "topic": "UltraMotion展示及商业化边界",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-15",
+      "topic": "三场景85.12/合并84%与客户21.50%分母",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-16",
+      "topic": "历史预测原文缺项及条件对照",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-17",
+      "topic": "YD-3015A 1.5–3kW配置选择",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    },
+    {
+      "id": "M1-18",
+      "topic": "嘉泰3年采购/p57适配/p60多供方均价/p68返利",
+      "markdown_present": true,
+      "html_citation_present": true,
+      "html_source_anchor": true,
+      "status": "实质落位；正文已人工通读，引用存在检查辅助"
+    }
+  ],
+  "issues": [
+    {
+      "id": "R1",
+      "severity": "文字修正",
+      "location": "ch07新业务末段及派生采用表",
+      "finding": "“雪球八文”误称来源集合；实际六篇雪球+两篇公众号",
+      "change": "改为“八篇参考文章”"
+    },
+    {
+      "id": "R2",
+      "severity": "证据口径修正",
+      "location": "ch07嘉泰p57/p60/p68段",
+      "finding": "p60表遮蔽的是柏楚供应商平均采购单价；同规格实结报价未披露",
+      "change": "将“同规格报价…被遮蔽”改为“柏楚采购单价被遮蔽，披露也未给出同规格实结净价”"
+    },
+    {
+      "id": "R3",
+      "severity": "发布前修复引用",
+      "location": "逐条采用表.md",
+      "finding": "源主张复制后复核.py及两个同页锚点失效",
+      "change": "复核.py改../成员一/复核.py；两锚点改../成员一/证据与改判.md#对应锚点"
+    },
+    {
+      "id": "R4",
+      "severity": "发布前修复引用",
+      "location": "依据与路线.md",
+      "finding": "九个链接以报告位置为基准，独立附件打开全部失效",
+      "change": "附件版本使用相对于自身的链接，报告嵌入保留报告基准链接"
+    }
+  ],
+  "conclusion": "18项实质采用与案例边界通过；两项文字口径及两组引用建议发布前修复。未发现应改变模型或采购数值的错误。",
+  "boundaries": [
+    "本次不复验浏览器视觉与估值控件；由主实施技术验收",
+    "预测原文缺项已明确保留条件对照，不把成员一摘录升级为现核原文",
+    "未取得真实同机型重选与净价，机制推断仍为条件判断"
+  ],
+  "articles": {
+    "rows": 8,
+    "snowball": 6,
+    "broker_wechat": 2,
+    "status": "逐篇设问、观点、实际采用、缺项列已核，未导入原情景估值和市场份额"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-26",
+  "actor": "Codex子Agent /root/member1_verification；仅核后续修正，未改成品，未代签刘翔宇",
+  "status": "R1–R4全部关闭",
+  "checks": {
+    "R1": true,
+    "R2": true,
+    "R3": true,
+    "R4": true
+  },
+  "local_links": [
+    {
+      "file": "逐条采用表.md",
+      "target": "../成员一/复核.py",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "逐条采用表.md",
+      "target": "../成员一/证据与改判.md#宏石激光调整控制系统采购",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "逐条采用表.md",
+      "target": "../成员一/证据与改判.md#行业分母与历史预测回看",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "逐条采用表.md",
+      "target": "逐条采用表.csv",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "依据与路线.md",
+      "target": "../../协作深化/11.26整合/逐条采用表.md",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "依据与路线.md",
+      "target": "../../协作深化/11.26整合/八篇文章采用表.md",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "依据与路线.md",
+      "target": "../../协作深化/11.26整合/方法与写作检查.md",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "依据与路线.md",
+      "target": "../../协作深化/11.26整合/成员1核对/采购原格独立核验.json",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "依据与路线.md",
+      "target": "../../协作深化/11.26整合/成员2核对/现金桥独立复算.json",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "依据与路线.md",
+      "target": "../../第四轮/输入原格.csv",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "依据与路线.md",
+      "target": "../../第四轮/逐年模型.csv",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "依据与路线.md",
+      "target": "../../协作深化/11.26整合/成员3核对/预测连接复核.md",
+      "exists": true,
+      "anchor": true
+    },
+    {
+      "file": "依据与路线.md",
+      "target": "../../协作深化/11.26整合/验收记录.md",
+      "exists": true,
+      "anchor": true
+    }
+  ],
+  "report_sha256": "8824f9d3eea0de54916ce9c8a5ba538c2d7887e209a2dfa61062fa7c72bb46f5",
+  "html_sha256": "de7feb185d5a7d55775f00b27f33dce1ddf407d340b8c21c86b6832fa0213cc2"
+}

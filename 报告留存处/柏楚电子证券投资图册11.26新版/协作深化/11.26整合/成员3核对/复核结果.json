@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-26",
+  "executor": "Codex成员三预测连接复核Agent；非原成员三本人，未代刘翔宇签署",
+  "model_files": [
+    {
+      "file": "calculator.js",
+      "sha256": "343dd1493ec9838ae525b9576ac6cedf9ab02c1278aeb160f49845d4234b49ce",
+      "audit_sha256": "343dd1493ec9838ae525b9576ac6cedf9ab02c1278aeb160f49845d4234b49ce",
+      "identical": true
+    },
+    {
+      "file": "model.py",
+      "sha256": "8878f8dc8bd932dcec59bf324f975893bb96f7dc2f555a7e79f9d19011531361",
+      "audit_sha256": "8878f8dc8bd932dcec59bf324f975893bb96f7dc2f555a7e79f9d19011531361",
+      "identical": true
+    },
+    {
+      "file": "估值汇总.csv",
+      "sha256": "72fdcfe397fd068fbd4534b12a3b54d55c0f25362330d59430d5e062ead0060f",
+      "audit_sha256": "72fdcfe397fd068fbd4534b12a3b54d55c0f25362330d59430d5e062ead0060f",
+      "identical": true
+    },
+    {
+      "file": "倍数条件价格.csv",
+      "sha256": "81a8ed4964cf091417509476448797f5cb1e024fe83e6e08af8df1a8e734a0f3",
+      "audit_sha256": "81a8ed4964cf091417509476448797f5cb1e024fe83e6e08af8df1a8e734a0f3",
+      "identical": true
+    },
+    {
+      "file": "关键假设来源.csv",
+      "sha256": "aafb9b3fbb33a9073365a45db55ef0168072504e2946387b76bc0e1ea0ca8859",
+      "audit_sha256": "aafb9b3fbb33a9073365a45db55ef0168072504e2946387b76bc0e1ea0ca8859",
+      "identical": true
+    },
+    {
+      "file": "利润现金联合阈值.csv",
+      "sha256": "c4ee930f71b4a362dcdb0633e707a0ccf5359393426cb214f66d2d14cdb7c709",
+      "audit_sha256": "c4ee930f71b4a362dcdb0633e707a0ccf5359393426cb214f66d2d14cdb7c709",
+      "identical": true
+    },
+    {
+      "file": "历史利润桥.csv",
+      "sha256": "01235b4cce3c79aed8278ce82797462dca797cc6da167643f30eb42bb9fb1ef7",
+      "audit_sha256": "01235b4cce3c79aed8278ce82797462dca797cc6da167643f30eb42bb9fb1ef7",
+      "identical": true
+    },
+    {
+      "file": "历史留出.csv",
+      "sha256": "1328202427616ab86476725dbc8166fb3b668111e531a63672d4224a358eb5a6",
+      "audit_sha256": "1328202427616ab86476725dbc8166fb3b668111e531a63672d4224a358eb5a6",
+      "identical": true
+    },
+    {
+      "file": "压力一致性检查.csv",
+      "sha256": "8e25145c8c322fe2307ae9faf840af748aafe44f0d2e46eacec973c1018aaf49",
+      "audit_sha256": "8e25145c8c322fe2307ae9faf840af748aafe44f0d2e46eacec973c1018aaf49",
+      "identical": true
+    },
+    {
+      "file": "折现与增长敏感性.csv",
+      "sha256": "59638be9d3cc9048b864be7ede49abcba3ae5dce8106e42e363c7ae4846a61cc",
+      "audit_sha256": "59638be9d3cc9048b864be7ede49abcba3ae5dce8106e42e363c7ae4846a61cc",
+      "identical": true
+    },
+    {
+      "file": "条件倍数.csv",
+      "sha256": "84e2c657feda61bc9e72b3cd439a273dcac7ed17f96761f565a09c4757a70bfa",
+      "audit_sha256": "84e2c657feda61bc9e72b3cd439a273dcac7ed17f96761f565a09c4757a70bfa",
+      "identical": true
+    },
+    {
+      "file": "模型.json",
+      "sha256": "5fae9e521416c58d8f84ed1f1221b4eb42da73db9357be2bd291cd7c64ea8b48",
+      "audit_sha256": "5fae9e521416c58d8f84ed1f1221b4eb42da73db9357be2bd291cd7c64ea8b48",
+      "identical": true
+    },
+    {
+      "file": "税返延续敏感性.csv",
+      "sha256": "c0040dab2d82958657d24cf58541a98e46cfd1394560a45719556b920a28d1e9",
+      "audit_sha256": "c0040dab2d82958657d24cf58541a98e46cfd1394560a45719556b920a28d1e9",
+      "identical": true
+    },
+    {
+      "file": "股权桥来源.csv",
+      "sha256": "1ee57aa69cff8f09d02b0f21850a128ba4dfe7f3f3c904499bb7d771ed6130fd",
+      "audit_sha256": "1ee57aa69cff8f09d02b0f21850a128ba4dfe7f3f3c904499bb7d771ed6130fd",
+      "identical": true
+    },
+    {
+      "file": "补充来源.csv",
+      "sha256": "176d95c7a9045df814e0221384f212555694bdfdb118865f93799d9dcb6064b2",
+      "audit_sha256": "176d95c7a9045df814e0221384f212555694bdfdb118865f93799d9dcb6064b2",
+      "identical": true
+    },
+    {
+      "file": "购建与经营现金保留.csv",
+      "sha256": "5a6120b988fd2c1fc373074e693eec42a4e7c55b8c0f69bc952982d9ffcd4259",
+      "audit_sha256": "5a6120b988fd2c1fc373074e693eec42a4e7c55b8c0f69bc952982d9ffcd4259",
+      "identical": true
+    },
+    {
+      "file": "资本回报敏感性.csv",
+      "sha256": "7941c3bfb36350e08f0c9039a8e69e41a7b521fdfe5e125711216cdb47acd077",
+      "audit_sha256": "7941c3bfb36350e08f0c9039a8e69e41a7b521fdfe5e125711216cdb47acd077",
+      "identical": true
+    },
+    {
+      "file": "输入原格.csv",
+      "sha256": "5ee3702fff32104f9c8c320d285b6e7953955fd1d656bc6919a1f052f44c407b",
+      "audit_sha256": "5ee3702fff32104f9c8c320d285b6e7953955fd1d656bc6919a1f052f44c407b",
+      "identical": true
+    },
+    {
+      "file": "逐年模型.csv",
+      "sha256": "2198acc06de86821bd1b838f5a13ea6260a9f2c9fb8717fdcf84da0a49a90a2b",
+      "audit_sha256": "2198acc06de86821bd1b838f5a13ea6260a9f2c9fb8717fdcf84da0a49a90a2b",
+      "identical": true
+    }
+  ],
+  "input_pins": [
+    {
+      "file": "../第一轮/清洗底表.csv",
+      "expected": "f5af4964fdc9ad37f640e55f06e1c9d6cec860f8e4e28fd70a3a69df6c1b5c56",
+      "actual": "f5af4964fdc9ad37f640e55f06e1c9d6cec860f8e4e28fd70a3a69df6c1b5c56"
+    },
+    {
+      "file": "../第二轮/经营桥明细.csv",
+      "expected": "26f9a5548364c1ec99ee0d3106215b668de2554666c2aa7af865cc83f8b6d56f",
+      "actual": "26f9a5548364c1ec99ee0d3106215b668de2554666c2aa7af865cc83f8b6d56f"
+    },
+    {
+      "file": "../第三轮/验收记录.md",
+      "expected": "a5baaa8d9d94f3ac499d0eb3b672b7d7fec0237ebaf5c38f7eba0b47a95286a8",
+      "actual": "a5baaa8d9d94f3ac499d0eb3b672b7d7fec0237ebaf5c38f7eba0b47a95286a8"
+    }
+  ],
+  "model_parameters": {
+    "shares": 288729927,
+    "financial_date": "2025-12-31",
+    "annual_available": "2026-04-10",
+    "base_wacc": 0.085,
+    "g": 0.02,
+    "roic": 0.2,
+    "identity": "研究条件假设，不是行情参数或已实现经营事实"
+  },
+  "dcf_recalculation": [
+    {
+      "scenario": "压力",
+      "first_year": {
+        "revenue": 2116.7317149319,
+        "cost": 502.09578713000246,
+        "core_ebit": 884.363486150392,
+        "revenue_difference": -5.798e-14,
+        "core_difference": -3.120747682625174e-13
+      },
+      "independent_price": 38.80680625180679,
+      "stored_price": 38.80680625180678,
+      "difference": 1.0494968497991102e-14,
+      "max_cash_identity_error": 8.5e-14,
+      "bridge": 5155.8131304664
+    },
+    {
+      "scenario": "基准",
+      "first_year": {
+        "revenue": 2485.1061827083,
+        "cost": 568.4539645888858,
+        "core_ebit": 1168.6352571242157,
+        "revenue_difference": -6.75e-14,
+        "core_difference": 1.0035465380781096e-13
+      },
+      "independent_price": 85.0857741275993,
+      "stored_price": 85.08577412759934,
+      "difference": -4.9120904667525835e-14,
+      "max_cash_identity_error": 2.35e-13,
+      "bridge": 5155.8131304664
+    },
+    {
+      "scenario": "改善",
+      "first_year": {
+        "revenue": 2636.0105257867,
+        "cost": 588.3913146400721,
+        "core_ebit": 1301.6282323489918,
+        "revenue_difference": -7.31e-14,
+        "core_difference": 3.739269441195652e-15
+      },
+      "independent_price": 150.2509755113371,
+      "stored_price": 150.25097551133712,
+      "difference": -3.861786002411039e-14,
+      "max_cash_identity_error": 5.26e-13,
+      "bridge": 5155.8131304664
+    }
+  ],
+  "pdf_sha256": "e12688b3c2e80e63fae0008983426c644a0ca5bc0da6bed30f9b45f635ecfed2",
+  "forecast_comparison": [
+    {
+      "source": "华创机械公众号",
+      "date": "2025-04-08",
+      "metric": "合并营业收入",
+      "forecast": "21.45",
+      "actual": "21.9563231292",
+      "conditional_error_pct": 2.3604807888111887,
+      "forecast_source_identity": "成员一已提交摘录，本轮未独立取得公众号正文，日期与预测原格待原文复核",
+      "actual_source": "2025年报物理p28三维收入／p8合并收入及归母净利，复核原文TXT另存"
+    },
+    {
+      "source": "华创机械公众号",
+      "date": "2025-04-08",
+      "metric": "归母净利润",
+      "forecast": "10.90",
+      "actual": "11.1254760775",
+      "conditional_error_pct": 2.068587866972477,
+      "forecast_source_identity": "成员一已提交摘录，本轮未独立取得公众号正文，日期与预测原格待原文复核",
+      "actual_source": "2025年报物理p28三维收入／p8合并收入及归母净利，复核原文TXT另存"
+    },
+    {
+      "source": "华创机械公众号",
+      "date": "2025-04-08",
+      "metric": "三维解决方案收入",
+      "forecast": "1.40",
+      "actual": "0.6389266655",
+      "conditional_error_pct": -54.362381035714286,
+      "forecast_source_identity": "成员一已提交摘录，本轮未独立取得公众号正文，日期与预测原格待原文复核",
+      "actual_source": "2025年报物理p28三维收入／p8合并收入及归母净利，复核原文TXT另存"
+    },
+    {
+      "source": "浙商机械公众号",
+      "date": "2023-10-11",
+      "metric": "归母净利润",
+      "forecast": "12.70",
+      "actual": "11.1254760775",
+      "conditional_error_pct": -12.397826161417322,
+      "forecast_source_identity": "成员一已提交摘录，本轮未独立取得公众号正文，日期与预测原格待原文复核",
+      "actual_source": "2025年报物理p28三维收入／p8合并收入及归母净利，复核原文TXT另存"
+    }
+  ]
+}
