@@ -3,6 +3,7 @@
 import json
 import re
 import sys
+from argparse import ArgumentParser
 from decimal import ROUND_HALF_UP, Decimal
 from hashlib import sha256
 from pathlib import Path
@@ -24,6 +25,21 @@ ANNUAL_SOURCES = {
 SALES_PAGES = {2024: 26, 2025: 29}
 EXPECTED_SALES = {2024: (60993, 35118), 2025: (65064, 56824)}
 
+PUBLIC_PDFS = {
+    "prospectus": (
+        "宏石激光_招股书注册稿_2023-10-12.pdf",
+        "b0ef9563516738d0dcfab6e1990406f01ae5a688e530772f2af187073945df44",
+    ),
+    "reply": (
+        "宏石激光_深交所问询回复.pdf",
+        "178485fdb5b598ba1f1e9b7f3b746d07ff1bf38bd54b0771bb394f3d0709cf8d",
+    ),
+    "manual": (
+        "柏楚_FSCUT8000装机手册_V1.6.pdf",
+        "49fc4dd3c46163e698d3d315d50047af2717ee0bed28f25796f3180b4b05cedc",
+    ),
+}
+
 
 def read_sales(payload, page_number):
     with pymupdf.open(stream=payload, filetype="pdf") as annual:
@@ -44,8 +60,78 @@ def display(value):
     return value.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
 
 
+def open_public_pdf(folder, document):
+    filename, fingerprint = PUBLIC_PDFS[document]
+    path = folder / filename
+    if not path.is_file():
+        raise SystemExit(f"缺少公开补证原件 {path}。来源见《证据与改判》。")
+    payload = path.read_bytes()
+    if sha256(payload).hexdigest() != fingerprint:
+        raise SystemExit(f"公开补证原件的 SHA-256 不匹配 {path}")
+    return pymupdf.open(stream=payload, filetype="pdf")
+
+
+def pdf_row(document, page_number, label):
+    matching_rows = [
+        line
+        for line in document[page_number - 1].get_text(sort=True).splitlines()
+        if label in line
+    ]
+    if len(matching_rows) != 1:
+        raise SystemExit(f"PDF 物理第 {page_number} 页无法唯一定位 {label}")
+    return matching_rows[0]
+
+
+def decimal_fields(row):
+    return [Decimal(cell.replace(",", "")) for cell in re.findall(r"\d[\d,]*\.\d{2}", row)]
+
+
+def verify_public_evidence(member):
+    originals = member / "公开补证原件"
+    with open_public_pdf(originals, "prospectus") as prospectus:
+        supplier_cells = decimal_fields(pdf_row(prospectus, 160, "系统控制类"))
+        # p165 的项目名跨行，按已登记原格定位，同一行前四个小数为各期采购额。
+        category_totals = decimal_fields(pdf_row(prospectus, 165, "4,388.51"))[:4]
+        system_total_h1 = decimal_fields(pdf_row(prospectus, 156, "3,237.16"))[0]
+
+    periods = ("2023 年上半年", "2022 年", "2021 年", "2020 年")
+    for period, amount, reported, total in zip(
+        periods, supplier_cells[::2], supplier_cells[1::2], category_totals, strict=True
+    ):
+        calculated = display(amount / total * 100)
+        if calculated != reported:
+            raise SystemExit(f"{period} 系统控制类采购占比复算与 p160 不一致。")
+        print(f"宏石 {period} 系统控制类 {amount:,} / {total:,} = {calculated}%")
+
+    with open_public_pdf(originals, "reply") as reply:
+        cells = pdf_row(reply, 96, "1,300.46").split()
+        if cells[0] != "柏楚电子" or cells[4:7] != ["-", "-", "-"]:
+            raise SystemExit("问询回复 p96 的柏楚供应商行或 2022 年横线与记录不一致。")
+        amount, reported, *_ = decimal_fields(" ".join(cells[1:]))
+        calculated = display(amount / system_total_h1 * 100)
+        if calculated != reported:
+            raise SystemExit("宏石 2023 年上半年加工控制系统采购占比复算与 p96 不一致。")
+        print(f"宏石 2023 年上半年加工控制系统 {amount:,} / {system_total_h1:,} = {calculated}%")
+        print("宏石问询回复 p96 的 2022 年柏楚采购栏为横线。")
+
+    with open_public_pdf(originals, "manual") as manual:
+        for page_number, configuration in (
+            (5, "8000A系统（搭配BLT切割头使用）"),
+            (6, "8000A系统（搭配其他品牌切割头使用）"),
+        ):
+            page = re.sub(r"\s+", "", manual[page_number - 1].get_text())
+            if configuration not in page:
+                raise SystemExit(f"装机手册物理第 {page_number} 页找不到登记的配置。")
+    print("三份公开原件的指纹、采购原格及 8000A 两种装机配置通过检查。")
+
+
 def main():
-    atlas = Path(__file__).resolve().parents[2]
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument("--public-evidence", action="store_true", help="同时复核三份公开补证原件")
+    args = parser.parse_args()
+
+    member = Path(__file__).resolve().parent
+    atlas = member.parents[1]
     repo = atlas.parents[1]
     project = repo / "companies" / "688188_柏楚电子"
     sys.path.insert(0, str(repo / "shared" / "runtime"))
@@ -82,6 +168,8 @@ def main():
     facts = store.facts()
     print(f"ReviewStore 当前有效 Fact {len(facts)} 条")
     print(f"2025 较 2024 的组间销量比相差 {display(ratios[2025] - ratios[2024])} 个百分点")
+    if args.public_evidence:
+        verify_public_evidence(member)
 
 
 if __name__ == "__main__":
