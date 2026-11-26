@@ -1,0 +1,186 @@
+{
+  "actor": "Codex成员二财务锚点核对Agent",
+  "date": "2026-11-26",
+  "human_confirmation": false,
+  "scope": [
+    "成品Markdown第6、7章",
+    "HTML ch06、ch07及ch09预测入口",
+    "第四轮逐年模型30行FCFF",
+    "第三轮cashsurplus桌面和手机版SVG及其生成器"
+  ],
+  "checks": {
+    "历史简化余量与FCFF分开": true,
+    "CFO后营运资本不重复扣减": true,
+    "核心EBIT和营业利润区别": true,
+    "成本内质保不重复扣减": true,
+    "毛利增量与营业利润增量区别": true,
+    "现金转换率合并分母": true,
+    "合同负债预提折扣和货款分开": true,
+    "营运占用及低购建限制": true,
+    "模型公式30行闭合容差1e-9": true,
+    "逐年模型与11.25原字节同": true,
+    "cashsurplus数值与独立复算四舍五入一致": true,
+    "图表改为从核验JSON生成金额": true
+  },
+  "cash_bridge_exact_source": "成员2核对/现金桥独立复算.json",
+  "fcff_residuals": [
+    {
+      "scenario": "压力",
+      "year": "2026",
+      "difference": "0E-14"
+    },
+    {
+      "scenario": "压力",
+      "year": "2027",
+      "difference": "3.07E-14"
+    },
+    {
+      "scenario": "压力",
+      "year": "2028",
+      "difference": "-8.08E-14"
+    },
+    {
+      "scenario": "压力",
+      "year": "2029",
+      "difference": "-5.1E-14"
+    },
+    {
+      "scenario": "压力",
+      "year": "2030",
+      "difference": "8.34E-14"
+    },
+    {
+      "scenario": "压力",
+      "year": "2031",
+      "difference": "1.82E-14"
+    },
+    {
+      "scenario": "压力",
+      "year": "2032",
+      "difference": "-2.36E-14"
+    },
+    {
+      "scenario": "压力",
+      "year": "2033",
+      "difference": "-5.86E-14"
+    },
+    {
+      "scenario": "压力",
+      "year": "2034",
+      "difference": "8.5E-14"
+    },
+    {
+      "scenario": "压力",
+      "year": "2035",
+      "difference": "6.3E-14"
+    },
+    {
+      "scenario": "基准",
+      "year": "2026",
+      "difference": "9E-14"
+    },
+    {
+      "scenario": "基准",
+      "year": "2027",
+      "difference": "-6.4E-14"
+    },
+    {
+      "scenario": "基准",
+      "year": "2028",
+      "difference": "1.3E-13"
+    },
+    {
+      "scenario": "基准",
+      "year": "2029",
+      "difference": "1.05E-13"
+    },
+    {
+      "scenario": "基准",
+      "year": "2030",
+      "difference": "-9E-14"
+    },
+    {
+      "scenario": "基准",
+      "year": "2031",
+      "difference": "-3E-14"
+    },
+    {
+      "scenario": "基准",
+      "year": "2032",
+      "difference": "-1.3E-13"
+    },
+    {
+      "scenario": "基准",
+      "year": "2033",
+      "difference": "-2.35E-13"
+    },
+    {
+      "scenario": "基准",
+      "year": "2034",
+      "difference": "8.3E-14"
+    },
+    {
+      "scenario": "基准",
+      "year": "2035",
+      "difference": "-2E-15"
+    },
+    {
+      "scenario": "改善",
+      "year": "2026",
+      "difference": "9.5E-14"
+    },
+    {
+      "scenario": "改善",
+      "year": "2027",
+      "difference": "-2.6E-14"
+    },
+    {
+      "scenario": "改善",
+      "year": "2028",
+      "difference": "9E-14"
+    },
+    {
+      "scenario": "改善",
+      "year": "2029",
+      "difference": "-6E-14"
+    },
+    {
+      "scenario": "改善",
+      "year": "2030",
+      "difference": "-5E-15"
+    },
+    {
+      "scenario": "改善",
+      "year": "2031",
+      "difference": "-1.0E-13"
+    },
+    {
+      "scenario": "改善",
+      "year": "2032",
+      "difference": "-8.5E-14"
+    },
+    {
+      "scenario": "改善",
+      "year": "2033",
+      "difference": "-1.2E-13"
+    },
+    {
+      "scenario": "改善",
+      "year": "2034",
+      "difference": "5.26E-13"
+    },
+    {
+      "scenario": "改善",
+      "year": "2035",
+      "difference": "-5.8E-14"
+    }
+  ],
+  "max_fcff_residual": "5.26E-13",
+  "fingerprints": {
+    "第四轮/逐年模型.csv": "2198acc06de86821bd1b838f5a13ea6260a9f2c9fb8717fdcf84da0a49a90a2b",
+    "第三轮/charts/cashsurplus.svg": "b3217cdd292c3e5f179c67b38e49bc1bb9bb14c2d653c7106edbdef7d3cb3689",
+    "第三轮/charts/cashsurplus-mobile.svg": "736e0b1b148e8ec4c237465d8f0ab8219df0492be23bef9bbb340b6b51bd5947"
+  },
+  "repair": "主实施Agent接受本核对意见，现金桥由硬编码金额改为读取独立核验JSON，以Decimal换算亿元。数字按token换行，保留完整小数。已复验实际成品。",
+  "review_status": "Agent技术核对通过；非刘翔宇最终独立裁定"
+}

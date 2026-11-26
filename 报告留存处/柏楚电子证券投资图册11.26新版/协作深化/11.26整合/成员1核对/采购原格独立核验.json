@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-26",
+  "actor": "Codex 子Agent /root/member1_verification（本轮独立内容核对，非原成员一本人，非刘翔宇人工签署）",
+  "hongshi_checks": [
+    {
+      "period": "2023H1",
+      "numerator": "1300.46",
+      "denominator": "4388.51",
+      "unit": "万元",
+      "formula": "分子/分母*100",
+      "calculated": "29.63329239309013765492160209",
+      "rounded": "29.63",
+      "reported": "29.63",
+      "difference_pp": "0.00",
+      "pages": [
+        160,
+        165
+      ],
+      "scope": "系统控制类/系统控制软硬件采购总额（不含税）"
+    },
+    {
+      "period": "2022",
+      "numerator": "24.66",
+      "denominator": "5612.11",
+      "unit": "万元",
+      "formula": "分子/分母*100",
+      "calculated": "0.4394069253810064307363897001",
+      "rounded": "0.44",
+      "reported": "0.44",
+      "difference_pp": "0.00",
+      "pages": [
+        160,
+        165
+      ],
+      "scope": "系统控制类/系统控制软硬件采购总额（不含税）"
+    },
+    {
+      "period": "2021",
+      "numerator": "3291.06",
+      "denominator": "7164.55",
+      "unit": "万元",
+      "formula": "分子/分母*100",
+      "calculated": "45.93533438945921237202615656",
+      "rounded": "45.94",
+      "reported": "45.94",
+      "difference_pp": "0.00",
+      "pages": [
+        160,
+        165
+      ],
+      "scope": "系统控制类/系统控制软硬件采购总额（不含税）"
+    },
+    {
+      "period": "2020",
+      "numerator": "3458.18",
+      "denominator": "6272.12",
+      "unit": "万元",
+      "formula": "分子/分母*100",
+      "calculated": "55.13574357633463645465966850",
+      "rounded": "55.14",
+      "reported": "55.14",
+      "difference_pp": "0.00",
+      "pages": [
+        160,
+        165
+      ],
+      "scope": "系统控制类/系统控制软硬件采购总额（不含税）"
+    }
+  ],
+  "jiatai_original_cells": {
+    "page": 100,
+    "printed_page": "1-1-99",
+    "table": "主要供应商情况/前五名供应商",
+    "supplier": "上海柏楚电子科技股份有限公司（同一控制下合并）",
+    "products": "光纤激光切割头、数控系统等",
+    "2023": [
+      "9260.25",
+      "16.40%"
+    ],
+    "2024": [
+      "10873.14",
+      "20.40%"
+    ],
+    "2025": [
+      "13487.95",
+      "21.72%"
+    ],
+    "unit": "万元",
+    "denominator": "嘉泰当期采购总额",
+    "status": "原表文本与渲染图对读，百分比不反推未披露精确分母"
+  },
+  "narrow_scope": {
+    "page": 96,
+    "2022": "原表横线，不改写零",
+    "2023H1_calculation": "1300.46/3237.16*100",
+    "value": "40.17286757528203734137330252"
+  },
+  "pdf_fingerprints": [
+    {
+      "file": "嘉泰激光_审核问询函回复_2025-08-05.pdf",
+      "sha256": "65570059b84f36fcbdb76e6faea08be715f78091cc867dcda79421cd0f53822b",
+      "pages": 186
+    },
+    {
+      "file": "嘉泰激光_招股说明书申报稿_2026-06-22.pdf",
+      "sha256": "a217e053620d07ccd829a1e3b14948a1803281b110d207508d9aaada3d85cadc",
+      "pages": 301
+    },
+    {
+      "file": "宏石激光_招股书注册稿_2023-10-12.pdf",
+      "sha256": "b0ef9563516738d0dcfab6e1990406f01ae5a688e530772f2af187073945df44",
+      "pages": 424
+    },
+    {
+      "file": "宏石激光_深交所问询回复.pdf",
+      "sha256": "178485fdb5b598ba1f1e9b7f3b746d07ff1bf38bd54b0771bb394f3d0709cf8d",
+      "pages": 159
+    },
+    {
+      "file": "柏楚_FSCUT8000装机手册_V1.6.pdf",
+      "sha256": "49fc4dd3c46163e698d3d315d50047af2717ee0bed28f25796f3180b4b05cedc",
+      "pages": 68
+    }
+  ]
+}

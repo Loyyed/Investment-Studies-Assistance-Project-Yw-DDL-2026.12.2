@@ -1,0 +1,310 @@
+{
+  "date": "2026-11-26",
+  "role": "本轮成员一内容核对 Agent /root/member1_verification",
+  "original_member1": "原成员一十文件为63fc83d分支成果，原会话审核原文完整保留。本核对不是原成员一本人或刘翔宇人工审阅。",
+  "read_files": [
+    {
+      "name": "README.md",
+      "sha256": "545aa3732b8a4c20c3b8aece928b92566963e445ec27f238cd2e6f98ee436409",
+      "characters": 3423
+    },
+    {
+      "name": "会话与采纳记录.md",
+      "sha256": "10fe1853fad58c605b1b524add473fc76901a0e8366c7630a87c5ea3f864680d",
+      "characters": 2410
+    },
+    {
+      "name": "可合并章节.md",
+      "sha256": "5a6caf3c3a497c42c98069a16c803713f365db6fbb8bdaaadcbe0e23fb1cdfbd",
+      "characters": 3740
+    },
+    {
+      "name": "复核.py",
+      "sha256": "0c7a19c6267c8808e55150ac2f8095bda1fa3bd9d9866488443a9982e1660c37",
+      "characters": 6588
+    },
+    {
+      "name": "复核与教师抽查.md",
+      "sha256": "f32d8f58be8dec97cf285cdbbd2ad2ed52189f46d31dc6d1577a3d04696af74d",
+      "characters": 4151
+    },
+    {
+      "name": "工作规划.md",
+      "sha256": "48c1244197347a0506963cce160b4c64b143a6c050c83de8ef3ebc2767e648d2",
+      "characters": 2089
+    },
+    {
+      "name": "护城河因果图.svg",
+      "sha256": "0b790216e3c9590f1334e0b63e6efdb8088c7d1f11a9f3fbdd344d10b64b53e8",
+      "characters": 3256
+    },
+    {
+      "name": "文章补充规划.md",
+      "sha256": "5523baff90e5425dac98d6531961682471f9ba4211865e78d9d56d208ebc06cb",
+      "characters": 2669
+    },
+    {
+      "name": "步骤完成记录.md",
+      "sha256": "d9926e3a32fa346035dc2ede6dfa90d9fb046eeacfe6552e63e4e7cb6e09229c",
+      "characters": 5038
+    },
+    {
+      "name": "证据与改判.md",
+      "sha256": "94721246a0ba993a1306dea46c9f959956d1a4a444bb087f9199ad401cf04475",
+      "characters": 15763
+    }
+  ],
+  "claims": [
+    {
+      "id": "M1-01",
+      "source_statement": "**M1-01｜柏楚解决什么加工问题**",
+      "source_locator": "2025 p5–6「释义」随动、总线、CAD、CAM、NC 条目。p14 产品表的管材套料、平面套料和 BLT 行，列「主要特点」。p18「CAM 技术」「NC 技术」「传感器控制技术」。[年报 p14](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=14) · [p18](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=18)",
+      "original_interpretation": "**产品功能披露。** 以板材加工说明套料、轨迹与反馈为何都需要。同材料、厚度和配置才有可比的合格率和节拍。用于图的第一节点。",
+      "suggested_anchor": "ch01",
+      "treatment": "采用加工闭环、板材/管材示例",
+      "support_limit": "图纸至验收在同工件条件下说明",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-02",
+      "source_statement": "**M1-02｜加工问题、柏楚怎样赚钱**",
+      "source_locator": "2021 p13、2023 p14、2025 p14「主要经营模式」，尤其是客户服务、技术服务、集成检测。2025 p12「主要业务」服务对象，p28 分销售模式「直销」行，p161「嵌入式软件产品销售收入」。[年报 p12](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=12) · [p161](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=161)",
+      "original_interpretation": "**披露＋责任待证。** 将柏楚的产品安装和自身服务职能，与整机厂和终端的验证、停机和保修责任分别落位。取验收单、服务工单和逐单买方。",
+      "suggested_anchor": "ch01,ch02",
+      "treatment": "采用柏楚组测/现场支持与整机责任分层",
+      "support_limit": "整机责任逐合同，直销描述合同买方",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-03",
+      "source_statement": "**M1-03｜柏楚怎样赚钱**",
+      "source_locator": "2025 p119「关键审计事项／收入确认」的合同、发货、签收及折扣抽查。p161–162「质保义务」和收入具体方法①②④。p213「合同负债」的预提销售折扣、货款分列。[年报 p119](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=119) · [p161](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=161)",
+      "original_interpretation": "**会计政策披露。** 把签收、交付、激活和年末折扣接到收入，同时留下到款的独立时点。对应图末节点。具体净价见下表的合同批次口径。",
+      "suggested_anchor": "ch02,ch07",
+      "treatment": "收入按签收验收/交付激活，折扣冲收入",
+      "support_limit": "到账独立，服务质保与一般保证分开",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-04",
+      "source_statement": "**M1-04｜竞争优势能持续多久**",
+      "source_locator": "2019 p30、2024 p39、2025 p40「平面及三维 CAD/CAM」的工艺库陈述。2025 p16 研发平台优化段的组件复用，以及 p6 关于 EtherCAT 的释义和 p18「切割工艺模块化处理技术」。[年报 p16](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=16) · [p40](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=40)",
+      "original_interpretation": "**公司描述→研究推断。** 从可复用工艺到换装工作量，再到 OEM 重选。开放协议和新机型独立开发会削弱可复用差异。以图中虚线表示，计算口径见批次表。",
+      "suggested_anchor": "ch07",
+      "treatment": "采用组件/接口工艺复用→减少重复验证的机制",
+      "support_limit": "复用披露属公司自述，经济效果待项目比较",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-05",
+      "source_statement": "**M1-05｜竞争优势能持续多久**",
+      "source_locator": "2019 p11 产品表 FSCUT2000、FSCUT8000 行。2021 p12–13 同类产品表。2022 p26「产销量情况分析表」的随动、板卡和总线行及表后说明。2023 p14「主要经营模式」。[2019 p11](https://static.cninfo.com.cn/finalpage/2020-04-28/1207650766.PDF#page=11) · [2022 p26](https://static.cninfo.com.cn/finalpage/2023-04-11/1216370312.PDF#page=26)",
+      "original_interpretation": "**历史产品披露和管理层解释。** 切割控制长期有可查的产品和服务，宏观需求和功率升级也能造成旧组销量回落。对比同 OEM、同机型的重选和切换记录，判断采购关系。",
+      "suggested_anchor": "ch07",
+      "treatment": "2019/2021产品持续、2022压力、2023服务历史",
+      "support_limit": "产品多年存在不等于同客户续购",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-06",
+      "source_statement": "**M1-06｜竞争优势能持续多久**",
+      "source_locator": "2024 p26「产销量情况说明」的随动功能集成。2025 p12–14 代表性产品表的总线、BLT，p16「金属成型」的工艺调试和变形管补偿，p29 两组产销量及组合方案说明。[2024 p26](https://static.cninfo.com.cn/finalpage/2025-04-03/1222993275.PDF#page=26) · [2025 p29](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=29)",
+      "original_interpretation": "**披露与反例。** 配套能减少协调，也会改变计数、规格和服务范围。以相同配置的装机、验收记录确认价值，出货总量用作线索。",
+      "suggested_anchor": "ch07",
+      "treatment": "保留2024随动集成反例及配套价值条件",
+      "support_limit": "计数变化不能推实际配套",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-07",
+      "source_statement": "**M1-07｜竞争优势能持续多久**",
+      "source_locator": "2024 p26、2025 p29「产销量情况分析表」中「控制系统」「智能硬件」两行，统一取「销售量」列，单位为套。[2024 p26](https://static.cninfo.com.cn/finalpage/2025-04-03/1222993275.PDF#page=26) · [2025 p29](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=29)",
+      "original_interpretation": "**组别销量比复算。** 读取四个原格，年内相除再比较。实际配套与续购的分母需要订单或装机记录。[复核程序](复核.py)",
+      "suggested_anchor": "ch07",
+      "treatment": "采用57.58→87.34、+29.76pp销量比",
+      "support_limit": "分母是集团控制系统组销量",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-08",
+      "source_statement": "**M1-08｜竞争优势能持续多久**",
+      "source_locator": "2020 p34「其他工业自动化控制应用方向」的智能焊接和高端驱控。2025 p13 智能焊接产品行，p16 技术进展，p27「主营业务分析」关于机器人及精密微加工的经营解释。[2020 p34](https://static.cninfo.com.cn/finalpage/2021-03-11/1209366984.PDF#page=34) · [2025 p16](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=16)",
+      "original_interpretation": "**计划、方案及经营描述各有时点。** 智能焊接已披露方案及业务进展，精密微加工已披露应用方案及客户认可描述。能否跨客户重复交付，需要对照验收、复购与可归属的成本。",
+      "suggested_anchor": "ch07,ch09",
+      "treatment": "区分2020研发方向、2025方案/业务进展",
+      "support_limit": "新业务重复交付与现金未单列",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-09",
+      "source_statement": "**M1-09｜竞争优势能持续多久**",
+      "source_locator": "宏石注册稿物理 p160、p163、p165 的分项采购、协议说明及同类采购分母。问询回复物理 p68 的控制系统来源、p96–98 的采购表和选型解释。 [宏石采购原表](https://static.cninfo.com.cn/finalpage/2023-10-12/1218021929.PDF#page=160) · [宏石问询回复](https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202309/RAS_202309_D713A29DE7A842CF800F6A78AFEB2F39.pdf#page=96)",
+      "original_interpretation": "**买方披露与复算。** 宏石有多个控制系统来源，实际调整过采购。给“工艺经验会带来持续采购”增加买方反例，按 [两类采购分母](#宏石激光调整控制系统采购) 核对。",
+      "suggested_anchor": "ch07",
+      "treatment": "采用宏石系统控制类三期占比与两分母表",
+      "support_limit": "2023H1非全年；2022窄口径横线非零",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-10",
+      "source_statement": "**M1-10｜竞争优势能持续多久**",
+      "source_locator": "柏楚 FSCUT8000 装机手册 V1.6 物理 p5–6，1.3.1 与 1.3.2 的 8000A 选配清单。 [装机手册](https://d.fscut.com/wordpress-fscut/2024/01/FSCUT8000%E9%AB%98%E5%8A%9F%E7%8E%87%E6%BF%80%E5%85%89%E5%88%87%E5%89%B2%E7%B3%BB%E7%BB%9F%E8%A3%85%E6%9C%BA%E6%89%8B%E5%86%8CV1.6.pdf#page=5)",
+      "original_interpretation": "**技术配置披露。** 给“软硬一体”补充同一控制系统的切割头选配。真实装机由交付清单或验收取证。",
+      "suggested_anchor": "ch07",
+      "treatment": "8000A可配BLT或他牌",
+      "support_limit": "技术可选不证明实机搭配与责任",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-11",
+      "source_statement": "**M1-11｜柏楚解决什么加工问题**",
+      "source_locator": "2025 年报物理 p12–15 的代表产品、激光切割与市场定位，p18 的 CAM、NC、传感器控制技术。 [柏楚年报 p12](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=12) · [p18](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=18)",
+      "original_interpretation": "**功能分工。** 从同一设备上的光源、切割头、机床和控制说明买方采购的对象。不同企业可能跨环节供货，竞争取决于同一设备配置中承担的功能和买方选型。",
+      "suggested_anchor": "ch01",
+      "treatment": "激光器/头/机床/控制分工",
+      "support_limit": "竞争需同工序与同采购对象",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-12",
+      "source_statement": "**M1-12｜竞争优势能持续多久**",
+      "source_locator": "维宏 LS6000M 产品介绍标示面向 12 kW 及以上激光平面切割。宏石问询回复物理 p68、p96–98 披露控制系统来源、二次开发和采购调整。 [维宏产品页](https://www.weihong.com.cn/products/detail/8) · [宏石问询回复 p68](https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202309/RAS_202309_D713A29DE7A842CF800F6A78AFEB2F39.pdf#page=68)",
+      "original_interpretation": "**候选与实际订单。** 维宏产品页证明有高功率平面方案，宏石披露证明该买方曾采购多种方案。具体机型是否试用 LS6000M、交付结果及份额另取同功率、同材料、同验收的报价和试样。",
+      "suggested_anchor": "ch07",
+      "treatment": "LS6000M高功率候选（≥12kW）",
+      "support_limit": "候选功能不等于订单替代",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-13",
+      "source_statement": "**M1-13｜竞争优势能持续多久**",
+      "source_locator": "柏楚 FSWeld 装机手册 V2.2 第 1.1–1.2 节的弧焊定位与组成，第 2.3 节的寻缝器，2025 年报物理 p13、p16 的智能机器人和锂电激光焊接说明。2026 上海光博会的 IWM 展示及 UltraOCT 产品说明。 [FSWeld 装机手册](https://d.fscut.com/wordpress-fscut/2024/04/FSWeld%E6%99%BA%E8%83%BD%E7%84%8A%E6%8E%A5%E7%B3%BB%E7%BB%9F%E8%A3%85%E6%9C%BA%E6%89%8B%E5%86%8CV2.2-hmx.pdf) · [柏楚年报 p16](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=16) · [UltraOCT 产品页](https://www.bochu.com/pro_ch/ultraoct/)",
+      "original_interpretation": "**两种工艺。** FSWeld 的离线编程、寻缝与弧焊工作站相关。锂电激光焊接的振镜和 OCT 用于相应工位的执行与检测。替代要比较该工位最终交付的工艺质量、节拍、维护和采购配置。",
+      "suggested_anchor": "ch07",
+      "treatment": "FSWeld弧焊与IWM激光焊接分别验收",
+      "support_limit": "机器人/振镜/OCT承担不同功能",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-14",
+      "source_statement": "**M1-14｜竞争优势能持续多久**",
+      "source_locator": "2025 年报物理 p16 的研发组件共享与标准化，p40–41 的研发方向。柏楚 2026-03-18 至 2026-03-20 上海光博会活动记录中精密业务线所展示的 UltraMotion 与三项方案。 [柏楚年报 p16](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=16) · [柏楚官方展会记录](https://www.bochu.com/exhibition/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E9%97%AA%E8%80%802026%E6%85%95%E5%B0%BC%E9%BB%91%E4%B8%8A%E6%B5%B7%E5%85%89/)",
+      "original_interpretation": "**复用披露与展会记录。** 对不同场景的共同技术，已核到组件标准化和精密业务线展示。FSWeld 或不同切割系统与该平台的具体部署关系以及量产放量，需版本、部署、验收与订单记录。",
+      "suggested_anchor": "ch07",
+      "treatment": "UltraMotion及精密展会展示",
+      "support_limit": "展示不写量产和全业务统一部署",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-15",
+      "source_statement": "**M1-15｜柏楚怎样赚钱、竞争优势能持续多久**",
+      "source_locator": "2025 年报物理 p8、p27–28、p30。合并会计数据、主营产品表四行及同一控制口径前五名客户。 [柏楚年报 p8](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=8) · [p27](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=27) · [p30](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=30)",
+      "original_interpretation": "**分母和业务归属。** 平面、管材、三维按场景合计，与控制系统单品收入和营收口径分别计算。前五名客户销售额占比 21.50% 描述集中度，续购要核同机型采购批次。",
+      "suggested_anchor": "ch02,ch03,ch07",
+      "treatment": "18.4425亿/主营85.12%、top5销售21.50%",
+      "support_limit": "场景非单品；集中度非续购",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-16",
+      "source_statement": "**M1-16｜竞争优势能持续多久**",
+      "source_locator": "两份机构文章原有的 2025 年预测，以及 2025 年报物理 p8、p28 的对应实际数。 [华创机械深度](https://mp.weixin.qq.com/s/IhMn7DMYR1lhKFNSdOnuPA?scene=1) · [浙商机械深度](https://mp.weixin.qq.com/s/FoI51dh6aj4yPVeIUFClhA?scene=1) · [柏楚年报 p28](https://static.cninfo.com.cn/finalpage/2026-04-10/1225091045.PDF#page=28)",
+      "original_interpretation": "**历史预测对照。** 合计收入与三维场景的偏差不同。结合首批验收、重复采购和实结，判断高增速是否扩大到有财务意义的规模。明细见[预测回看](#行业分母与历史预测回看)。",
+      "suggested_anchor": "ch07,ch09证据附件",
+      "treatment": "历史预测对照或列原文待核",
+      "support_limit": "本轮交成员三取原文/日期/表格，不继承未核摘要",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-17",
+      "source_statement": "**M1-17｜竞争优势能持续多久**",
+      "source_locator": "壹德弘扬 YD-3015A 技术方案印刷 p4，「四、设备配置」第 3、4 项及「五、设备参数」。 [整机厂技术方案](https://www.yideautotech.cn/static/upload/file/20250425/1745560912243065.pdf)",
+      "original_interpretation": "**同机型可选项。** 1.5–3 kW 的 YD-3015A 在控制系统与套料软件两行列柏楚、维宏选配。具体订单的实际配置、两套方案的试切及验收需按该机型逐单核对。",
+      "suggested_anchor": "ch07",
+      "treatment": "壹德YD-3015A 1.5–3kW选项",
+      "support_limit": "本地PDF缺，沿已审核交接注明原链接/印刷p4",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    },
+    {
+      "id": "M1-18",
+      "source_statement": "**M1-18｜竞争优势能持续多久**",
+      "source_locator": "嘉泰招股说明书申报稿物理 p100（印刷 1-1-99）的三年供应商表，物理 p111（印刷 1-1-110）的整机合同第 7 项，挂牌问询回复物理 p68 的超高功率产品结构和返利说明。 [嘉泰申报稿 p100](https://www.bse.cn/disclosure/2026/2026-06-22/86ddfe82dfd046c38bf2224339da6ca6.pdf#page=100) · [嘉泰问询回复 p68](https://pdf.dfcfw.com/pdf/H2_AN202508051721934948_1.pdf#page=68)",
+      "original_interpretation": "**跨年采购与结算。** 按买方披露的供应商口径核对切割头、数控系统等合计。采用嘉泰说明的产品结构与返利变化来观察持续采购机制。同机型换装成本、实际配套和净价仍需工位与订单匹配。",
+      "suggested_anchor": "ch07",
+      "treatment": "嘉泰三年采购+适配、多供方、返利",
+      "support_limit": "p57适配与p60降价/多供方并列，勿推同规格净价",
+      "actual_destination": "由成员四整合后填写，本核验不假报已落位"
+    }
+  ],
+  "articles": [
+    {
+      "id": "A1",
+      "original_row": "| 2026-07-20，雪球都不是（一） | 从光学硬件、运动控制到整机和终端梳理产业链，并按切割、焊接和精密加工讨论业务。 | 用产品职责解释上下游。用 2025 年报重算平面、管材和三维的场景收入，回到实际销售的品类。 | [基础认知](https://xueqiu.com/1486099110/401079646) |",
+      "disposition": "吸收设问并用年报/买方证据重写；原情景不导入模型"
+    },
+    {
+      "id": "A2",
+      "original_row": "| 2026-07-20，雪球都不是（二） | 按业务赛道判断第三方控制、上游硬件、整机自研和机器人厂商的重叠。 | 比较同一工序和采购环节。以维宏 LS6000M 的公开用途补充高功率平面控制候选，以实际试切、验收和订单验证竞争强弱。 | [赛道竞争](https://xueqiu.com/1486099110/401250172) |",
+      "disposition": "吸收设问并用年报/买方证据重写；原情景不导入模型"
+    },
+    {
+      "id": "A3",
+      "original_row": "| 2026-07-21，雪球都不是（三） | 用工艺库、控制算法、硬件协同和跨场景复用解释壁垒。 | 年报支持模块复用与工艺库的披露。官方展会资料说明 UltraMotion 在精密业务的展示，具体模块的跨业务部署及参数迁移成本待证。 | [技术壁垒](https://xueqiu.com/1486099110/401371375) |",
+      "disposition": "吸收设问并用年报/买方证据重写；原情景不导入模型"
+    },
+    {
+      "id": "A4",
+      "original_row": "| 2026-07-24，雪球都不是（四） | 讨论机器人替代和整机厂自研、切换成本及选配。 | 以同工件验收和采购去向定义替代条件。2025 年报前五大客户占比按销售额复核，单个机型的留用率和调试周期回到项目记录。 | [机器人替代与客户黏性](https://xueqiu.com/1486099110/401962941) |",
+      "disposition": "吸收设问并用年报/买方证据重写；原情景不导入模型"
+    },
+    {
+      "id": "A5",
+      "original_row": "| 2026-07-25，雪球都不是（五） | 讨论高功率增长、光学检测与工艺控制的关系，以及新业务放量。 | 区分激光焊接的振镜执行、OCT 监测与弧焊工位的寻缝和路径。用年报的场景收入和实际验收回查各自的增长。 | [市场争议](https://xueqiu.com/1486099110/402078421) |",
+      "disposition": "吸收设问并用年报/买方证据重写；原情景不导入模型"
+    },
+    {
+      "id": "A6",
+      "original_row": "| 2026-07-26，雪球都不是（终章） | 按高功率、焊接、精密和海外进展设置情景。 | 提取同机型重选、同场景重复验收、配套合同和回款等观察点。利润增速、估值倍数和目标价属于文章情景，供成员三在既有模型口径下另行判断。 | [三情景估值](https://xueqiu.com/1486099110/402142812) |",
+      "disposition": "吸收设问并用年报/买方证据重写；原情景不导入模型"
+    },
+    {
+      "id": "A7",
+      "original_row": "| 2025-04-08，华创机械团队公众号 | 用控制系统与切割头的协同、免示教焊接解释成长，并给出场景预测。 | 记录焊接市场测算的设备数、假定采用率和单价。将 2025 年合并收入、归母净利润和三维解决方案的预测与年报原值对读。 | [华创机械深度](https://mp.weixin.qq.com/s/IhMn7DMYR1lhKFNSdOnuPA?scene=1) |",
+      "disposition": "交成员三核历史预测原文并明确缺项"
+    },
+    {
+      "id": "A8",
+      "original_row": "| 2023-10-11，浙商机械国防团队公众号 | 从中低功率起步讨论高功率国产替代、切割头渗透与盈利。 | 区分较早的功率段份额与 2025 年报时点。用年报实际值对读该篇的 2025 年归母净利润预测。 | [浙商机械深度](https://mp.weixin.qq.com/s/FoI51dh6aj4yPVeIUFClhA?scene=1) |",
+      "disposition": "交成员三核历史预测原文并明确缺项"
+    }
+  ],
+  "audit_notes": [
+    "宏石四期系统控制类按p160分子/p165分母重算，显示精度差额全为0",
+    "嘉泰p100三期采购额与占比已文本+渲染逐格核对",
+    "嘉泰问询p57适配；p60≥3家、多供应商且2024柏楚头均价下降；p68功率组合及每套返利提高",
+    "5份PDF重新下载后指纹与成员一交接完全一致；壹德下载失败仍保持本地缺件",
+    "成员一原SVG末节点到收入，本版需扩展成本、费用、资本占用、现金与改判；原SVG留存"
+  ],
+  "missing": [
+    {
+      "item": "同买方同机型采购重选、报价、配置、试样/验收、服务、实结折扣、回款",
+      "impact": "实际续购、同规格净价、换装成本及利润现金归因",
+      "route": "OEM合同技术附件、验收/工单、订单与结算"
+    },
+    {
+      "item": "壹德原PDF本地留存",
+      "impact": "同型号可选项二次独核；已审成员一记录仍可引用其身份",
+      "route": "官网原链接恢复后印刷p4核"
+    },
+    {
+      "item": "两篇公众号原文/预测表",
+      "impact": "历史预测误差只能在核原文后成立",
+      "route": "交成员三原文日期/年度/归母或合并口径对读"
+    },
+    {
+      "item": "行业同口径控制系统/头行业分母，工位适用率、采用率、每站套数及实结价",
+      "impact": "市场份额/TAM/估值上限",
+      "route": "行业报告原统计表与真实订单"
+    }
+  ]
+}

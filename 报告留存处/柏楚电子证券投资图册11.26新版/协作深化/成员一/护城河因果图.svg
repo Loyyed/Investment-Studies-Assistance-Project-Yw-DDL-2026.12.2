@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 768" role="img" aria-labelledby="title description">
+  <title id="title">工艺适配怎样影响整机厂续购</title>
+  <desc id="description">柏楚的工艺模块可能影响整机验证和采购。右侧列出装机手册中的切割头选配和宏石披露的采购变化。虚线表示有待同一机型项目和订单验证的推断。若向柏楚下单，适用已披露的确认收入政策。</desc>
+  <rect width="940" height="768" rx="28" fill="#f4f8f6"/>
+
+  <g stroke="#c9ded7" stroke-width="2">
+    <rect x="40" y="125" width="533" height="113" rx="18" fill="#e8f4ee"/>
+    <rect x="40" y="278" width="533" height="113" rx="18" fill="#ffffff"/>
+    <rect x="40" y="431" width="533" height="113" rx="18" fill="#ffffff"/>
+    <rect x="622" y="278" width="278" height="126" rx="18" fill="#e8f4ee"/>
+    <rect x="40" y="584" width="533" height="113" rx="18" fill="#e8f4ee"/>
+    <path d="M 40 724 H 900"/>
+  </g>
+  <rect x="622" y="421" width="278" height="132" rx="18" fill="#fbf2e7" stroke="#e7ceb5" stroke-width="2"/>
+
+  <g fill="none" stroke="#347366" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 42 91 H 76 M 75 546 V 579"/>
+    <path d="M 254 91 H 260 M 265 91 H 271 M 276 91 H 282 M 287 91 H 288"/>
+    <path d="M 75 240 V 245 M 75 249 V 254 M 75 258 V 263 M 75 267 V 273 M 75 393 V 398 M 75 402 V 407 M 75 411 V 416 M 75 420 V 426"/>
+    <path d="M 69 265 L 75 273 L 81 265 M 69 418 L 75 426 L 81 418 M 69 571 L 75 579 L 81 571"/>
+  </g>
+  <g fill="none" stroke="#986335" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 620 483 H 614 M 609 483 H 603 M 598 483 H 592 M 587 483 H 579"/>
+    <path d="M 587 477 L 579 483 L 587 489"/>
+  </g>
+
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" fill="#1b302e">
+    <text x="40" y="58" font-size="36" font-weight="700">工艺适配怎样影响整机厂续购</text>
+    <g font-size="25" font-weight="700">
+      <text x="64" y="161">柏楚把切割工艺做成可复用工具</text>
+      <text x="64" y="313">整机厂验证加工表现</text>
+      <text x="64" y="466">整机厂比较留用与换装</text>
+      <text x="644" y="311">公开装机选配</text>
+      <text x="644" y="453" fill="#624326">宏石调整采购来源</text>
+      <text x="64" y="619">柏楚履约并确认收入</text>
+    </g>
+    <g font-size="20">
+      <text x="64" y="191">图纸处理、排样、运动控制与传感反馈</text>
+      <text x="64" y="343">在相同工件和规格下比较调试时间与良率</text>
+      <text x="64" y="496">对照折扣后净价、验证工时和服务责任</text>
+      <text x="644" y="338">8000A 可配 BLT</text>
+      <text x="644" y="362">也可配其他品牌切割头</text>
+      <text x="64" y="649">按签收、交付或激活规则及年度折扣确认</text>
+    </g>
+    <g font-size="19" fill="#624326">
+      <text x="644" y="481">2022 年减少向柏楚采购</text>
+      <text x="644" y="506">2023 上半年向柏楚增购</text>
+    </g>
+    <g font-size="17" fill="#435e59">
+      <text x="86" y="97">披露的业务环节</text>
+      <text x="299" y="97">需要项目或订单验证的解释</text>
+      <text x="64" y="218">年报原页 · 2025 p14、p16、p18、p40</text>
+      <text x="98" y="263">当程序、参数和接口可以沿用</text>
+      <text x="64" y="371">待核 · 整机试样和验收单</text>
+      <text x="98" y="416">若沿用可少做一轮测试或训练</text>
+      <text x="64" y="524">待核 · 同机型的实结净价和实际重选批次</text>
+      <text x="644" y="387">柏楚装机手册 · p5–6</text>
+      <text x="644" y="534">宏石问询回复 · p96–98</text>
+      <text x="98" y="569">向柏楚下单后</text>
+      <text x="64" y="677">年报原页 · 2025 p119、p161–162</text>
+      <text x="40" y="747">出货总量说明产品组变化。续购和配套回到同一整机的订单、验收和服务记录。</text>
+    </g>
+  </g>
+</svg>

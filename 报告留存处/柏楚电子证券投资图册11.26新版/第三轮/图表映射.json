@@ -1,0 +1,119 @@
+{
+  "process": {
+    "title": "从一张板材图到合格工件",
+    "period": "2025年报功能披露",
+    "unit": "流程及机制示意",
+    "evidence": "M1-01、02、11；E01、E02",
+    "blocks": [],
+    "file": "charts/process.svg",
+    "mobile": "charts/process-mobile.svg"
+  },
+  "contract": {
+    "title": "采购、交付、收入与到账的时点",
+    "period": "2025年报销售与会计政策",
+    "unit": "流程及机制示意",
+    "evidence": "M1-02、03、15；E02–E04、E15",
+    "blocks": [],
+    "file": "charts/contract.svg",
+    "mobile": "charts/contract-mobile.svg"
+  },
+  "structure2024": {
+    "title": "主营收入与毛利结构",
+    "unit": "人民币百万元、% ",
+    "period": "2024",
+    "evidence": "E05",
+    "blocks": [
+      "B04"
+    ],
+    "file": "charts/structure2024.png"
+  },
+  "structure2025": {
+    "title": "主营收入与毛利结构",
+    "unit": "人民币百万元、% ",
+    "period": "2025",
+    "evidence": "E05",
+    "blocks": [
+      "B04"
+    ],
+    "file": "charts/structure2025.png"
+  },
+  "history": {
+    "title": "七年经营",
+    "unit": "人民币百万元",
+    "period": "2019–2025",
+    "evidence": "E07",
+    "blocks": [
+      "B01"
+    ],
+    "file": "charts/history.png"
+  },
+  "margin": {
+    "title": "主营毛利率变动分解",
+    "unit": "百分点",
+    "period": "2024→2025",
+    "evidence": "E11",
+    "blocks": [
+      "B04"
+    ],
+    "file": "charts/margin.png"
+  },
+  "cash2022": {
+    "title": "利润到现金桥",
+    "unit": "人民币百万元",
+    "period": "2021→2022",
+    "evidence": "E13",
+    "blocks": [
+      "B09"
+    ],
+    "file": "charts/cash2022.png"
+  },
+  "cash2025": {
+    "title": "利润到现金桥",
+    "unit": "人民币百万元",
+    "period": "2024→2025",
+    "evidence": "E13",
+    "blocks": [
+      "B09"
+    ],
+    "file": "charts/cash2025.png"
+  },
+  "liability": {
+    "title": "合同负债构成",
+    "unit": "人民币百万元",
+    "period": "2024年末、2025年末",
+    "evidence": "E15",
+    "blocks": [
+      "L213"
+    ],
+    "file": "charts/liability.png"
+  },
+  "moat": {
+    "title": "工艺适配怎样变成订单、利润和现金",
+    "period": "机制检验与2024→2025集团历史",
+    "unit": "流程及机制示意",
+    "evidence": "M1-01–18；B01、B02、B04、B09、B10",
+    "blocks": [],
+    "file": "charts/moat.svg",
+    "mobile": "charts/moat-mobile.svg"
+  },
+  "cashsurplus": {
+    "title": "简化现金余量增加来自哪里",
+    "period": "2024→2025",
+    "unit": "人民币亿元",
+    "evidence": "E13、E14；B01、B09；独立现金桥原格",
+    "blocks": [
+      "B01",
+      "B09"
+    ],
+    "file": "charts/cashsurplus.svg",
+    "mobile": "charts/cashsurplus-mobile.svg"
+  },
+  "memberoriginal": {
+    "title": "成员一原图：工艺适配怎样影响整机厂续购",
+    "period": "2026-11-26成员一原成果",
+    "unit": "机制示意",
+    "evidence": "M1-01–04、09、10",
+    "blocks": [],
+    "file": "../协作深化/成员一/护城河因果图.svg"
+  }
+}

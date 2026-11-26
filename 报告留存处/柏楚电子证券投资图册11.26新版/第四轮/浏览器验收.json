@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-26",
+  "stage": "D:\\投资学\\.publish-1126-1795705877581\\integrate\\报告留存处\\柏楚电子证券投资图册11.26新版",
+  "browser": "Chromium121",
+  "offline": true,
+  "widths": [
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "images": 17,
+      "chapters": 11,
+      "moatNavigation": true,
+      "responsive": [
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/process.svg",
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/contract.svg",
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/moat.svg",
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/cashsurplus.svg"
+      ]
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "images": 17,
+      "chapters": 11,
+      "moatNavigation": true,
+      "responsive": [
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/process-mobile.svg",
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/contract-mobile.svg",
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/moat-mobile.svg",
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/cashsurplus-mobile.svg"
+      ]
+    },
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "images": 17,
+      "chapters": 11,
+      "moatNavigation": true,
+      "responsive": [
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/process-mobile.svg",
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/contract-mobile.svg",
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/moat-mobile.svg",
+        "file:///D:/%E6%8A%95%E8%B5%84%E5%AD%A6/.publish-1126-1795705877581/integrate/%E6%8A%A5%E5%91%8A%E7%95%99%E5%AD%98%E5%A4%84/%E6%9F%8F%E6%A5%9A%E7%94%B5%E5%AD%90%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9B%BE%E5%86%8C11.26%E6%96%B0%E7%89%88/%E7%AC%AC%E4%B8%89%E8%BD%AE/charts/cashsurplus-mobile.svg"
+      ]
+    }
+  ],
+  "images": 17,
+  "localLinks": 251,
+  "links": 253,
+  "controls": "三情景、联合参数、无效折现保护、恢复、年份切换、筛选均通过",
+  "errors": []
+}

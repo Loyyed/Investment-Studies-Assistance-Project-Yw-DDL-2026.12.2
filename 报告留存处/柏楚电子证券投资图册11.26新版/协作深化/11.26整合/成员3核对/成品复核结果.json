@@ -1,0 +1,351 @@
+{
+  "tables": [
+    {
+      "first": [
+        "场景",
+        "2025收入",
+        "主营毛利额",
+        "收入增量"
+      ],
+      "cells": 25,
+      "missing": []
+    },
+    {
+      "first": [
+        "合同负债项目",
+        "2024年末（元）",
+        "2025年末（元）",
+        "增加（元）"
+      ],
+      "cells": 16,
+      "missing": []
+    },
+    {
+      "first": [
+        "买方案例及期间",
+        "采购原值与适用分母",
+        "能检验的判断",
+        "宏石，2021年"
+      ],
+      "cells": 21,
+      "missing": []
+    },
+    {
+      "first": [
+        "对照条件",
+        "会增强判断",
+        "会收窄或改变判断",
+        "连接的模型变量"
+      ],
+      "cells": 20,
+      "missing": []
+    },
+    {
+      "first": [
+        "第四轮变量",
+        "历史起点和预测所需解释",
+        "分场景收入及增长",
+        "平面为最大基座，管材、三维、其他分别有自己的增量与规模。预测需解释份额、需求、规格与净价，2023新方案分项绝对收入继续留缺。"
+      ],
+      "cells": 14,
+      "missing": []
+    },
+    {
+      "first": [
+        "项目",
+        "2025百万元",
+        "采用方式",
+        "核心EBIT"
+      ],
+      "cells": 21,
+      "missing": []
+    },
+    {
+      "first": [
+        "参数",
+        "压力",
+        "基准",
+        "改善"
+      ],
+      "cells": 45,
+      "missing": []
+    },
+    {
+      "first": [
+        "情景／年",
+        "收入",
+        "成本",
+        "销管研"
+      ],
+      "cells": 341,
+      "missing": []
+    },
+    {
+      "first": [
+        "情景",
+        "显性期现值",
+        "终值现值",
+        "终值占经营价值"
+      ],
+      "cells": 24,
+      "missing": []
+    },
+    {
+      "first": [
+        "项目",
+        "2025年末百万元",
+        "口径与来源",
+        "现金等价物"
+      ],
+      "cells": 21,
+      "missing": []
+    },
+    {
+      "first": [
+        "假设元／股",
+        "FY2025PE",
+        "2026EPE",
+        "PB"
+      ],
+      "cells": 49,
+      "missing": []
+    },
+    {
+      "first": [
+        "索引",
+        "年报年度和物理页",
+        "内容及计算",
+        ""
+      ],
+      "cells": 54,
+      "missing": [
+        "年报年度和物理页",
+        "内容及计算",
+        "20256、12–18",
+        "加工流程、产品功能、CAM、NC及传感控制B04",
+        "202514、17、161–162",
+        "主要经营模式、标准产品安装、现场支持B08",
+        "2025119、160–162",
+        "合同、签收验收、年度折扣与软件确认政策B08",
+        "2021–20252021p25–26；2022p26；2023p25；2024p26；2025p28",
+        "直销分母与金额B08",
+        "2024–20252024p25、205；2025p27–28、221",
+        "平面及其余场景的收入与毛利B03、B04",
+        "2024–20252024p25–26；2025p28",
+        "地区收入与增量B07",
+        "2019–2025合并三表，逐年页码见单元索引",
+        "收入、利润和现金历史B01、B02",
+        "202224–27、102–107、174、182–186",
+        "压力期、旧产品、现金及范围变化B02、B05、B09",
+        "2024112–113、153、205",
+        "2023比较成本质保重列B02、B03",
+        "2025125–126、222–224",
+        "扩张利润、费用、少数股东损益B02",
+        "2024–20252024p25–27；2025p27–30",
+        "毛利中点分解与成本性质B04、B06",
+        "2024–20252024p26–27；2025p27–30",
+        "软硬组合、实物结构与成本B06、B11",
+        "2022、2024、20252022p106–108、182–183；2024p116–117、213–214；2025p129–131、229–230",
+        "直接与间接现金桥、购建、现金转换B01、B09",
+        "2024–20252024p108–109；2025p121–122、188",
+        "营运占用与资本B10",
+        "2025161–162、213",
+        "年度折扣政策及合同负债构成L213",
+        "2024–20252024p26；2025p29",
+        "硬件库存差额B11",
+        "20256、14–18、26、41",
+        "接口复用、竞争、成本与服务，研究反方B01、B04、B09"
+      ]
+    }
+  ],
+  "date": "2026-11-26",
+  "executor": "Codex成员三成品复核Agent",
+  "model_files": [
+    {
+      "file": "calculator.js",
+      "sha256": "343dd1493ec9838ae525b9576ac6cedf9ab02c1278aeb160f49845d4234b49ce",
+      "baseline": "343dd1493ec9838ae525b9576ac6cedf9ab02c1278aeb160f49845d4234b49ce",
+      "identical": true
+    },
+    {
+      "file": "model.py",
+      "sha256": "8878f8dc8bd932dcec59bf324f975893bb96f7dc2f555a7e79f9d19011531361",
+      "baseline": "8878f8dc8bd932dcec59bf324f975893bb96f7dc2f555a7e79f9d19011531361",
+      "identical": true
+    },
+    {
+      "file": "估值汇总.csv",
+      "sha256": "72fdcfe397fd068fbd4534b12a3b54d55c0f25362330d59430d5e062ead0060f",
+      "baseline": "72fdcfe397fd068fbd4534b12a3b54d55c0f25362330d59430d5e062ead0060f",
+      "identical": true
+    },
+    {
+      "file": "倍数条件价格.csv",
+      "sha256": "81a8ed4964cf091417509476448797f5cb1e024fe83e6e08af8df1a8e734a0f3",
+      "baseline": "81a8ed4964cf091417509476448797f5cb1e024fe83e6e08af8df1a8e734a0f3",
+      "identical": true
+    },
+    {
+      "file": "关键假设来源.csv",
+      "sha256": "aafb9b3fbb33a9073365a45db55ef0168072504e2946387b76bc0e1ea0ca8859",
+      "baseline": "aafb9b3fbb33a9073365a45db55ef0168072504e2946387b76bc0e1ea0ca8859",
+      "identical": true
+    },
+    {
+      "file": "利润现金联合阈值.csv",
+      "sha256": "c4ee930f71b4a362dcdb0633e707a0ccf5359393426cb214f66d2d14cdb7c709",
+      "baseline": "c4ee930f71b4a362dcdb0633e707a0ccf5359393426cb214f66d2d14cdb7c709",
+      "identical": true
+    },
+    {
+      "file": "历史利润桥.csv",
+      "sha256": "01235b4cce3c79aed8278ce82797462dca797cc6da167643f30eb42bb9fb1ef7",
+      "baseline": "01235b4cce3c79aed8278ce82797462dca797cc6da167643f30eb42bb9fb1ef7",
+      "identical": true
+    },
+    {
+      "file": "历史留出.csv",
+      "sha256": "1328202427616ab86476725dbc8166fb3b668111e531a63672d4224a358eb5a6",
+      "baseline": "1328202427616ab86476725dbc8166fb3b668111e531a63672d4224a358eb5a6",
+      "identical": true
+    },
+    {
+      "file": "压力一致性检查.csv",
+      "sha256": "8e25145c8c322fe2307ae9faf840af748aafe44f0d2e46eacec973c1018aaf49",
+      "baseline": "8e25145c8c322fe2307ae9faf840af748aafe44f0d2e46eacec973c1018aaf49",
+      "identical": true
+    },
+    {
+      "file": "折现与增长敏感性.csv",
+      "sha256": "59638be9d3cc9048b864be7ede49abcba3ae5dce8106e42e363c7ae4846a61cc",
+      "baseline": "59638be9d3cc9048b864be7ede49abcba3ae5dce8106e42e363c7ae4846a61cc",
+      "identical": true
+    },
+    {
+      "file": "条件倍数.csv",
+      "sha256": "84e2c657feda61bc9e72b3cd439a273dcac7ed17f96761f565a09c4757a70bfa",
+      "baseline": "84e2c657feda61bc9e72b3cd439a273dcac7ed17f96761f565a09c4757a70bfa",
+      "identical": true
+    },
+    {
+      "file": "模型.json",
+      "sha256": "5fae9e521416c58d8f84ed1f1221b4eb42da73db9357be2bd291cd7c64ea8b48",
+      "baseline": "5fae9e521416c58d8f84ed1f1221b4eb42da73db9357be2bd291cd7c64ea8b48",
+      "identical": true
+    },
+    {
+      "file": "税返延续敏感性.csv",
+      "sha256": "c0040dab2d82958657d24cf58541a98e46cfd1394560a45719556b920a28d1e9",
+      "baseline": "c0040dab2d82958657d24cf58541a98e46cfd1394560a45719556b920a28d1e9",
+      "identical": true
+    },
+    {
+      "file": "股权桥来源.csv",
+      "sha256": "1ee57aa69cff8f09d02b0f21850a128ba4dfe7f3f3c904499bb7d771ed6130fd",
+      "baseline": "1ee57aa69cff8f09d02b0f21850a128ba4dfe7f3f3c904499bb7d771ed6130fd",
+      "identical": true
+    },
+    {
+      "file": "补充来源.csv",
+      "sha256": "176d95c7a9045df814e0221384f212555694bdfdb118865f93799d9dcb6064b2",
+      "baseline": "176d95c7a9045df814e0221384f212555694bdfdb118865f93799d9dcb6064b2",
+      "identical": true
+    },
+    {
+      "file": "购建与经营现金保留.csv",
+      "sha256": "5a6120b988fd2c1fc373074e693eec42a4e7c55b8c0f69bc952982d9ffcd4259",
+      "baseline": "5a6120b988fd2c1fc373074e693eec42a4e7c55b8c0f69bc952982d9ffcd4259",
+      "identical": true
+    },
+    {
+      "file": "资本回报敏感性.csv",
+      "sha256": "7941c3bfb36350e08f0c9039a8e69e41a7b521fdfe5e125711216cdb47acd077",
+      "baseline": "7941c3bfb36350e08f0c9039a8e69e41a7b521fdfe5e125711216cdb47acd077",
+      "identical": true
+    },
+    {
+      "file": "输入原格.csv",
+      "sha256": "5ee3702fff32104f9c8c320d285b6e7953955fd1d656bc6919a1f052f44c407b",
+      "baseline": "5ee3702fff32104f9c8c320d285b6e7953955fd1d656bc6919a1f052f44c407b",
+      "identical": true
+    },
+    {
+      "file": "逐年模型.csv",
+      "sha256": "2198acc06de86821bd1b838f5a13ea6260a9f2c9fb8717fdcf84da0a49a90a2b",
+      "baseline": "2198acc06de86821bd1b838f5a13ea6260a9f2c9fb8717fdcf84da0a49a90a2b",
+      "identical": true
+    }
+  ],
+  "body_paragraphs": 108,
+  "paragraph_failures": [
+    {
+      "length": 225,
+      "start": "阅读目录：柏楚解决什么加工问题 · 柏楚怎样赚钱 · 利润主要来自哪里 · 七年经营怎样走到今天 · 毛利额增加时，毛利率为何下降 · 利润怎样变成现金 · 护城河怎样形成并兑现 · 从工件要求看工艺",
+      "matched": false
+    },
+    {
+      "length": 52,
+      "start": "执行为成员四Codex实施Agent；原四轮审核记录保留。本版新增内容实际核对见11.26整合验收记录。",
+      "matched": false
+    },
+    {
+      "length": 61,
+      "start": "机制检验与2024→2025集团历史 · 流程及机制示意 · M1-01–18；B01、B02、B04、B09、B10，年报定位和计算见来源索引",
+      "matched": false
+    },
+    {
+      "length": 73,
+      "start": "数值以第一轮获准底表与第二轮经营桥为主。合同负债构成由2025年报p213单列补充原格。机制判断沿已审第二轮材料，原文自述与研究推断在相邻段说明。",
+      "matched": false
+    }
+  ],
+  "chapter_source_checks": [
+    {
+      "chapter": "01",
+      "paragraphs": 6,
+      "failed": []
+    },
+    {
+      "chapter": "02",
+      "paragraphs": 9,
+      "failed": []
+    },
+    {
+      "chapter": "07",
+      "paragraphs": 26,
+      "failed": []
+    }
+  ],
+  "snapshot_checks": {
+    "第三轮报告留存.md": {
+      "paragraphs": 41,
+      "failed": []
+    },
+    "第三轮图册留存.html": {
+      "paragraphs": 41,
+      "failed": []
+    }
+  },
+  "findings": [
+    {
+      "id": "M3-F01",
+      "status": "已修并独立复验",
+      "result": "正式Markdown相邻E/M1引用0处，原8处已分隔。"
+    },
+    {
+      "id": "M3-F02",
+      "status": "已修并独立复验",
+      "result": "正式稿、03章节源、两个第四轮留存及HTML均限定2025年最大主营毛利来源。",
+      "checks": {
+        "第三轮/chapters/03.md": true,
+        "第四轮/第三轮报告留存.md": true,
+        "第四轮/第三轮图册留存.html": true,
+        "index.html": true
+      }
+    }
+  ],
+  "status": "本轮Agent成品内容与模型复核通过；未代刘翔宇新增人工审核",
+  "non_body_differences": "4项为目录、执行提示、图注及来源引言，未发现实质正文差异。来源表在HTML以面板呈现。",
+  "report_sha256": "41c90b8c7aad3f03aa0c4d31af4162a65d647a96f4d5367cd7aec0666febca07",
+  "html_sha256": "c79810d166231ebc016393cf3cf3bf9c171689718afe6a28fe44efff8099c60a"
+}
